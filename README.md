@@ -163,6 +163,34 @@ Actualmente, ambas necesidades permanecen desconectadas. Mientras el negocio no 
 
 #### 2.2.1. Diseño de entrevistas
 
+Con el objetivo de comprender las necesidades, frustraciones y expectativas de los segmentos definidos para RetailPulse, se diseñaron preguntas de entrevista diferenciadas para cada uno de los dos segmentos objetivo:
+
+#### Preguntas para el segmento 1: Negocios retail físicos (dueños o administradores)
+
+1. ¿Cómo tomas actualmente decisiones sobre la distribución de productos dentro de tu tienda?
+2. ¿Qué tipo de información utilizas para saber qué productos funcionan mejor o peor?
+3. ¿Te resulta fácil identificar qué zonas de tu tienda atraen más clientes? ¿Por qué?
+4. ¿En qué situaciones sientes que pierdes ventas sin saber exactamente qué ocurrió?
+5. ¿Cómo detectas si un cliente mostró interés en un producto pero finalmente no lo compró?
+6. ¿Qué dificultades tiene tu personal para atender a los clientes dentro del local?
+7. ¿Cómo decides cuándo cambiar la ubicación de un producto o activar una promoción?
+8. ¿Qué herramientas digitales utilizas actualmente para gestionar tu tienda?
+9. Si pudieras ver con mayor claridad cómo se comportan los clientes dentro del local, ¿cómo usarías esa información?
+10. ¿Qué tipo de alertas, reportes o recomendaciones te ayudarían más a mejorar tus ventas?
+
+#### Preguntas para el segmento 2: Compradores en tienda
+
+1. Cuando ingresas a una tienda, ¿sueles encontrar fácilmente lo que estás buscando? ¿Por qué?
+2. ¿Qué haces normalmente cuando no encuentras un producto dentro del local?
+3. ¿Con qué frecuencia necesitas pedir ayuda a un vendedor para ubicar un producto?
+4. ¿Te suele pasar que te interesa un producto pero finalmente no lo compras? ¿Qué te detiene?
+5. ¿Qué tan importante es para ti saber si un producto tiene stock antes de buscarlo?
+6. ¿Te parecería útil contar con una pantalla o quiosco dentro de la tienda para buscar productos? ¿Por qué?
+7. ¿Qué información te gustaría ver al consultar un producto dentro de la tienda?
+8. ¿Qué tan relevantes te resultan las promociones mientras estás comprando en una tienda física?
+9. ¿Qué cosas te hacen perder más tiempo o te generan más frustración al comprar en tienda?
+10. ¿Qué mejoraría tu experiencia de compra para que sea más rápida, cómoda o útil?
+
 #### 2.2.2. Registro de entrevistas
 
 #### 2.2.3. Análisis de entrevistas
