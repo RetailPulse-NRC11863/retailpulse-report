@@ -62,9 +62,68 @@ El equipo ha utilizado un flujo de trabajo en github: [retailpulse-report](https
 
 ### 1.1. Startup Profile
 
+RetailPulse es una startup tecnológica conformada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC), orientada al desarrollo de soluciones digitales para mejorar la gestión comercial y la experiencia de compra en tiendas físicas del sector retail. La problematica surge a partir de que el comercio electrónico cuenta con métricas detalladas sobre el comportamiento de sus usuarios, muchos negocios físicos todavía operan con información limitada, tomando decisiones comerciales en función de intuición, experiencia previa o únicamente datos de venta.
+
+La propuesta de valor de RetailPulse se materializa en una plataforma web SaaS que conecta la analítica de comportamiento en tienda con herramientas de apoyo operativo y experiencia asistida para el cliente. Por un lado, permite a boutiques, minimarkets y tiendas de conveniencia visualizar información como zonas de mayor tráfico, tiempo de permanencia, productos con alta interacción y baja conversión, y patrones de circulación dentro del local. Por otro lado, incorpora una interfaz web de consulta para el cliente en tienda, mediante la cual puede buscar productos, verificar disponibilidad, ubicar artículos dentro del local y acceder a promociones o recomendaciones durante su recorrido.
+
+RetailPulse no se limita a mostrar datos, sino que los transforma en acciones concretas para el negocio. A partir de la información capturada, la plataforma puede generar recomendaciones para optimizar la distribución del local, activar promociones en zonas estratégicas, emitir alertas al personal cuando una zona requiere atención y facilitar decisiones relacionadas con exhibición, stock y conversión. De esta manera, RetailPulse busca llevar al retail físico un nivel de inteligencia operativa similar al del comercio electrónico, ayudando a los negocios a vender con mayor precisión y a los clientes a comprar con menos fricción.
+
 #### 1.1.1. Descripción de la Startup
 
 #### 1.1.2. Perfiles de integrantes del equipo
+
+<table>
+  <tr>
+    <td rowspan="3"><img src="assets/images/Perfil_Jesus.png" alt="Jesús Godoy" width="800"></td>
+    <td>Jesús Andres Godoy Santillan (U20251C350)</td>
+  </tr>
+  <tr>
+    <td>Ingeniería de Software</td>
+  </tr>
+  <tr>
+    <td>Soy Jesús, tengo 23 años. Me apasiona la programación desde temprana edad, habiendo desarrollado proyectos que van desde videojuegos hasta plataformas para eventos online con creadores de contenido. Cuento con experiencia en el desarrollo de sistemas personalizados para el sector agroindustrial y brindo asesoría técnica en soluciones tecnológicas y resolución de problemas.</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><img src="assets/images/perfil-anghelo.png" alt="Anghelo Faustino" width="800"></td>
+    <td>Faustino Hurtado, Anghelo Edwin (U20241B331)</td>
+  </tr>
+  <tr>
+    <td>Ingeniería de Software</td>
+  </tr>
+  <tr>
+    <td>[Insertar biografía aquí]</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><img src="assets/images/perfil-jose.png" alt="José María Franco" width="800"></td>
+    <td>Franco del Carpio, José María (U202319178)</td>
+  </tr>
+  <tr>
+    <td>Ingeniería de Software</td>
+  </tr>
+  <tr>
+    <td>[Insertar biografía aquí]</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><img src="assets/images/perfil-luis.png" alt="Luis Rubio" width="800"></td>
+    <td>Rubio Ortiz, Luis Sebastián (U202310349)</td>
+  </tr>
+  <tr>
+    <td>Ingeniería de Software</td>
+  </tr>
+  <tr>
+    <td>[Insertar biografía aquí]</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><img src="assets/images/perfil-fabio.png" alt="Fabio Vallejo" width="800"></td>
+    <td>Vallejo Trujillo, Fabio Cesar (U20211D989)</td>
+  </tr>
+  <tr>
+    <td>Ingeniería de Software</td>
+  </tr>
+  <tr>
+    <td>[Insertar biografía aquí]</td>
+  </tr>
+</table>
 
 ### 1.2. Solution Profile
 
