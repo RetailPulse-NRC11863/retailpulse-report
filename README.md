@@ -298,6 +298,8 @@ Con el objetivo de comprender las necesidades, frustraciones y expectativas de l
 
 #### 4.6.2. Software Architecture Context Diagram
 
+![RetailPulse Context Diagram](assets/images/retailpulse-context-diagram.png)
+
 #### 4.6.3. Software Architecture Container Diagrams
 
 #### 4.6.4. Software Architecture Components Diagrams
