@@ -310,6 +310,44 @@ Con el objetivo de comprender las necesidades, frustraciones y expectativas de l
 
 #### 4.8.1. Database Diagrams
 
+![RetailPulse Database](assets/images/retailpulse-database.png)
+
+##### Bounded Context: Subscription
+
+Este esquema representa el contexto **Subscription**, se encarga de gestionar el modelo SaaS de RetailPulse. Su propósito es administrar las cuentas de negocio que contratan la plataforma, los tres planes disponibles, las suscripciones activas y los usuarios internos que acceden al sistema según sus roles. Este contexto permite responder quién utiliza la plataforma, bajo qué organización trabaja y qué funcionalidades puede consumir de acuerdo con el plan que se ha contratado, estableciendo así la base de acceso y control del sistema.
+
+![RetailPulse Subscription Context Database](assets/images/retailpulse-subscription-context-database.png)
+
+##### Bounded Context: Store Configuration
+
+Este esquema representa el contexto **Store Configuration**, se enfoca en definir la estructura física y lógica de la tienda que será analizada por la plataforma. Aquí se modelan las tiendas, sus zonas, estantes, productos y la ubicación de los productos dentro del local. Este contexto es importante porque proporciona la base espacial y comercial sobre la que luego se interpretan los eventos, las búsquedas de compradores, las métricas de tráfico y los reportes de conversión.
+
+![RetailPulse Store Configuration Context Database](assets/images/retailpulse-store-configuration-context-database.png)
+
+##### Bounded Context: Simulation & In-Store Monitoring
+
+Este esquema representa el contexto **Simulation & In-Store Monitoring**, se centra en la generación y registro de eventos simulados de comportamiento dentro de la tienda. Administra sesiones de visita, recorridos por zonas, tiempos de permanencia e interacciones con productos, reproduciendo de manera lógica la información que podría capturarse con sensores reales en un entorno de producción. Este contexto constituye el núcleo analítico del sistema, ya que alimenta funcionalidades como heatmaps, dashboards de tráfico y patrones de comportamiento en tienda.
+
+![RetailPulse Simulation & In Store Monitoring Context Database](assets/images/retailpulse-simulation-in-store-monitoring-context-database.png)
+
+##### Bounded Context: Buyer Assistance
+
+Este esquema representa el contexto **Buyer Assistance**, está orientado a la experiencia del comprador dentro del local mediante el quiosco web. Gestiona sesiones de uso del quiosco, búsquedas de productos, consultas de disponibilidad y promociones asociadas a los productos. Su objetivo es reducir la fricción durante la compra, facilitar la ubicación de artículos y ofrecer información relevante en tiempo real, complementando la analítica interna con una capa de asistencia directa al cliente.
+
+![RetailPulse Buyer Assistance Context Database](assets/images/retailpulse-buyer-assistance-context-database.png)
+
+##### Bounded Context: Sales & Conversion
+
+Este esquema representa el contexto **Sales & Conversion**, se encarga de relacionar la actividad observada en tienda con los resultados comerciales. Administra ventas, detalle de productos vendidos y métricas consolidadas de conversión, tanto a nivel general como por zona y producto. Este contexto permite evaluar si las interacciones de los compradores realmente terminan en compra, haciendo posible identificar áreas de bajo rendimiento, productos con alta interacción pero baja venta y oportunidades de optimización comercial.
+
+![RetailPulse Sales & Conversion Context Database](assets/images/retailpulse-sales-conversion-context-database.png)
+
+##### Bounded Context: Alerts & Recommendations
+
+Este esquema representa el contexto **Alerts & Recommendations**, se enfoca en transformar los datos del sistema en acciones concretas. Administra alertas generadas automáticamente, tareas operativas asignadas al personal y recomendaciones dirigidas al administrador del negocio. Su función es convertir el análisis de tráfico, interacción y conversión en decisiones accionables, permitiendo reaccionar ante zonas de alta demanda, problemas de atención, baja conversión o necesidades de mejora en la disposición de productos.
+
+![RetailPulse Alerts & Recommendations Context Database](assets/images/retailpulse-alerts-recommendations-context-database.png)
+
 ---
 
 ## Capítulo V: Product Implementation, Validation & Deployment
