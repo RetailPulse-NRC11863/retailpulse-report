@@ -499,6 +499,54 @@ Con el objetivo de comprender las necesidades, frustraciones y expectativas de l
 
 #### 4.1.1. General Style Guidelines
 
+En esta sección se definen los pilares visuales que rigen la identidad de marca de **RetailPulse**. Estas directrices garantizan la consistencia en todos los puntos de contacto de la plataforma, desde el informe técnico hasta la interfaz de la aplicación web, transmitiendo los valores de innovación, precisión analítica y profesionalismo premium.
+
+**A. Brand Persona**
+
+La identidad visual de RetailPulse proyecta la imagen de una *startup* tecnológica sofisticada y confiable. Se prioriza la claridad de los datos, el minimalismo y una estética de interfaz limpia, diseñada para facilitar la toma de decisiones gerenciales mediante visualizaciones precisas.
+
+**B. Tipografía**
+
+Se ha seleccionado una familia tipográfica *sans-serif* moderna, optimizada para la legibilidad en pantallas de alta densidad y compatible con estándares de desarrollo web.
+
+* **Fuentes Principales:** `Inter` o `Poppins` (Pesos: Light 300, Regular 400, Semibold 600, Bold 700, Black 900).
+* **Jerarquía Tipográfica:**
+    * **Títulos (H1/H2):** Peso Bold o Black, color Deep Tech Navy Blue (`#0A2540`).
+    * **Cuerpo de Texto:** Peso Regular para una lectura fluida.
+    * **Monospace (APIs y Backend):** `Fira Code` o `Roboto Mono` para la documentación técnica de las US-11 a US-15.
+
+**C. Paleta de Colores**
+
+La paleta se compone de tonos que equilibran la seriedad corporativa con el dinamismo tecnológico de la analítica de datos.
+
+1. **Azul Marino Profundo (Deep Tech Navy Blue):**
+    * **HEX:** `#0A2540`
+    * **Función:** Base corporativa que transmite confianza. Se utiliza en el texto principal, encabezados y elementos estructurales.
+
+2. **Cian Eléctrico Vibrante (Vibrant Electric Cyan):**
+    * **HEX:** `#00D2FF`
+    * **Función:** Acento tecnológico y moderno. Se utiliza para resaltar elementos de analítica (líneas de pulso, gráficos), botones de acción y estados activos.
+
+3. **Blanco Puro:**
+    * **HEX:** `#FFFFFF`
+    * **Función:** Fondo principal para mantener un diseño minimalista, limpio y con alto contraste.
+
+**D. Directrices del Logotipo**
+
+<img src="assets/images/logo-retailpulse.png" alt="Logo de RetailPulse" width="350">
+
+El logotipo debe presentarse siempre de forma legible, respetando su composición y colores originales:
+
+* **Símbolo:** Representa la unión entre el sector retail (bolsa de compras con líneas sólidas) y la analítica (línea de pulso en cian).
+* **Composición:** La palabra "Retail" se presenta en Deep Tech Navy Blue y "Pulse" en Vibrant Electric Cyan, reforzando la identidad dual de la herramienta.
+* **Uso en Fondos:** Sobre fondo blanco se utiliza la versión a color. En fondos oscuros, se prefiere la versión monocromática blanca o con el acento cian resaltado.
+
+**E. Principios de Layout y Espaciado**
+
+* **Sistema de Grillas:** Basado en múltiplos de 8px para garantizar la armonía visual en todos los componentes de la UI.
+* **Espacio Negativo:** Uso extensivo del blanco puro para reducir la carga cognitiva y destacar los KPIs críticos de la tienda.
+* **Bordes:** Redondeado moderno (entre 4px y 8px) para suavizar la estética tecnológica y mejorar la experiencia de usuario.
+
 #### 4.1.2. Web Style Guidelines
 
 ### 4.2. Information Architecture
