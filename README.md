@@ -539,6 +539,8 @@ Con el objetivo de comprender las necesidades, frustraciones y expectativas de l
 
 #### 4.6.3. Software Architecture Container Diagrams
 
+![RetailPulse Container Diagram](assets/images/retailpulse-container-diagram.png)
+
 #### 4.6.4. Software Architecture Components Diagrams
 
 ### 4.7. Software Object-Oriented Design
