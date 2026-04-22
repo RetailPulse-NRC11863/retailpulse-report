@@ -430,6 +430,45 @@ Con el objetivo de comprender las necesidades, frustraciones y expectativas de l
 
 #### 2.2.2. Registro de entrevistas
 
+##### Segmento 1: Dueños o administradores de negocios retail fisicos
+
+###### Entrevista 1
+* Nombre: Andy Pillaca
+* Edad: 27
+* Distrito: San Borja
+* Timing: 
+
+![Entrevista](assets/images/entrevista-andy-pillaca.png)
+
+**Resumen**: 
+Andy gestiona la distribución de productos en base a experiencia y observación, apoyándose en reportes de ventas y comentarios del personal. Sin embargo, no cuenta con datos precisos sobre el tráfico por zonas ni sobre el comportamiento de los clientes dentro del local, lo que dificulta entender por qué algunos productos no se venden (ubicación, precio o atención).
+
+Actualmente, no puede identificar si un cliente interactúa con un producto y no lo compra, y en horas pico el personal no logra cubrir todas las áreas. Las decisiones como promociones o reubicación de productos se toman de forma reactiva, cuando las ventas son bajas o el stock no rota.
+
+Utiliza únicamente un sistema POS y Excel. Considera que tener visibilidad del comportamiento del cliente le permitiría mejorar la distribución, la conversión y la atención. Le resultan especialmente útiles alertas de zonas con alto tráfico y baja conversión, identificación de productos con alta interacción sin venta y recomendaciones automáticas de acciones comerciales.
+
+**Enlace:** 
+
+##### Segmento 2: Compradores frecuentes en tiendas fisicas
+
+###### Entrevista 1
+* Nombre: Andy Nuñez
+* Edad: 26
+* Distrito: Lurigancho-Chosica
+* Timing:
+
+![Entrevista](assets/images/entrevista-andy-nunez.png)
+
+**Resumen**: Andy Nuñez es un comprador frecuente en tiendas físicas y su experiencia depende mucho de la organización del local. En tiendas grandes o desconocidas, le resulta difícil encontrar productos debido a la falta de señalización y orden, por lo que suele recorrer toda la tienda antes de pedir ayuda, ya que los vendedores suelen estar ocupados.
+
+Si no encuentra lo que busca, puede abandonar la tienda y buscar otra alternativa. No suele interactuar con el personal, prefiriendo tiendas donde ya conoce la distribución. Cuando no compra un producto que le interesó, generalmente se debe al precio, falta de necesidad o desconfianza en la calidad.
+
+Valora mucho conocer rápidamente el stock de un producto para no perder tiempo ni generar frustración. Considera útil la presencia de pantallas en tienda que le permitan buscar productos, ver disponibilidad, ubicación y promociones al ingresar.
+
+Sus principales frustraciones al comprar son no encontrar productos, perder tiempo, desorden en el local, mala señalización, precios incorrectos y largas colas.
+
+**Enlace:** 
+
 #### 2.2.3. Análisis de entrevistas
 
 ### 2.3. Needfinding
