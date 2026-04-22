@@ -115,14 +115,14 @@ RetailPulse no se limita a mostrar datos, sino que los transforma en acciones co
     <td>[Insertar biografía aquí]</td>
   </tr>
   <tr>
-    <td rowspan="3"><img src="assets/images/perfil-fabio.png" alt="Fabio Vallejo" width="800"></td>
+    <td rowspan="3"><img src="assets/images/perfil-fabio-vallejo.png" alt="Fabio Vallejo" width="800"></td>
     <td>Vallejo Trujillo, Fabio Cesar (U20211D989)</td>
   </tr>
   <tr>
     <td>Ingeniería de Software</td>
   </tr>
   <tr>
-    <td>[Insertar biografía aquí]</td>
+    <td>Soy Fabio, estudiante de ingenieria de software en quinto ciclo. Tengo 22 años, me gusta aprender nuevas tecnologías de programación y mantener buenas prácticas. Puedo aportar al proyecto manteniendo al grupo organizado con los entregables y con mis conocimientos técnicos en las multiples areas de programación, modelado de base de datos y arquitectura de software.</td>
   </tr>
 </table>
 
@@ -542,6 +542,10 @@ Con el objetivo de comprender las necesidades, frustraciones y expectativas de l
 ![RetailPulse Container Diagram](assets/images/retailpulse-container-diagram.png)
 
 #### 4.6.4. Software Architecture Components Diagrams
+
+![RetailPulse Container Diagram](assets/images/retailpulse-component-diagram-webservice.png)
+
+![RetailPulse Container Diagram](assets/images/retailpulse-component-diagram-webapp.png)
 
 ### 4.7. Software Object-Oriented Design
 
