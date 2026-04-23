@@ -524,6 +524,12 @@ Sus principales frustraciones al comprar son no encontrar productos, perder tiem
 
 #### 2.3.1. User Personas
 
+Basados en la información recopilada durante nuestras entrevistas y análisis competitivo, hemos desarrollado User Personas representativas de nuestros segmentos objetivo.
+
+Segmento 1: Negocios retail físicos (Administradores y Dueños):
+![Segmento-1](assets/images/segmento-1.png)
+Segmento 2: Compradores en tiendas físicas:
+![Segmento-2](assets/images/segmento-2.png)
 #### 2.3.2. User Task Matrix
 
 #### 2.3.3. User Journey Mapping
