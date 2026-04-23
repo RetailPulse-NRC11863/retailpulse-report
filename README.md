@@ -1294,6 +1294,68 @@ Este esquema representa el contexto **Alerts & Recommendations**, se enfoca en t
 
 #### 5.1.1. Software Development Environment Configuration
 
+En esta sección se describen las herramientas, tecnologías y entornos utilizados para el desarrollo del proyecto RetailPulse, considerando todas las actividades del ciclo de vida: diseño, desarrollo, colaboración y despliegue.
+
+---
+
+#### UX/UI Design
+
+**Figma**  
+Herramienta de diseño colaborativo utilizada para la creación de wireframes, mockups, prototipos y flujos de usuario. Permite validar tempranamente la experiencia del usuario y asegurar consistencia visual entre el Landing Page y la Web Application.
+
+---
+
+#### Software Development
+
+**Visual Studio Code**  
+Editor de código utilizado como entorno principal de desarrollo tanto para el frontend como para configuraciones generales del proyecto. Destaca por su ligereza, extensibilidad mediante plugins y soporte para múltiples lenguajes.
+
+**WebStorm**  
+IDE especializado en desarrollo frontend utilizado para trabajar con Angular, facilitando la navegación del proyecto, debugging y gestión de componentes.
+
+**GitHub**  
+Plataforma de control de versiones utilizada para la gestión del código fuente y colaboración del equipo. Se implementa la estrategia GitFlow, junto con Conventional Commits, para mantener un historial ordenado y trazable del desarrollo.
+
+---
+
+#### Frontend Development
+
+**HTML5**  
+Lenguaje de marcado utilizado para estructurar las interfaces de usuario del sistema.
+
+**CSS3**  
+Lenguaje de estilos utilizado para el diseño visual, layout y adaptación responsive de la aplicación.
+
+**TypeScript**  
+Lenguaje utilizado en el desarrollo frontend, proporcionando tipado estático y mejor mantenibilidad del código.
+
+**Angular**  
+Framework principal para el desarrollo de la Web Application. Permite construir interfaces dinámicas, modulares y escalables mediante componentes reutilizables, servicios y manejo de estados.
+
+---
+
+#### Backend Development
+
+**Java**  
+Lenguaje de programación utilizado para el desarrollo de la lógica del lado servidor.
+
+**Spring Boot**  
+Framework utilizado para la construcción del RESTful API. Permite desarrollar servicios robustos, escalables y desacoplados, facilitando la creación de endpoints, manejo de dependencias e integración con bases de datos.
+
+#### Software Deployment
+
+**GitHub Pages**  
+Servicio utilizado para el despliegue del Landing Page del proyecto, permitiendo su acceso público como punto de entrada al modelo de negocio.
+
+**Vercel / Netlify (Frontend)**  
+Plataforma utilizada para el despliegue del frontend desarrollado en Angular, facilitando integración continua, builds automáticos y distribución global.
+
+**Railway / Render (Backend)**  
+Plataforma utilizada para el despliegue del RESTful API desarrollado en Spring Boot, permitiendo exponer servicios en la nube y gestionar variables de entorno.
+
+---
+
+
 #### 5.1.2. Source Code Management
 
 Para la gestión del código fuente del proyecto RetailPulse, el equipo utiliza GitHub como plataforma central de control de versiones y colaboración entre los miembros. Se ha optado por trabajar con una organización que agrupa múltiples repositorios, cada uno enfocado en un componente específico del sistema. A continuación, se detallan los repositorios utilizados:
