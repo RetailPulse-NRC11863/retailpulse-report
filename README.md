@@ -1148,6 +1148,75 @@ De esta manera, la navegación se convierte en un componente clave para garantiz
 
 #### 4.6.1. Design-Level Event Storming
 
+##### 1.	Unstructured Exploration
+
+<img src="assets/images/event-storming-1.png" width="50%">
+
+En esta fase inicial se identificaron los eventos de dominio principales de RetailPulse, sin priorizar aún un orden cronológico. Estos eventos representan los hitos clave del negocio, desde la configuración de la tienda hasta la simulación del comportamiento del cliente, la asistencia en tienda y la generación de alertas y recomendaciones.
+
+##### 2.	Timelines
+
+<img src="assets/images/event-storming-2.png" width="70%">
+
+En esta fase los eventos se organizan en líneas de tiempo que representan los flujos principales del sistema: configuración del negocio, monitoreo del comportamiento en tienda, asistencia al comprador, registro de ventas y generación de inteligencia operativa. Estas secuencias permiten visualizar cómo fluye la información desde la interacción del cliente hasta la generación de decisiones accionables dentro del negocio.
+
+##### 3.	Pain Points 
+
+<img src="assets/images/event-storming-3.png" width="100%">
+
+En esta fase se identifican los puntos de fricción. Estos pain points representan fallos, demoras o vacíos de información que afectan la operación del sistema, como la falta de trazabilidad de una interacción, errores en la ubicación de productos o la ausencia de alertas oportunas. Su propósito es evidenciar dónde el flujo de negocio pierde eficiencia y cómo la solución propuesta puede corregirlo.
+
+##### 4.	Pivotal Points
+
+<img src="assets/images/event-storming-3.png" width="100%">
+
+Los pivotal points representan eventos determinantes dentro del ciclo de vida del sistema. Estos hitos marcan cambios relevantes, como la activación del servicio, el inicio de una sesión de monitoreo, la detección de interacción con un producto o la generación de una alerta. Son puntos críticos porque habilitan nuevas capacidades operativas o analíticas dentro de la plataforma.
+
+##### 5.	Commands
+
+<img src="assets/images/event-storming-5.png" width="100%">
+
+Los comandos representan las acciones ejecutadas por un actor o por el propio sistema que desencadenan eventos dentro del dominio. Estos comandos permiten modelar la intención de negocio y enlazan las interacciones de los usuarios con las respuestas del sistema.
+
+##### 6.	Policies
+
+<img src="assets/images/event-storming-6.png" width="100%">
+
+Las políticas automatizan la lógica del sistema a partir de eventos relevantes. Su función es garantizar coherencia y reacción automática frente a situaciones del negocio, como la activación del servicio, la generación de alertas por alta demanda o la emisión de recomendaciones cuando se detecta interacción sin conversión.
+
+##### 7.	Read Models
+
+<img src="assets/images/event-storming-7.png" width="100%">
+
+Los read models representan las vistas del sistema que permiten consumir la información ya procesada por la lógica del dominio. En RetailPulse, estas vistas incluyen la landing page comercial, la página de registro, los paneles de suscripción, las alertas operativas y la experiencia de asistencia al comprador mediante el quiosco.
+
+##### 8.	External Systems
+
+<img src="assets/images/event-storming-8.png" width="100%">
+
+Los sistemas externos representan servicios que complementan el funcionamiento de RetailPulse sin formar parte de su dominio central. En este caso, se consideran la pasarela de pago para la activación de suscripciones y el servicio de correo para el envío de notificaciones relacionadas con la operación y la cuenta del negocio.
+
+##### 9.	Aggregates
+
+<img src="assets/images/event-storming-9.png" width="100%">
+
+Los aggregates representan las estructuras principales del dominio que encapsulan la lógica de negocio y mantienen la consistencia de los datos. En RetailPulse, estos agregados permiten modelar la suscripción del negocio, la configuración del local, el monitoreo de visitas, la asistencia al comprador, el registro de ventas y la generación de alertas y recomendaciones.
+
+##### 10.	Bounded Contexts
+
+<img src="assets/images/event-storming-10.png" width="100%">
+<img src="assets/images/event-storming-11.png" width="100%">
+<img src="assets/images/event-storming-12.png" width="100%">
+<img src="assets/images/event-storming-13.png" width="100%">
+<img src="assets/images/event-storming-14.png" width="100%">
+<img src="assets/images/event-storming-15.png" width="100%">
+<img src="assets/images/event-storming-16.png" width="100%">
+
+Los bounded contexts organizan el dominio de RetailPulse en áreas funcionales independientes, cada una con su propia responsabilidad y lenguaje de negocio. Esta separación permite estructurar la solución de manera coherente, escalable y alineada con la arquitectura del sistema, conectando el Event Storming con el modelo C4 y el diseño de la base de datos.
+
+**Enlace de Visualización:** https://miro.com/app/board/uXjVHe0Bh8Q=/?share_link_id=570174974504
+
+
 #### 4.6.2. Software Architecture Context Diagram
 
 ![RetailPulse Context Diagram](assets/images/retailpulse-context-diagram.png)
