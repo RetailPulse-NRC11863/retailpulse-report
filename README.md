@@ -56,6 +56,54 @@ El equipo ha utilizado un flujo de trabajo en github: [retailpulse-report](https
 
 **ABET - EAC - Student Outcome 3:** Capacidad de comunicarse efectivamente con un rango de audiencias.
 
+### Student Outcome
+
+<table>
+  <tr>
+    <th>Criterio específico</th>
+    <th>Acciones realizadas</th>
+    <th>Conclusiones</th>
+  </tr>
+  <tr>
+    <td><strong>Comunica oralmente con efectividad a diferentes rangos de audiencia.</strong></td>
+    <td>
+      <p><strong>Faustino Hurtado, Anghelo Edwin</strong><br>
+      <strong>AV1:</strong> Participó en la explicación de los artefactos de Lean UX, incluyendo assumptions, hypothesis statements y Lean UX Canvas. Asimismo, sustentó el análisis competitivo, las estrategias frente a competidores, los lineamientos visuales, la arquitectura de organización y las User Stories asignadas.</p>
+      <p><strong>Franco del Carpio, José María</strong><br>
+      <strong>AV1:</strong> Explicó la construcción del Ubiquitous Language, el Product Backlog y los sistemas de arquitectura de información, incluyendo labeling, SEO tags, searching y navigation systems. También participó en la sustentación del registro de entrevistas y User Stories.</p>
+      <p><strong>Godoy Santillan, Jesus Andres</strong><br>
+      <strong>AV1:</strong> Presentó los antecedentes y la problemática, los segmentos objetivo y los artefactos de needfinding, como User Personas y User Task Matrix. Además, explicó el Landing Page Wireframe, el Container Diagram, los Class Diagrams y la configuración del entorno de desarrollo.</p>
+      <p><strong>Rubio Ortiz, Luis Sebastián</strong><br>
+      <strong>AV1:</strong> Sustentó el Impact Mapping, el Landing Page Mock-up, los Web Applications Mock-ups y el prototipo de la aplicación web. También explicó los Component Diagrams, las convenciones de estilo de código, la configuración de despliegue y las User Stories asignadas.</p>
+      <p><strong>Vallejo Trujillo, Fabio Cesar</strong><br>
+      <strong>AV1:</strong> Presentó la descripción de la startup, los Lean UX Problem Statements, el Context Diagram, el diseño de base de datos, la gestión del código fuente, los User Flow Diagrams, el Big Picture Event Storming, el Design-Level Event Storming y el registro de entrevistas.</p>
+    </td>
+    <td>
+      <p><strong>AV1:</strong><br>
+      Durante el AV1, el equipo desarrolló la capacidad de comunicar oralmente los principales avances del proyecto RetailPulse a distintos tipos de audiencia. Las exposiciones permitieron explicar tanto aspectos de negocio, como la problemática, segmentos y propuesta de valor, como aspectos técnicos, incluyendo arquitectura, diseño de base de datos, prototipos y artefactos de DDD. La distribución de responsabilidades favoreció que cada integrante pudiera sustentar una parte específica del proceso de ingeniería y comunicar su aporte con claridad.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Comunica por escrito con efectividad a diferentes rangos de audiencia.</strong></td>
+    <td>
+      <p><strong>Faustino Hurtado, Anghelo Edwin</strong><br>
+      <strong>AV1:</strong> Redactó y documentó secciones relacionadas con Lean UX Assumptions, Lean UX Hypothesis Statements, Lean UX Canvas, análisis de competidores, estrategias frente a competidores, General Style Guidelines, Web Applications Wireframes, Organization Systems y User Stories.</p>
+      <p><strong>Franco del Carpio, José María</strong><br>
+      <strong>AV1:</strong> Elaboró documentación vinculada al Ubiquitous Language, Product Backlog, Labeling Systems, SEO Tags and Meta Tags, Searching Systems, Navigation Systems, Registro de Entrevista y User Stories, contribuyendo a la claridad del informe técnico y funcional.</p>
+      <p><strong>Godoy Santillan, Jesus Andres</strong><br>
+      <strong>AV1:</strong> Documentó los antecedentes y la problemática, segmentos objetivo, User Personas, User Task Matrix, Landing Page Wireframe, Software Architecture Container Diagrams, Class Diagrams y Software Development Environment Configuration.</p>
+      <p><strong>Rubio Ortiz, Luis Sebastián</strong><br>
+      <strong>AV1:</strong> Redactó y documentó el Impact Mapping, Landing Page Mock-up, Web Applications Mock-ups, Web Applications Prototyping, Software Architecture Components Diagrams, Source Code Style Guide & Conventions, Software Deployment Configuration y User Stories.</p>
+      <p><strong>Vallejo Trujillo, Fabio Cesar</strong><br>
+      <strong>AV1:</strong> Elaboró la documentación de la descripción de la startup, Lean UX Problem Statements, Software Architecture Context Diagram, Database Diagrams, Source Code Management, Web Applications User Flow Diagrams, Big Picture Event Storming, Design-Level Event Storming y Registro de Entrevistas.</p>
+    </td>
+    <td>
+      <p><strong>AV1:</strong><br>
+      En el AV1, el equipo evidenció comunicación escrita efectiva mediante la elaboración colaborativa del informe del proyecto. La documentación permitió organizar de manera clara los fundamentos del negocio, los hallazgos de investigación, los requisitos, el diseño UX/UI, la arquitectura de software, el diseño orientado a objetos, la base de datos y la gestión del desarrollo. Esto permitió presentar RetailPulse de forma comprensible para audiencias técnicas y no técnicas, manteniendo coherencia entre el problema, la solución, los artefactos de diseño y las decisiones arquitectónicas.</p>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Capítulo I: Introducción
