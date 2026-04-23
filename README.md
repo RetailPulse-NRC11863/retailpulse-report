@@ -1606,7 +1606,7 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
   <td>Crear mockups de heatmap, alertas y quiosco.</td>
   <td>6</td>
   <td>Rubio Ortiz, Luis Sebastián</td>
-  <td>Done</td>
+  <td>To-do</td>
 </tr>
 
 <tr>
@@ -1615,7 +1615,7 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
   <td>Incorporar las demostraciones en el flujo del landing.</td>
   <td>4</td>
   <td>Godoy Santillan, Jesus Andres</td>
-  <td>Done</td>
+  <td>To-do</td>
 </tr>
 
 <tr>
@@ -1626,7 +1626,7 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
   <td>Implementar input y lógica básica de consulta.</td>
   <td>6</td>
   <td>Vallejo Trujillo, Fabio Cesar</td>
-  <td>Done</td>
+  <td>To-do</td>
 </tr>
 
 <tr>
@@ -1635,7 +1635,7 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
   <td>Mostrar productos, stock y ubicación simulada.</td>
   <td>5</td>
   <td>Franco del Carpio, José María</td>
-  <td>Done</td>
+  <td>To-do</td>
 </tr>
 
 <tr>
@@ -1646,7 +1646,7 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
   <td>Diseñar módulo de promociones relacionadas.</td>
   <td>4</td>
   <td>Rubio Ortiz, Luis Sebastián</td>
-  <td>Done</td>
+  <td>To-do</td>
 </tr>
 
 <tr>
@@ -1655,7 +1655,7 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
   <td>Mostrar promociones dentro del flujo de búsqueda.</td>
   <td>4</td>
   <td>Faustino Hurtado, Anghelo Edwin</td>
-  <td>Done</td>
+  <td>To-do</td>
 </tr>
 
 </table>
