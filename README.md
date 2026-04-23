@@ -849,6 +849,47 @@ Esta alineación permite una integración coherente entre diseño, desarrollo y 
 
 #### 4.2.3. SEO Tags and Meta Tags
 
+El uso de **SEO Tags y Meta Tags** en RetailPulse tiene como objetivo mejorar la visibilidad de la plataforma en motores de búsqueda, facilitar la indexación del contenido y optimizar la experiencia de usuario en el acceso al landing page.
+
+Dado que RetailPulse es una solución SaaS orientada a negocios retail, la estrategia SEO se enfoca en atraer a administradores de tiendas, emprendedores y pequeñas empresas interesadas en mejorar su operación mediante herramientas digitales.
+
+---
+
+##### 4.2.3.1. Objetivos de SEO
+
+- Incrementar la visibilidad del landing page en buscadores como Google.
+- Atraer tráfico orgánico de negocios retail.
+- Posicionar a RetailPulse como solución innovadora en analítica de tiendas físicas.
+- Mejorar la tasa de conversión mediante descripciones claras y relevantes.
+
+---
+
+##### 4.2.3.2. Meta Tags Principales
+
+A continuación, se definen las etiquetas principales utilizadas en el landing page:
+
+| Meta Tag | Descripción |
+|----------|------------|
+| **title** | Define el título de la página que aparece en los resultados de búsqueda. |
+| **description** | Proporciona un resumen del contenido de la página. |
+| **keywords** | Lista de palabras clave relevantes para el posicionamiento. |
+| **viewport** | Permite la correcta visualización en dispositivos móviles. |
+| **author** | Indica el autor o la organización responsable del sitio. |
+
+---
+
+##### 4.2.3.3. Ejemplo de Implementación
+
+```html
+<head>
+  <title>RetailPulse - Analítica inteligente para tiendas físicas</title>
+  <meta name="description" content="Optimiza tu tienda física con analítica de tráfico, mapas de calor y asistencia digital al cliente con RetailPulse.">
+  <meta name="keywords" content="retail, analítica de tiendas, mapas de calor, SaaS retail, optimización de ventas, quiosco digital">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="RetailPulse Team">
+</head>
+```
+
 #### 4.2.4. Searching Systems
 
 #### 4.2.5. Navigation Systems
