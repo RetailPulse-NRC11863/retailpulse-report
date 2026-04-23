@@ -482,29 +482,31 @@ Con el objetivo de comprender las necesidades, frustraciones y expectativas de l
 ##### Segmento 1: Dueños o administradores de negocios retail fisicos
 
 ###### Entrevista 1
+
 * Nombre: Andy Pillaca
 * Edad: 27
 * Distrito: San Borja
-* Timing: 
+* Timing: 0:02-3:50
 
 ![Entrevista](assets/images/entrevista-andy-pillaca.png)
 
-**Resumen**: 
+**Resumen:**
 Andy gestiona la distribución de productos en base a experiencia y observación, apoyándose en reportes de ventas y comentarios del personal. Sin embargo, no cuenta con datos precisos sobre el tráfico por zonas ni sobre el comportamiento de los clientes dentro del local, lo que dificulta entender por qué algunos productos no se venden (ubicación, precio o atención).
 
 Actualmente, no puede identificar si un cliente interactúa con un producto y no lo compra, y en horas pico el personal no logra cubrir todas las áreas. Las decisiones como promociones o reubicación de productos se toman de forma reactiva, cuando las ventas son bajas o el stock no rota.
 
 Utiliza únicamente un sistema POS y Excel. Considera que tener visibilidad del comportamiento del cliente le permitiría mejorar la distribución, la conversión y la atención. Le resultan especialmente útiles alertas de zonas con alto tráfico y baja conversión, identificación de productos con alta interacción sin venta y recomendaciones automáticas de acciones comerciales.
 
-**Enlace:** 
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
 
 ##### Segmento 2: Compradores frecuentes en tiendas fisicas
 
 ###### Entrevista 1
+
 * Nombre: Andy Nuñez
 * Edad: 26
 * Distrito: Lurigancho-Chosica
-* Timing:
+* Timing: 8:40-13:15
 
 ![Entrevista](assets/images/entrevista-andy-nunez.png)
 
@@ -516,7 +518,20 @@ Valora mucho conocer rápidamente el stock de un producto para no perder tiempo 
 
 Sus principales frustraciones al comprar son no encontrar productos, perder tiempo, desorden en el local, mala señalización, precios incorrectos y largas colas.
 
-**Enlace:** 
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
+
+###### Entrevista 2
+
+* Nombre: Sra. Flores Aliaga
+* Edad: 50 años
+* Distrito: Santiago de Surco
+* Timing: 13:15-20:45
+
+![Entrevista](assets/images/entrevista-flores-aliaga.png)
+
+Resumen: La Sra. Flores suele encontrar lo que busca en una tienda física porque ya sabe a qué pasillo o sección ir, pero cuando no encuentra un producto busca a un dependiente para preguntar si hay o dónde está. A veces decide no comprar un producto por el precio (más alto de lo esperado) o porque encuentra otra marca que le parece mejor. No considera muy importante saber el stock antes de ir, aunque sí ve valor en herramientas como una pantalla de búsqueda para personas más jóvenes, mientras que para ella podría ser más difícil por temas de tecnología. Valora información como fecha de caducidad, precio, información nutricional y componentes, y considera las promociones importantes porque pueden cambiar lo que compra. Sus principales frustraciones son los cambios en la disposición de productos, las colas largas por pocas cajas y la falta de precios visibles; para mejorar, propone mantener la distribución estable, que el personal tenga información clara y habilitar más cajas en horas de alta demanda.
+
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
 
 #### 2.2.3. Análisis de entrevistas
 
