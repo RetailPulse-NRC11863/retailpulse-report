@@ -667,6 +667,28 @@ Para asegurar la correcta aplicación del Ubiquitous Language en el proyecto:
 
 ### 3.3. Product Backlog
 
+A continuación, se presenta el Product Backlog de RetailPulse, el cual organiza las User Stories en función de su valor para el negocio y su prioridad dentro del desarrollo del producto.
+
+| # Orden | User Story ID | Título | Descripción | Story Points |
+|--------|---------------|--------|------------|--------------|
+| 1 | US-01 | Explorar planes y propuesta de valor de RetailPulse | Como visitante de página, quiero conocer los planes y beneficios de RetailPulse, para evaluar si la solución se adapta a las necesidades de mi tienda. | 3 |
+| 2 | US-16 | Conocer cómo RetailPulse mejora la operación de la tienda | Como visitante de página, quiero visualizar de forma clara cómo RetailPulse ayuda a mejorar la operación, la conversión y la experiencia de compra en tienda, para entender el valor real de la solución para mi negocio. | 3 |
+| 3 | US-17 | Visualizar demostraciones del funcionamiento de RetailPulse | Como visitante de página, quiero visualizar ejemplos o demostraciones del funcionamiento de RetailPulse, para comprender cómo se verían sus principales funcionalidades aplicadas en una tienda real. | 5 |
+| 4 | US-04 | Buscar productos y su ubicación dentro de la tienda | Como comprador en tienda, quiero buscar un producto y conocer su disponibilidad y ubicación, para encontrarlo rápidamente. | 5 |
+| 5 | US-09 | Recibir promociones personalizadas en quiosco | Como comprador en tienda, quiero recibir promociones personalizadas mientras busca productos, para aprovechar ofertas relevantes durante su compra. | 3 |
+| 6 | US-05 | Consultar tareas operativas asignadas en tienda | Como personal de tienda, quiero consultar las tareas operativas generadas por el sistema, para atender zonas, productos o incidencias priorizadas dentro del local. | 3 |
+| 7 | US-03 | Recibir alertas operativas por zonas de alta demanda | Como personal de tienda, quiero recibir alertas sobre zonas con alta demanda o baja atención, para priorizar mi intervención y mejorar la experiencia del comprador. | 3 |
+| 8 | US-10 | Notificar falta de stock al personal | Como sistema, quiero notificar al personal cuando un producto consultado no tiene stock, para que puedan tomar acciones rápidas dentro de la tienda. | 5 |
+| 9 | US-02 | Analizar tráfico e interacción por zonas de la tienda | Como administrador de tienda, quiero visualizar métricas de tráfico, permanencia e interacción por zona, para identificar oportunidades de mejora en la distribución del local y en la conversión. | 8 |
+| 10 | US-06 | Visualizar mapa de calor de interacción en tienda | Como administrador de tienda, quiero visualizar un mapa de calor de interacción de clientes dentro del local, para identificar zonas de alta y baja actividad y optimizar la distribución del espacio. | 8 |
+| 11 | US-08 | Visualizar patrones de circulación de clientes | Como administrador de tienda, quiero visualizar los patrones de circulación de los clientes dentro del local, para entender su comportamiento y mejorar la experiencia de compra. | 8 |
+| 12 | US-07 | Recibir recomendaciones de optimización del layout | Como administrador de tienda, quiero recibir recomendaciones sobre la distribución de productos y zonas, para mejorar la conversión y el flujo de clientes. | 5 |
+| 13 | US-13 | Construir API REST para la gestión del catálogo | Como desarrollador, quiero desarrollar las rutas CRUD de productos en el backend, para que la plataforma web pueda gestionar el inventario. | 5 |
+| 14 | US-11 | Crear endpoint para recepción de eventos de tráfico | Como desarrollador, quiero implementar un endpoint POST en la API, para que los sensores envíen datos en tiempo real. | 5 |
+| 15 | US-12 | Desarrollar endpoint GET de analítica y mapas de calor | Como desarrollador, quiero crear un endpoint de agregación de datos, para que el frontend consuma métricas procesadas. | 5 |
+| 16 | US-15 | Configurar el esquema y conexión de Base de Datos | Como desarrollador, quiero establecer la conexión y el modelado de las tablas, para almacenar eventos de la tienda. | 5 |
+| 17 | US-14 | Implementar seguridad y autenticación JWT | Como desarrollador, quiero configurar la seguridad mediante tokens JWT, para proteger las rutas privadas del sistema. | 3 |
+
 ---
 
 ## Capítulo IV: Product Design
