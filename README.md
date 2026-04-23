@@ -1452,9 +1452,217 @@ En el repositorio del informe se emplean mensajes como `docs(report): add projec
 
 ##### 5.2.1.1. Sprint Planning 1
 
+A continuación, se presenta la planificación correspondiente al Sprint 1 del proyecto RetailPulse, el cual tiene como enfoque principal la validación de la propuesta de valor mediante la implementación del landing page y una primera funcionalidad básica de búsqueda de productos en tienda. En esta etapa inicial, el equipo definió el objetivo del sprint, seleccionó las historias de usuario más relevantes y estableció los entregables clave que permitirán construir una primera versión funcional y visualmente clara del sistema.
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 1</th>
+  </tr>
+
+  <tr>
+    <td><strong>Sprint Planning Background</strong></td>
+    <td>Primera planificación del proyecto enfocada en validar la propuesta de valor del sistema RetailPulse.</td>
+  </tr>
+
+  <tr>
+    <td>Date</td>
+    <td>2026-04-23</td>
+  </tr>
+
+  <tr>
+    <td>Time</td>
+    <td>23:00 pm (GMT-5)</td>
+  </tr>
+
+  <tr>
+    <td>Location</td>
+    <td>Modalidad remota mediante la plataforma Discord</td>
+  </tr>
+
+  <tr>
+    <td>Prepared By</td>
+    <td>Vallejo Trujillo, Fabio Cesar</td>
+  </tr>
+
+  <tr>
+    <td>Attendees (to planning meeting)</td>
+    <td>
+      Faustino Hurtado, Anghelo Edwin / Franco del Carpio, José María / Godoy Santillan, Jesus Andres / Rubio Ortiz, Luis Sebastián / Vallejo Trujillo, Fabio Cesar
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 0 Review Summary</td>
+    <td>Dado que este es el sprint inicial del proyecto, no se cuenta con un sprint previo a evaluar.</td>
+  </tr>
+
+  <tr>
+    <td>Sprint 0 Retrospective Summary</td>
+    <td>Al tratarse del primer sprint, no se dispone de retroalimentación previa.</td>
+  </tr>
+
+  <tr>
+    <td><strong>Sprint Goal & User Stories</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Sprint 1 Goal</td>
+    <td>
+      El objetivo del Sprint 1 es validar la propuesta de valor de RetailPulse mediante la implementación del landing page y una funcionalidad básica de búsqueda de productos en tienda.
+      <br><br>
+      Se busca que los usuarios comprendan claramente el valor del sistema, puedan visualizar sus beneficios y explorar una simulación inicial de interacción dentro del entorno de tienda.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 1 Velocity</td>
+    <td>19 puntos</td>
+  </tr>
+
+  <tr>
+    <td>Sum of Story Points</td>
+    <td>19 puntos</td>
+  </tr>
+</table>
+
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 
 ##### 5.2.1.3. Sprint Backlog 1
+
+**Duración:** 2 semanas
+
+**Objetivo del Sprint:**
+Validar la propuesta de valor de RetailPulse mediante la implementación del landing page y habilitar la funcionalidad básica de búsqueda de productos en tienda.
+
+<table>
+<tr>
+  <th>Sprint #</th>
+  <th colspan="7">Sprint 1</th>
+</tr>
+
+<tr>
+  <th colspan="2">User Story</th>
+  <th colspan="6">Work-Item / Task</th>
+</tr>
+
+<tr>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Description</th>
+  <th>Estimation (Hours)</th>
+  <th>Assigned To</th>
+  <th>Status</th>
+</tr>
+
+<tr>
+  <td rowspan="2">US-01</td>
+  <td rowspan="2">Explorar planes y propuesta de valor</td>
+  <td>T-01</td>
+  <td>Redactar contenido del landing</td>
+  <td>Definir textos de valor, beneficios y secciones principales del landing page.</td>
+  <td>5</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-02</td>
+  <td>Diseñar sección de planes</td>
+  <td>Construir la visualización de planes y beneficios del sistema.</td>
+  <td>5</td>
+  <td>Godoy Santillan, Jesus Andres</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-16</td>
+  <td rowspan="2">Visualizar valor del sistema</td>
+  <td>T-03</td>
+  <td>Sección beneficios</td>
+  <td>Mostrar cómo RetailPulse mejora la operación y conversión.</td>
+  <td>5</td>
+  <td>Franco del Carpio, José María</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-04</td>
+  <td>Casos de uso</td>
+  <td>Ejemplificar escenarios reales dentro de tienda.</td>
+  <td>4</td>
+  <td>Faustino Hurtado, Anghelo Edwin</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-17</td>
+  <td rowspan="2">Ver demostraciones del sistema</td>
+  <td>T-05</td>
+  <td>Diseñar demos visuales</td>
+  <td>Crear mockups de heatmap, alertas y quiosco.</td>
+  <td>6</td>
+  <td>Rubio Ortiz, Luis Sebastián</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-06</td>
+  <td>Integrar demos</td>
+  <td>Incorporar las demostraciones en el flujo del landing.</td>
+  <td>4</td>
+  <td>Godoy Santillan, Jesus Andres</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-04</td>
+  <td rowspan="2">Buscar productos y ubicación</td>
+  <td>T-07</td>
+  <td>Formulario de búsqueda</td>
+  <td>Implementar input y lógica básica de consulta.</td>
+  <td>6</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-08</td>
+  <td>Resultados de búsqueda</td>
+  <td>Mostrar productos, stock y ubicación simulada.</td>
+  <td>5</td>
+  <td>Franco del Carpio, José María</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-09</td>
+  <td rowspan="2">Promociones en quiosco</td>
+  <td>T-09</td>
+  <td>Panel promociones</td>
+  <td>Diseñar módulo de promociones relacionadas.</td>
+  <td>4</td>
+  <td>Rubio Ortiz, Luis Sebastián</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-10</td>
+  <td>Integración promociones</td>
+  <td>Mostrar promociones dentro del flujo de búsqueda.</td>
+  <td>4</td>
+  <td>Faustino Hurtado, Anghelo Edwin</td>
+  <td>Done</td>
+</tr>
+
+</table>
+
+**Total Story Points:** 19
+
+---
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
