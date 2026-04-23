@@ -892,6 +892,113 @@ A continuación, se definen las etiquetas principales utilizadas en el landing p
 
 #### 4.2.4. Searching Systems
 
+El **Searching System** de RetailPulse define los mecanismos que permiten a los usuarios localizar información dentro de la plataforma de manera eficiente, precisa y sin fricción.
+
+Dado que el sistema está orientado a distintos tipos de usuario (administrador, personal de tienda y comprador), la funcionalidad de búsqueda se adapta a cada contexto, priorizando la rapidez en el quiosco web y la precisión en los entornos de gestión.
+
+---
+
+##### 4.2.4.1. Objetivos del Sistema de Búsqueda
+
+- Permitir a los compradores encontrar productos de forma rápida dentro de la tienda.
+- Facilitar el acceso a información relevante para el personal y administradores.
+- Reducir el tiempo necesario para completar tareas dentro del sistema.
+- Minimizar errores mediante sugerencias y validaciones.
+
+---
+
+##### 4.2.4.2. Tipos de Búsqueda
+
+RetailPulse implementa distintos tipos de búsqueda según el contexto de uso:
+
+- **Búsqueda por texto:** permite ingresar el nombre de un producto o palabra clave.
+- **Búsqueda asistida:** sugiere resultados automáticamente durante la escritura.
+- **Búsqueda por categorías:** organiza los productos en grupos para facilitar la exploración.
+- **Búsqueda contextual:** filtra resultados según la tienda, zona o disponibilidad.
+
+---
+
+##### 4.2.4.3. Búsqueda en el Quiosco Web
+
+El quiosco web constituye el principal punto de interacción del comprador con el sistema, por lo que la búsqueda se diseña para ser rápida e intuitiva.
+
+**Características principales:**
+
+- Campo de búsqueda visible desde la pantalla principal.
+- Sugerencias automáticas en tiempo real.
+- Resultados claros que incluyen:
+  - Nombre del producto
+  - Disponibilidad
+  - Ubicación dentro de la tienda
+  - Promociones asociadas
+- Acceso directo a la visualización de la ubicación del producto.
+
+**Flujo de búsqueda:**
+
+1. El usuario ingresa el nombre del producto.
+2. El sistema muestra sugerencias relacionadas.
+3. El usuario selecciona un resultado.
+4. Se presenta la información detallada del producto.
+
+---
+
+##### 4.2.4.4. Búsqueda para Administrador
+
+En el entorno administrativo, la búsqueda está orientada a la gestión y análisis de información.
+
+**Características principales:**
+
+- Búsqueda de productos dentro del catálogo.
+- Aplicación de filtros por zona, tráfico, conversión y periodo.
+- Acceso rápido a reportes y métricas específicas.
+
+Esta funcionalidad permite al administrador tomar decisiones basadas en datos de manera eficiente.
+
+---
+
+##### 4.2.4.5. Búsqueda para Personal de Tienda
+
+El personal de tienda utiliza la búsqueda para la gestión operativa diaria.
+
+**Características principales:**
+
+- Búsqueda de tareas asignadas.
+- Filtro por estado (pendiente, en progreso, completado).
+- Acceso a alertas relacionadas con productos o zonas.
+
+---
+
+##### 4.2.4.6. Manejo de Resultados y Errores
+
+El sistema contempla distintos escenarios para mejorar la experiencia de usuario:
+
+- **Sin resultados:** se informa al usuario y se sugieren alternativas.
+- **Errores de escritura:** se ofrecen sugerencias automáticas.
+- **Resultados ambiguos:** se priorizan los resultados más relevantes.
+
+---
+
+##### 4.2.4.7. Optimización del Sistema
+
+Para garantizar un rendimiento adecuado, se consideran las siguientes prácticas:
+
+- Uso de índices para acelerar la búsqueda.
+- Implementación de caché en consultas frecuentes.
+- Priorización de resultados según disponibilidad, relevancia y frecuencia de uso.
+
+---
+
+##### 4.2.4.8. Impacto en la Experiencia de Usuario
+
+El sistema de búsqueda es un componente clave en RetailPulse, ya que:
+
+- Reduce el tiempo de búsqueda de productos.
+- Disminuye la dependencia del personal de tienda.
+- Mejora la eficiencia operativa.
+- Incrementa la probabilidad de conversión.
+
+De esta manera, el Searching System contribuye directamente a la propuesta de valor de la plataforma.
+
 #### 4.2.5. Navigation Systems
 
 ### 4.3. Landing Page UI Design
