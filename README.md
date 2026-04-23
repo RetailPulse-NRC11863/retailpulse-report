@@ -674,6 +674,8 @@ Para asegurar la correcta aplicación del Ubiquitous Language en el proyecto:
 
 ### 3.2. Impact Mapping
 
+![Impact Mapping](assets/images/impact-mapping.png)
+
 ### 3.3. Product Backlog
 
 A continuación, se presenta el Product Backlog de RetailPulse, el cual organiza las User Stories en función de su valor para el negocio y su prioridad dentro del desarrollo del producto.
