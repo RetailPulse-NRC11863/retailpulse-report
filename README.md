@@ -112,7 +112,7 @@ RetailPulse no se limita a mostrar datos, sino que los transforma en acciones co
     <td>Ingeniería de Software</td>
   </tr>
   <tr>
-    <td>[Insertar biografía aquí]</td>
+    <td>Soy Luis Sebastián, tengo 20 años. Cuando empecé a aprender cada vez más sobre las computadoras desde pequeño, supe que este era mi camino. Me gusta aprender cosas nuevas, y tengo experiencia trabajando en equipo no solo en el contexto universitario, sino también en ambientes laborales.</td>
   </tr>
   <tr>
     <td rowspan="3"><img src="assets/images/perfil-fabio-vallejo.png" alt="Fabio Vallejo" width="800"></td>
