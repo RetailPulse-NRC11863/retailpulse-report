@@ -532,6 +532,15 @@ Sus principales frustraciones al comprar son no encontrar productos, perder tiem
 
 ### 2.4. Big Picture Event Storming
 
+En esta sección, se presenta el desarrollo y los resultados de la sesión de Event Storming realizada por el equipo para el proyecto RetailPulse. Este proceso consistió en una actividad colaborativa de modelado del dominio, orientada a comprender de manera integral el funcionamiento del negocio de analítica en tiendas físicas.
+
+A través de esta dinámica, se identificaron los actores principales, los eventos de dominio más relevantes y su relación dentro del flujo de valor del sistema, desde la adopción de la plataforma hasta la generación de alertas y recomendaciones en tienda. Esto permitió construir una visión clara del comportamiento del sistema en un nivel de negocio (Big Picture), así como una base estructurada para el diseño detallado posterior mediante el Design-Level Event Storming.
+
+<img src="assets/images/big-picture-event-storming.png" width="100%">
+
+**Enlace de Visualización:** https://miro.com/app/board/uXjVHd0j6Lc=/?share_link_id=737912347927
+
+
 ### 2.5. Ubiquitous Language
 
 El **Ubiquitous Language** define un conjunto de términos compartidos entre los miembros del equipo de desarrollo, stakeholders y usuarios del sistema RetailPulse. Este lenguaje permite establecer una comunicación clara, consistente y sin ambigüedades a lo largo del diseño, desarrollo e implementación de la plataforma.
