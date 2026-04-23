@@ -112,7 +112,7 @@ RetailPulse no se limita a mostrar datos, sino que los transforma en acciones co
     <td>Ingeniería de Software</td>
   </tr>
   <tr>
-    <td>[Insertar biografía aquí]</td>
+    <td>Soy Luis Sebastián, tengo 20 años. Cuando empecé a aprender cada vez más sobre las computadoras desde pequeño, supe que este era mi camino. Me gusta aprender cosas nuevas, y tengo experiencia trabajando en equipo no solo en el contexto universitario, sino también en ambientes laborales.</td>
   </tr>
   <tr>
     <td rowspan="3"><img src="assets/images/perfil-fabio-vallejo.png" alt="Fabio Vallejo" width="800"></td>
@@ -688,6 +688,8 @@ Para asegurar la correcta aplicación del Ubiquitous Language en el proyecto:
 | US-17 | Visualizar demostraciones del funcionamiento de RetailPulse | Como visitante de página, quiero visualizar ejemplos o demostraciones del funcionamiento de RetailPulse, para comprender cómo se verían sus principales funcionalidades aplicadas en una tienda real. | **Escenario 1:** Given el visitante accede al landing page, when revisa la sección de demostración del producto, then el sistema muestra ejemplos visuales de funcionalidades como mapa de calor, alertas y búsqueda de productos.<br><br>**Escenario 2:** Given el visitante desea profundizar en el funcionamiento de la solución, when consulta la sección de demostraciones, then el sistema presenta contenido explicativo sobre el uso de RetailPulse en un entorno retail.<br><br>**Escenario 3:** Given el visitante intenta reproducir o consultar una demostración no disponible, when realiza la acción, then el sistema informa que el recurso no está disponible y mantiene la navegación dentro del landing page. | EP-02 |
 
 ### 3.2. Impact Mapping
+
+![Impact Mapping](assets/images/impact-mapping.png)
 
 ### 3.3. Product Backlog
 
