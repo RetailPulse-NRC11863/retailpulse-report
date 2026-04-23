@@ -1001,6 +1001,131 @@ De esta manera, el Searching System contribuye directamente a la propuesta de va
 
 #### 4.2.5. Navigation Systems
 
+El **Navigation System** de RetailPulse define la estructura mediante la cual los usuarios se desplazan a través de la plataforma, permitiendo acceder de forma intuitiva a las distintas funcionalidades del sistema.
+
+Dado que RetailPulse cuenta con múltiples tipos de usuario (administrador, personal de tienda y comprador), la navegación ha sido diseñada de manera diferenciada, adaptándose a las necesidades, contexto y objetivos de cada perfil.
+
+---
+
+##### 4.2.5.1. Objetivos del Sistema de Navegación
+
+- Facilitar el acceso rápido a las funcionalidades principales del sistema.
+- Reducir la cantidad de pasos necesarios para completar una tarea.
+- Garantizar una experiencia intuitiva para todos los tipos de usuario.
+- Mantener consistencia en la estructura de navegación en toda la plataforma.
+
+---
+
+##### 4.2.5.2. Tipos de Navegación
+
+RetailPulse implementa los siguientes tipos de navegación:
+
+**a. Navegación global**  
+Presente en todas las vistas del sistema, permite acceder a las secciones principales.
+
+**b. Navegación contextual**  
+Se adapta según la funcionalidad que el usuario está utilizando.
+
+**c. Navegación jerárquica**  
+Organiza la información en niveles (ejemplo: Dashboard → Reportes → Detalle).
+
+**d. Navegación por tareas**  
+Orienta al usuario a completar acciones específicas de forma directa.
+
+---
+
+##### 4.2.5.3. Navegación para Administrador
+
+El administrador accede a una navegación estructurada orientada al análisis y gestión de la tienda.
+
+**Estructura principal:**
+
+- Dashboard  
+- Mapas de calor  
+- Alertas  
+- Reportes  
+- Configuración de tienda  
+
+**Características:**
+
+- Menú lateral persistente para acceso rápido.
+- Jerarquía clara de información.
+- Acceso a vistas detalladas desde métricas generales.
+
+---
+
+##### 4.2.5.4. Navegación para Personal de Tienda
+
+El personal de tienda requiere una navegación simple y enfocada en tareas operativas.
+
+**Estructura principal:**
+
+- Tareas  
+- Alertas  
+
+**Características:**
+
+- Interfaz simplificada.
+- Acceso directo a tareas prioritarias.
+- Navegación orientada a acciones (atender, finalizar).
+
+---
+
+##### 4.2.5.5. Navegación para Comprador (Quiosco Web)
+
+La navegación del comprador está diseñada para ser rápida, intuitiva y sin fricción.
+
+**Características principales:**
+
+- Pantalla inicial con buscador destacado.
+- Navegación centrada en la búsqueda de productos.
+- Flujo directo: búsqueda → resultado → ubicación.
+- Interfaz táctil con botones grandes y claros.
+
+**Estructura:**
+
+- Pantalla principal (búsqueda)
+- Resultados de búsqueda
+- Detalle de producto
+- Visualización de ubicación
+
+---
+
+##### 4.2.5.6. Elementos de Navegación
+
+| Elemento | Descripción |
+|----------|------------|
+| Menú lateral | Permite acceder a las secciones principales del sistema |
+| Barra superior | Contiene acceso a perfil y acciones generales |
+| Breadcrumbs | Indican la ubicación actual del usuario dentro del sistema |
+| Botones de acción | Permiten ejecutar tareas específicas |
+| Enlaces internos | Facilitan la navegación entre secciones relacionadas |
+
+---
+
+##### 4.2.5.7. Consistencia y Usabilidad
+
+Para garantizar una navegación efectiva, se aplican las siguientes prácticas:
+
+- Estructura consistente en todas las vistas.
+- Uso de etiquetas claras alineadas con el Ubiquitous Language.
+- Reducción de niveles de navegación innecesarios.
+- Retroalimentación visual al usuario (indicadores de sección activa).
+- Diseño responsive adaptable a distintos dispositivos.
+
+---
+
+##### 4.2.5.8. Impacto en la Experiencia de Usuario
+
+Un sistema de navegación bien diseñado permite:
+
+- Reducir el tiempo necesario para completar tareas.
+- Minimizar errores de interacción.
+- Mejorar la eficiencia del personal de tienda.
+- Facilitar la experiencia de compra del usuario final.
+
+De esta manera, la navegación se convierte en un componente clave para garantizar la usabilidad y efectividad de la plataforma RetailPulse.
+
 ### 4.3. Landing Page UI Design
 
 #### 4.3.1. Landing Page Wireframe
