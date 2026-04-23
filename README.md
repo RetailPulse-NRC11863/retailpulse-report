@@ -1529,6 +1529,18 @@ A continuación, se presenta la planificación correspondiente al Sprint 1 del p
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 
+Durante el Sprint 1, el equipo se enfocó exclusivamente en la validación de la propuesta de valor de RetailPulse mediante el desarrollo del Landing Page. En este contexto, se definieron los principales aspectos relacionados al diseño, contenido y experiencia de usuario de la página.
+
+Para asegurar una correcta organización del equipo, se elaboró la matriz LACX (Leader and Collaborators), asignando a cada integrante un rol de liderazgo (L) en un aspecto específico del landing page y participación como colaborador (C) en los demás.
+
+| Team Member (Last Name, First Name) | GitHub Username | Hero Section & Value Proposition | About Us | Benefits | Demonstrations | Contact |
+|-----------------------------------|----------------|----------------------------------|----------|----------|----------------|---------|
+| Vallejo Trujillo, Fabio Cesar     | fabiovallejo   | L                                | C        | C        | C              | C       |
+| Godoy Santillan, Jesus Andres     | JesusGodoyS    | C                                | L        | C        | C              | C       |
+| Rubio Ortiz, Luis Sebastián       | notoriussxd    | C                                | C        | L        | C              | C       |
+| Faustino Hurtado, Anghelo Edwin   | Limos05        | C                                | C        | C        | L              | C       |
+| Franco del Carpio, José María     | VoltTrd        | C                                | C        | C        | C              | L       |
+
 ##### 5.2.1.3. Sprint Backlog 1
 
 **Duración:** 2 semanas
