@@ -753,6 +753,100 @@ El logotipo debe presentarse siempre de forma legible, respetando su composició
 
 #### 4.2.2. Labeling Systems
 
+El **Labeling System** define la forma en que se nombran y presentan los elementos dentro de la interfaz de usuario de RetailPulse. Su objetivo es garantizar que los usuarios comprendan de manera inmediata las funcionalidades del sistema, reduciendo la carga cognitiva y facilitando la navegación.
+
+Dado que RetailPulse cuenta con múltiples tipos de usuario (administrador, personal de tienda y comprador), el sistema de etiquetado ha sido diseñado considerando el contexto, nivel técnico y necesidades específicas de cada uno.
+
+---
+
+##### 4.2.2.1. Principios de Etiquetado
+
+Para asegurar la consistencia y claridad del sistema, se establecen los siguientes principios:
+
+- **Claridad:** Los términos deben ser comprensibles para el usuario final sin necesidad de explicación adicional.
+- **Consistencia:** Se debe utilizar el mismo término para referirse a un mismo concepto en todo el sistema.
+- **Relevancia:** Las etiquetas deben estar alineadas con las tareas principales del usuario.
+- **Concisión:** Se priorizan etiquetas cortas y directas.
+- **Contextualización:** Las etiquetas pueden adaptarse según el tipo de usuario (administrador, personal, comprador).
+
+---
+
+##### 4.2.2.2. Convenciones Generales
+
+- Se utiliza **español** como idioma principal en la interfaz.
+- Se mantienen términos técnicos en inglés cuando son estándar del dominio (*Dashboard*, *Heatmap*, *Stock*).
+- Se emplea **capitalización tipo oración** (solo la primera palabra en mayúscula).
+- Se evita el uso de abreviaciones ambiguas.
+- Los verbos en botones se presentan en forma de acción (ejemplo: "Buscar", "Ver detalle").
+
+---
+
+##### 4.2.2.3. Etiquetado para Administrador
+
+| Tipo de elemento | Etiqueta | Descripción |
+|-----------------|----------|------------|
+| Menú principal | Dashboard | Vista general de métricas y analítica de la tienda |
+| Menú principal | Mapas de calor | Visualización de tráfico por zonas |
+| Menú principal | Alertas | Notificaciones operativas del sistema |
+| Menú principal | Reportes | Análisis de métricas históricas |
+| Menú principal | Configuración de tienda | Gestión de zonas, estantes y productos |
+| Botón | Ver detalle | Accede a información específica |
+| Botón | Filtrar | Permite aplicar filtros a los datos |
+| Botón | Exportar | Descarga reportes en formato digital |
+
+---
+
+##### 4.2.2.4. Etiquetado para Personal de Tienda
+
+| Tipo de elemento | Etiqueta | Descripción |
+|-----------------|----------|------------|
+| Menú principal | Tareas | Lista de tareas operativas asignadas |
+| Menú principal | Alertas | Notificaciones de zonas críticas o sin stock |
+| Estado | Pendiente | Tarea aún no iniciada |
+| Estado | En progreso | Tarea en ejecución |
+| Estado | Completado | Tarea finalizada |
+| Botón | Atender | Inicia la atención de una tarea |
+| Botón | Finalizar | Marca una tarea como completada |
+
+---
+
+##### 4.2.2.5. Etiquetado para Comprador (Quiosco Web)
+
+| Tipo de elemento | Etiqueta | Descripción |
+|-----------------|----------|------------|
+| Campo de búsqueda | Buscar producto | Permite ingresar el nombre del producto |
+| Resultado | Disponible | Producto en stock |
+| Resultado | Sin stock | Producto no disponible |
+| Información | Ubicación | Indica la zona o estante del producto |
+| Información | Promoción | Muestra ofertas asociadas |
+| Botón | Ver ubicación | Muestra dónde encontrar el producto |
+| Botón | Nueva búsqueda | Reinicia la consulta |
+
+---
+
+##### 4.2.2.6. Etiquetado de Navegación Global
+
+| Elemento | Etiqueta |
+|----------|----------|
+| Inicio | Inicio |
+| Menú principal | Menú |
+| Perfil de usuario | Mi cuenta |
+| Cerrar sesión | Cerrar sesión |
+
+---
+
+##### 4.2.2.7. Consistencia con el Ubiquitous Language
+
+El sistema de etiquetado se encuentra alineado con el **Ubiquitous Language** definido en la sección 2.5, asegurando que los términos utilizados en la interfaz coincidan con los conceptos del dominio.
+
+Por ejemplo:
+
+- "Zona" se utiliza en lugar de sinónimos como "sección" o "área".
+- "Producto" se mantiene como término estándar en todo el sistema.
+- "Alerta" y "Tarea operativa" conservan su significado definido en el dominio.
+
+Esta alineación permite una integración coherente entre diseño, desarrollo y documentación, facilitando la comprensión del sistema tanto para usuarios como para el equipo técnico.
+
 #### 4.2.3. SEO Tags and Meta Tags
 
 #### 4.2.4. Searching Systems
