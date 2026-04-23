@@ -534,6 +534,102 @@ Sus principales frustraciones al comprar son no encontrar productos, perder tiem
 
 ### 2.5. Ubiquitous Language
 
+El **Ubiquitous Language** define un conjunto de términos compartidos entre los miembros del equipo de desarrollo, stakeholders y usuarios del sistema RetailPulse. Este lenguaje permite establecer una comunicación clara, consistente y sin ambigüedades a lo largo del diseño, desarrollo e implementación de la plataforma.
+
+Dado que RetailPulse está basado en principios de **Domain-Driven Design (DDD)**, los términos definidos a continuación se alinean con los distintos **Bounded Contexts** del sistema, tales como *Store Configuration*, *Simulation & In-Store Monitoring*, *Buyer Assistance*, *Sales & Conversion* y *Alerts & Recommendations*.
+
+---
+
+#### 2.5.1. Términos del Dominio de Negocio
+
+| Término | Definición |
+|--------|-----------|
+| **RetailPulse** | Plataforma SaaS orientada a la analítica de comportamiento en tiendas físicas y asistencia digital al comprador. |
+| **Tienda (Store)** | Establecimiento físico donde se implementa RetailPulse para analizar el comportamiento de los clientes. |
+| **Administrador** | Usuario responsable de la gestión de la tienda, toma de decisiones y análisis de métricas. |
+| **Personal de tienda** | Empleados encargados de la operación diaria, reposición de productos y atención al cliente. |
+| **Comprador** | Cliente final que interactúa con la tienda física y el quiosco digital. |
+| **Suscripción** | Plan contratado por una tienda para acceder a las funcionalidades de RetailPulse. |
+| **Plan** | Nivel de servicio ofrecido (básico, intermedio, avanzado) que define capacidades del sistema. |
+
+---
+
+#### 2.5.2. Términos de Configuración de Tienda
+
+| Término | Definición |
+|--------|-----------|
+| **Zona (Zone)** | Área específica dentro de la tienda (pasillos, secciones, entradas, cajas). |
+| **Estante (Shelf)** | Estructura física donde se ubican productos dentro de una zona. |
+| **Producto (Product)** | Ítem disponible para la venta dentro de la tienda. |
+| **Ubicación de producto** | Relación entre un producto y su posición exacta dentro de la tienda. |
+| **Catálogo** | Conjunto de productos registrados en el sistema. |
+
+---
+
+#### 2.5.3. Términos de Analítica y Monitoreo
+
+| Término | Definición |
+|--------|-----------|
+| **Evento** | Registro de una acción o interacción del cliente dentro de la tienda (movimiento, permanencia, interacción). |
+| **Sesión de visita** | Conjunto de eventos asociados a un cliente durante su recorrido en la tienda. |
+| **Mapa de calor (Heatmap)** | Visualización que representa la intensidad de tráfico o interacción en distintas zonas. |
+| **Tráfico** | Cantidad de personas que transitan por una zona determinada. |
+| **Tiempo de permanencia** | Duración que un cliente permanece en una zona específica. |
+| **Interacción** | Acción del cliente relacionada con un producto o zona (detenerse, observar, consultar). |
+
+---
+
+#### 2.5.4. Términos de Asistencia al Comprador
+
+| Término | Definición |
+|--------|-----------|
+| **Quiosco Web** | Interfaz interactiva en tienda que permite al comprador buscar productos y consultar información. |
+| **Búsqueda de producto** | Proceso mediante el cual el comprador consulta un producto en el sistema. |
+| **Disponibilidad** | Estado que indica si un producto se encuentra en stock. |
+| **Ubicación del producto** | Información que indica en qué zona o estante se encuentra un producto. |
+| **Promoción** | Oferta o incentivo asociado a un producto para incentivar su compra. |
+| **Sesión de quiosco** | Interacción completa de un comprador con el quiosco web. |
+
+---
+
+#### 2.5.5. Términos de Ventas y Conversión
+
+| Término | Definición |
+|--------|-----------|
+| **Venta** | Transacción en la que uno o más productos son adquiridos por el cliente. |
+| **Conversión** | Relación entre interacción del cliente y compra efectiva. |
+| **Tasa de conversión** | Métrica que indica el porcentaje de visitantes que realizan una compra. |
+| **Producto de alta interacción** | Producto que recibe muchas consultas o interés, pero no necesariamente ventas. |
+| **Zona de baja conversión** | Área con alto tráfico pero bajo nivel de compras. |
+
+---
+
+#### 2.5.6. Términos de Alertas y Operación
+
+| Término | Definición |
+|--------|-----------|
+| **Alerta operativa** | Notificación generada por el sistema ante una condición relevante (alta demanda, falta de stock, zona desatendida). |
+| **Tarea operativa** | Acción asignada al personal de tienda como respuesta a una alerta. |
+| **Prioridad** | Nivel de urgencia asignado a una alerta o tarea. |
+| **Recomendación** | Sugerencia generada por el sistema para optimizar la operación o la distribución de la tienda. |
+
+---
+
+#### 2.5.7. Consistencia del Lenguaje
+
+Para asegurar la correcta aplicación del Ubiquitous Language en el proyecto:
+
+- Todos los términos definidos deben ser utilizados de manera consistente en:
+  - User Stories  
+  - Diagramas de arquitectura  
+  - Código fuente (nombres de clases, variables, servicios)  
+  - Interfaces de usuario  
+
+- Se evita el uso de sinónimos para un mismo concepto (por ejemplo, no alternar entre “cliente” y “comprador” si se ha definido uno como estándar).
+
+- Los términos en inglés se mantienen únicamente cuando forman parte del lenguaje técnico (por ejemplo, *Heatmap*, *Dashboard*, *Stock*).
+
+
 ---
 
 ## Capítulo III: Requirements Specification
