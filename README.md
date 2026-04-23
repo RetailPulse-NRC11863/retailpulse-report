@@ -1470,6 +1470,18 @@ En el repositorio del informe se emplean mensajes como `docs(report): add projec
 
 ### Conclusiones y recomendaciones
 
+El desarrollo del proyecto RetailPulse permitió abordar de manera integral el proceso de construcción de una aplicación open source, desde la identificación de una problemática real en el sector retail hasta la propuesta de una solución tecnológica estructurada y viable. El proyecto partió de la necesidad de mejorar la experiencia de compra en tiendas físicas, así como optimizar la operación interna mediante el uso de datos y herramientas digitales.
+
+A lo largo del trabajo, se definió una propuesta clara de valor respaldada por el diseño de un landing page orientado a comunicar los beneficios del sistema, captar usuarios potenciales y validar la solución en el mercado. Este enfoque permitió comprender la importancia de no solo desarrollar funcionalidades, sino también de presentar adecuadamente el producto.
+
+En el ámbito del diseño del sistema, la aplicación de Domain-Driven Design (DDD) permitió estructurar la solución en base al dominio del problema, destacando la definición del Ubiquitous Language como un elemento clave para mantener consistencia entre el análisis, diseño y desarrollo. Asimismo, la organización en distintos contextos facilitó una visión modular y escalable del sistema.
+
+Por otro lado, la incorporación de principios de experiencia de usuario, mediante el desarrollo de sistemas de etiquetado, navegación y búsqueda, permitió diseñar una interacción intuitiva y eficiente para los diferentes tipos de usuario del sistema. Esto evidencia la importancia de la arquitectura de información en la construcción de aplicaciones modernas.
+
+En cuanto a la gestión del desarrollo, la elaboración del Product Backlog y la planificación de los sprints permitió organizar el trabajo de manera incremental, priorizando funcionalidades en función del valor de negocio. Este enfoque facilitó una evolución progresiva del sistema, comenzando con la validación del producto, seguido de la operación en tienda y culminando con la implementación de capacidades analíticas avanzadas.
+
+Finalmente, RetailPulse se consolida como una propuesta innovadora que integra analítica de comportamiento, asistencia al comprador y optimización operativa en un solo sistema, demostrando el potencial de las tecnologías open source para resolver problemáticas reales. En conjunto, el proyecto evidencia una correcta integración entre análisis, diseño, experiencia de usuario y planificación ágil, dando como resultado una solución coherente, bien fundamentada y con potencial de aplicación en un entorno real.
+
 ### Video About-the-Team
 
 ## Bibliografía
