@@ -1911,7 +1911,96 @@ En el repositorio del informe se emplean mensajes como `docs(report): add projec
 
 #### 5.1.3. Source Code Style Guide & Conventions
 
+**HTML5 (Angular Templates)**
+
+En este proyecto de RetailPulse (Angular), la estructura de la landing page se define en templates HTML (app.html) con enfoque semántico, accesible y mantenible.
+
+- Usar etiquetas semánticas como header, main, section y footer para organizar claramente la página.
+- Mantener etiquetas y atributos en minúsculas.
+- Cerrar correctamente todas las etiquetas.
+- Respetar la jerarquía de títulos h1, h2 y h3 por sección.
+- Incluir alt en imágenes y aria-label en botones o iconos cuando corresponda.
+- Usar rutas estáticas consistentes para assets, como /assets/images/.
+- Evitar texto hardcodeado cuando ya existe i18n; preferir bindings desde copy() para traducciones.
+- Usar la sintaxis de control de Angular (@for, @if) de forma clara y legible.
+- Evitar estructuras de marcado innecesariamente complejas.
+
+**CSS**
+
+Los estilos se gestionan principalmente en app.css con variables, layout responsive y soporte de tema claro y oscuro.
+
+- Usar nombres de clase descriptivos y consistentes con el componente, como brand-*, benefit-* y contact-*.
+- Centralizar colores y tokens en variables CSS, por ejemplo en :host y :host.theme-dark.
+- Mantener indentación uniforme y bloques agrupados por sección visual.
+- Reutilizar estilos comunes como button, grids y cards para evitar duplicación.
+- Priorizar diseño responsive con breakpoints definidos, por ejemplo 960px y 640px.
+- Evitar selectores excesivamente específicos.
+- Mantener reglas de estado claras, como .active y .visible.
+- Controlar la experiencia de formularios con estilos de foco visibles.
+- Usar resize: none en textarea cuando se busque un layout fijo.
+
+**TypeScript (Angular)**
+
+En este proyecto, la lógica está implementada en TypeScript (app.ts, i18n.service.ts, translations.ts), no en JavaScript puro.
+
+- Nombrar variables y métodos en camelCase.
+- Mantener tipado explícito, como Theme, Language y Record.
+- Preferir readonly y encapsulación private o protected cuando aplique.
+- Mantener funciones cortas y con una sola responsabilidad.
+- Usar Signals de Angular para estado reactivo.
+- Usar constantes para keys de localStorage, como THEME_STORAGE_KEY.
+- Evitar acceso directo al DOM sin inyección; usar DOCUMENT cuando sea necesario.
+- Manejar cleanup de recursos, como timers, en ngOnDestroy.
+- Para formularios de la landing, interceptar submit con preventDefault si aún no existe backend.
+- Mantener la lógica de i18n centralizada en traducciones y servicio, no en el template.
+
+**Gherkin**
+
+Para documentar el comportamiento funcional de la landing, se deben usar escenarios claros y trazables a user stories.
+
+- Redactar escenarios cortos y directos.
+- Usar la estructura estándar Given, When y Then.
+- Definir un escenario por funcionalidad principal.
+- Evitar redundancias entre escenarios.
+- Cubrir funcionalidades actuales del proyecto, como:
+  - cambio de idioma (ES/EN),
+  - cambio de tema (claro/oscuro) y persistencia,
+  - envío simulado del formulario con toast de confirmación,
+  - render correcto de imágenes en header, equipo y beneficios,
+  - comportamiento responsive en desktop y móvil.
+
 #### 5.1.4. Software Deployment Configuration
+
+Para la publicación en línea del proyecto **RetailPulse Landing Page**, se implementó un proceso de despliegue automatizado utilizando **Netlify** como plataforma principal de hosting y **GitHub** como repositorio central del código fuente. Esta configuración permite una integración continua (CI) y despliegue continuo (CD), asegurando la disponibilidad, rendimiento y actualización constante del sitio web.
+
+
+### Proceso de Despliegue
+
+**1. Integración con Repositorios Git**  
+El repositorio del proyecto se encuentra alojado en GitHub. Netlify se conecta directamente al repositorio, lo que permite que cada vez que se realiza un *push* o un *merge* a la rama principal (`main`), se ejecute automáticamente el proceso de construcción y despliegue del sitio.
+
+**2. Compilación Automatizada**  
+Durante el proceso de build, Netlify ejecuta el comando `npm run build`.
+
+Esto permite compilar la aplicación Angular y generar una versión optimizada para producción. Este proceso incluye:
+
+- Minificación de archivos HTML, CSS y JavaScript.  
+- Optimización de recursos estáticos (imágenes, fuentes).  
+- Generación de archivos listos para despliegue en el directorio `/dist/RetailPulse/browser`.
+
+**3. Despliegue en Netlify**  
+Una vez finalizada la compilación, Netlify distribuye automáticamente el contenido en su red global de entrega de contenido (CDN), garantizando tiempos de carga rápidos y alta disponibilidad desde cualquier ubicación.
+
+**4. Vistas Previas por Rama (Deploy Previews)**  
+Netlify genera automáticamente una vista previa del sitio por cada rama o Pull Request. Esto permite al equipo revisar los cambios antes de ser integrados a la rama principal, facilitando la detección temprana de errores y validación visual.
+
+**5. Despliegue Continuo (Continuous Deployment)**  
+Cada vez que se realiza un merge a la rama `main`, Netlify actualiza automáticamente la versión en producción. De esta manera, el sitio siempre refleja la versión más reciente y estable del proyecto.
+
+
+### Productos Desplegados
+
+- **Landing Page de RetailPulse:** Aplicación web desarrollada en Angular y desplegada en Netlify, accesible públicamente mediante una URL generada automáticamente por la plataforma.
 
 ### 5.2. Landing Page, Services & Applications Implementation
 
