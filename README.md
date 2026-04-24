@@ -1844,6 +1844,8 @@ Las actividades se llevaron a cabo de la siguiente manera:
 
 Gracias a esta organización, el equipo logró avanzar de manera simultánea en múltiples frentes del proyecto, asegurando que todos los integrantes contribuyeran activamente en la construcción del producto y del informe.
 
+<img src="assets/images/commits.png" width="100%">
+
 ---
 
 #### Evidencia de Colaboración en GitHub
