@@ -27,9 +27,11 @@
 
 ## Registro de Versiones del Informe
 
+## Registro de Versiones del Informe
+
 | Avance | Fecha | Autor | Descripción de Modificación |
-| :--- | :--- | :--- | :--- |
-| AV1 | --/04/2026 | "-" | "-" |
+|--------|------|------|-----------------------------|
+| AV1 | 23/04/2026 | Equipo RetailPulse (Fabio Vallejo, Jesus Godoy, Luis Rubio, Anghelo Hurtado, José del Carpio) | Elaboración completa del informe incluyendo: Carátula, Project Report Collaboration Insights, Student Outcome, Capítulo I (Introducción), Capítulo II (Requirements Elicitation & Analysis), Capítulo III (Requirements Specification), Capítulo IV (Product Design), Capítulo V (Product Implementation, Validation & Deployment), Software Configuration Management, Software Development Environment Configuration, Source Code Management, Source Code Style Guide & Conventions, Software Deployment Configuration, Sprint Planning 1, Aspect Leaders and Collaborators, Sprint Backlog 1, Development Evidence, Execution Evidence, Services Documentation Evidence, Software Deployment Evidence, Team Collaboration Insights, Conclusiones, Bibliografía y Anexos. |
 
 ---
 
