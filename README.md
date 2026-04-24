@@ -721,6 +721,14 @@ En esta sección se describen las tareas realizadas por los distintos segmentos 
 
 #### 2.3.4. Empathy Mapping
 
+##### Segmento 1: Administradores de tienda
+
+<img src="assets/images/empathy-mapping-administradores.png" width="100%">
+
+##### Segmento 2: Compradores en tienda
+
+<img src="assets/images/empathy-mapping-compradores.png" width="100%">
+
 ### 2.4. Big Picture Event Storming
 
 En esta sección, se presenta el desarrollo y los resultados de la sesión de Event Storming realizada por el equipo para el proyecto RetailPulse. Este proceso consistió en una actividad colaborativa de modelado del dominio, orientada a comprender de manera integral el funcionamiento del negocio de analítica en tiendas físicas.
