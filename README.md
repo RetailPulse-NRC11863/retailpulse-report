@@ -110,13 +110,13 @@ El equipo ha utilizado un flujo de trabajo en github: [retailpulse-report](https
 
 ### 1.1. Startup Profile
 
+#### 1.1.1. Descripción de la Startup
+
 RetailPulse es una startup tecnológica conformada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC), orientada al desarrollo de soluciones digitales para mejorar la gestión comercial y la experiencia de compra en tiendas físicas del sector retail. La problematica surge a partir de que el comercio electrónico cuenta con métricas detalladas sobre el comportamiento de sus usuarios, muchos negocios físicos todavía operan con información limitada, tomando decisiones comerciales en función de intuición, experiencia previa o únicamente datos de venta.
 
 La propuesta de valor de RetailPulse se materializa en una plataforma web SaaS que conecta la analítica de comportamiento en tienda con herramientas de apoyo operativo y experiencia asistida para el cliente. Por un lado, permite a boutiques, minimarkets y tiendas de conveniencia visualizar información como zonas de mayor tráfico, tiempo de permanencia, productos con alta interacción y baja conversión, y patrones de circulación dentro del local. Por otro lado, incorpora una interfaz web de consulta para el cliente en tienda, mediante la cual puede buscar productos, verificar disponibilidad, ubicar artículos dentro del local y acceder a promociones o recomendaciones durante su recorrido.
 
 RetailPulse no se limita a mostrar datos, sino que los transforma en acciones concretas para el negocio. A partir de la información capturada, la plataforma puede generar recomendaciones para optimizar la distribución del local, activar promociones en zonas estratégicas, emitir alertas al personal cuando una zona requiere atención y facilitar decisiones relacionadas con exhibición, stock y conversión. De esta manera, RetailPulse busca llevar al retail físico un nivel de inteligencia operativa similar al del comercio electrónico, ayudando a los negocios a vender con mayor precisión y a los clientes a comprar con menos fricción.
-
-#### 1.1.1. Descripción de la Startup
 
 #### 1.1.2. Perfiles de integrantes del equipo
 
@@ -607,6 +607,17 @@ Resumen: La Sra. Flores suele encontrar lo que busca en una tienda física porqu
 ### 2.3. Needfinding
 
 #### 2.3.1. User Personas
+
+Basados en la información recopilada durante nuestras entrevistas y análisis competitivo, hemos desarrollado User Personas representativas de nuestros segmentos objetivo.
+
+##### Segmento 1: Negocios retail físicos (Administradores y Dueños)
+
+![Entrevista](assets/images/user-persona-1.png)
+
+##### Segmento 2: Compradores en tiendas físicas:
+
+![Entrevista](assets/images/user-persona-2.png)
+
 
 #### 2.3.2. User Task Matrix
 
