@@ -547,6 +547,27 @@ Utiliza únicamente un sistema POS y Excel. Considera que tener visibilidad del 
 
 **Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
 
+##### Segmento 1: Dueños o administradores de negocios retail físicos
+
+###### Entrevista 2
+
+* **Nombre:** Andrés de la Cruz
+* **Edad:** 21
+* **Distrito:** San Juan de Lurigancho
+* **Timing:** 3:48-8:40
+
+![Entrevista](assets/images/entrevista-andres-cruz.png)
+
+**Resumen:**
+Andrés gestiona la distribución de su local basándose principalmente en la intuición y la observación directa, apoyándose únicamente en los reportes de ventas finales para evaluar el éxito de sus productos. Esta falta de datos precisos le impide entender el comportamiento del cliente antes de llegar a la caja, especialmente en pasillos que quedan fuera de su vista durante el día.
+
+Actualmente, enfrenta dificultades para identificar por qué el alto flujo de personas los fines de semana no se traduce siempre en ventas, y le resulta casi imposible detectar cuando un cliente muestra interés en un producto pero decide no comprarlo. Además, el personal de tienda presenta ineficiencias al aglomerarse en ciertas áreas, dejando zonas críticas sin atención. Las decisiones de reubicación de mercadería o promociones son reactivas, ejecutándose solo cuando el stock está estancado o por vencer.
+
+Su ecosistema tecnológico es limitado, compuesto por un sistema POS básico, Excel y cámaras de seguridad convencionales que no aportan métricas. Andrés considera que contar con mapas de calor y alertas en tiempo real sobre zonas desatendidas transformaría su gestión, permitiéndole optimizar los turnos del personal y recibir recomendaciones automáticas para mejorar el layout y la rentabilidad del local.
+
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
+
+
 ##### Segmento 2: Compradores frecuentes en tiendas fisicas
 
 ###### Entrevista 1
