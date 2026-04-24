@@ -1449,6 +1449,72 @@ Enlaces legales, mapa del sitio y redes sociales de la startup.
 
 #### 4.3.2. Landing Page Mock-up
 
+## Versión Desktop Web Browser
+
+<img src="assets/images/landing-mockup-1.png" width="90%">
+
+---
+
+### Flujo de acceso y secciones clave
+
+**Inicio de sesión:**  
+
+<img src="assets/images/landing-mockup-2.png" width="90%">
+
+---
+
+**Registro:**  
+
+<img src="assets/images/landing-mockup-3.png" width="90%">
+
+---
+
+**Olvido de contraseña:**  
+
+<img src="assets/images/landing-mockup-4.png" width="90%">
+
+---
+
+**Sección de propuesta de valor:**  
+
+<img src="assets/images/landing-mockup-5.png" width="90%">
+
+---
+
+**Sección de integrantes del equipo:**  
+
+<img src="assets/images/landing-mockup-6.png" width="90%">
+
+---
+
+**Beneficios por segmento:**  
+
+<img src="assets/images/landing-mockup-7.png" width="90%">
+
+---
+
+**Sección de testimonios:**  
+
+<img src="assets/images/landing-mockup-8.png" width="90%">
+
+---
+
+**Sección de preguntas frecuentes (FAQ):**  
+
+<img src="assets/images/landing-mockup-9.png" width="90%">
+
+---
+
+**Sección de contacto:**  
+
+<img src="assets/images/landing-mockup-10.png" width="90%">
+
+---
+
+**Footer:**  
+
+<img src="assets/images/landing-mockup-11.png" width="90%">
+
 ### 4.4. Web Applications UX/UI Design
 
 ### 4.4.1. Web Applications Wireframes
@@ -2160,8 +2226,6 @@ Por otro lado, la incorporación de principios de experiencia de usuario, median
 En cuanto a la gestión del desarrollo, la elaboración del Product Backlog y la planificación de los sprints permitió organizar el trabajo de manera incremental, priorizando funcionalidades en función del valor de negocio. Este enfoque facilitó una evolución progresiva del sistema, comenzando con la validación del producto, seguido de la operación en tienda y culminando con la implementación de capacidades analíticas avanzadas.
 
 Finalmente, RetailPulse se consolida como una propuesta innovadora que integra analítica de comportamiento, asistencia al comprador y optimización operativa en un solo sistema, demostrando el potencial de las tecnologías open source para resolver problemáticas reales. En conjunto, el proyecto evidencia una correcta integración entre análisis, diseño, experiencia de usuario y planificación ágil, dando como resultado una solución coherente, bien fundamentada y con potencial de aplicación en un entorno real.
-
-### Video About-the-Team
 
 ## Bibliografía
 
