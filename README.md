@@ -1279,6 +1279,104 @@ De esta manera, la navegación se convierte en un componente clave para garantiz
 
 #### 4.3.1. Landing Page Wireframe
 
+A continuación, se presentan los wireframes de las principales secciones de la landing page de RetailPulse. Cada imagen ilustra el diseño propuesto para las diferentes funcionalidades, flujos de navegación y elementos de interacción orientados tanto a dueños de negocios como a compradores finales.
+
+---
+
+## Principios Aplicados
+
+**Jerarquía visual clara:**  
+Los contenidos se ordenan priorizando la propuesta de valor en la parte superior (Hero Section) y distribuyendo de manera progresiva los beneficios analíticos, testimonios de éxito, preguntas frecuentes, tutoriales de configuración, contacto y descarga de reportes.
+
+**Contraste y accesibilidad:**  
+Se aseguraron contrastes adecuados entre texto y fondo para favorecer la legibilidad, especialmente en dashboards de datos, así como tamaños de fuente óptimos para usuarios con diferentes capacidades visuales.
+
+**Optimización para dispositivos móviles:**  
+Los wireframes contemplan un diseño adaptable (Responsive), reorganizando los componentes en una estructura vertical, botones de mayor tamaño para el personal operativo y menús accesibles para pantallas táctiles.
+
+**Diseño inclusivo:**  
+Cada sección permite navegación intuitiva mediante teclado y está pensada para ser compatible con tecnologías de asistencia, asegurando que los quioscos web sean fáciles de usar para todos los compradores.
+
+---
+
+## Versión Desktop Web Browser
+
+En esta sección se presenta la pantalla Home de la landing page, donde se observa un botón call-to-action (CTA) principal: **"Optimiza tu tienda ahora"**. Para los administradores recurrentes, se aprecia el botón de **"Sign in"** en el toolbar superior derecho.
+
+<img src="assets/images/landing-page-wireframe-1.png" width="90%">
+
+---
+
+### Flujo de acceso y secciones clave
+
+**Inicio de sesión:**  
+Interfaz limpia con campos para credenciales y acceso directo mediante Google.
+
+<img src="assets/images/landing-page-wireframe-2.png" width="90%">
+
+---
+
+**Registro:**  
+Formulario para nuevos administradores de retail solicitando datos del negocio.
+
+<img src="assets/images/landing-page-wireframe-3.png" width="90%">
+
+---
+
+**Olvido de contraseña:**  
+Flujo de recuperación mediante correo electrónico vinculado a la cuenta corporativa.
+
+<img src="assets/images/landing-page-wireframe-4.png" width="90%">
+
+---
+
+**Sección de propuesta de valor:**  
+Presentación de cómo RetailPulse transforma datos de tráfico en decisiones comerciales mediante analítica avanzada y asistencia al cliente.
+
+<img src="assets/images/landing-page-wireframe-5.png" width="90%">
+
+---
+
+**Sección de integrantes del equipo:**  
+Fichas de los 5 desarrolladores (Jesús, Anghelo, José, Luis, Fabio) con enlaces a sus perfiles profesionales.
+
+<img src="assets/images/landing-page-wireframe-6.png" width="90%">
+
+---
+
+**Beneficios por segmento:**  
+Frames que detallan las ventajas para el Administrador (mapas de calor, alertas) y para el Comprador (autonomía, ubicación de productos).
+
+<img src="assets/images/landing-page-wireframe-7.png" width="90%">
+
+---
+
+**Sección de testimonios:**  
+Comentarios simulados de gerentes de tiendas y compradores que evidencian mejoras en la experiencia de compra.
+
+<img src="assets/images/landing-page-wireframe-8.png" width="90%">
+
+---
+
+**Sección de preguntas frecuentes (FAQ):**  
+Desplegables con información sobre costos, integración de sensores y seguridad de datos.
+
+<img src="assets/images/landing-page-wireframe-9.png" width="90%">
+
+---
+
+**Sección de contacto:**  
+Formulario para consultas comerciales personalizadas y soporte técnico.
+
+<img src="assets/images/landing-page-wireframe-10.png" width="90%">
+
+---
+
+**Footer:**  
+Enlaces legales, mapa del sitio y redes sociales de la startup.
+
+<img src="assets/images/landing-page-wireframe-11.png" width="90%">
+
 #### 4.3.2. Landing Page Mock-up
 
 ### 4.4. Web Applications UX/UI Design
