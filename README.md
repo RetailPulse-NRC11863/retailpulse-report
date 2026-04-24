@@ -1559,9 +1559,38 @@ A continuación, se detallan las interfaces principales del panel administrativo
 
 #### 4.4.2. Web Applications Wireflow Diagrams
 
-#### 4.4.2. Web Applications Mock-ups
+#### 4.4.3. Web Applications Mock-ups
 
-#### 4.4.3. Web Applications User Flow Diagrams
+Tras validar la arquitectura de la información y la distribución de elementos en los wireframes, se desarrolló el diseño de alta fidelidad (Mockups) aplicando las guías de estilo visual de **RetailPulse**.
+
+Se utilizó la paleta de colores oficial, priorizando el azul oscuro corporativo para transmitir seguridad y el cyan brillante para resaltar métricas clave, alertas y llamados a la acción (CTAs). A continuación, se presentan las pantallas finales del panel administrativo:
+
+#### 1. Dashboard Principal y Menú de Navegación
+Representa la vista principal del sistema con la barra lateral (Sidebar) integrada, permitiendo al administrador navegar fluidamente entre los distintos módulos operativos.
+
+<img src="assets/images/mockup_1.png" alt="Dashboard Principal" width="600">
+
+#### 2. Configuración de Zonas de la Tienda
+Interfaz pulida donde los pasillos se representan mediante tarjetas interactivas, destacando el uso de sombras suaves para separar los elementos del fondo claro.
+
+<img src="assets/images/mockup_2.png" alt="Store Zones Configuration" width="600">
+
+#### 3. Catálogo de Productos
+Aplicación del diseño de tarjetas para el inventario. La jerarquía visual destaca el nombre del producto y su zona asignada utilizando los colores de acento de la marca.
+
+<img src="assets/images/mockup_3.png" alt="Product Catalog" width="600">
+
+#### 4. Recomendaciones de Layout
+El panel prescriptivo en alta fidelidad. Los botones de acción primaria ("Aplicar Cambio") destacan fuertemente para guiar la vista del usuario hacia la toma de decisiones.
+
+<img src="assets/images/mockup_4.png" alt="Layout Recommendations" width="600">
+
+#### 5. Mapa de Calor y Flujo de Clientes
+El núcleo del sistema renderizado con componentes visuales atractivos. Las "manchas" de calor y los KPIs destacan sobre el lienzo blanco, ofreciendo una lectura rápida y clara del estado de la tienda.
+
+<img src="assets/images/mockup_5.png" alt="Store Heatmap Content" width="600">
+
+#### 4.4.4. Web Applications User Flow Diagrams
 
 ### 4.5. Web Applications Prototyping
 
