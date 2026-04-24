@@ -1815,10 +1815,7 @@ A continuación, se presenta el registro completo de commits realizados durante 
 <tr><td>feature/chapter-2-*</td><td>Entrevistas, Event Storming, Competidores</td></tr>
 <tr><td>feature/chapter-3-*</td><td>User Stories, Impact Mapping, Backlog</td></tr>
 <tr><td>feature/chapter-4-*</td><td>C4, Base de Datos, DDD, Class Diagrams</td></tr>
-<tr><td>feature/chapter-5-*</td><td>Agile, Sprint Planning, Student Outcome</td></tr>
-
-<tr><td>feature/chapter-5-code</td><td>Implementación del landing page</td></tr>
-
+<tr><td>feature/chapter-5-*</td><td>Sprint Planning, Spring Backlog, Evidence</td></tr>
 <tr><td>feature/conclusiones</td><td>Conclusiones del proyecto</td></tr>
 <tr><td>feature/student-outcome</td><td>Evaluación del equipo</td></tr>
 
