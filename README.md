@@ -1726,6 +1726,104 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
+Durante el Sprint 1, el equipo trabajó bajo la metodología GitFlow, utilizando múltiples ramas feature para desarrollar de forma paralela cada sección del informe y funcionalidades del sistema. La integración se realizó progresivamente hacia la rama **develop**, evidenciando un flujo continuo de commits y contribuciones por parte de todos los integrantes del equipo.
+
+A continuación, se presenta el registro completo de commits realizados durante el desarrollo del Sprint 1.
+
+
+<table>
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit Message</th>
+<th>Author</th>
+<th>Date</th>
+</tr>
+
+<!-- APR 23 -->
+<tr><td>RetailPulse/report</td><td>feature/student-outcome</td><td>docs: added student outcome for the project</td><td>fabiovallejo</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-5-aspect-leaders-and-collaborators</td><td>docs: added aspect leaders and collaborators for chapter 5</td><td>fabiovallejo</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-5-sprint-1</td><td>refactor(sprint-1): modified sprint backlog 1 for chapter 5</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-5-sprint-1</td><td>docs: added sprint planning 1 and sprint backlog 1</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-3-impact-mapping</td><td>Merge pull request feature/chapter-3-impact-mapping</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-1</td><td>docs(chapter1): update Luis profile</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>assets</td><td>docs(assets): add profile picture for Luis</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/conclusiones</td><td>docs: added conclusions for the project</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-2</td><td>docs: added second segment interview</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-3</td><td>docs(report): add impact mapping image reference</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4-class-diagrams</td><td>docs: added class diagrams for chapter 4</td><td>fabiovallejo</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>assets</td><td>docs(assets): add impact mapping diagram</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-5</td><td>docs: added software environment configuration</td><td>fabiovallejo</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-3-user-stories-luis</td><td>Merge pull request feature/chapter-3-user-stories-luis</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-3</td><td>docs: add user stories 6-10</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-2</td><td>docs: added big picture event storming</td><td>fabiovallejo</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: added design level event storming</td><td>fabiovallejo</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: added navigation systems</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: added searching systems</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: added seo tags and meta tags</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: added labeling systems</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-3</td><td>added product backlog</td><td>VoltTrd</td><td>23-04-2026</td></tr>
+
+<!-- APR 22 -->
+<tr><td>RetailPulse/report</td><td>feature/chapter-2</td><td>added ubiquitous language</td><td>VoltTrd</td><td>22-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-1</td><td>docs: added antecedentes y problematica</td><td>ItsFlaZer</td><td>22-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-1</td><td>docs: added target segments</td><td>fabiovallejo</td><td>22-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-3</td><td>docs: added user stories 16 and 17</td><td>fabiovallejo</td><td>22-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-2</td><td>docs: add interviews</td><td>fabiovallejo</td><td>22-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: add style guidelines</td><td>limozz05</td><td>22-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-3</td><td>docs: update user stories backend focus</td><td>limozz05</td><td>22-04-2026</td></tr>
+
+<!-- APR 21 -->
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: software architecture components diagrams</td><td>fabiovallejo</td><td>21-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: software architecture container diagram</td><td>fabiovallejo</td><td>21-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>develop</td><td>Merge branch feature/chapter-4-database-design</td><td>fabiovallejo</td><td>21-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>refactor(database): normalize schema</td><td>fabiovallejo</td><td>21-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-2</td><td>docs: add competitors and analysis</td><td>limozz05</td><td>21-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-1</td><td>docs: lean ux</td><td>limozz05</td><td>21-04-2026</td></tr>
+
+<!-- APR 20 -->
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: add C4 context diagram</td><td>fabiovallejo</td><td>20-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-4</td><td>docs: add database diagrams</td><td>fabiovallejo</td><td>20-04-2026</td></tr>
+
+<!-- APR 19 -->
+<tr><td>RetailPulse/report</td><td>feature/chapter-3</td><td>docs: add user stories 1-5</td><td>fabiovallejo</td><td>19-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-2</td><td>docs: add interview questions</td><td>fabiovallejo</td><td>19-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-5</td><td>docs: add source code management</td><td>fabiovallejo</td><td>19-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-1</td><td>docs: add lean ux problem statements</td><td>fabiovallejo</td><td>19-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>feature/chapter-1</td><td>docs: add startup profile</td><td>fabiovallejo</td><td>19-04-2026</td></tr>
+<tr><td>RetailPulse/report</td><td>main</td><td>docs: initialize project report structure</td><td>fabiovallejo</td><td>19-04-2026</td></tr>
+
+<!-- FRONTEND -->
+<tr><td>RetailPulse/frontend</td><td>feature/chapter-5-code</td><td>feat(landing): add initial landing page implementation</td><td>notoriussxd</td><td>23-04-2026</td></tr>
+
+</table>
+
+<br>
+
+<h6>Branches utilizadas durante el Sprint 1</h6>
+
+<table>
+<tr>
+<th>Branch</th>
+<th>Descripción</th>
+</tr>
+
+<tr><td>main</td><td>Versión estable del repositorio</td></tr>
+<tr><td>develop</td><td>Rama de integración principal</td></tr>
+
+<tr><td>feature/chapter-1-*</td><td>Startup, Lean UX, Problem Statements</td></tr>
+<tr><td>feature/chapter-2-*</td><td>Entrevistas, Event Storming, Competidores</td></tr>
+<tr><td>feature/chapter-3-*</td><td>User Stories, Impact Mapping, Backlog</td></tr>
+<tr><td>feature/chapter-4-*</td><td>C4, Base de Datos, DDD, Class Diagrams</td></tr>
+<tr><td>feature/chapter-5-*</td><td>Agile, Sprint Planning, Student Outcome</td></tr>
+
+<tr><td>feature/chapter-5-code</td><td>Implementación del landing page</td></tr>
+
+<tr><td>feature/conclusiones</td><td>Conclusiones del proyecto</td></tr>
+<tr><td>feature/student-outcome</td><td>Evaluación del equipo</td></tr>
+
+</table>
+
 ##### 5.2.1.5. Execution Evidence for Sprint Review
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
