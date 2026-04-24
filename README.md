@@ -1557,7 +1557,50 @@ A continuación, se detallan las interfaces principales del panel administrativo
 <img src="assets/images/wireframe_5.png" alt="Active Promotions" width="600">
 
 
-#### 4.4.2. Web Applications Wireflow Diagrams
+### 4.4.2. Web Applications Wireflow Diagrams
+
+El Diagrama de Wireflows ilustra el recorrido interactivo y lógico que sigue el usuario administrador dentro de la plataforma **RetailPulse**. Este esquema conecta las interfaces de baja fidelidad (wireframes) para mapear el flujo de las principales Historias de Usuario (US).
+
+Como se observa en el diagrama, el flujo operativo sigue esta secuencia lógica:
+
+1. **Setup Inicial:** El administrador ingresa a la **Store Zones Configuration** para estructurar el mapa digital del local.
+2. **Asignación de Inventario:** Continúa hacia el **Product Catalog** para vincular los productos físicos a las zonas previamente creadas.
+3. **Toma de Decisiones (US-07):** El usuario revisa las **Layout Recommendations**, evaluando los cambios sugeridos por el algoritmo para optimizar la distribución.
+4. **Análisis Visual (US-06 y US-08):** El flujo desemboca en el **Store Heatmap & Customer Flow**, donde el administrador analiza las métricas en tiempo real y el comportamiento del cliente.
+5. **Acción Comercial:** Finalmente, basándose en los datos del mapa de calor, el usuario navega hacia **Active Promotions** para ejecutar campañas de descuento dirigidas a zonas específicas.
+
+<img src="assets/images/wireflow_diagram.png" alt="Web Application Wireflow Diagram" width="800">
+
+### 4.4.3. Web Applications Mock-ups
+
+Tras validar la arquitectura de la información y la distribución de elementos en los wireframes, se desarrolló el diseño de alta fidelidad (Mockups) aplicando las guías de estilo visual de **RetailPulse**.
+
+Se utilizó la paleta de colores oficial, priorizando el azul oscuro corporativo para transmitir seguridad y el cyan brillante para resaltar métricas clave, alertas y llamados a la acción (CTAs). A continuación, se presentan las pantallas finales del panel administrativo:
+
+#### 1. Dashboard Principal y Menú de Navegación
+Representa la vista principal del sistema con la barra lateral (Sidebar) integrada, permitiendo al administrador navegar fluidamente entre los distintos módulos operativos.
+
+<img src="assets/images/mockup_1.png" alt="Dashboard Principal" width="600">
+
+#### 2. Configuración de Zonas de la Tienda
+Interfaz pulida donde los pasillos se representan mediante tarjetas interactivas, destacando el uso de sombras suaves para separar los elementos del fondo claro.
+
+<img src="assets/images/mockup_2.png" alt="Store Zones Configuration" width="600">
+
+#### 3. Catálogo de Productos
+Aplicación del diseño de tarjetas para el inventario. La jerarquía visual destaca el nombre del producto y su zona asignada utilizando los colores de acento de la marca.
+
+<img src="assets/images/mockup_3.png" alt="Product Catalog" width="600">
+
+#### 4. Recomendaciones de Layout
+El panel prescriptivo en alta fidelidad. Los botones de acción primaria ("Aplicar Cambio") destacan fuertemente para guiar la vista del usuario hacia la toma de decisiones.
+
+<img src="assets/images/mockup_4.png" alt="Layout Recommendations" width="600">
+
+#### 5. Mapa de Calor y Flujo de Clientes
+El núcleo del sistema renderizado con componentes visuales atractivos. Las "manchas" de calor y los KPIs destacan sobre el lienzo blanco, ofreciendo una lectura rápida y clara del estado de la tienda.
+
+<img src="assets/images/mockup_5.png" alt="Store Heatmap Content" width="600">
 
 #### 4.4.3. Web Applications Mock-ups
 
