@@ -2331,6 +2331,48 @@ A continuación, se presenta el registro completo de commits realizados durante 
 
 ##### 5.2.1.5. Execution Evidence for Sprint Review
 
+Durante el primer sprint, se lograron avances importantes en el desarrollo de la landing page de **RetailPulse**. A continuación, se presentan las evidencias de ejecución relacionadas con la implementación, organización del repositorio y visualización de las secciones principales del sitio web.
+
+#### Evidencias del Sprint
+
+- **Establecimiento del repositorio:**  
+  Se creó y configuró el repositorio del proyecto en GitHub para gestionar el código fuente de la landing page, permitiendo mantener un control de versiones adecuado y facilitar el trabajo colaborativo del equipo.
+
+  **Evidencia:**  
+  _Insertar imagen del repositorio en GitHub._
+
+  ![Repositorio del proyecto](assets/images/imagen-repositorio.png)
+
+- **Implementación de la Landing Page:**  
+  Se diseñó y desarrolló la landing page de **RetailPulse**, orientada a una plataforma SaaS para retail físico, integrando secciones informativas que presentan la propuesta de valor, funcionalidades principales, beneficios y canales de contacto.
+
+#### Imágenes del Landing Page
+
+- **Inicio:**  
+  Sección principal de bienvenida donde se presenta la propuesta de valor de RetailPulse, destacando la digitalización de tiendas físicas mediante inteligencia de e-commerce.
+
+  ![Sección Inicio](assets/images/imagen-inicio.png)
+
+- **Nosotros:**  
+  Sección informativa donde se describe el propósito de RetailPulse y el enfoque de la solución para mejorar la experiencia de compra en tiendas físicas.
+
+  ![Sección Nosotros](assets/images/imagen-nosotros.png)
+
+- **Beneficios:**  
+  Sección donde se muestran las funcionalidades clave y beneficios principales de la plataforma, como monitoreo en tiempo real, mapas de calor y asistencia al comprador.
+
+  ![Sección Beneficios](assets/images/imagen-beneficios.png)
+
+- **Preguntas frecuentes:**  
+  Sección destinada a resolver dudas comunes de los usuarios sobre el funcionamiento, alcance y uso de RetailPulse.
+
+  ![Sección Preguntas Frecuentes](assets/images/imagen-preguntas-frecuentes.png)
+
+- **Contacto:**  
+  Sección final del landing page que permite al usuario visualizar los medios de contacto o solicitar información adicional sobre la solución.
+
+  ![Sección Contacto](assets/images/imagen-contacto.png)
+
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
