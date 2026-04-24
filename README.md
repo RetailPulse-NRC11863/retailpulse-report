@@ -825,6 +825,13 @@ El logotipo debe presentarse siempre de forma legible, respetando su composició
 
 #### 4.2.1. Organization Systems
 
+En el sistema RetailPulse, se emplea la organización jerárquica para priorizar la visualización de datos críticos, como los mapas de calor (*heatmaps*), alertas de zonas desatendidas y los Key Performance Indicators (KPIs) de conversión en el dashboard gerencial. Esta jerarquía visual permite que el usuario identifique de forma inmediata la información más relevante sobre el comportamiento físico de la tienda.
+
+También se aplica una organización secuencial en procesos que requieren una guía paso a paso, como la configuración de nuevas zonas dentro del local (pasillos/góndolas), la vinculación de productos al catálogo espacial o la creación de campañas promocionales. Estos flujos siguen una progresión lógica para evitar errores de ingreso de datos y facilitar la operatividad del administrador.
+
+En cuanto a los esquemas de categorización, no se prioriza una organización alfabética general ni matricial. Sin embargo, sí se emplea una organización cronológica para visualizar datos analíticos históricos, como los reportes comparativos de tráfico diario, el historial de interacciones por producto y el registro de incidencias del personal. Además, el contenido se clasifica estrictamente según el tipo de usuario: los Administradores acceden a módulos de analítica profunda y configuración, el Personal Operativo cuenta con paneles de tareas orientados a la acción rápida, y los Compradores (clientes) acceden a una interfaz visual de navegación interactiva en los quioscos físicos.
+
+
 #### 4.2.2. Labeling Systems
 
 El **Labeling System** define la forma en que se nombran y presentan los elementos dentro de la interfaz de usuario de RetailPulse. Su objetivo es garantizar que los usuarios comprendan de manera inmediata las funcionalidades del sistema, reduciendo la carga cognitiva y facilitando la navegación.
