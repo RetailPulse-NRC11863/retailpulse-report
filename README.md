@@ -604,6 +604,57 @@ Resumen: La Sra. Flores suele encontrar lo que busca en una tienda física porqu
 
 #### 2.2.3. Análisis de entrevistas
 
+## Análisis de Entrevistas por Segmento
+
+---
+
+### Segmento 1: Dueños o Administradores de Negocios Retail Físicos
+
+El análisis conjunto de las entrevistas evidencia una problemática estructural en la gestión de tiendas físicas que es la falta de visibilidad sobre el comportamiento del cliente dentro del local. A partir de los testimonios recolectados, se identifican los siguientes hallazgos clave:
+
+1. **Ausencia de analítica de comportamiento en tienda (Validación de Heatmaps y Tracking):**  
+   Los administradores dependen de intuición, observación directa y reportes de ventas finales, lo que genera una visión incompleta del recorrido del cliente. No existen datos sobre tráfico por zonas ni sobre interacción con productos, lo que valida la necesidad de mapas de calor y analítica de movimiento.
+
+2. **Desconexión del embudo de conversión físico:**  
+   Existe una brecha entre el interés del cliente (interacción con productos) y la compra final. Los administradores no pueden identificar por qué productos con alto flujo o interacción no se venden, lo que limita la toma de decisiones estratégicas.
+
+3. **Gestión reactiva en lugar de predictiva (Validación de Recomendaciones):**  
+   Las decisiones comerciales, como promociones o reubicación de productos, se toman únicamente cuando el problema ya es evidente (baja rotación o sobrestock). Esto valida la necesidad de un sistema que genere recomendaciones automáticas basadas en datos.
+
+4. **Ineficiencia operativa del personal (Validación de Alertas en Tiempo Real):**  
+   Durante horas pico, el personal no logra cubrir todas las zonas del local, generando áreas desatendidas y pérdida de oportunidades de venta. La necesidad de alertas en tiempo real sobre concentración de clientes o zonas críticas es recurrente.
+
+5. **Limitaciones tecnológicas actuales:**  
+   El ecosistema digital de muchas tiendas fisicas está limitado a POS, Excel y cámaras de seguridad sin capacidad analítica. Esto refuerza la oportunidad de RetailPulse como solución que integra datos operativos y comportamiento del cliente en una sola plataforma.
+
+En conjunto, este segmento valida directamente el núcleo de valor de RetailPulse, que es transformar datos de interacción en decisiones accionables que mejoren la conversión, la distribución del espacio y la eficiencia operativa.
+
+---
+
+### Segmento 2: Compradores Frecuentes en Tiendas Físicas
+
+El análisis de los compradores revela fricciones claras en la experiencia de compra dentro de tiendas físicas, principalmente relacionadas con la búsqueda de productos, la disponibilidad de información y la eficiencia del recorrido. Los hallazgos principales son:
+
+1. **Dificultad para encontrar productos (Validación del Kiosco y Mapa Interactivo):**  
+   En tiendas grandes o desconocidas, los usuarios experimentan desorientación debido a la falta de señalización clara y organización del espacio. Esto genera recorridos innecesarios y pérdida de tiempo, validando la necesidad de herramientas de búsqueda y ubicación de productos en tienda.
+
+2. **Baja interacción con el personal:**  
+   Los compradores prefieren no depender de vendedores, ya sea por falta de disponibilidad o por preferencia personal. Esto refuerza la importancia de soluciones de autoservicio como kioscos digitales.
+
+3. **Abandono de compra por fricción en la experiencia:**  
+   Los usuarios pueden abandonar la tienda si no encuentran lo que buscan o si el proceso resulta demasiado complejo o lento. Factores como desorden, mala señalización o largas colas impactan directamente en la conversión.
+
+4. **Necesidad de información inmediata (Validación de Stock en Tiempo Real):**  
+   La disponibilidad de stock es un factor crítico para evitar frustración. Los usuarios valoran saber rápidamente si un producto está disponible antes de buscarlo físicamente.
+
+5. **Factores de decisión de compra:**  
+   El precio, la percepción de necesidad, la confianza en la marca y las promociones influyen directamente en la decisión final. Esto valida la importancia de mostrar información relevante y sugerencias dentro del punto de venta.
+
+6. **Brecha generacional en adopción tecnológica:**  
+   Mientras algunos usuarios valoran herramientas digitales como kioscos, otros pueden tener dificultades en su uso. Esto implica que la solución debe ser intuitiva y accesible para distintos perfiles de usuario.
+
+En conjunto, este segmento valida la propuesta de RetailPulse desde la perspectiva del cliente final, que es mejorar la experiencia de compra mediante acceso rápido a información, navegación asistida y reducción de fricciones dentro del local.
+
 ### 2.3. Needfinding
 
 #### 2.3.1. User Personas
