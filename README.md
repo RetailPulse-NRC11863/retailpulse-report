@@ -1829,6 +1829,37 @@ A continuación, se presenta el registro completo de commits realizados durante 
 
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
 
+#### Desarrollo de las Actividades de Implementación
+
+Durante el Sprint 1, el equipo de RetailPulse trabajó de manera colaborativa en la construcción del informe del proyecto y la validación de la propuesta de valor mediante el desarrollo inicial del Landing Page. A diferencia de un desarrollo tradicional centrado únicamente en código, este Sprint involucró actividades de análisis, diseño, modelado y documentación técnica.
+
+Las actividades se llevaron a cabo de la siguiente manera:
+
+- Se utilizó la metodología GitFlow, creando ramas específicas para cada capítulo y funcionalidad del proyecto (feature/chapter-x-*), lo que permitió un trabajo paralelo organizado.
+- Cada integrante asumió la responsabilidad de desarrollar secciones específicas del informe, incluyendo Lean UX, entrevistas, User Stories, arquitectura C4, Event Storming, base de datos y artefactos ágiles.
+- Se realizaron commits frecuentes, registrando avances de manera continua en cada sección del proyecto.
+- Los cambios fueron integrados mediante merges y Pull Requests hacia la rama develop, consolidando el trabajo del equipo.
+- Se mantuvo comunicación constante mediante Discord para coordinar avances, resolver dudas y asegurar coherencia en el desarrollo del informe.
+- Se aplicaron buenas prácticas de control de versiones, organización del repositorio y estructuración del trabajo por módulos.
+
+Gracias a esta organización, el equipo logró avanzar de manera simultánea en múltiples frentes del proyecto, asegurando que todos los integrantes contribuyeran activamente en la construcción del producto y del informe.
+
+---
+
+#### Evidencia de Colaboración en GitHub
+
+Se presenta a continuación la evidencia de colaboración obtenida a partir de los insights del repositorio de GitHub correspondientes al Sprint 1:
+
+**Insights:**
+
+- 5 autores contribuyendo activamente al repositorio.
+- 44 commits realizados en el periodo del Sprint (excluyendo merges).
+- Uso consistente de ramas feature para el desarrollo paralelo.
+- Integración centralizada en la rama develop siguiendo GitFlow.
+- Participación activa de todos los miembros del equipo en distintas áreas del proyecto.
+
+Estos resultados evidencian una colaboración efectiva del equipo, con una distribución equilibrada del trabajo y una adecuada gestión del código fuente durante el desarrollo del Sprint 1.
+
 ---
 
 ## Conclusiones
