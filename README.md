@@ -1504,6 +1504,37 @@ Para documentar el comportamiento funcional de la landing, se deben usar escenar
 
 #### 5.1.4. Software Deployment Configuration
 
+Para la publicación en línea del proyecto **RetailPulse Landing Page**, se implementó un proceso de despliegue automatizado utilizando **Netlify** como plataforma principal de hosting y **GitHub** como repositorio central del código fuente. Esta configuración permite una integración continua (CI) y despliegue continuo (CD), asegurando la disponibilidad, rendimiento y actualización constante del sitio web.
+
+
+### Proceso de Despliegue
+
+**1. Integración con Repositorios Git**  
+El repositorio del proyecto se encuentra alojado en GitHub. Netlify se conecta directamente al repositorio, lo que permite que cada vez que se realiza un *push* o un *merge* a la rama principal (`main`), se ejecute automáticamente el proceso de construcción y despliegue del sitio.
+
+**2. Compilación Automatizada**  
+Durante el proceso de build, Netlify ejecuta el comando `npm run build`.
+
+Esto permite compilar la aplicación Angular y generar una versión optimizada para producción. Este proceso incluye:
+
+- Minificación de archivos HTML, CSS y JavaScript.  
+- Optimización de recursos estáticos (imágenes, fuentes).  
+- Generación de archivos listos para despliegue en el directorio `/dist/RetailPulse/browser`.
+
+**3. Despliegue en Red CDN**  
+Una vez finalizada la compilación, Netlify distribuye automáticamente el contenido en su red global de entrega de contenido (CDN), garantizando tiempos de carga rápidos y alta disponibilidad desde cualquier ubicación.
+
+**4. Vistas Previas por Rama (Deploy Previews)**  
+Netlify genera automáticamente una vista previa del sitio por cada rama o Pull Request. Esto permite al equipo revisar los cambios antes de ser integrados a la rama principal, facilitando la detección temprana de errores y validación visual.
+
+**5. Despliegue Continuo (Continuous Deployment)**  
+Cada vez que se realiza un merge a la rama `main`, Netlify actualiza automáticamente la versión en producción. De esta manera, el sitio siempre refleja la versión más reciente y estable del proyecto.
+
+
+### Productos Desplegados
+
+- **Landing Page de RetailPulse:** Aplicación web desarrollada en Angular y desplegada en Netlify, accesible públicamente mediante una URL generada automáticamente por la plataforma.
+
 ### 5.2. Landing Page, Services & Applications Implementation
 
 #### 5.2.1. Sprint 1
