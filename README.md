@@ -621,6 +621,42 @@ Basados en la información recopilada durante nuestras entrevistas y análisis c
 
 #### 2.3.2. User Task Matrix
 
+En esta sección se describen las tareas realizadas por los distintos segmentos objetivos dentro de la plataforma RetailPulse.
+
+---
+
+### Segmento 1: Negocios retail físicos (Administradores y Dueños)
+
+| Tarea | Frecuencia | Importancia |
+|------|-----------|-------------|
+| Analizar dashboards de tráfico y permanencia en tiempo real | Alta | Alta |
+| Monitorear mapas de calor para identificar zonas muertas | Alta | Crítica |
+| Configurar el layout digital de la tienda y definir zonas | Baja | Alta |
+| Gestionar alertas operativas para el personal de piso | Alta | Alta |
+| Revisar reportes de conversión de productos por zona | Media | Alta |
+| Administrar el catálogo de productos y stock disponible | Media | Alta |
+| Gestionar la suscripción SaaS y roles de usuarios (Staff) | Baja | Media |
+| Evaluar la efectividad de promociones en puntos de venta | Media | Alta |
+| Recibir recomendaciones automáticas para optimización de local | Media | Media |
+| Monitorear interacciones de los clientes con los quioscos | Alta | Media |
+
+---
+
+### Segmento 2: Compradores en tiendas físicas
+
+| Tarea | Frecuencia | Importancia |
+|------|-----------|-------------|
+| Buscar la ubicación exacta de un producto en la tienda | Alta | Alta |
+| Consultar la disponibilidad de stock en tiempo real | Alta | Crítica |
+| Identificarse mediante DNI para acceder a beneficios | Media | Alta |
+| Visualizar el mapa interactivo para navegación en tienda | Media | Media |
+| Consultar promociones y descuentos vigentes | Alta | Alta |
+| Solicitar asistencia técnica o personal mediante el quiosco | Baja | Media |
+| Verificar precios y características de productos | Alta | Alta |
+| Escanear códigos de productos para obtener información | Media | Media |
+| Recibir sugerencias de productos complementarios | Media | Baja |
+| Evaluar la experiencia de compra a través de la interfaz | Baja | Baja |
+
 #### 2.3.3. User Journey Mapping
 
 #### 2.3.4. Empathy Mapping
