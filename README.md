@@ -1945,7 +1945,7 @@ Esto permite compilar la aplicación Angular y generar una versión optimizada p
 - Optimización de recursos estáticos (imágenes, fuentes).  
 - Generación de archivos listos para despliegue en el directorio `/dist/RetailPulse/browser`.
 
-**3. Despliegue en Red CDN**  
+**3. Despliegue en Netlify**  
 Una vez finalizada la compilación, Netlify distribuye automáticamente el contenido en su red global de entrega de contenido (CDN), garantizando tiempos de carga rápidos y alta disponibilidad desde cualquier ubicación.
 
 **4. Vistas Previas por Rama (Deploy Previews)**  
