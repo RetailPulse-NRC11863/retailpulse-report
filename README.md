@@ -737,7 +737,7 @@ En esta sección, se presenta el desarrollo y los resultados de la sesión de Ev
 
 A través de esta dinámica, se identificaron los actores principales, los eventos de dominio más relevantes y su relación dentro del flujo de valor del sistema, desde la adopción de la plataforma hasta la generación de alertas y recomendaciones en tienda. Esto permitió construir una visión clara del comportamiento del sistema en un nivel de negocio (Big Picture), así como una base estructurada para el diseño detallado posterior mediante el Design-Level Event Storming.
 
-<img src="assets/images/big-picture-event-storming.png" width="100%">
+<img src="assets/images/big-picture-event-storming-retailpulse.png" width="100%">
 
 **Enlace de Visualización:** https://miro.com/app/board/uXjVHd0j6Lc=/?share_link_id=737912347927
 
@@ -1610,15 +1610,17 @@ El núcleo del sistema renderizado con componentes visuales atractivos. Las "man
 
 #### 4.6.1. Design-Level Event Storming
 
+<img src="assets/images/event-storming-0.png" width="100%">
+
 ##### 1.	Unstructured Exploration
 
-<img src="assets/images/event-storming-1.png" width="50%">
+<img src="assets/images/event-storming-1.png" width="100%">
 
 En esta fase inicial se identificaron los eventos de dominio principales de RetailPulse, sin priorizar aún un orden cronológico. Estos eventos representan los hitos clave del negocio, desde la configuración de la tienda hasta la simulación del comportamiento del cliente, la asistencia en tienda y la generación de alertas y recomendaciones.
 
 ##### 2.	Timelines
 
-<img src="assets/images/event-storming-2.png" width="70%">
+<img src="assets/images/event-storming-2.png" width="100%">
 
 En esta fase los eventos se organizan en líneas de tiempo que representan los flujos principales del sistema: configuración del negocio, monitoreo del comportamiento en tienda, asistencia al comprador, registro de ventas y generación de inteligencia operativa. Estas secuencias permiten visualizar cómo fluye la información desde la interacción del cliente hasta la generación de decisiones accionables dentro del negocio.
 
@@ -1630,7 +1632,7 @@ En esta fase se identifican los puntos de fricción. Estos pain points represent
 
 ##### 4.	Pivotal Points
 
-<img src="assets/images/event-storming-3.png" width="100%">
+<img src="assets/images/event-storming-4.png" width="100%">
 
 Los pivotal points representan eventos determinantes dentro del ciclo de vida del sistema. Estos hitos marcan cambios relevantes, como la activación del servicio, el inicio de una sesión de monitoreo, la detección de interacción con un producto o la generación de una alerta. Son puntos críticos porque habilitan nuevas capacidades operativas o analíticas dentro de la plataforma.
 
@@ -1668,11 +1670,6 @@ Los aggregates representan las estructuras principales del dominio que encapsula
 
 <img src="assets/images/event-storming-10.png" width="100%">
 <img src="assets/images/event-storming-11.png" width="100%">
-<img src="assets/images/event-storming-12.png" width="100%">
-<img src="assets/images/event-storming-13.png" width="100%">
-<img src="assets/images/event-storming-14.png" width="100%">
-<img src="assets/images/event-storming-15.png" width="100%">
-<img src="assets/images/event-storming-16.png" width="100%">
 
 Los bounded contexts organizan el dominio de RetailPulse en áreas funcionales independientes, cada una con su propia responsabilidad y lenguaje de negocio. Esta separación permite estructurar la solución de manera coherente, escalable y alineada con la arquitectura del sistema, conectando el Event Storming con el modelo C4 y el diseño de la base de datos.
 
