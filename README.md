@@ -1694,41 +1694,41 @@ Los bounded contexts organizan el dominio de RetailPulse en áreas funcionales i
 
 #### 4.7.1. Class Diagrams
 
-##### 1. Subscription Context
+##### 1. Traffic Analytics Context
 
 <img src="assets/images/class-diagram-1.png" width="100%">
 
-Este diagrama representa el Subscription Context, responsable de gestionar las cuentas de negocio, la suscripción al servicio y los usuarios internos que acceden a la plataforma. El agregado principal es CompanyAccount, que agrupa la relación con la suscripción y los usuarios del negocio. Los value objects se utilizan para encapsular identificadores y atributos con reglas propias, como el correo electrónico y los roles de acceso.
+Este bounded context modela el análisis del comportamiento físico dentro de la tienda. Permite representar el layout comercial, zonas de tráfico, métricas de calor, zonas muertas y congestión, alineándose con la retroalimentación que pedía un dominio más orientado a eventos, comportamiento e invariantes.
 
-##### 2. Store Configuration Context
+##### 2. Store Operations Context
 
 <img src="assets/images/class-diagram-2.png" width="100%">
 
-Este diagrama representa el Store Configuration Context, encargado de modelar la estructura física y comercial de la tienda. El agregado principal es Store, que contiene zonas y ubicaciones de productos dentro del local. Los value objects permiten representar conceptos como coordenadas, prioridad de visualización y stock del producto en tienda sin convertirlos en entidades independientes innecesarias.
+Este bounded context representa la operación diaria del personal de tienda. Modela alertas, tareas operativas, escalamiento, asignación de personal y resolución de incidencias, evitando que el sistema se limite a mostrar una pantalla de alertas.
 
-##### 3. In-Store Monitoring Context
+##### 3. Assisted Shopping Context
 
 <img src="assets/images/class-diagram-3.png" width="100%">
 
-Este diagrama representa el Simulation & In-Store Monitoring Context, núcleo analítico del sistema. El agregado principal es VisitorSession, que encapsula el recorrido del cliente dentro de la tienda mediante visitas a zonas e interacciones con productos. Los value objects permiten modelar tiempo de permanencia, tipo de interacción y estado de sesión de forma coherente con la lógica del dominio.
+Este bounded context modela la experiencia del comprador dentro del quiosco web. Representa búsquedas asistidas, productos consultados, disponibilidad, ubicación, promociones y abandono de sesión, alineándose con el objetivo de reducir fricción durante la compra.
 
-##### 4. Buyer Assistance Context
+##### 4. Inventory Intelligence Context
 
 <img src="assets/images/class-diagram-4.png" width="100%">
 
-Este diagrama representa el Buyer Assistance Context, enfocado en la experiencia del comprador mediante el quiosco digital. El agregado principal es KioskSession, que registra consultas realizadas por el usuario y su intención de búsqueda. Los value objects permiten encapsular la consulta, la disponibilidad observada y la información de ubicación del producto mostrada al comprador.
+Este bounded context representa la inteligencia de inventario. Permite modelar productos disponibles, stock crítico, quiebre de stock, reposición y ubicación física, evitando que el inventario sea tratado solo como CRUD.
 
-##### 5. Sales & Conversion Context
+##### 5. Promotion Optimization Context
 
 <img src="assets/images/class-diagram-5.png" width="100%">
 
-Este diagrama representa el Sales & Conversion Context, responsable de registrar el resultado comercial del comportamiento observado en tienda. El agregado principal es Sale, que contiene los productos vendidos mediante SaleItem. Los value objects permiten modelar cantidades, montos y métodos de pago, manteniendo consistencia con el proceso de conversión del dominio.
+Este bounded context modela recomendaciones comerciales basadas en interacción, conversión y desempeño de productos. Su objetivo es convertir datos de comportamiento en acciones como promociones, reubicaciones o recomendaciones estratégicas.
 
-##### 6. Alerts & Recommendations Context
+##### 6. Subscription Context
 
 <img src="assets/images/class-diagram-6.png" width="100%">
 
-Este diagrama representa el Alerts & Recommendations Context, encargado de transformar métricas e interacciones en acciones concretas para el negocio. Los agregados principales son Alert y Recommendation, que encapsulan incidentes operativos y sugerencias estratégicas. Los value objects permiten representar prioridad, estado y tipo de observación de forma consistente con la lógica de reacción automática del sistema.
+Este bounded context se mantiene como contexto de soporte del modelo SaaS. Permite gestionar la cuenta, los planes, el estado de suscripción y el cambio de plan, pero no representa el core domain principal de RetailPulse.
 
 
 ### 4.8. Database Design
