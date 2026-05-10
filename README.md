@@ -1739,39 +1739,45 @@ Este bounded context se mantiene como contexto de soporte del modelo SaaS. Permi
 
 ##### Bounded Context: Subscription
 
-Este esquema representa el contexto **Subscription**, se encarga de gestionar el modelo SaaS de RetailPulse. Su propósito es administrar las cuentas de negocio que contratan la plataforma, los tres planes disponibles, las suscripciones activas y los usuarios internos que acceden al sistema según sus roles. Este contexto permite responder quién utiliza la plataforma, bajo qué organización trabaja y qué funcionalidades puede consumir de acuerdo con el plan que se ha contratado, estableciendo así la base de acceso y control del sistema.
+Este contexto representa el modelo SaaS de RetailPulse. Permite gestionar las cuentas de negocio, usuarios, planes disponibles y suscripciones activas. Se considera un contexto de soporte, ya que no representa la ventaja principal del dominio retail, pero permite controlar el acceso a funcionalidades según el plan contratado.
 
-![RetailPulse Subscription Context Database](assets/images/retailpulse-subscription-context-database.png)
+![RetailPulse Subscription Context Database](assets/images/retailpulse-database-subscription-context.png)
 
-##### Bounded Context: Store Configuration
+##### Bounded Context: Store Foundation
 
-Este esquema representa el contexto **Store Configuration**, se enfoca en definir la estructura física y lógica de la tienda que será analizada por la plataforma. Aquí se modelan las tiendas, sus zonas, estantes, productos y la ubicación de los productos dentro del local. Este contexto es importante porque proporciona la base espacial y comercial sobre la que luego se interpretan los eventos, las búsquedas de compradores, las métricas de tráfico y los reportes de conversión.
+Este contexto contiene la estructura base de la tienda física. Modela la tienda, su layout, zonas comerciales y productos registrados. Aunque no es un core domain por sí mismo, sirve como base para que los demás contextos puedan analizar tráfico, ubicar productos, generar alertas y construir recomendaciones.
 
-![RetailPulse Store Configuration Context Database](assets/images/retailpulse-store-configuration-context-database.png)
+![RetailPulse Store Foundation Context Database](assets/images/retailpulse-database-store-foundation-context.png)
 
-##### Bounded Context: Simulation & In-Store Monitoring
+##### Bounded Context: Traffic Analytics
 
-Este esquema representa el contexto **Simulation & In-Store Monitoring**, se centra en la generación y registro de eventos simulados de comportamiento dentro de la tienda. Administra sesiones de visita, recorridos por zonas, tiempos de permanencia e interacciones con productos, reproduciendo de manera lógica la información que podría capturarse con sensores reales en un entorno de producción. Este contexto constituye el núcleo analítico del sistema, ya que alimenta funcionalidades como heatmaps, dashboards de tráfico y patrones de comportamiento en tienda.
+Este contexto permite analizar el comportamiento físico de los compradores dentro de la tienda. Registra métricas de heatmap, métricas por zona, recorridos simulados de clientes e interacciones con productos. Su propósito es convertir el movimiento dentro del local en información útil para la toma de decisiones.
 
-![RetailPulse Simulation & In Store Monitoring Context Database](assets/images/retailpulse-simulation-in-store-monitoring-context-database.png)
+![RetailPulse Traffic Analytics Context Database](assets/images/retailpulse-database-traffic-analytics-context.png)
 
-##### Bounded Context: Buyer Assistance
+##### Bounded Context: Assisted Shopping
 
-Este esquema representa el contexto **Buyer Assistance**, está orientado a la experiencia del comprador dentro del local mediante el quiosco web. Gestiona sesiones de uso del quiosco, búsquedas de productos, consultas de disponibilidad y promociones asociadas a los productos. Su objetivo es reducir la fricción durante la compra, facilitar la ubicación de artículos y ofrecer información relevante en tiempo real, complementando la analítica interna con una capa de asistencia directa al cliente.
+Este contexto representa la experiencia del comprador dentro del quiosco web. Permite registrar sesiones de búsqueda y consultas de productos, ayudando al comprador a encontrar disponibilidad, ubicación y promociones dentro de la tienda.
 
-![RetailPulse Buyer Assistance Context Database](assets/images/retailpulse-buyer-assistance-context-database.png)
+![RetailPulse Assisted Shopping Context Database](assets/images/retailpulse-database-assisted-shopping-context.png)
 
-##### Bounded Context: Sales & Conversion
+##### Bounded Context: Inventory Intelligence
 
-Este esquema representa el contexto **Sales & Conversion**, se encarga de relacionar la actividad observada en tienda con los resultados comerciales. Administra ventas, detalle de productos vendidos y métricas consolidadas de conversión, tanto a nivel general como por zona y producto. Este contexto permite evaluar si las interacciones de los compradores realmente terminan en compra, haciendo posible identificar áreas de bajo rendimiento, productos con alta interacción pero baja venta y oportunidades de optimización comercial.
+Este contexto administra la disponibilidad de productos dentro de la tienda. Modela el stock actual, umbrales críticos, estado de inventario, ubicación por zona y promoción asociada. Su objetivo es detectar productos sin stock o con stock crítico para activar acciones operativas.
 
-![RetailPulse Sales & Conversion Context Database](assets/images/retailpulse-sales-conversion-context-database.png)
+![RetailPulse Inventory Intelligence Context Database](assets/images/retailpulse-database-inventory-intelligence-context.png)
 
-##### Bounded Context: Alerts & Recommendations
+##### Bounded Context: Store Operations
 
-Este esquema representa el contexto **Alerts & Recommendations**, se enfoca en transformar los datos del sistema en acciones concretas. Administra alertas generadas automáticamente, tareas operativas asignadas al personal y recomendaciones dirigidas al administrador del negocio. Su función es convertir el análisis de tráfico, interacción y conversión en decisiones accionables, permitiendo reaccionar ante zonas de alta demanda, problemas de atención, baja conversión o necesidades de mejora en la disposición de productos.
+Este contexto representa la operación diaria del personal de tienda. Permite gestionar alertas operativas y tareas asignadas, relacionadas con congestión de zonas, reposición de productos o atención de incidencias. Su objetivo es convertir eventos relevantes del sistema en acciones concretas para el personal.
 
-![RetailPulse Alerts & Recommendations Context Database](assets/images/retailpulse-alerts-recommendations-context-database.png)
+![RetailPulse Store Operations Context Database](assets/images/retailpulse-database-store-operations-context.png)
+
+##### Bounded Context: Promotion Optimization
+
+Este contexto representa la inteligencia comercial de RetailPulse. Modela brechas de conversión, desempeño de productos, promociones y recomendaciones comerciales. Su objetivo es detectar productos con alta interacción y baja conversión para sugerir acciones que mejoren las ventas.
+
+![RetailPulse Promotion Optimization Context Database](assets/images/retailpulse-database-promotion-optimization-context.png)
 
 ---
 
