@@ -848,30 +848,33 @@ Para asegurar la correcta aplicación del Ubiquitous Language en el proyecto:
 
 | Epic ID | Título | Descripción |
 |---|---|---|
-| EP-01 | Inteligencia Retail y Asistencia en Tienda | Permite analizar el comportamiento de los clientes dentro de la tienda física, optimizar la distribución del espacio y asistir tanto al personal como al comprador en tiempo real. |
-| EP-02 | Experiencia Digital del Ecosistema | Permite que visitantes, compradores y personal interactúen con la plataforma web para acceder a información útil, tomar decisiones y ejecutar acciones dentro de la tienda. |
-| EP-03 | Integración y Desarrollo de APIs RESTful | Construcción de los servicios backend (endpoints) que permiten la comunicación de datos entre los sensores de la tienda, la base de datos y la interfaz web. |
-| EP-04 | Arquitectura y Seguridad del Sistema | Configuración de la infraestructura base, gestión de la base de datos y mecanismos de autenticación para garantizar la estabilidad del software. |
+| EP-01 | Traffic Analytics & Store Operations | Agrupa las capacidades que permiten detectar patrones de circulación, zonas críticas, congestión, alertas operativas y tareas del personal dentro de la tienda física. |
+| EP-02 | Assisted Shopping Experience | Agrupa las capacidades orientadas a reducir la fricción del comprador dentro de la tienda, permitiendo buscar productos, validar disponibilidad, ubicar artículos y recibir promociones relevantes. |
+| EP-03 | Inventory Intelligence & Promotion Optimization | Agrupa las capacidades que permiten detectar stock crítico, productos con baja conversión, oportunidades comerciales y recomendaciones para mejorar ventas y distribución. |
+| EP-04 | SaaS Platform & Access Management | Agrupa las capacidades de soporte de la plataforma, como planes SaaS, acceso por roles, configuración inicial de tienda y habilitación de funcionalidades según suscripción. |
 
-| Story ID | Título | Descripción | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Relacionado con |
-|---|---|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| US-01 | Explorar planes y propuesta de valor de RetailPulse | Como visitante de página, quiero conocer los planes y beneficios de RetailPulse, para evaluar si la solución se adapta a las necesidades de mi tienda. | **Escenario 1:** Given el visitante accede al landing page, When revisa la información comercial, Then el sistema presenta la propuesta de valor y los planes disponibles.<br><br>**Escenario 2:** Given el visitante identifica un plan de interés, When consulta su detalle, Then el sistema muestra sus beneficios y alcance principal.<br><br>**Escenario 3:** Given el visitante intenta acceder a una sección no disponible del landing page, When realiza la solicitud, Then el sistema informa que el contenido no se encuentra disponible y permite volver al inicio.                                                       | EP-02 |
-| US-02 | Analizar tráfico e interacción por zonas de la tienda | Como administrador de tienda, quiero visualizar métricas de tráfico, permanencia e interacción por zona, para identificar oportunidades de mejora en la distribución del local y en la conversión. | **Escenario 1:** Given la tienda registra eventos de interacción, When el administrador consulta el desempeño general, Then el sistema muestra métricas por zona para el período seleccionado.<br><br>**Escenario 2:** Given existen datos suficientes de actividad, When el administrador revisa la distribución del tráfico, Then el sistema presenta una visualización de intensidad de interacción por zonas.<br><br>**Escenario 3:** Given el administrador solicita métricas de un período sin datos registrados, When realiza la consulta, Then el sistema informa que no existen datos disponibles para el rango solicitado. | EP-01 |
-| US-03 | Recibir alertas operativas por zonas de alta demanda | Como personal de tienda, quiero recibir alertas sobre zonas con alta demanda o baja atención, para priorizar mi intervención y mejorar la experiencia del comprador. | **Escenario 1:** Given una zona supera el umbral definido de actividad, When el sistema detecta la condición, Then genera una alerta operativa asociada a dicha zona.<br><br>**Escenario 2:** Given existen alertas activas, When el personal consulta su panel operativo, Then el sistema muestra las alertas ordenadas por prioridad.<br><br>**Escenario 3:** Given el personal intenta acceder al detalle de una alerta inexistente o ya cerrada, When selecciona dicha alerta, Then el sistema informa que la alerta no se encuentra disponible.                                                                                 | EP-01 |
-| US-04 | Buscar productos y su ubicación dentro de la tienda | Como comprador en tienda, quiero buscar un producto y conocer su disponibilidad y ubicación, para encontrarlo rápidamente. | **Escenario 1:** Given el producto existe en el catálogo de la tienda, When el comprador realiza la búsqueda, Then el sistema devuelve su ubicación y disponibilidad.<br><br>**Escenario 2:** Given el producto existe y tiene promociones asociadas, When el comprador consulta su información, Then el sistema muestra la promoción vigente junto con la ubicación del producto.<br><br>**Escenario 3:** Given el comprador busca un producto inexistente o sin coincidencias, When realiza la búsqueda, Then el sistema informa que no se encontraron resultados y sugiere intentar otra búsqueda.                                | EP-02 |
-| US-05 | Consultar tareas operativas asignadas en tienda | Como personal de tienda, quiero consultar las tareas operativas generadas por el sistema, para atender zonas, productos o incidencias priorizadas dentro del local. | **Escenario 1:** Given existen tareas operativas activas, When el personal accede a su panel, Then el sistema muestra las tareas asignadas con su prioridad y estado.<br><br>**Escenario 2:** Given una tarea operativa está pendiente, When el personal consulta su detalle, Then el sistema muestra la zona o motivo asociado para facilitar su atención.<br><br>**Escenario 3:** Given el personal intenta consultar una tarea inexistente o ya finalizada, When accede a su detalle, Then el sistema informa que la tarea no se encuentra disponible.                                                                            | EP-01 |
-| US-06 | Visualizar mapa de calor de interacción en tienda | Como administrador de tienda, quiero visualizar un mapa de calor de interacción de clientes dentro del local, para identificar zonas de alta y baja actividad y optimizar la distribución del espacio. | **Escenario 1:** Given existen datos de interacción en tienda, When el administrador accede al módulo de visualización, Then el sistema muestra un mapa de calor con intensidad por zonas.<br><br>**Escenario 2:** Given el administrador selecciona un rango de fechas, When actualiza la visualización, Then el sistema refleja el mapa de calor correspondiente al período seleccionado.<br><br>**Escenario 3:** Given no existen datos suficientes, When el administrador intenta visualizar el mapa, Then el sistema muestra un mensaje indicando falta de datos. | EP-01 |
-| US-07 | Recibir recomendaciones de optimización del layout | Como administrador de tienda, quiero recibir recomendaciones sobre la distribución de productos y zonas, para mejorar la conversión y el flujo de clientes. | **Escenario 1:** Given el sistema analiza patrones de comportamiento, When detecta oportunidades de mejora, Then genera recomendaciones sobre ubicación de productos o zonas.<br><br>**Escenario 2:** Given existen recomendaciones generadas, When el administrador accede a su panel, Then el sistema muestra las sugerencias priorizadas.<br><br>**Escenario 3:** Given el administrador revisa una recomendación, When accede al detalle, Then el sistema muestra la justificación basada en datos. | EP-01 |
-| US-08 | Visualizar patrones de circulación de clientes | Como administrador de tienda, quiero visualizar los patrones de circulación de los clientes dentro del local, para entender su comportamiento y mejorar la experiencia de compra. | **Escenario 1:** Given existen registros de movimiento de clientes, When el administrador accede al módulo de análisis, Then el sistema muestra rutas o flujos de circulación.<br><br>**Escenario 2:** Given el administrador selecciona una zona específica, When consulta su comportamiento, Then el sistema muestra los patrones de tránsito asociados.<br><br>**Escenario 3:** Given no hay datos registrados, When intenta visualizar patrones, Then el sistema informa que no hay información disponible. | EP-01 |
-| US-09 | Recibir promociones personalizadas en quiosco | Como comprador en tienda, quiero recibir promociones personalizadas mientras busca productos, para aprovechar ofertas relevantes durante su compra. | **Escenario 1:** Given el comprador interactúa con el sistema, When consulta un producto, Then el sistema muestra promociones relacionadas.<br><br>**Escenario 2:** Given el sistema identifica patrones de interés, When el comprador navega en el quiosco, Then se muestran recomendaciones personalizadas.<br><br>**Escenario 3:** Given no existen promociones disponibles, When el comprador consulta productos, Then el sistema indica que no hay promociones activas. | EP-02 |
-| US-10 | Notificar falta de stock al personal | Como sistema, quiero notificar al personal cuando un producto consultado no tiene stock, para que puedan tomar acciones rápidas dentro de la tienda. | **Escenario 1:** Given un comprador busca un producto sin stock, When el sistema detecta la condición, Then genera una alerta para el personal.<br><br>**Escenario 2:** Given el personal recibe la notificación, When accede al panel, Then visualiza el producto sin stock y su ubicación.<br><br>**Escenario 3:** Given el producto vuelve a estar disponible, When el sistema actualiza el estado, Then la alerta se marca como resuelta. | EP-01 |
-| US-11 | Crear endpoint para recepción de eventos de tráfico | Como desarrollador, quiero implementar un endpoint POST en la API, para que los sensores de la tienda puedan enviar los datos de movimiento al backend en tiempo real. | **Escenario 1:** Given un payload válido del sensor, When el endpoint recibe la petición, Then el sistema responde con código 201 y guarda el registro.<br><br>**Escenario 2:** Given un payload con datos faltantes, When se envía la petición, Then la API responde con error 400 Bad Request.<br><br>**Escenario 3:** Given una falla en el servidor, When procesa los datos, Then el sistema responde con error 500 y registra el log.                                                                                                                                                                                           | EP-03 |
-| US-12 | Desarrollar endpoint GET de analítica y mapas de calor | Como desarrollador, quiero crear un endpoint de agregación de datos, para que el frontend pueda consumir las métricas procesadas y renderizar el mapa de calor correctamente. | **Escenario 1:** Given una consulta válida con rango de fechas, When se llama al endpoint, Then el sistema retorna un JSON con los datos agrupados por zona.<br><br>**Escenario 2:** Given una consulta en un período sin tráfico, When se solicita la data, Then el sistema retorna un array vacío con código 200.<br><br>**Escenario 3:** Given un error de formato en la fecha, When se hace la petición GET, Then el sistema retorna un error de validación.                                                                                                                                                                     | EP-03 |
-| US-13 | Construir API REST para la gestión del catálogo | Como desarrollador, quiero desarrollar las rutas CRUD de productos en el backend, para que la plataforma web pueda crear, leer, actualizar y eliminar el inventario. | **Escenario 1:** Given una petición GET a la ruta de productos, When se ejecuta, Then el sistema retorna la lista completa del catálogo.<br><br>**Escenario 2:** Given los datos correctos de un nuevo producto, When se envía un POST, Then el sistema lo inserta en la base de datos.<br><br>**Escenario 3:** Given un ID de producto inexistente, When se intenta eliminar (DELETE), Then el sistema retorna un error 404 Not Found.                                                                                                                                                                                              | EP-03 |
-| US-14 | Implementar seguridad y autenticación JWT | Como desarrollador, quiero configurar la seguridad mediante tokens JWT, para proteger las rutas privadas del sistema y asegurar que solo el personal autorizado acceda a la data. | **Escenario 1:** Given credenciales correctas en el login, When se procesa la petición, Then el sistema genera y devuelve un token JWT válido.<br><br>**Escenario 2:** Given una petición a una ruta protegida sin token, When el usuario intenta acceder, Then la API bloquea el acceso con código 401 Unauthorized.<br><br>**Escenario 3:** Given un token expirado, When se adjunta en la petición, Then el sistema rechaza la acción por expiración de credenciales.                                                                                                                                                             | EP-04 |
-| US-15 | Configurar el esquema y conexión de Base de Datos | Como desarrollador, quiero establecer la conexión y el modelado de las tablas/colecciones, para almacenar de forma persistente y eficiente los eventos diarios de la tienda. | **Escenario 1:** Given el inicio del servidor backend, When arranca la aplicación, Then el sistema establece conexión exitosa con la base de datos.<br><br>**Escenario 2:** Given credenciales inválidas de conexión, When arranca el servicio, Then el sistema lanza una excepción explícita y detiene el proceso.<br><br>**Escenario 3:** Given la inserción de un nuevo registro, When se ejecuta el query, Then la base de datos respeta y valida las restricciones de los campos obligatorios.                                                                                                                                  | EP-04 |
-| US-16 | Conocer cómo RetailPulse mejora la operación de la tienda | Como visitante de página, quiero visualizar de forma clara cómo RetailPulse ayuda a mejorar la operación, la conversión y la experiencia de compra en tienda, para entender el valor real de la solución para mi negocio. | **Escenario 1:** Given el visitante accede al landing page, when revisa la sección de beneficios del producto, then el sistema presenta de forma clara cómo RetailPulse mejora la analítica, la atención en tienda y la conversión.<br><br>**Escenario 2:** Given el visitante pertenece al segmento de negocios retail físicos, when explora la información del producto, then el sistema muestra casos de uso y beneficios asociados a la gestión de tiendas físicas.<br><br>**Escenario 3:** Given el visitante intenta acceder a una sección informativa no disponible, when realiza la navegación, then el sistema informa que el contenido no se encuentra disponible y ofrece volver a una sección válida del landing page. | EP-02 |
-| US-17 | Visualizar demostraciones del funcionamiento de RetailPulse | Como visitante de página, quiero visualizar ejemplos o demostraciones del funcionamiento de RetailPulse, para comprender cómo se verían sus principales funcionalidades aplicadas en una tienda real. | **Escenario 1:** Given el visitante accede al landing page, when revisa la sección de demostración del producto, then el sistema muestra ejemplos visuales de funcionalidades como mapa de calor, alertas y búsqueda de productos.<br><br>**Escenario 2:** Given el visitante desea profundizar en el funcionamiento de la solución, when consulta la sección de demostraciones, then el sistema presenta contenido explicativo sobre el uso de RetailPulse en un entorno retail.<br><br>**Escenario 3:** Given el visitante intenta reproducir o consultar una demostración no disponible, when realiza la acción, then el sistema informa que el recurso no está disponible y mantiene la navegación dentro del landing page. | EP-02 |
+| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
+|---|---|---|---|---|
+| US-01 | Evaluar propuesta de valor y planes SaaS | Como administrador retail visitante, quiero conocer los planes, beneficios y casos de uso de RetailPulse, para decidir si la solución puede mejorar la operación de mi tienda. | **Escenario 1:** Given el visitante accede al landing page, When revisa la propuesta de valor, Then el sistema presenta beneficios relacionados con tráfico, operación, inventario y conversión.<br><br>**Escenario 2:** Given el visitante consulta los planes, When compara sus beneficios, Then el sistema muestra diferencias claras entre Starter, Growth y Premium.<br><br>**Escenario 3:** Given el visitante selecciona un plan, When inicia el flujo de suscripción, Then el sistema lo dirige al registro o checkout simulado. | EP-04 |
+| US-02 | Identificar zonas de baja conversión | Como administrador retail, quiero identificar zonas con alta interacción y baja conversión, para redistribuir productos estratégicamente y mejorar el rendimiento del local. | **Escenario 1:** Given existen métricas de interacción y ventas por zona, When el administrador consulta el análisis, Then el sistema muestra zonas con brechas de conversión.<br><br>**Escenario 2:** Given una zona tiene alta interacción y baja conversión, When el sistema calcula la brecha, Then marca la zona como oportunidad comercial.<br><br>**Escenario 3:** Given no existen datos suficientes, When el administrador consulta el análisis, Then el sistema informa que no hay información disponible para calcular la brecha. | EP-01 |
+| US-03 | Recibir alertas de congestión operativa | Como supervisor de tienda, quiero recibir alertas cuando una zona supere niveles críticos de tráfico, para redistribuir personal antes de afectar la experiencia del comprador. | **Escenario 1:** Given una zona supera el umbral de tráfico definido, When el sistema detecta congestión, Then genera una alerta operativa.<br><br>**Escenario 2:** Given existen varias alertas activas, When el personal consulta su panel, Then el sistema las ordena por prioridad.<br><br>**Escenario 3:** Given una alerta no es atendida en el tiempo esperado, When vence el umbral de atención, Then el sistema cambia su prioridad o la marca como escalada. | EP-01 |
+| US-04 | Encontrar productos rápidamente en tienda | Como comprador en tienda, quiero encontrar productos rápidamente mediante el quiosco, para evitar recorrer pasillos innecesarios o abandonar la compra por frustración. | **Escenario 1:** Given el producto existe y tiene stock, When el comprador lo busca, Then el sistema muestra disponibilidad, zona y referencia de estante.<br><br>**Escenario 2:** Given el producto existe pero no tiene stock, When el comprador lo consulta, Then el sistema informa la falta de disponibilidad.<br><br>**Escenario 3:** Given no hay coincidencias, When el comprador realiza la búsqueda, Then el sistema muestra un mensaje claro y permite intentar otra búsqueda. | EP-02 |
+| US-05 | Atender tareas operativas priorizadas | Como colaborador de piso, quiero consultar tareas operativas priorizadas, para atender zonas, reposiciones o incidencias según su impacto en la experiencia del comprador. | **Escenario 1:** Given existen tareas activas, When el colaborador accede a su vista operativa, Then el sistema muestra tareas con prioridad, zona y estado.<br><br>**Escenario 2:** Given una tarea está pendiente, When el colaborador la completa, Then el sistema actualiza su estado como resuelta.<br><br>**Escenario 3:** Given una tarea vencida sigue pendiente, When el sistema evalúa su antigüedad, Then la marca como atrasada o prioritaria. | EP-01 |
+| US-06 | Detectar zonas calientes y zonas muertas | Como administrador retail, quiero identificar zonas calientes y zonas muertas dentro del local, para ajustar la distribución comercial con base en comportamiento real. | **Escenario 1:** Given existen métricas de tráfico por zona, When el administrador consulta el mapa de calor, Then el sistema representa la intensidad de actividad por zona.<br><br>**Escenario 2:** Given una zona tiene baja intensidad y bajo tráfico, When el sistema analiza el layout, Then la identifica como posible zona muerta.<br><br>**Escenario 3:** Given una zona tiene intensidad alta, When el sistema calcula su nivel de calor, Then la muestra como zona caliente. | EP-01 |
+| US-07 | Recibir recomendaciones de optimización comercial | Como administrador retail, quiero recibir recomendaciones basadas en tráfico, stock e interacción, para tomar acciones correctivas sobre productos, zonas o promociones. | **Escenario 1:** Given el sistema detecta una zona con baja conversión, When genera una recomendación, Then muestra una acción sugerida con prioridad.<br><br>**Escenario 2:** Given un producto tiene alta interacción y baja venta, When el sistema analiza su desempeño, Then recomienda promoción, reubicación o mejora de visibilidad.<br><br>**Escenario 3:** Given una recomendación es aplicada, When el administrador la marca como ejecutada, Then el sistema actualiza su estado. | EP-03 |
+| US-08 | Detectar patrones de circulación | Como administrador retail, quiero detectar patrones de circulación de clientes, para optimizar el layout comercial y mejorar el flujo de compra dentro del local. | **Escenario 1:** Given existen eventos de visita por zona, When el sistema procesa el recorrido, Then muestra patrones frecuentes de circulación.<br><br>**Escenario 2:** Given un patrón concentra tráfico en pocas zonas, When el administrador lo revisa, Then el sistema permite identificar puntos de saturación o zonas ignoradas.<br><br>**Escenario 3:** Given no existen recorridos registrados, When se consulta el análisis, Then el sistema informa que no hay datos suficientes. | EP-01 |
+| US-09 | Recibir promociones relevantes durante la búsqueda | Como comprador en tienda, quiero recibir promociones relevantes mientras busco productos, para descubrir ofertas útiles sin interrumpir mi recorrido de compra. | **Escenario 1:** Given el producto consultado tiene una promoción activa, When el comprador revisa su información, Then el sistema muestra la promoción relacionada.<br><br>**Escenario 2:** Given el comprador consulta productos de una categoría específica, When existen promociones relacionadas, Then el sistema las muestra como sugerencias relevantes.<br><br>**Escenario 3:** Given no existen promociones disponibles, When el comprador consulta el producto, Then el sistema no muestra ofertas irrelevantes. | EP-02 |
+| US-10 | Activar alerta por quiebre de stock consultado | Como colaborador de piso, quiero recibir alertas cuando un comprador consulta un producto sin stock, para actuar rápidamente y evitar quiebres visibles al cliente. | **Escenario 1:** Given un comprador busca un producto sin stock, When el sistema detecta la condición, Then genera una alerta de reposición o revisión.<br><br>**Escenario 2:** Given el personal atiende la alerta, When repone o confirma el estado del producto, Then el sistema permite marcar la alerta como resuelta.<br><br>**Escenario 3:** Given el producto vuelve a estar disponible, When se actualiza el inventario, Then el sistema deja de mostrarlo como no disponible. | EP-03 |
+| US-11 | Registrar eventos de movimiento en tienda | Como sistema de analítica, quiero registrar eventos de movimiento por zona, para alimentar el cálculo de tráfico, congestión y mapas de calor. | **Escenario 1:** Given se recibe un evento válido de zona, When el sistema lo procesa, Then lo registra asociado a la tienda y zona correspondiente.<br><br>**Escenario 2:** Given el evento no tiene zona válida, When se intenta registrar, Then el sistema rechaza el evento o lo marca como inválido.<br><br>**Escenario 3:** Given existen eventos acumulados, When se procesa la analítica, Then el sistema puede calcular intensidad de tráfico por zona. | EP-01 |
+| US-12 | Calcular métricas de calor y conversión | Como sistema de analítica, quiero calcular métricas de tráfico, permanencia e interacción, para generar insights accionables sobre el comportamiento dentro de la tienda. | **Escenario 1:** Given existen eventos de tráfico e interacción, When el sistema calcula métricas, Then genera indicadores por zona.<br><br>**Escenario 2:** Given una zona supera el umbral de intensidad, When se procesan las métricas, Then el sistema puede marcarla como zona caliente o congestionada.<br><br>**Escenario 3:** Given una zona tiene baja actividad sostenida, When se calculan los indicadores, Then el sistema puede marcarla como zona fría o muerta. | EP-01 |
+| US-13 | Mantener catálogo y ubicación de productos | Como administrador retail, quiero mantener productos con stock, zona y referencia de estante, para que compradores y personal trabajen con información confiable dentro de la tienda. | **Escenario 1:** Given el administrador registra un producto con datos válidos, When guarda la información, Then el sistema lo incorpora al catálogo de la tienda.<br><br>**Escenario 2:** Given un producto cambia de zona o estante, When el administrador actualiza su ubicación, Then el sistema refleja el cambio en el quiosco y en inventario.<br><br>**Escenario 3:** Given un producto queda inactivo, When se actualiza su estado, Then el sistema evita mostrarlo como disponible para el comprador. | EP-03 |
+| US-14 | Acceder a información según rol operativo | Como administrador o personal autorizado, quiero acceder únicamente a las funcionalidades correspondientes a mi rol, para proteger métricas sensibles y separar responsabilidades operativas. | **Escenario 1:** Given el usuario selecciona o inicia sesión con rol administrador, When accede al sistema, Then puede ver métricas, configuración y suscripción.<br><br>**Escenario 2:** Given el usuario accede como personal de tienda, When ingresa al sistema, Then solo visualiza alertas y tareas operativas.<br><br>**Escenario 3:** Given un usuario sin permisos intenta entrar a una vista restringida, When realiza la acción, Then el sistema bloquea o redirige el acceso. | EP-04 |
+| US-15 | Configurar tienda y funcionalidades disponibles | Como administrador retail, quiero configurar los datos iniciales de mi tienda y las funcionalidades habilitadas por mi plan, para operar RetailPulse según el alcance contratado. | **Escenario 1:** Given el administrador registra una tienda, When completa sus datos principales, Then el sistema guarda nombre, rubro, dirección y configuración base.<br><br>**Escenario 2:** Given la cuenta tiene un plan activo, When el administrador accede a funcionalidades avanzadas, Then el sistema valida si están disponibles según su suscripción.<br><br>**Escenario 3:** Given el plan cambia, When se actualiza la suscripción, Then el sistema actualiza las funcionalidades disponibles. | EP-04 |
+| US-16 | Comprender impacto operativo de RetailPulse | Como visitante de página, quiero comprender cómo RetailPulse reduce fricción operativa y mejora decisiones comerciales, para evaluar su valor más allá de sus funcionalidades visuales. | **Escenario 1:** Given el visitante revisa la sección de beneficios, When consulta el contenido, Then el sistema explica mejoras en tráfico, stock, atención y conversión.<br><br>**Escenario 2:** Given el visitante pertenece a un negocio retail físico, When explora casos de uso, Then el sistema muestra ejemplos aplicados a tiendas reales.<br><br>**Escenario 3:** Given el visitante desea profundizar, When revisa demostraciones, Then el sistema muestra escenarios de uso conectados a problemas reales del negocio. | EP-02 |
+| US-17 | Visualizar demostraciones orientadas a outcomes | Como visitante de página, quiero visualizar demostraciones de RetailPulse aplicadas a situaciones reales de tienda, para entender cómo la plataforma transforma eventos del local en acciones operativas y comerciales. | **Escenario 1:** Given el visitante accede a la sección de demostraciones, When revisa el contenido, Then el sistema muestra ejemplos de congestión, quiebre de stock, búsqueda en quiosco y recomendaciones.<br><br>**Escenario 2:** Given el visitante selecciona una demostración, When la visualiza, Then el sistema explica el problema detectado y la acción sugerida.<br><br>**Escenario 3:** Given una demostración no está disponible, When el visitante intenta acceder, Then el sistema informa la situación y mantiene la navegación dentro del landing page. | EP-02 |
+| US-18 | Detectar automáticamente congestión crítica | Como supervisor operativo, quiero que el sistema detecte automáticamente zonas con alta congestión, para redistribuir personal antes de afectar la experiencia del comprador. | **Escenario 1:** Given una zona supera el umbral de tráfico permitido, When el sistema procesa sus métricas, Then detecta congestión crítica automáticamente.<br><br>**Escenario 2:** Given se detecta congestión crítica, When el sistema genera la alerta, Then asigna prioridad alta o crítica según la intensidad registrada.<br><br>**Escenario 3:** Given la congestión disminuye, When las métricas vuelven a niveles normales, Then el sistema permite resolver o cerrar la alerta operativa. | EP-01 |
+| US-19 | Detectar productos con alta interacción y baja conversión | Como gerente retail, quiero identificar productos con alta interacción y baja conversión, para ejecutar acciones correctivas antes de generar sobrestock o pérdida de oportunidades comerciales. | **Escenario 1:** Given un producto registra muchas interacciones y pocas ventas, When el sistema calcula su desempeño, Then lo marca como producto con baja conversión.<br><br>**Escenario 2:** Given un producto es marcado con baja conversión, When el gerente revisa las recomendaciones, Then el sistema sugiere promoción, reubicación o mejora de visibilidad.<br><br>**Escenario 3:** Given se aplica una acción correctiva, When se actualiza la recomendación, Then el sistema cambia su estado a aplicada. | EP-03 |
+| US-20 | Recibir promociones dinámicas según comportamiento | Como comprador frecuente, quiero recibir promociones dinámicas según mi comportamiento dentro del local, para descubrir productos relevantes sin interrumpir mi recorrido. | **Escenario 1:** Given el comprador consulta o interactúa con productos de una categoría, When existen promociones relacionadas, Then el sistema muestra promociones relevantes.<br><br>**Escenario 2:** Given el comprador se encuentra asociado a una zona o producto con oportunidad comercial, When el sistema detecta el contexto, Then muestra una promoción dinámica en el quiosco.<br><br>**Escenario 3:** Given no existen promociones relevantes, When el comprador continúa navegando, Then el sistema evita mostrar recomendaciones irrelevantes. | EP-02 |
 
 ### 3.2. Impact Mapping
 
@@ -879,27 +882,32 @@ Para asegurar la correcta aplicación del Ubiquitous Language en el proyecto:
 
 ### 3.3. Product Backlog
 
-A continuación, se presenta el Product Backlog de RetailPulse, el cual organiza las User Stories en función de su valor para el negocio y su prioridad dentro del desarrollo del producto.
+A continuación, se presenta el Product Backlog actualizado de RetailPulse, el cual organiza las User Stories en función de su valor para el negocio y su prioridad dentro del desarrollo del producto. Se mantiene la estructura general del backlog anterior, incorporando únicamente las historias avanzadas agregadas para responder al feedback recibido sobre automatización inteligente, workflows operacionales, eventos críticos y comportamiento del dominio.
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
-|--------|---------------|--------|------------|--------------|
-| 1 | US-01 | Explorar planes y propuesta de valor de RetailPulse | Como visitante de página, quiero conocer los planes y beneficios de RetailPulse, para evaluar si la solución se adapta a las necesidades de mi tienda. | 3 |
-| 2 | US-16 | Conocer cómo RetailPulse mejora la operación de la tienda | Como visitante de página, quiero visualizar de forma clara cómo RetailPulse ayuda a mejorar la operación, la conversión y la experiencia de compra en tienda, para entender el valor real de la solución para mi negocio. | 3 |
-| 3 | US-17 | Visualizar demostraciones del funcionamiento de RetailPulse | Como visitante de página, quiero visualizar ejemplos o demostraciones del funcionamiento de RetailPulse, para comprender cómo se verían sus principales funcionalidades aplicadas en una tienda real. | 5 |
-| 4 | US-04 | Buscar productos y su ubicación dentro de la tienda | Como comprador en tienda, quiero buscar un producto y conocer su disponibilidad y ubicación, para encontrarlo rápidamente. | 5 |
-| 5 | US-09 | Recibir promociones personalizadas en quiosco | Como comprador en tienda, quiero recibir promociones personalizadas mientras busca productos, para aprovechar ofertas relevantes durante su compra. | 3 |
-| 6 | US-05 | Consultar tareas operativas asignadas en tienda | Como personal de tienda, quiero consultar las tareas operativas generadas por el sistema, para atender zonas, productos o incidencias priorizadas dentro del local. | 3 |
-| 7 | US-03 | Recibir alertas operativas por zonas de alta demanda | Como personal de tienda, quiero recibir alertas sobre zonas con alta demanda o baja atención, para priorizar mi intervención y mejorar la experiencia del comprador. | 3 |
-| 8 | US-10 | Notificar falta de stock al personal | Como sistema, quiero notificar al personal cuando un producto consultado no tiene stock, para que puedan tomar acciones rápidas dentro de la tienda. | 5 |
-| 9 | US-02 | Analizar tráfico e interacción por zonas de la tienda | Como administrador de tienda, quiero visualizar métricas de tráfico, permanencia e interacción por zona, para identificar oportunidades de mejora en la distribución del local y en la conversión. | 8 |
-| 10 | US-06 | Visualizar mapa de calor de interacción en tienda | Como administrador de tienda, quiero visualizar un mapa de calor de interacción de clientes dentro del local, para identificar zonas de alta y baja actividad y optimizar la distribución del espacio. | 8 |
-| 11 | US-08 | Visualizar patrones de circulación de clientes | Como administrador de tienda, quiero visualizar los patrones de circulación de los clientes dentro del local, para entender su comportamiento y mejorar la experiencia de compra. | 8 |
-| 12 | US-07 | Recibir recomendaciones de optimización del layout | Como administrador de tienda, quiero recibir recomendaciones sobre la distribución de productos y zonas, para mejorar la conversión y el flujo de clientes. | 5 |
-| 13 | US-13 | Construir API REST para la gestión del catálogo | Como desarrollador, quiero desarrollar las rutas CRUD de productos en el backend, para que la plataforma web pueda gestionar el inventario. | 5 |
-| 14 | US-11 | Crear endpoint para recepción de eventos de tráfico | Como desarrollador, quiero implementar un endpoint POST en la API, para que los sensores envíen datos en tiempo real. | 5 |
-| 15 | US-12 | Desarrollar endpoint GET de analítica y mapas de calor | Como desarrollador, quiero crear un endpoint de agregación de datos, para que el frontend consuma métricas procesadas. | 5 |
-| 16 | US-15 | Configurar el esquema y conexión de Base de Datos | Como desarrollador, quiero establecer la conexión y el modelado de las tablas, para almacenar eventos de la tienda. | 5 |
-| 17 | US-14 | Implementar seguridad y autenticación JWT | Como desarrollador, quiero configurar la seguridad mediante tokens JWT, para proteger las rutas privadas del sistema. | 3 |
+|--------|---------------|--------|-------------|--------------|
+| 1 | US-01 | Evaluar propuesta de valor y planes SaaS | Como administrador retail visitante, quiero conocer los planes, beneficios y casos de uso de RetailPulse, para decidir si la solución puede mejorar la operación de mi tienda. | 3 |
+| 2 | US-16 | Comprender impacto operativo de RetailPulse | Como visitante de página, quiero comprender cómo RetailPulse reduce fricción operativa y mejora decisiones comerciales, para evaluar su valor más allá de sus funcionalidades visuales. | 3 |
+| 3 | US-17 | Visualizar demostraciones orientadas a outcomes | Como visitante de página, quiero visualizar demostraciones de RetailPulse aplicadas a situaciones reales de tienda, para entender cómo la plataforma transforma eventos del local en acciones operativas y comerciales. | 5 |
+| 4 | US-04 | Encontrar productos rápidamente en tienda | Como comprador en tienda, quiero encontrar productos rápidamente mediante el quiosco, para evitar recorrer pasillos innecesarios o abandonar la compra por frustración. | 5 |
+| 5 | US-09 | Recibir promociones relevantes durante la búsqueda | Como comprador en tienda, quiero recibir promociones relevantes mientras busco productos, para descubrir ofertas útiles sin interrumpir mi recorrido de compra. | 3 |
+| 6 | US-20 | Recibir promociones dinámicas según comportamiento | Como comprador frecuente, quiero recibir promociones dinámicas según mi comportamiento dentro del local, para descubrir productos relevantes sin interrumpir mi recorrido. | 5 |
+| 7 | US-05 | Atender tareas operativas priorizadas | Como colaborador de piso, quiero consultar tareas operativas priorizadas, para atender zonas, reposiciones o incidencias según su impacto en la experiencia del comprador. | 3 |
+| 8 | US-03 | Recibir alertas de congestión operativa | Como supervisor de tienda, quiero recibir alertas cuando una zona supere niveles críticos de tráfico, para redistribuir personal antes de afectar la experiencia del comprador. | 3 |
+| 9 | US-18 | Detectar automáticamente congestión crítica | Como supervisor operativo, quiero que el sistema detecte automáticamente zonas con alta congestión, para redistribuir personal antes de afectar la experiencia del comprador. | 5 |
+| 10 | US-10 | Activar alerta por quiebre de stock consultado | Como colaborador de piso, quiero recibir alertas cuando un comprador consulta un producto sin stock, para actuar rápidamente y evitar quiebres visibles al cliente. | 5 |
+| 11 | US-02 | Identificar zonas de baja conversión | Como administrador retail, quiero identificar zonas con alta interacción y baja conversión, para redistribuir productos estratégicamente y mejorar el rendimiento del local. | 8 |
+| 12 | US-06 | Detectar zonas calientes y zonas muertas | Como administrador retail, quiero identificar zonas calientes y zonas muertas dentro del local, para ajustar la distribución comercial con base en comportamiento real. | 8 |
+| 13 | US-08 | Detectar patrones de circulación | Como administrador retail, quiero detectar patrones de circulación de clientes, para optimizar el layout comercial y mejorar el flujo de compra dentro del local. | 8 |
+| 14 | US-19 | Detectar productos con alta interacción y baja conversión | Como gerente retail, quiero identificar productos con alta interacción y baja conversión, para ejecutar acciones correctivas antes de generar sobrestock o pérdida de oportunidades comerciales. | 5 |
+| 15 | US-07 | Recibir recomendaciones de optimización comercial | Como administrador retail, quiero recibir recomendaciones basadas en tráfico, stock e interacción, para tomar acciones correctivas sobre productos, zonas o promociones. | 5 |
+| 16 | US-13 | Mantener catálogo y ubicación de productos | Como administrador retail, quiero mantener productos con stock, zona y referencia de estante, para que compradores y personal trabajen con información confiable dentro de la tienda. | 5 |
+| 17 | US-11 | Registrar eventos de movimiento en tienda | Como sistema de analítica, quiero registrar eventos de movimiento por zona, para alimentar el cálculo de tráfico, congestión y mapas de calor. | 5 |
+| 18 | US-12 | Calcular métricas de calor y conversión | Como sistema de analítica, quiero calcular métricas de tráfico, permanencia e interacción, para generar insights accionables sobre el comportamiento dentro de la tienda. | 5 |
+| 19 | US-15 | Configurar tienda y funcionalidades disponibles | Como administrador retail, quiero configurar los datos iniciales de mi tienda y las funcionalidades habilitadas por mi plan, para operar RetailPulse según el alcance contratado. | 5 |
+| 20 | US-14 | Acceder a información según rol operativo | Como administrador o personal autorizado, quiero acceder únicamente a las funcionalidades correspondientes a mi rol, para proteger métricas sensibles y separar responsabilidades operativas. | 3 |
+
+**Total Story Points:** 97
 
 ---
 
@@ -2073,7 +2081,7 @@ Para asegurar una correcta organización del equipo, se elaboró la matriz LACX 
 
 **Duración:** 2 semanas
 
-**Objetivo del Sprint:**
+**Objetivo del Sprint:**  
 Validar la propuesta de valor de RetailPulse mediante la implementación del landing page y habilitar la funcionalidad básica de búsqueda de productos en tienda.
 
 <table>
@@ -2100,10 +2108,10 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
 
 <tr>
   <td rowspan="2">US-01</td>
-  <td rowspan="2">Explorar planes y propuesta de valor</td>
+  <td rowspan="2">Evaluar propuesta de valor y planes SaaS</td>
   <td>T-01</td>
   <td>Redactar contenido del landing</td>
-  <td>Definir textos de valor, beneficios y secciones principales del landing page.</td>
+  <td>Definir textos de valor, beneficios y casos de uso de RetailPulse orientados a operación, inventario, tráfico y conversión.</td>
   <td>5</td>
   <td>Vallejo Trujillo, Fabio Cesar</td>
   <td>Done</td>
@@ -2111,8 +2119,8 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
 
 <tr>
   <td>T-02</td>
-  <td>Diseñar sección de planes</td>
-  <td>Construir la visualización de planes y beneficios del sistema.</td>
+  <td>Diseñar sección de planes SaaS</td>
+  <td>Construir la visualización de planes, beneficios y diferencias entre Starter, Growth y Premium.</td>
   <td>5</td>
   <td>Godoy Santillan, Jesus Andres</td>
   <td>Done</td>
@@ -2120,10 +2128,10 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
 
 <tr>
   <td rowspan="2">US-16</td>
-  <td rowspan="2">Visualizar valor del sistema</td>
+  <td rowspan="2">Comprender impacto operativo de RetailPulse</td>
   <td>T-03</td>
-  <td>Sección beneficios</td>
-  <td>Mostrar cómo RetailPulse mejora la operación y conversión.</td>
+  <td>Sección de impacto operativo</td>
+  <td>Mostrar cómo RetailPulse reduce fricción operativa, mejora la atención, optimiza stock y apoya decisiones comerciales.</td>
   <td>5</td>
   <td>Franco del Carpio, José María</td>
   <td>Done</td>
@@ -2131,8 +2139,8 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
 
 <tr>
   <td>T-04</td>
-  <td>Casos de uso</td>
-  <td>Ejemplificar escenarios reales dentro de tienda.</td>
+  <td>Casos de uso en tienda</td>
+  <td>Ejemplificar escenarios reales como congestión, quiebre de stock, búsqueda de productos y recomendaciones comerciales.</td>
   <td>4</td>
   <td>Faustino Hurtado, Anghelo Edwin</td>
   <td>Done</td>
@@ -2140,62 +2148,62 @@ Validar la propuesta de valor de RetailPulse mediante la implementación del lan
 
 <tr>
   <td rowspan="2">US-17</td>
-  <td rowspan="2">Ver demostraciones del sistema</td>
+  <td rowspan="2">Visualizar demostraciones orientadas a outcomes</td>
   <td>T-05</td>
   <td>Diseñar demos visuales</td>
-  <td>Crear mockups de heatmap, alertas y quiosco.</td>
+  <td>Crear mockups o secciones visuales que representen heatmap, alertas, quiosco y recomendaciones aplicadas a situaciones reales.</td>
   <td>6</td>
   <td>Rubio Ortiz, Luis Sebastián</td>
-  <td>To-do</td>
+  <td>Done</td>
 </tr>
 
 <tr>
   <td>T-06</td>
-  <td>Integrar demos</td>
-  <td>Incorporar las demostraciones en el flujo del landing.</td>
+  <td>Integrar demos en landing</td>
+  <td>Incorporar las demostraciones dentro del flujo del landing page, explicando el problema detectado y la acción sugerida.</td>
   <td>4</td>
   <td>Godoy Santillan, Jesus Andres</td>
-  <td>To-do</td>
+  <td>Done</td>
 </tr>
 
 <tr>
   <td rowspan="2">US-04</td>
-  <td rowspan="2">Buscar productos y ubicación</td>
+  <td rowspan="2">Encontrar productos rápidamente en tienda</td>
   <td>T-07</td>
-  <td>Formulario de búsqueda</td>
-  <td>Implementar input y lógica básica de consulta.</td>
+  <td>Formulario de búsqueda en quiosco</td>
+  <td>Implementar input y lógica básica para que el comprador pueda buscar productos dentro de la tienda.</td>
   <td>6</td>
   <td>Vallejo Trujillo, Fabio Cesar</td>
-  <td>To-do</td>
+  <td>Done</td>
 </tr>
 
 <tr>
   <td>T-08</td>
   <td>Resultados de búsqueda</td>
-  <td>Mostrar productos, stock y ubicación simulada.</td>
+  <td>Mostrar productos encontrados con disponibilidad, zona, referencia de estante y datos simulados.</td>
   <td>5</td>
   <td>Franco del Carpio, José María</td>
-  <td>To-do</td>
+  <td>Done</td>
 </tr>
 
 <tr>
   <td rowspan="2">US-09</td>
-  <td rowspan="2">Promociones en quiosco</td>
+  <td rowspan="2">Recibir promociones relevantes durante la búsqueda</td>
   <td>T-09</td>
-  <td>Panel promociones</td>
-  <td>Diseñar módulo de promociones relacionadas.</td>
+  <td>Panel de promociones relevantes</td>
+  <td>Diseñar el módulo visual de promociones relacionadas al producto o categoría consultada.</td>
   <td>4</td>
   <td>Rubio Ortiz, Luis Sebastián</td>
-  <td>To-do</td>
+  <td>Done</td>
 </tr>
 
 <tr>
   <td>T-10</td>
-  <td>Integración promociones</td>
-  <td>Mostrar promociones dentro del flujo de búsqueda.</td>
+  <td>Integración de promociones en búsqueda</td>
+  <td>Mostrar promociones relevantes dentro del flujo de búsqueda del quiosco, evitando ofertas irrelevantes.</td>
   <td>4</td>
   <td>Faustino Hurtado, Anghelo Edwin</td>
-  <td>To-do</td>
+  <td>Done</td>
 </tr>
 
 </table>
