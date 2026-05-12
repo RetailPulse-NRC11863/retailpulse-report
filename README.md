@@ -1612,6 +1612,16 @@ User Goal 6: Como cliente, quiero buscar un producto en el quiosco para conocer 
 
 ### 4.5. Web Applications Prototyping
 
+Para el prototipo de RetailPulse se adoptaron los siguientes criterios de interacción. El acceso al sistema comienza con una pantalla selectora de perfiles que divide la experiencia en tres flujos principales según el rol del usuario (Administrador, Personal de tienda o Cliente en quiosco).
+
+La navegación principal para el perfil de Administrador se centraliza en un menú lateral izquierdo (sidebar) con acceso directo a las secciones de Dashboard, Configuración de tienda, Conversión, Mapa de calor y Suscripción. Las transiciones entre pantallas se diseñaron de forma lineal y directa para mantener la experiencia enfocada en el contexto de cada usuario, asegurando una navegación intuitiva y una carga visual limpia sin interrumpir el flujo principal de trabajo.
+
+A continuación, se presenta el flujo de interacción del prototipo elaborado en Figma:
+
+<img src="assets/images/prototyping.png" alt="Web Applications Prototyping" width="800">
+
+Enlace al prototipo en Figma:https://www.figma.com/proto/G09z9SLcGBIqnB5xNAsgEW/WEB-APLICATION?node-id=43-9750&t=Y3G3ksXy61OqMGsm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=41%3A6978&show-proto-sidebar=1
+
 ### 4.6. Domain-Driven Software Architecture
 
 #### 4.6.1. Design-Level Event Storming
