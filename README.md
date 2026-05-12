@@ -1509,17 +1509,31 @@ Los wireframes de baja fidelidad para la aplicación web se diseñaron para esta
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-El Diagrama de Wireflows ilustra el recorrido interactivo y lógico que sigue el usuario administrador dentro de la plataforma **RetailPulse**. Este esquema conecta las interfaces de baja fidelidad (wireframes) para mapear el flujo de las principales Historias de Usuario (US).
+User Goal 1: Como usuario, quiero seleccionar mi perfil de acceso para ingresar a la experiencia adecuada del sistema y garantizar la seguridad de la información según mi rol.
 
-Como se observa en el diagrama, el flujo operativo sigue esta secuencia lógica:
+<img src="assets/images/wireflow1.png" alt="User Goal 1" width="800">
 
-1. **Setup Inicial:** El administrador ingresa a la **Store Zones Configuration** para estructurar el mapa digital del local.
-2. **Asignación de Inventario:** Continúa hacia el **Product Catalog** para vincular los productos físicos a las zonas previamente creadas.
-3. **Toma de Decisiones (US-07):** El usuario revisa las **Layout Recommendations**, evaluando los cambios sugeridos por el algoritmo para optimizar la distribución.
-4. **Análisis Visual (US-06 y US-08):** El flujo desemboca en el **Store Heatmap & Customer Flow**, donde el administrador analiza las métricas en tiempo real y el comportamiento del cliente.
-5. **Acción Comercial:** Finalmente, basándose en los datos del mapa de calor, el usuario navega hacia **Active Promotions** para ejecutar campañas de descuento dirigidas a zonas específicas.
+User Goal 2: Como administrador, quiero configurar las zonas y productos de mi tienda para mantener actualizado el layout comercial y asegurar una recolección de datos precisa.
 
-<img src="assets/images/wireflow_diagram.png" alt="Web Application Wireflow Diagram" width="800">
+<img src="assets/images/wireflow2.png" alt="User Goal 2" width="800">
+
+User Goal 3: Como administrador, quiero analizar el comportamiento de los clientes en cada zona para identificar puntos críticos de interacción que permitan mejorar la tasa de conversión.
+
+<img src="assets/images/wireflow3.png" alt="User Goal 3" width="800">
+
+User Goal 4: Como administrador, quiero revisar y comparar los planes de suscripción para elegir el que mejor se adapte a la escala de mi negocio y optimizar mis costos operativos.
+
+<img src="assets/images/wireflow4.png" alt="User Goal 4" width="800">
+
+User Goal 5: Como personal de tienda, quiero atender las alertas y tareas operativas en tiempo real para resolver congestiones y mantener el flujo eficiente de clientes.
+
+<img src="assets/images/wireflow5.png" alt="User Goal 5" width="800">
+
+User Goal 6: Como cliente, quiero buscar un producto en el quiosco para conocer su ubicación, disponibilidad y promociones de forma autónoma, optimizando mi tiempo de compra.
+
+<img src="assets/images/wireflow6.png" alt="User Goal 6" width="800">
+
+---
 
 #### 4.4.3. Web Applications Mock-ups
 
