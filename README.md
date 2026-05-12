@@ -1485,32 +1485,32 @@ Enlaces legales, mapa del sitio y redes sociales de la startup.
 
 Los wireframes de baja fidelidad para la aplicación web se diseñaron para establecer la estructura y funcionalidad básica de las principales vistas: Dashboard, Gestión de Zonas, Inventario de Productos, Suscripciones, Configuración de Tienda, Panel de Alertas Operativas y Quiosco de Consulta.
 
-<img src="assets/images/wireframe1.png" alt="Dashboard principal con métricas" width="800">
 *Figura 1. Dashboard principal con métricas de tráfico y conversión.*
+<img src="assets/images/wireframe1.png" alt="Dashboard principal con métricas" width="800">
 
 
-<img src="assets/images/wireframe2.png" alt="Planes de Suscripción" width="800">
 *Figura 2. Configuración de la tienda y ubicación.*
+<img src="assets/images/wireframe2.png" alt="Planes de Suscripción" width="800">
 
 
-<img src="assets/images/wireframe3.png" alt="Gestión de Zonas" width="800">
 *Figura 3. Inventario de productos con métricas de interacción por ítem.*
+<img src="assets/images/wireframe3.png" alt="Gestión de Zonas" width="800">
 
 
-<img src="assets/images/wireframe4.png" alt="Inventario de Productos" width="800">
 *Figura 4. Gestión de Zonas para la configuración del layout físico de la tienda.*
+<img src="assets/images/wireframe4.png" alt="Inventario de Productos" width="800">
 
 
-<img src="assets/images/wireframe5.png" alt="Configuración de Tienda" width="800">
 *Figura 5. Selección de planes de suscripción para el modelo SaaS.*
+<img src="assets/images/wireframe5.png" alt="Configuración de Tienda" width="800">
 
 
-<img src="assets/images/wireframe6.png" alt="Panel de Alertas Operativas" width="800">
 *Figura 6. Panel de Alertas Operativas para el personal de tienda.*
+<img src="assets/images/wireframe6.png" alt="Panel de Alertas Operativas" width="800">
 
 
-<img src="assets/images/wireframe7.png" alt="Quiosco de Consulta" width="800">
 *Figura 7. Quiosco web para búsqueda de productos y promociones.*
+<img src="assets/images/wireframe7.png" alt="Quiosco de Consulta" width="800">
 
 
 ### 4.4.2. Web Applications Wireflow Diagrams
@@ -1582,7 +1582,33 @@ Los mock-ups de alta fidelidad para la aplicación web presentan una visión det
 
 ---
 
-#### 4.4.4. Web Applications User Flow Diagrams
+### 4.4.4. Web Applications User Flow Diagrams
+
+User Goal 1: Como usuario, quiero seleccionar mi perfil de acceso para ingresar a la experiencia adecuada del sistema y garantizar la seguridad de la información según mi rol.
+
+<img src="assets/images/userflow1.png" alt="User Goal 1" width="800">
+
+User Goal 2: Como administrador, quiero configurar las zonas y productos de mi tienda para mantener actualizado el layout comercial y asegurar una recolección de datos precisa.
+
+<img src="assets/images/userflow2.png" alt="User Goal 2" width="800">
+
+User Goal 3: Como administrador, quiero analizar el comportamiento de los clientes en cada zona para identificar puntos críticos de interacción que permitan mejorar la tasa de conversión.
+
+<img src="assets/images/userflow3.png" alt="User Goal 3" width="800">
+
+User Goal 4: Como administrador, quiero revisar y comparar los planes de suscripción para elegir el que mejor se adapte a la escala de mi negocio y optimizar mis costos operativos.
+
+<img src="assets/images/userflow4.png" alt="User Goal 4" width="800">
+
+User Goal 5: Como personal de tienda, quiero atender las alertas y tareas operativas en tiempo real para resolver congestiones y mantener el flujo eficiente de clientes.
+
+<img src="assets/images/userflow5.png" alt="User Goal 5" width="800">
+
+User Goal 6: Como cliente, quiero buscar un producto en el quiosco para conocer su ubicación, disponibilidad y promociones de forma autónoma, optimizando mi tiempo de compra.
+
+<img src="assets/images/userflow6.png" alt="User Goal 6" width="800">
+
+---
 
 ### 4.5. Web Applications Prototyping
 
