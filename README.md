@@ -1488,20 +1488,26 @@ Los wireframes de baja fidelidad para la aplicación web se diseñaron para esta
 <img src="assets/images/wireframe1.png" alt="Dashboard principal con métricas" width="800">
 *Figura 1. Dashboard principal con métricas de tráfico y conversión.*
 
+
 <img src="assets/images/wireframe2.png" alt="Planes de Suscripción" width="800">
 *Figura 2. Configuración de la tienda y ubicación.*
+
 
 <img src="assets/images/wireframe3.png" alt="Gestión de Zonas" width="800">
 *Figura 3. Inventario de productos con métricas de interacción por ítem.*
 
+
 <img src="assets/images/wireframe4.png" alt="Inventario de Productos" width="800">
 *Figura 4. Gestión de Zonas para la configuración del layout físico de la tienda.*
+
 
 <img src="assets/images/wireframe5.png" alt="Configuración de Tienda" width="800">
 *Figura 5. Selección de planes de suscripción para el modelo SaaS.*
 
+
 <img src="assets/images/wireframe6.png" alt="Panel de Alertas Operativas" width="800">
 *Figura 6. Panel de Alertas Operativas para el personal de tienda.*
+
 
 <img src="assets/images/wireframe7.png" alt="Quiosco de Consulta" width="800">
 *Figura 7. Quiosco web para búsqueda de productos y promociones.*
@@ -1535,36 +1541,46 @@ User Goal 6: Como cliente, quiero buscar un producto en el quiosco para conocer 
 
 ---
 
-#### 4.4.3. Web Applications Mock-ups
+### 4.4.3. Web Applications Mock-ups
 
-Tras validar la arquitectura de la información y la distribución de elementos en los wireframes, se desarrolló el diseño de alta fidelidad (Mockups) aplicando las guías de estilo visual de **RetailPulse**.
+Los mock-ups de alta fidelidad para la aplicación web presentan una visión detallada de la interfaz de usuario final de RetailPulse. En estas pantallas, se ha aplicado el esquema de colores institucional, la tipografía y los componentes visuales definitivos para proporcionar una representación precisa de cómo se verá la aplicación en producción. Esto incluye las vistas del dashboard analítico, la gestión del layout de la tienda, el panel de alertas operativas, la interfaz del quiosco para compradores, el inventario detallado y la gestión del modelo SaaS.
 
-Se utilizó la paleta de colores oficial, priorizando el azul oscuro corporativo para transmitir seguridad y el cyan brillante para resaltar métricas clave, alertas y llamados a la acción (CTAs). A continuación, se presentan las pantallas finales del panel administrativo:
+**Mock-up 1:**
 
-#### 1. Dashboard Principal y Menú de Navegación
-Representa la vista principal del sistema con la barra lateral (Sidebar) integrada, permitiendo al administrador navegar fluidamente entre los distintos módulos operativos.
+<img src="assets/images/mockup1.png" alt="Mock-up 1" width="800">
 
-<img src="assets/images/mockup_1.png" alt="Dashboard Principal" width="600">
 
-#### 2. Configuración de Zonas de la Tienda
-Interfaz pulida donde los pasillos se representan mediante tarjetas interactivas, destacando el uso de sombras suaves para separar los elementos del fondo claro.
+**Mock-up 2:**
 
-<img src="assets/images/mockup_2.png" alt="Store Zones Configuration" width="600">
+<img src="assets/images/mockup2.png" alt="Mock-up 2" width="800">
 
-#### 3. Catálogo de Productos
-Aplicación del diseño de tarjetas para el inventario. La jerarquía visual destaca el nombre del producto y su zona asignada utilizando los colores de acento de la marca.
 
-<img src="assets/images/mockup_3.png" alt="Product Catalog" width="600">
+**Mock-up 3:**
 
-#### 4. Recomendaciones de Layout
-El panel prescriptivo en alta fidelidad. Los botones de acción primaria ("Aplicar Cambio") destacan fuertemente para guiar la vista del usuario hacia la toma de decisiones.
+<img src="assets/images/mockup3.png" alt="Mock-up 3" width="800">
 
-<img src="assets/images/mockup_4.png" alt="Layout Recommendations" width="600">
 
-#### 5. Mapa de Calor y Flujo de Clientes
-El núcleo del sistema renderizado con componentes visuales atractivos. Las "manchas" de calor y los KPIs destacan sobre el lienzo blanco, ofreciendo una lectura rápida y clara del estado de la tienda.
+**Mock-up 4:**
 
-<img src="assets/images/mockup_5.png" alt="Store Heatmap Content" width="600">
+<img src="assets/images/mockup4.png" alt="Mock-up 4" width="800">
+
+
+**Mock-up 5:**
+
+<img src="assets/images/mockup5.png" alt="Mock-up 5" width="800">
+
+
+**Mock-up 6:**
+
+<img src="assets/images/mockup6.png" alt="Mock-up 6" width="800">
+
+
+**Mock-up 7:**
+
+<img src="assets/images/mockup7.png" alt="Mock-up 7" width="800">
+
+
+---
 
 #### 4.4.4. Web Applications User Flow Diagrams
 
