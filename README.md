@@ -1483,42 +1483,28 @@ Enlaces legales, mapa del sitio y redes sociales de la startup.
 
 ### 4.4.1. Web Applications Wireframes
 
-A continuación, se detallan las interfaces principales del panel administrativo de **RetailPulse**, diseñadas bajo una arquitectura de la información minimalista y orientada a la toma de decisiones.
+Los wireframes de baja fidelidad para la aplicación web se diseñaron para establecer la estructura y funcionalidad básica de las principales vistas: Dashboard, Gestión de Zonas, Inventario de Productos, Suscripciones, Configuración de Tienda, Panel de Alertas Operativas y Quiosco de Consulta.
 
-#### 1. Configuración de Zonas de la Tienda (Store Zones Configuration)
-* **Descripción visual:** Interfaz limpia y directa que permite al administrador digitalizar el plano físico de su local. Presenta un botón principal para añadir nuevas zonas y un listado visual de las áreas ya configuradas.
-* **Propósito funcional:** Es el paso inicial (setup) del sistema. Permite segmentar la tienda en áreas medibles para que las cámaras y sensores recolecten datos precisos.
-* **Justificación de negocio:** Resuelve el desorden espacial, permitiendo un control estructurado de pasillos y góndolas.
+<img src="assets/images/wireframe1.png" alt="Dashboard principal con métricas" width="800">
+*Figura 1. Dashboard principal con métricas de tráfico y conversión.*
 
-<img src="assets/images/wireframe_1.png" alt="Store Zones Configuration" width="600">
+<img src="assets/images/wireframe2.png" alt="Planes de Suscripción" width="800">
+*Figura 2. Configuración de la tienda y ubicación.*
 
-#### 2. Catálogo de Productos y Asignación (Product Catalog)
-* **Descripción visual:** Vista de gestión de inventario organizada en tarjetas y listas. Muestra la imagen referencial del producto, precio, stock y la **zona asignada** dentro de la tienda.
-* **Propósito funcional:** Vincula el inventario físico con el mapa digital creado anteriormente.
-* **Justificación de negocio:** Permite rastrear la ubicación de los productos de mayor margen, siendo la base para las recomendaciones de reubicación.
+<img src="assets/images/wireframe3.png" alt="Gestión de Zonas" width="800">
+*Figura 3. Inventario de productos con métricas de interacción por ítem.*
 
-<img src="assets/images/wireframe_2.png" alt="Product Catalog" width="600">
+<img src="assets/images/wireframe4.png" alt="Inventario de Productos" width="800">
+*Figura 4. Gestión de Zonas para la configuración del layout físico de la tienda.*
 
-#### 3. Recomendaciones de Layout (Layout Recommendations)
-* **Descripción visual:** Panel prescriptivo que despliega tarjetas con sugerencias específicas generadas por el sistema (ej. "Mover Producto A a la Zona 1"). Incluye botones para aplicar o descartar la sugerencia.
-* **Propósito funcional:** Transforma datos analíticos en acciones directas cruzando el tráfico con el stock del catálogo.
-* **Justificación de negocio:** Elimina la toma de decisiones basada en la intuición, proporcionando recomendaciones de IA para maximizar la rentabilidad.
+<img src="assets/images/wireframe5.png" alt="Configuración de Tienda" width="800">
+*Figura 5. Selección de planes de suscripción para el modelo SaaS.*
 
-<img src="assets/images/wireframe_3.png" alt="Layout Recommendations" width="600">
+<img src="assets/images/wireframe6.png" alt="Panel de Alertas Operativas" width="800">
+*Figura 6. Panel de Alertas Operativas para el personal de tienda.*
 
-#### 4. Mapa de Calor y Flujo de Clientes (Store Heatmap & Customer Flow)
-* **Descripción visual:** Núcleo analítico que presenta un plano central con rutas y concentraciones de clientes, complementado con métricas clave como hora pico y tasa de conversión.
-* **Propósito funcional:** Visualiza en tiempo real o mediante reportes por dónde camina la gente y dónde se detiene más tiempo.
-* **Justificación de negocio:** Elimina la "ceguera" operativa, identificando cuellos de botella o pasillos muertos que afectan las ventas.
-
-<img src="assets/images/wireframe_4.png" alt="Store Heatmap & Customer Flow" width="600">
-
-#### 5. Creación de Promociones (Active Promotions / Create New Promotion)
-* **Descripción visual:** Formulario estructurado para configurar campañas. Permite seleccionar productos o zonas, asignar descuentos y definir fechas de vigencia.
-* **Propósito funcional:** Ejecuta acciones comerciales inmediatas para incentivar la rotación de inventario en zonas específicas del local.
-* **Justificación de negocio:** Permite reaccionar rápidamente ante zonas de bajo rendimiento, capitalizando el flujo de clientes detectado por el mapa de calor.
-
-<img src="assets/images/wireframe_5.png" alt="Active Promotions" width="600">
+<img src="assets/images/wireframe7.png" alt="Quiosco de Consulta" width="800">
+*Figura 7. Quiosco web para búsqueda de productos y promociones.*
 
 
 ### 4.4.2. Web Applications Wireflow Diagrams
