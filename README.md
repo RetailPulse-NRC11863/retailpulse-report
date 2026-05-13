@@ -2488,18 +2488,21 @@ Aunque no se desplegaron endpoints REST definitivos en el backend aún, se confi
 * Aplicación de buenas prácticas de organización modular y separación de la lógica de negocio en el frontend.
 * Integración visual consolidada basada en Angular y Angular Material, aplicando el branding institucional del sistema.
 
-
-##### 5.2.2.7. Software Deployment Evidence for Sprint Review
+##### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
 Para asegurar que las funcionalidades desarrolladas durante el Sprint 2 puedan ser validadas y probadas en un entorno real, el equipo llevó a cabo el despliegue tanto de la aplicación web frontend como de la API simulada (Fake API) utilizando plataformas en la nube.
 
 **1. Despliegue del Frontend (Vercel)**
-La aplicación web desarrollada en Angular fue desplegada exitosamente utilizando Vercel. Este entorno de producción permite acceder a la interfaz de usuario de RetailPulse (incluyendo el login, dashboard y configuración de zonas) mediante una URL pública, garantizando integración continua a partir de la rama `main`.
+La aplicación web desarrollada en Angular fue desplegada exitosamente utilizando Vercel. Este entorno de producción permite acceder a la interfaz de usuario de RetailPulse mediante una URL pública, garantizando integración continua a partir de la rama `main`.
+
+* **Enlace de Producción (Frontend):** [https://retailpulse-web-application.vercel.app](https://retailpulse-web-application.vercel.app)
 
 <img src="assets/images/deployment-vercel.jpg" alt="Despliegue del Frontend en Vercel" width="800">
 
 **2. Despliegue de la API Simulada (Railway)**
-Para respaldar el funcionamiento del frontend sin depender de datos en memoria local, se configuró y desplegó un servidor JSON (Fake API) en la plataforma Railway. Este servicio provee los endpoints necesarios para las operaciones CRUD del sprint y simula la persistencia de datos en un entorno remoto (`retailpulse-fake-api-production.up.railway.app`).
+Para respaldar el funcionamiento del frontend sin depender de datos en memoria local, se configuró y desplegó un servidor JSON (Fake API) en la plataforma Railway. Este servicio provee los endpoints necesarios para las operaciones CRUD del sprint y simula la persistencia de datos en un entorno remoto.
+
+* **Enlace de Producción (Fake API):** [https://retailpulse-fake-api-production.up.railway.app/](https://retailpulse-fake-api-production.up.railway.app/)
 
 <img src="assets/images/deployment-railway.jpg" alt="Despliegue del Fake API en Railway" width="800">
 
@@ -2523,6 +2526,7 @@ Se presenta a continuación la evidencia de colaboración obtenida a partir de l
 * Se realizaron **78 commits** en todas las ramas durante el periodo del Sprint (excluyendo merges), lo que evidencia un alto volumen de trabajo concurrente.
 * Se registró **1 commit directo a `main`**, correspondiente a la consolidación y despliegue final de la primera versión funcional del sistema.
 * El gráfico de "Top Committers" refleja una colaboración continua y un esfuerzo distribuido entre los desarrolladores.
+
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
