@@ -503,7 +503,7 @@ Actualmente, no puede identificar si un cliente interactúa con un producto y no
 
 Utiliza únicamente un sistema POS y Excel. Considera que tener visibilidad del comportamiento del cliente le permitiría mejorar la distribución, la conversión y la atención. Le resultan especialmente útiles alertas de zonas con alto tráfico y baja conversión, identificación de productos con alta interacción sin venta y recomendaciones automáticas de acciones comerciales.
 
-**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ##### Segmento 1: Dueños o administradores de negocios retail físicos
 
@@ -523,7 +523,7 @@ Actualmente, enfrenta dificultades para identificar por qué el alto flujo de pe
 
 Su ecosistema tecnológico es limitado, compuesto por un sistema POS básico, Excel y cámaras de seguridad convencionales que no aportan métricas. Andrés considera que contar con mapas de calor y alertas en tiempo real sobre zonas desatendidas transformaría su gestión, permitiéndole optimizar los turnos del personal y recibir recomendaciones automáticas para mejorar el layout y la rentabilidad del local.
 
-**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 
 ##### Segmento 2: Compradores frecuentes en tiendas fisicas
@@ -545,7 +545,7 @@ Valora mucho conocer rápidamente el stock de un producto para no perder tiempo 
 
 Sus principales frustraciones al comprar son no encontrar productos, perder tiempo, desorden en el local, mala señalización, precios incorrectos y largas colas.
 
-**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ###### Entrevista 2
 
@@ -558,7 +558,7 @@ Sus principales frustraciones al comprar son no encontrar productos, perder tiem
 
 Resumen: La Sra. Flores suele encontrar lo que busca en una tienda física porque ya sabe a qué pasillo o sección ir, pero cuando no encuentra un producto busca a un dependiente para preguntar si hay o dónde está. A veces decide no comprar un producto por el precio (más alto de lo esperado) o porque encuentra otra marca que le parece mejor. No considera muy importante saber el stock antes de ir, aunque sí ve valor en herramientas como una pantalla de búsqueda para personas más jóvenes, mientras que para ella podría ser más difícil por temas de tecnología. Valora información como fecha de caducidad, precio, información nutricional y componentes, y considera las promociones importantes porque pueden cambiar lo que compra. Sus principales frustraciones son los cambios en la disposición de productos, las colas largas por pocas cajas y la falta de precios visibles; para mejorar, propone mantener la distribución estable, que el personal tenga información clara y habilitar más cajas en horas de alta demanda.
 
-**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQAd8rGaBYoiSJHGx5KN4hfkAVKyNoXuCuAJTjFeEkgM1SI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cg8vWA)
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 #### 2.2.3. Análisis de entrevistas
 
