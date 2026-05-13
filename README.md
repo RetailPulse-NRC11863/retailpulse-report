@@ -2106,6 +2106,7 @@ Para asegurar una correcta organización del equipo, se elaboró la matriz LACX 
 | Franco del Carpio, José María     | VoltTrd        | C                                | C        | C        | C              | L       |
 
 ##### 5.2.1.3. Sprint Backlog 1
+![Sprint Backlog 1](assets/images/sprint_backlog_1.png)
 
 **Duración:** 2 semanas
 
@@ -2568,6 +2569,7 @@ Para asegurar una correcta organización del equipo, se elaboró la matriz LACX 
 | Franco del Carpio, José María | VoltTrd | C | C | C | C |
 
 ##### 5.2.2.3. Sprint Backlog 2
+![Sprint Backlog 2](assets/images/sprint_backlog_2.png)
 
 **Duración:** 2 semanas
 
