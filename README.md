@@ -560,6 +560,26 @@ Resumen: La Sra. Flores suele encontrar lo que busca en una tienda física porqu
 
 **Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
+
+###### Entrevista 3
+
+* Nombre: Giancarlo Castañeda
+* Edad: 20
+* Distrito: Santiago de Surco
+* Timing: 20:46-25:35
+
+![Entrevista](assets/images/entrevista-giancarlo-castaneda.png)
+
+**Resumen**: Giancarlo Castañeda es un comprador recurrente, siempre visita distintas tiendas y acepta que hay problemas con la organización. Siente que puede perderse al busca un producto en especifico, y la posibilidad de saber si hay stock o no es imposible a menos que pregunte o no encuentre directamente el producto.
+
+Siente que al buscar el producto y no encontrarlo donde deberia es una perdida de tiempo y dinero, en caso no encuentre lo que busca suele preguntar a los trabajadores, pero no siempre estan libres.
+
+Considera que seria bueno tener una pantalla donde pueda consultar los precios o descripciones sobre los productos que busca, para que en el caso no haya stock, no pierda el tiempo buscando, ni esperando que un trabajador venga a ayudarlo.
+
+**Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
+
 #### 2.2.3. Análisis de entrevistas
 
 ## Análisis de Entrevistas por Segmento
