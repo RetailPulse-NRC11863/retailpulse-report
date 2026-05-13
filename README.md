@@ -2468,6 +2468,84 @@ Estos resultados evidencian una colaboración efectiva del equipo, con una distr
 
 ##### 5.2.2.1. Sprint Planning 2
 
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 2</th>
+  </tr>
+
+  <tr>
+    <td><strong>Sprint Planning Background</strong></td>
+    <td>Segunda planificación del proyecto enfocada en mejorar la experiencia interactiva del sistema RetailPulse y complementar las funcionalidades del quiosco inteligente.</td>
+  </tr>
+
+  <tr>
+    <td>Date</td>
+    <td>2026-05-01</td>
+  </tr>
+
+  <tr>
+    <td>Time</td>
+    <td>22:00 pm (GMT-5)</td>
+  </tr>
+
+  <tr>
+    <td>Location</td>
+    <td>Modalidad remota mediante la plataforma Discord</td>
+  </tr>
+
+  <tr>
+    <td>Prepared By</td>
+    <td>Vallejo Trujillo, Fabio Cesar</td>
+  </tr>
+
+  <tr>
+    <td>Attendees (to planning meeting)</td>
+    <td>
+      Faustino Hurtado, Anghelo Edwin / Franco del Carpio, José María / Godoy Santillan, Jesus Andres / Rubio Ortiz, Luis Sebastián / Vallejo Trujillo, Fabio Cesar
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 1 Review Summary</td>
+    <td>
+      Durante el Sprint 1 se validó la propuesta de valor del sistema RetailPulse mediante el desarrollo del landing page y funcionalidades iniciales de búsqueda de productos.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 1 Retrospective Summary</td>
+    <td>
+      El equipo identificó la necesidad de mejorar la integración visual del quiosco inteligente y fortalecer la experiencia interactiva del usuario dentro de tienda.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Sprint Goal & User Stories</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Sprint 2 Goal</td>
+    <td>
+      El objetivo del Sprint 2 es implementar demostraciones visuales avanzadas del sistema RetailPulse y mejorar la experiencia de búsqueda mediante promociones relevantes y simulaciones interactivas del quiosco inteligente.
+      <br><br>
+      Se busca que los usuarios puedan visualizar de forma más clara el funcionamiento del sistema dentro del entorno retail y comprender cómo RetailPulse optimiza la conversión y experiencia en tienda.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 2 Velocity</td>
+    <td>19 puntos</td>
+  </tr>
+
+  <tr>
+    <td>Sum of Story Points</td>
+    <td>19 puntos</td>
+  </tr>
+</table>
+
+
 ##### 5.2.2.2. Aspect Leaders and Collaborators.
 Durante el Sprint 2, el equipo se enfocó en la evolución del diseño del sistema y el desarrollo de las funcionalidades core de la aplicación web de RetailPulse. Esto incluyó la mejora de los prototipos de alta fidelidad, la estructuración de los dashboards analíticos y la implementación de la gestión del layout de la tienda (CRUD de zonas).
 Para asegurar una correcta organización del equipo, se elaboró la matriz LACX (Leader and Collaborators), asignando a cada integrante un rol de liderazgo (L) en un aspecto específico y participación como colaborador (C) en los demás.
@@ -2480,6 +2558,137 @@ Para asegurar una correcta organización del equipo, se elaboró la matriz LACX 
 | Franco del Carpio, José María | VoltTrd | C | C | C | C |
 
 ##### 5.2.2.3. Sprint Backlog 2
+
+**Duración:** 2 semanas
+
+**Objetivo del Sprint:**  
+Implementar funcionalidades analíticas y operativas clave de RetailPulse para mejorar la toma de decisiones comerciales, el control operativo y la experiencia inteligente dentro de la tienda.
+
+<table>
+<tr>
+  <th>Sprint #</th>
+  <th colspan="7">Sprint 2</th>
+</tr>
+
+<tr>
+  <th colspan="2">User Story</th>
+  <th colspan="6">Work-Item / Task</th>
+</tr>
+
+<tr>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Description</th>
+  <th>Estimation (Hours)</th>
+  <th>Assigned To</th>
+  <th>Status</th>
+</tr>
+
+<tr>
+  <td rowspan="2">US-02</td>
+  <td rowspan="2">Identificar zonas de baja conversión</td>
+  <td>T-11</td>
+  <td>Métricas de interacción por zona</td>
+  <td>Implementar visualización de tráfico, permanencia e interacción para detectar zonas con baja conversión.</td>
+  <td>8</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-12</td>
+  <td>Dashboard de conversión</td>
+  <td>Diseñar panel analítico para identificar oportunidades de redistribución comercial dentro de la tienda.</td>
+  <td>6</td>
+  <td>Godoy Santillan, Jesus Andres</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-06</td>
+  <td rowspan="2">Detectar zonas calientes y zonas muertas</td>
+  <td>T-13</td>
+  <td>Mapa de calor interactivo</td>
+  <td>Desarrollar visualización heatmap para identificar zonas de alta y baja actividad dentro del local.</td>
+  <td>8</td>
+  <td>Rubio Ortiz, Luis Sebastián</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-14</td>
+  <td>Análisis de comportamiento</td>
+  <td>Procesar métricas de interacción y comportamiento para optimizar la distribución comercial.</td>
+  <td>5</td>
+  <td>Franco del Carpio, José María</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-09</td>
+  <td rowspan="2">Recibir promociones relevantes durante la búsqueda</td>
+  <td>T-15</td>
+  <td>Panel de promociones inteligentes</td>
+  <td>Diseñar promociones dinámicas relacionadas al producto o categoría consultada por el comprador.</td>
+  <td>4</td>
+  <td>Faustino Hurtado, Anghelo Edwin</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-16</td>
+  <td>Integración de promociones</td>
+  <td>Integrar promociones relevantes dentro del flujo de búsqueda del quiosco inteligente.</td>
+  <td>4</td>
+  <td>Rubio Ortiz, Luis Sebastián</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-13</td>
+  <td rowspan="2">Mantener catálogo y ubicación de productos</td>
+  <td>T-17</td>
+  <td>Gestión CRUD de productos</td>
+  <td>Implementar operaciones de creación, edición y eliminación de productos dentro del catálogo.</td>
+  <td>6</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-18</td>
+  <td>Asignación de zonas y stock</td>
+  <td>Permitir registrar stock, zonas y referencias de estante para productos del sistema.</td>
+  <td>5</td>
+  <td>Franco del Carpio, José María</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-19</td>
+  <td rowspan="2">Detectar productos con alta interacción y baja conversión</td>
+  <td>T-19</td>
+  <td>Análisis de productos críticos</td>
+  <td>Detectar productos con alta interacción pero baja conversión para prevenir pérdidas comerciales.</td>
+  <td>5</td>
+  <td>Godoy Santillan, Jesus Andres</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-20</td>
+  <td>Alertas comerciales</td>
+  <td>Generar alertas y recomendaciones sobre productos con bajo rendimiento comercial.</td>
+  <td>4</td>
+  <td>Faustino Hurtado, Anghelo Edwin</td>
+  <td>Done</td>
+</tr>
+
+</table>
+
+**Total Story Points:** 29
 
 ##### 5.2.2.4. Development Evidence for Sprint Review
 A continuación, se presenta el registro de commits destacados realizados durante el desarrollo del Sprint 2, evidenciando el trabajo integral del equipo en ambos frentes:
