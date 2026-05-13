@@ -2383,7 +2383,49 @@ Durante el primer sprint, se lograron avances importantes en el desarrollo de la
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
+Durante el primer sprint, se desarrolló el Landing Page, este mismo como parte de la primera entrega del proyecto. El desarrollo fue meramente para la implementacion de su estructura, su diseño, aun no se agregaron cosas más avanzadas, unicamente la muestra del nuestro Landing Page.
+
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Este punto se encarga de registrar la evidencia del despliegue realizado durante el Sprint, incluyendo la configuración del repositorio, la configuración del sitio en Netlify y la verificación del despliegue en producción.
+
+**Creación de Repositorios y Configuración en GitHub**
+
+- Se creó una organización en GitHub para alojar todos los repositorios referentes al trabajo, este incluyendo el reporte y la Landing Page.
+- Se subió el código fuente del proyecto en su respectivo repositorio para poder realizar luego un despliegue con la herramienta **Netlify**.
+- Se verificó la trazabilidad de cambios mediante commits y creación de ramas extra para poder genera un orden en el desarrollo de cada punto o capítulo.
+
+![GitHub - Vista del repositorio RetailPulse](assets/images/01-github-repo.png)
+
+![GitHub - Historial de commits](assets/images/02-github-commits.png)
+
+**Configuración de despliegue en Netlify**
+- En Netlify, se seleccionó **"Add new project" -> Import a Git repository**.
+- Se eligió el proveedor de **GitHub** y se autorizó el acceso a la organización.
+- Se seleccionó el repositorio de **retailpulse-landing-page** para crear el sitio.
+
+![Netlify - Importar proyecto desde GitHub](assets/images/03-netlify-import.png)
+
+**Build settings**
+| Campo | Valor |
+|---|---|
+| Base directory | `/` |
+| Build command | `npm run build` |
+| Publish directory | `dist/RetailPulse/browser` |
+
+**Deployment**
+- Se habilitó el despliegue automático desde la rama configurada `main`.
+- Al realizar `push` al repositorio, Netlify ejecutó el pipeline de build y generó un deploy.
+
+![Netlify - Lista de deploys](assets/images/04-netlify-deploys.png)
+
+![Netlify - Logs del deploy](assets/images/05-netlify-deploy-logs.png)
+
+**Publicación y verificación del sitio desplegado**
+
+- **URL pública (Netlify): https://retailpulselandingpage.netlify.app/**
+
+![RetailPulse - Sitio publicado en Netlify](assets/images/06-production-site.png)
 
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
 
