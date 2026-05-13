@@ -2382,8 +2382,18 @@ Durante el primer sprint, se lograron avances importantes en el desarrollo de la
   ![Sección Contacto](assets/images/imagen-contacto.png)
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
+  Durante este sprint se completó el diseño e implementación del Landing Page de la plataforma RetailPulse, el cual constituye el punto de entrada fundamental para nuestros dos segmentos objetivos: administradores de tiendas físicas y compradores finales.
 
-Durante el primer sprint, se desarrolló el Landing Page, este mismo como parte de la primera entrega del proyecto. El desarrollo fue meramente para la implementacion de su estructura, su diseño, aun no se agregaron cosas más avanzadas, unicamente la muestra del nuestro Landing Page.
+  Aunque en esta etapa inicial del desarrollo no se implementaron endpoints de tipo REST para la lógica de negocio (Backend), se documenta a continuación la URL del recurso estático publicado, junto con la evidencia de su despliegue en producción y el repositorio de control de versiones correspondiente.
+
+-	Implementación del Landing Page: Desarrollo de la interfaz responsiva con secciones de propuesta de valor, beneficios por segmento, equipo y planes SaaS.
+-	Deployment del Recurso: Despliegue exitoso a través de GitHub Pages para su visualización pública.
+
+### Recursos del Sprint
+
+| Recurso      | Acción implementada   | Método HTTP | URL / Endpoint                                                              | Link de repositorio                                                         |
+| ------------ | ---------------------- | ------------ | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Landing Page | Visualización inicial | GET          | https://retailpulse-web-application.vercel.app/login | https://github.com/RetailPulse-NRC11863/retailpulse-landing-page |
 
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
