@@ -2427,19 +2427,91 @@ Estos resultados evidencian una colaboración efectiva del equipo, con una distr
 ##### 5.2.2.1. Sprint Planning 2
 
 ##### 5.2.2.2. Aspect Leaders and Collaborators.
+Durante el Sprint 2, el equipo se enfocó en la evolución del diseño del sistema y el desarrollo de las funcionalidades core de la aplicación web de RetailPulse. Esto incluyó la mejora de los prototipos de alta fidelidad, la estructuración de los dashboards analíticos y la implementación de la gestión del layout de la tienda (CRUD de zonas).
+Para asegurar una correcta organización del equipo, se elaboró la matriz LACX (Leader and Collaborators), asignando a cada integrante un rol de liderazgo (L) en un aspecto específico y participación como colaborador (C) en los demás.
+| Team Member (Last Name, First Name) | GitHub Username | CRUD de Zonas (Layout) | Web Prototyping & Flow | Dashboard Analytics | Roles & Suscripciones |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Faustino Hurtado, Anghelo Edwin | Limos05 | C | L | C | C |
+| Vallejo Trujillo, Fabio Cesar | fabiovallejo | L | C | L | C |
+| Godoy Santillan, Jesus Andres | JesusGodoyS | C | C | C | L |
+| Rubio Ortiz, Luis Sebastián | notoriussxd | C | C | C | C |
+| Franco del Carpio, José María | VoltTrd | C | C | C | C |
 
 ##### 5.2.2.3. Sprint Backlog 2
 
 ##### 5.2.2.4. Development Evidence for Sprint Review
+A continuación, se presenta el registro de commits destacados realizados durante el desarrollo del Sprint 2, evidenciando el trabajo integral del equipo en ambos frentes:
+| Repository | Branch | Commit Message | Author |
+| :--- | :--- | :--- | :--- |
+| RetailPulse/frontend | feature/product-search | feat(catalog): implement product search functionality | Limos05 |
+| RetailPulse/frontend | feature/admin-registration | feat(auth): add admin registration form and validation | Limos05 |
+| RetailPulse/frontend | feature/branding | style(ui): integrate institutional logo across main views | Limos05 |
+| RetailPulse/frontend | feature/product-crud | feat(catalog): implement product registration and editing (US-05 to 08) | JesusGodoyS |
+| RetailPulse/frontend | feature/zone-layout | feat(layout): implement zone editing for layout simulation | fabiovallejo |
+| RetailPulse/frontend | feature/dashboard-ui | feat(analytics): implement conversion and heatmap UI components | VoltTrd |
+| RetailPulse/report | feature/web-prototyping | docs: add web applications prototyping and figma flows | Limos05 |
 
 ##### 5.2.2.5. Execution Evidence for Sprint Review
 
+Durante este segundo Sprint, el equipo avanzó en la implementación de la aplicación web frontend, logrando una interfaz interactiva, visualmente coherente y adaptable a las necesidades de gestión y analítica de tiendas físicas. A continuación, se muestra la evidencia visual de las secciones desplegadas, mostrando la navegación de la plataforma.
+
+**1. Dashboard - Panel Principal (Analytics):**
+Vista principal del administrador que consolida las métricas de tráfico, interacción y tasas de conversión en tiempo real, incluyendo la visualización del mapa de calor de la tienda.
+<img src="assets/images/mockup1.png" alt="Dashboard Panel Principal" width="800">
+
+**2. Gestión de Zonas y Productos (Store Configuration):**
+Interfaz que permite al administrador realizar el CRUD de zonas físicas y asociar productos a ubicaciones específicas (estantes y pasillos), fundamental para la recolección de datos.
+<img src="assets/images/mockup2.png" alt="Gestión de Zonas y Productos" width="800">
+
+**3. Insights de Conversión (Performance):**
+Panel analítico detallado que cruza las interacciones físicas con las ventas reales, permitiendo identificar productos con alta interacción pero baja conversión.
+<img src="assets/images/mockup3.png" alt="Insights de Conversión" width="800">
+
+**4. Panel Operativo y Alertas (Communication):**
+Vista diseñada para el personal de tienda, donde se reciben notificaciones automáticas y tareas pendientes, como quiebres de stock o zonas congestionadas.
+<img src="assets/images/mockup4.png" alt="Panel Operativo y Alertas" width="800">
+
+**5. Gestión de Suscripciones SaaS (Profile/Billing):**
+Sección donde el administrador del negocio puede visualizar el estado de su plan actual, comparar características y gestionar mejoras en la plataforma.
+<img src="assets/images/mockup5.png" alt="Gestión de Suscripciones SaaS" width="800">
+
 ##### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
 
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-##### 5.2.2.8. Team Collaboration Insights during Sprint
+Para asegurar que las funcionalidades desarrolladas durante el Sprint 2 puedan ser validadas y probadas en un entorno real, el equipo llevó a cabo el despliegue tanto de la aplicación web frontend como de la API simulada (Fake API) utilizando plataformas en la nube.
 
+**1. Despliegue del Frontend (Vercel)**
+La aplicación web desarrollada en Angular fue desplegada exitosamente utilizando Vercel. Este entorno de producción permite acceder a la interfaz de usuario de RetailPulse (incluyendo el login, dashboard y configuración de zonas) mediante una URL pública, garantizando integración continua a partir de la rama `main`.
+
+<img src="assets/images/deployment-vercel.jpg" alt="Despliegue del Frontend en Vercel" width="800">
+
+**2. Despliegue de la API Simulada (Railway)**
+Para respaldar el funcionamiento del frontend sin depender de datos en memoria local, se configuró y desplegó un servidor JSON (Fake API) en la plataforma Railway. Este servicio provee los endpoints necesarios para las operaciones CRUD del sprint y simula la persistencia de datos en un entorno remoto (`retailpulse-fake-api-production.up.railway.app`).
+
+<img src="assets/images/deployment-railway.jpg" alt="Despliegue del Fake API en Railway" width="800">
+
+##### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+**Desarrollo de las Actividades de Implementación**
+
+Durante el Sprint 2, la colaboración del equipo se centró en unificar el diseño visual con la implementación técnica en múltiples módulos de RetailPulse. Las actividades se llevaron a cabo de la siguiente manera:
+* Se mantuvo la disciplina de GitFlow, operando simultáneamente en ramas específicas para el catálogo y para la configuración de tienda.
+* Se realizó un esfuerzo conjunto para que la gestión de productos y autenticación conviviera armónicamente con los nuevos prototipos de analítica y diseño visual.
+* La comunicación constante del equipo permitió que la integración del branding institucional (logo) se aplicara de manera uniforme en los componentes desarrollados por los distintos integrantes.
+
+**Evidencia de Colaboración en GitHub**
+
+Se presenta a continuación la evidencia de colaboración obtenida a partir de los insights del repositorio correspondientes al Sprint 2:
+
+<img src="assets/images/github-insights-sprint2.jpg" alt="GitHub Insights Sprint 2" width="800">
+
+**Insights del Sprint 2:**
+* **6 autores** contribuyeron al repositorio, reflejando la participación activa de todo el equipo en sus frentes asignados.
+* Se realizaron **78 commits** en todas las ramas durante el periodo del Sprint (excluyendo merges), lo que evidencia un alto volumen de trabajo concurrente.
+* Se registró **1 commit directo a `main`**, correspondiente a la consolidación y despliegue final de la primera versión funcional del sistema.
+* El gráfico de "Top Committers" refleja una colaboración continua y un esfuerzo distribuido entre los desarrolladores.
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
