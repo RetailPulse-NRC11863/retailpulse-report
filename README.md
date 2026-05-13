@@ -2443,11 +2443,11 @@ Para asegurar una correcta organización del equipo, se elaboró la matriz LACX 
 A continuación, se presenta el registro de commits destacados realizados durante el desarrollo del Sprint 2, evidenciando el trabajo integral del equipo en ambos frentes:
 | Repository | Branch | Commit Message | Author |
 | :--- | :--- | :--- | :--- |
-| RetailPulse/frontend | feature/product-search | feat(catalog): implement product search functionality | Limos05 |
-| RetailPulse/frontend | feature/admin-registration | feat(auth): add admin registration form and validation | Limos05 |
-| RetailPulse/frontend | feature/branding | style(ui): integrate institutional logo across main views | Limos05 |
+| RetailPulse/frontend | feature/product-search | feat(catalog): implement product search functionality | fabiovallejo |
+| RetailPulse/frontend | feature/admin-registration | feat(auth): add admin registration form and validation | fabiovallejo |
+| RetailPulse/frontend | feature/branding | style(ui): integrate institutional logo across main views | fabiovallejo |
 | RetailPulse/frontend | feature/product-crud | feat(catalog): implement product registration and editing (US-05 to 08) | JesusGodoyS |
-| RetailPulse/frontend | feature/zone-layout | feat(layout): implement zone editing for layout simulation | fabiovallejo |
+| RetailPulse/frontend | feature/zone-layout | feat(layout): implement zone editing for layout simulation | Limos05 |
 | RetailPulse/frontend | feature/dashboard-ui | feat(analytics): implement conversion and heatmap UI components | VoltTrd |
 | RetailPulse/report | feature/web-prototyping | docs: add web applications prototyping and figma flows | Limos05 |
 
@@ -2475,7 +2475,18 @@ Vista diseñada para el personal de tienda, donde se reciben notificaciones auto
 Sección donde el administrador del negocio puede visualizar el estado de su plan actual, comparar características y gestionar mejoras en la plataforma.
 <img src="assets/images/mockup5.png" alt="Gestión de Suscripciones SaaS" width="800">
 
-##### 5.2.2.6. Services Documentation Evidence for Sprint Review
+##### 5.2.2.6. Services Documentation Evidence for Sprint Review.
+
+Durante este sprint se consolidó la primera versión funcional de la aplicación web de RetailPulse, estableciendo su estructura visual, diseño responsivo y las funcionalidades de navegación principales (menú lateral y ruteo). Asimismo, se avanzó de forma significativa en la construcción del frontend del sistema, incluyendo componentes clave como el dashboard de analítica, el módulo de gestión del catálogo de productos, la configuración del layout físico (zonas) y la arquitectura modular en Angular.
+
+Aunque no se desplegaron endpoints REST definitivos en el backend aún, se configuró un entorno simulado utilizando JSON Server (Fake API) para gestionar la persistencia temporal de los datos. A continuación, se documentan los recursos y avances relevantes del sprint en cuanto a la integración de servicios:
+
+**Descripción de los Logros:**
+* Implementación de la estructura de frontend modular iniciada (menú sidebar, dashboard interactivo y componentes base).
+* Configuración de servicios en Angular (`ProductService`, `ZoneService`, etc.) para simular el consumo asíncrono de datos.
+* Despliegue de Fake API (JSON Server) que permite probar las peticiones HTTP (GET, POST, PUT, DELETE) requeridas para los módulos operativos.
+* Aplicación de buenas prácticas de organización modular y separación de la lógica de negocio en el frontend.
+* Integración visual consolidada basada en Angular y Angular Material, aplicando el branding institucional del sistema.
 
 
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
