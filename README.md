@@ -2790,6 +2790,467 @@ Se presenta a continuación la evidencia de colaboración obtenida a partir de l
 * Se registró **1 commit directo a `main`**, correspondiente a la consolidación y despliegue final de la primera versión funcional del sistema.
 * El gráfico de "Top Committers" refleja una colaboración continua y un esfuerzo distribuido entre los desarrolladores.
 
+---
+
+#### 5.2.3. Sprint 3
+
+##### 5.2.3.1. Sprint Planning 3
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 3</th>
+  </tr>
+
+  <tr>
+    <td><strong>Sprint Planning Background</strong></td>
+    <td>
+      Tercera planificación del proyecto enfocada en la migración progresiva desde una Fake API basada en JSON Server hacia una primera versión real de Web Services desarrollada con Java y Spring Boot. Asimismo, se consideró la preparación de evidencias técnicas, validaciones con usuarios y material audiovisual requerido para la entrega AV2.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Date</td>
+    <td>2026-06-10</td>
+  </tr>
+
+  <tr>
+    <td>Time</td>
+    <td>22:00 pm (GMT-5)</td>
+  </tr>
+
+  <tr>
+    <td>Location</td>
+    <td>Modalidad remota mediante la plataforma Discord</td>
+  </tr>
+
+  <tr>
+    <td>Prepared By</td>
+    <td>Vallejo Trujillo, Fabio Cesar</td>
+  </tr>
+
+  <tr>
+    <td>Attendees (to planning meeting)</td>
+    <td>
+      Faustino Hurtado, Anghelo Edwin / Franco del Carpio, José María / Godoy Santillan, Jesus Andres / Rubio Ortiz, Luis Sebastián / Vallejo Trujillo, Fabio Cesar
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 2 Review Summary</td>
+    <td>
+      Durante el Sprint 2 se consolidó una primera versión funcional de la aplicación web de RetailPulse, incluyendo vistas administrativas, simulación de dashboard analítico, gestión de productos, layout de tienda, promociones y consumo de datos mediante una Fake API basada en JSON Server.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 2 Retrospective Summary</td>
+    <td>
+      El equipo identificó la necesidad de reemplazar la simulación de datos por una primera versión real de Web Services, con el fin de fortalecer la arquitectura del proyecto, documentar endpoints y preparar una integración más cercana a un entorno de producción.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Sprint Goal & User Stories</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Sprint 3 Goal</td>
+    <td>
+      El objetivo del Sprint 3 es implementar la primera versión real de los Web Services de RetailPulse utilizando Java y Spring Boot, reemplazando progresivamente el uso de JSON Server como fuente de datos simulada.
+      <br><br>
+      Se busca que la aplicación web pueda consumir servicios backend reales para funcionalidades clave como layout de tienda, métricas de heatmap, productos, inventario, alertas operativas, recomendaciones comerciales y planes de suscripción. Además, el sprint contempla la documentación de servicios, evidencias de despliegue, entrevistas de validación y material audiovisual requerido para la revisión del producto.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sprint 3 Velocity</td>
+    <td>23 puntos</td>
+  </tr>
+
+  <tr>
+    <td>Sum of Story Points</td>
+    <td>23 puntos</td>
+  </tr>
+</table>
+
+
+##### 5.2.3.2. Aspect Leaders and Collaborators.
+
+Durante el Sprint 3, el equipo se enfocó en la implementación de la primera versión real de los Web Services de RetailPulse, la integración progresiva con la aplicación web Angular y la preparación de las evidencias requeridas para la entrega AV2. Para asegurar una correcta organización, se ha asignando a cada integrante un rol de liderazgo (L) en un aspecto específico y participación como colaborador (C) en los demás.
+
+| Team Member (Last Name, First Name) | GitHub Username | Backend Base & Deployment | Traffic Analytics | Inventory & Product Services | Store Operations | Promotion & Subscription | Validation & Report Evidence | Product/Team Videos |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Vallejo Trujillo, Fabio Cesar | fabiovallejo | L | L | C | C | C | C | C |
+| Faustino Hurtado, Anghelo Edwin | Limos05 | C | C | C | L | C | C | C |
+| Franco del Carpio, José María | VoltTrd | C | C | L | C | C | L | C |
+| Godoy Santillan, Jesus Andres | JesusGodoyS | C | C | L | C | C | C | C |
+| Rubio Ortiz, Luis Sebastián | notoriussxd | C | C | C | C | L | C | L |
+
+
+##### 5.2.3.3. Sprint Backlog 3
+
+![Sprint Backlog 3](assets/images/sprint_backlog_3.png)
+
+**Duración:** 2 semanas
+
+**Objetivo del Sprint:**  
+Implementar la primera versión real de Web Services de RetailPulse mediante Spring Boot, integrando progresivamente el frontend Angular con endpoints reales y preparando las evidencias de servicios, despliegue, validación y presentación del producto para AV2.
+
+<table>
+<tr>
+  <th>Sprint #</th>
+  <th colspan="7">Sprint 3</th>
+</tr>
+
+<tr>
+  <th colspan="2">User Story</th>
+  <th colspan="6">Work-Item / Task</th>
+</tr>
+
+<tr>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Description</th>
+  <th>Estimation (Hours)</th>
+  <th>Assigned To</th>
+  <th>Status</th>
+</tr>
+
+<tr>
+  <td rowspan="2">US-11</td>
+  <td rowspan="2">Registrar eventos de movimiento en tienda</td>
+  <td>T-21</td>
+  <td>Estructura base de Web Services</td>
+  <td>Crear la estructura inicial del backend en Spring Boot siguiendo un enfoque DDD por bounded contexts, separando capas de dominio, aplicación, infraestructura e interfaces.</td>
+  <td>4</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-22</td>
+  <td>Servicios de eventos y métricas de tráfico</td>
+  <td>Implementar la base de servicios para registrar y consultar información relacionada con movimiento, zonas y comportamiento dentro de tienda.</td>
+  <td>5</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-12</td>
+  <td rowspan="2">Calcular métricas de calor y conversión</td>
+  <td>T-23</td>
+  <td>Endpoints de heatmap metrics</td>
+  <td>Implementar endpoints REST para consultar métricas de heatmap utilizadas por el dashboard administrativo.</td>
+  <td>5</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-24</td>
+  <td>Documentación de servicios de analítica</td>
+  <td>Documentar los endpoints de Traffic Analytics mediante Swagger/OpenAPI y registrar evidencias para la sección de Services Documentation Evidence.</td>
+  <td>4</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-05</td>
+  <td rowspan="2">Atender tareas operativas priorizadas</td>
+  <td>T-29</td>
+  <td>Servicios de alertas operativas</td>
+  <td>Implementar endpoints para consultar, crear o actualizar alertas operativas asociadas a zonas, quiebres de stock o incidencias dentro de tienda.</td>
+  <td>5</td>
+  <td>Faustino Hurtado, Anghelo Edwin</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-30</td>
+  <td>Servicios de tareas operativas</td>
+  <td>Implementar endpoints para consultar y actualizar el estado de tareas priorizadas para el personal de tienda.</td>
+  <td>5</td>
+  <td>Faustino Hurtado, Anghelo Edwin</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-07</td>
+  <td rowspan="2">Recibir recomendaciones de optimización comercial</td>
+  <td>T-31</td>
+  <td>Servicios de recomendaciones comerciales</td>
+  <td>Implementar endpoints para listar recomendaciones comerciales basadas en tráfico, interacción, inventario o conversión.</td>
+  <td>6</td>
+  <td>Rubio Ortiz, Luis Sebastián</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-32</td>
+  <td>Servicios de planes de suscripción</td>
+  <td>Implementar endpoints para consultar planes SaaS, plan activo y funcionalidades disponibles según el alcance contratado.</td>
+  <td>6</td>
+  <td>Rubio Ortiz, Luis Sebastián</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td rowspan="2">US-15</td>
+  <td rowspan="2">Configurar tienda y funcionalidades disponibles</td>
+  <td>T-33</td>
+  <td>Despliegue de backend</td>
+  <td>Desplegar la primera versión de Web Services en una plataforma cloud y verificar el acceso público a la API y Swagger/OpenAPI.</td>
+  <td>6</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+<tr>
+  <td>T-34</td>
+  <td>Despliegue y ajuste de frontend</td>
+  <td>Publicar o actualizar la aplicación web frontend y validar su consumo progresivo del backend real.</td>
+  <td>6</td>
+  <td>Vallejo Trujillo, Fabio Cesar</td>
+  <td>Done</td>
+</tr>
+
+</table>
+
+**Total Story Points: 23** 
+
+
+##### 5.2.3.4. Development Evidence for Sprint Review
+
+A continuación, se presenta el registro de commits destacados realizados durante el desarrollo del Sprint 3, evidenciando el trabajo del equipo en la construcción de la primera versión real de Web Services y su integración progresiva con la aplicación web.
+
+| Repository | Branch | Commit Message | Author |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+##### 5.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3, el equipo trabajó en la implementación e integración de los servicios backend reales de RetailPulse, orientados a reemplazar progresivamente la Fake API usada en sprints anteriores. En esta sección se deben incluir las evidencias visuales de las funcionalidades ejecutándose desde la aplicación web y consumiendo Web Services reales.
+
+**1. Backend Spring Boot en ejecución local:**
+
+<img src="" alt="Backend Spring Boot en ejecución local" width="800">
+
+**2. Swagger/OpenAPI con endpoints disponibles:**
+
+<img src="" alt="Swagger OpenAPI Sprint 3" width="800">
+
+**3. Vista de layout y heatmap consumiendo backend real:**
+
+<img src="" alt="Layout y heatmap consumiendo backend real" width="800">
+
+**4. Vista de productos o inventario consumiendo backend real:**
+
+<img src="" alt="Productos e inventario consumiendo backend real" width="800">
+
+**5. Vista de alertas, tareas o recomendaciones operativas:**
+
+<img src="" alt="Alertas y recomendaciones operativas" width="800">
+
+
+##### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+Durante este sprint se inició la documentación de la primera versión real de los Web Services de RetailPulse, desarrollados con Java y Spring Boot. A diferencia del sprint anterior, donde se utilizó JSON Server como Fake API para simular persistencia y consumo de datos, en el Sprint 3 se comenzó la migración hacia endpoints REST reales organizados según bounded contexts.
+
+La documentación debe evidenciar los endpoints disponibles, los métodos HTTP soportados, los recursos expuestos y su relación con las funcionalidades del frontend.
+
+**Descripción de los Logros:**
+* Implementación de una primera estructura backend con enfoque DDD.
+* Organización del backend por bounded contexts y capas: dominio, aplicación, infraestructura e interfaces REST.
+* Exposición de endpoints REST bajo la ruta base `/api/v1`.
+* Configuración de documentación de servicios mediante Swagger/OpenAPI.
+* Integración progresiva entre la aplicación Angular y los nuevos Web Services.
+* Reemplazo parcial o progresivo de recursos anteriormente simulados con JSON Server.
+
+**Endpoints documentados durante el Sprint 3:**
+
+| Bounded Context | Endpoint | Métodos | Funcionalidad relacionada | Estado |
+| :--- | :--- | :--- | :--- | :--- |
+| Traffic Analytics | `/api/v1/zones` | GET, POST, PUT | Consulta y mantenimiento de zonas del layout de tienda |  |
+| Traffic Analytics | `/api/v1/layouts` | GET, POST, PUT | Consulta y mantenimiento del layout de tienda |  |
+| Traffic Analytics | `/api/v1/heatmap-metrics` | GET, POST, PUT | Consulta y mantenimiento de métricas de heatmap |  |
+| Inventory Intelligence |  |  |  |  |
+| Store Operations |  |  |  |  |
+| Promotion Optimization |  |  |  |  |
+| Subscription |  |  |  |  |
+
+**Evidencia de Swagger/OpenAPI:**
+
+<img src="" alt="Swagger OpenAPI Services Documentation Sprint 3" width="800">
+
+
+##### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+Para validar las funcionalidades desarrolladas durante el Sprint 3, el equipo debe evidenciar el despliegue de la aplicación web y de la primera versión real de Web Services. Esta sección debe completarse con las URLs públicas, capturas del proceso de despliegue y verificación de funcionamiento.
+
+**1. Despliegue del Frontend**
+
+* **Plataforma:** 
+* **Enlace de Producción (Frontend):** 
+
+<img src="" alt="Despliegue del Frontend Sprint 3" width="800">
+
+**2. Despliegue del Backend / Web Services**
+
+* **Plataforma:** 
+* **Enlace de Producción (Backend):** 
+* **Swagger/OpenAPI:** 
+
+<img src="" alt="Despliegue del Backend Sprint 3" width="800">
+
+**3. Verificación de consumo de Web Services desde el frontend**
+
+<img src="" alt="Frontend consumiendo Web Services Sprint 3" width="800">
+
+
+##### 5.2.3.8. Team Collaboration Insights during Sprint.
+
+**Desarrollo de las Actividades de Implementación**
+
+Durante el Sprint 3, la colaboración del equipo se orientó a la construcción de la primera versión real de Web Services, la integración progresiva del frontend con backend y la preparación de evidencias necesarias para AV2. Las actividades colaborativas deben evidenciar el uso de ramas, commits, pull requests y coordinación entre los integrantes.
+
+* 
+* 
+* 
+
+**Evidencia de Colaboración en GitHub**
+
+Se presenta a continuación la evidencia de colaboración obtenida a partir de los insights del repositorio correspondientes al Sprint 3:
+
+<img src="" alt="GitHub Insights Sprint 3" width="800">
+
+**Insights del Sprint 3:**
+* 
+* 
+* 
+* 
+
+
+#### 5.3. Validation Interviews.
+
+En esta sección, el equipo registra y explica las actividades de entrevistas de validación realizadas durante el proyecto. Las entrevistas de validación tienen como finalidad obtener retroalimentación de usuarios pertenecientes a los segmentos objetivo, quienes interactúan con el landing page y con la aplicación web de RetailPulse.
+
+El proceso de validación considera dos segmentos principales:
+* Administradores, supervisores o personal de tienda.
+* Clientes o compradores que podrían utilizar la experiencia de búsqueda y asistencia dentro de tienda.
+
+
+##### 5.3.1. Diseño de Entrevistas.
+
+Las entrevistas de validación fueron diseñadas para evaluar la claridad de la propuesta de valor, la facilidad de uso de la aplicación, la utilidad de las funcionalidades implementadas y la percepción de valor de RetailPulse frente a problemas reales del entorno retail.
+
+**A. Entrevista para Administradores, Supervisores y Personal de Tienda**
+
+1. ¿Qué tan clara te pareció la propuesta de valor de RetailPulse?
+2. ¿Qué tan fácil fue navegar por el dashboard o las vistas administrativas?
+3. ¿La información mostrada sobre zonas, productos, inventario o métricas te pareció clara y útil?
+4. ¿El mapa de calor o visualización de zonas te ayuda a identificar oportunidades de mejora dentro de la tienda?
+5. ¿Consideras útil recibir alertas o tareas operativas priorizadas para el personal de tienda?
+6. ¿La información sobre productos, stock y ubicación sería suficiente para apoyar la operación diaria?
+7. ¿Qué tan útil te parece contar con recomendaciones comerciales basadas en tráfico, interacción o conversión?
+8. ¿Qué funcionalidades consideras más importantes para un negocio retail?
+9. ¿Qué dificultades o aspectos confusos encontraste durante el uso de la aplicación?
+10. ¿Recomendarías RetailPulse a un negocio retail? ¿Por qué?
+
+**B. Entrevista para Clientes / Compradores**
+
+1. ¿Qué tan fácil fue comprender para qué sirve RetailPulse?
+2. ¿Qué tan fácil fue usar la experiencia de búsqueda de productos?
+3. ¿Pudiste identificar información relevante como stock, ubicación o referencia del producto?
+4. ¿Las promociones o recomendaciones mostradas te parecieron útiles?
+5. ¿La interfaz te pareció clara, intuitiva y agradable?
+6. ¿Consideras que esta solución podría ayudarte a ahorrar tiempo dentro de una tienda?
+7. ¿Qué fue lo que más te gustó de la experiencia?
+8. ¿Qué aspecto mejorarías de la aplicación o del flujo de búsqueda?
+9. ¿Usarías una solución similar en una tienda física real?
+10. ¿Recomendarías RetailPulse a otras personas? ¿Por qué?
+
+
+##### 5.3.2. Registro de Entrevistas.
+
+A continuación, se debe registrar la información correspondiente a las entrevistas de validación realizadas durante el Sprint 3.
+
+**Resumen de hallazgos - Administradores, Supervisores y Personal de Tienda**
+
+* 
+* 
+* 
+
+**Resumen de hallazgos - Clientes / Compradores**
+
+* 
+* 
+* 
+
+Los detalles completos de las entrevistas, respuestas y evidencias se presentan en el Anexo correspondiente.
+
+
+##### 5.3.3. Evaluaciones según heurísticas.
+
+En esta sección se debe registrar la evaluación heurística aplicada al landing page y a la aplicación web de RetailPulse, considerando los criterios definidos para el proyecto.
+
+| # | Heurística evaluada | Hallazgo | Severidad | Recomendación |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | Visibilidad del estado del sistema |  |  |  |
+| 2 | Relación entre el sistema y el mundo real |  |  |  |
+| 3 | Control y libertad del usuario |  |  |  |
+| 4 | Consistencia y estándares |  |  |  |
+| 5 | Prevención de errores |  |  |  |
+| 6 | Reconocimiento antes que recuerdo |  |  |  |
+| 7 | Flexibilidad y eficiencia de uso |  |  |  |
+| 8 | Diseño estético y minimalista |  |  |  |
+| 9 | Ayuda a reconocer, diagnosticar y recuperarse de errores |  |  |  |
+| 10 | Ayuda y documentación |  |  |  |
+
+
+#### 5.4. Video About-the-Product.
+
+En esta sección se presenta la primera versión del video About-the-Product, orientado a explicar la propuesta de valor de RetailPulse, sus principales funcionalidades, los segmentos objetivo y la forma en que la plataforma transforma eventos de tienda en acciones operativas y comerciales.
+
+**Resumen del video:**
+
+
+
+
+**URL de la versión publicada en Microsoft Stream:**
+
+[Video About-the-Product - Microsoft Stream]()
+
+**URL de la versión publicada en YouTube:**
+
+[Video About-the-Product - YouTube]()
+
+**Cuadro representativo del video:**
+
+<img src="" alt="Video About-the-Product Sprint 3" width="800">
+
+**Pauta de secuencias de contenido:**
+
+| Sección | Inicio | Contenido |
+| :--- | :---: | :--- |
+| Introducción del problema retail | 00:00:00 |  |
+| Presentación de RetailPulse | 00:00:00 |  |
+| Segmentos objetivo | 00:00:00 |  |
+| Funcionalidades principales | 00:00:00 |  |
+| Demostración de la aplicación | 00:00:00 |  |
+| Valor generado y cierre | 00:00:00 |  |
+
+
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
@@ -2807,5 +3268,18 @@ En cuanto a la gestión del desarrollo, la elaboración del Product Backlog y la
 Finalmente, RetailPulse se consolida como una propuesta innovadora que integra analítica de comportamiento, asistencia al comprador y optimización operativa en un solo sistema, demostrando el potencial de las tecnologías open source para resolver problemáticas reales. En conjunto, el proyecto evidencia una correcta integración entre análisis, diseño, experiencia de usuario y planificación ágil, dando como resultado una solución coherente, bien fundamentada y con potencial de aplicación en un entorno real.
 
 ## Bibliografía
+
+* Oracle. (2026). Java Documentation. https://docs.oracle.com/en/java/
+* Angular. (2026). Angular Documentation. https://angular.dev/
+* Spring. (2026). Spring Boot Reference Documentation. https://spring.io/projects/spring-boot
+* OpenAPI Initiative. (2026). OpenAPI Specification. https://swagger.io/specification/
+* Amazon Web Services. (2026). AWS Documentation. https://docs.aws.amazon.com/
+* Microsoft Azure. (2026). Azure Documentation. https://learn.microsoft.com/azure/
+* W3Schools. (2026). Java Tutorial. https://www.w3schools.com/java/
+* RetailNext. (2026). Retail Analytics Platform. https://retailnext.net/
+*	Dor Technologies. (2026). Retail Traffic Analytics. https://www.getdor.com/
+*	Sensormatic Solutions. (2026). ShopperTrak Analytics. https://www.sensormatic.com/
+*	Cámara de Comercio de Lima. (2026). Reportes del Gremio Retail y Distribución.
+
 
 ## Anexos
