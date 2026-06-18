@@ -3414,33 +3414,48 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 En esta sección se presenta la primera versión del video About-the-Product, orientado a explicar la propuesta de valor de RetailPulse, sus principales funcionalidades, los segmentos objetivo y la forma en que la plataforma transforma eventos de tienda en acciones operativas y comerciales.
 
 **Resumen del video:**
+**Guion – About the Product**
 
+### Introducción
 
+* Plataforma de analítica para retail.
+* Transforma datos de ventas en información útil.
+* Apoya la toma de decisiones empresariales.
+* Dashboards, análisis y recomendaciones.
 
+### Modelo de negocio
+
+* Empresas cargan datos de ventas.
+* Procesamiento y análisis de información.
+* Generación de reportes y visualizaciones.
+* Soporte para decisiones comerciales.
+
+### Características principales
+
+* Dashboard interactivo.
+* Reportes automáticos.
+* Análisis predictivo.
+* Análisis prescriptivo.
+* Procesamiento con Databricks.
+
+### Beneficios
+
+* Identificación de patrones de compra.
+* Decisiones basadas en datos.
+* Ahorro de tiempo en análisis.
+* Mejora de ventas y operaciones.
 
 **URL de la versión publicada en Microsoft Stream:**
 
-[Video About-the-Product - Microsoft Stream]()
+[Video About-the-Product - Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQBrOnJJU_MkTL4CGkC0d8lIAc8mXpNImVidVC8DSX7uJj8?e=Rl3OJ8)
 
 **URL de la versión publicada en YouTube:**
 
-[Video About-the-Product - YouTube]()
+[Video About-the-Product - YouTube](https://youtu.be/IugIQcvcHa4)
 
 **Cuadro representativo del video:**
 
 <img src="" alt="Video About-the-Product Sprint 3" width="800">
-
-**Pauta de secuencias de contenido:**
-
-| Sección | Inicio | Contenido |
-| :--- | :---: | :--- |
-| Introducción del problema retail | 00:00:00 |  |
-| Presentación de RetailPulse | 00:00:00 |  |
-| Segmentos objetivo | 00:00:00 |  |
-| Funcionalidades principales | 00:00:00 |  |
-| Demostración de la aplicación | 00:00:00 |  |
-| Valor generado y cierre | 00:00:00 |  |
-
 
 ## Conclusiones
 
