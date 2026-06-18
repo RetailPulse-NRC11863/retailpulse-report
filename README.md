@@ -3280,7 +3280,7 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 * 
 * 
 
-### 5.3.3. Evaluaciones según heurísticas
+##### 5.3.3. Evaluaciones según heurísticas
 
 En esta sección se debe registrar la evaluación heurística aplicada al landing page y a la aplicación web de RetailPulse, considerando los criterios definidos para el proyecto.
 
@@ -3473,6 +3473,20 @@ En cuanto a la gestión del desarrollo, la elaboración del Product Backlog y la
 
 Finalmente, RetailPulse se consolida como una propuesta innovadora que integra analítica de comportamiento, asistencia al comprador y optimización operativa en un solo sistema, demostrando el potencial de las tecnologías open source para resolver problemáticas reales. En conjunto, el proyecto evidencia una correcta integración entre análisis, diseño, experiencia de usuario y planificación ágil, dando como resultado una solución coherente, bien fundamentada y con potencial de aplicación en un entorno real.
 
+#### Video About-the-Team
+
+En esta sección se presenta el video About-The-Team, en el cual se resume el proceso de trabajo realizado por el equipo RetailPulse durante el desarrollo del proyecto. El video evidencia la organización del equipo, la distribución de responsabilidades, las actividades realizadas durante el Sprint 3 y los principales aportes de cada integrante.
+
+Asimismo, se incluyen testimonios ante cámara de los participantes, donde cada miembro describe las actividades desarrolladas, los outcomes alcanzados y las competencias fortalecidas durante la implementación, validación y despliegue de la solución.
+
+**URL de la versión publicada en Microsoft Stream:**
+
+[Video About-the-Team - Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQCA5NpEZOhQTaP0bSI-9bncAfpBD3pfVOkQ-nLyoUHf_UA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=S7fSLD)
+
+**URL de la versión publicada en YouTube:**
+
+[Video About-the-Team - YouTube](https://youtu.be/6dIop2AMrf8)
+
 ## Bibliografía
 
 * Oracle. (2026). Java Documentation. https://docs.oracle.com/en/java/
@@ -3489,3 +3503,57 @@ Finalmente, RetailPulse se consolida como una propuesta innovadora que integra a
 
 
 ## Anexos
+
+### A. Links Importantes
+
+#### 1. Despliegues y Servicios API
+
+**Landing Page:**  
+https://retailpulselandingpage.netlify.app/
+
+**Web Application (Frontend):**  
+https://polite-sea-0e075210f.7.azurestaticapps.net/
+
+**Web Services API / Swagger:**  
+https://retailpulse-api-fabio-dgb7etencqega8g8.centralus-01.azurewebsites.net/swagger-ui/swagger-ui/index.html
+
+---
+
+#### 2. Repositorios de GitHub
+
+**Organización Principal:**  
+https://github.com/RetailPulse-NRC11863
+
+**Informe del Proyecto:**  
+https://github.com/RetailPulse-NRC11863/retailpulse-report
+
+**Landing Page Source:**  
+https://github.com/RetailPulse-NRC11863/retailpulse-landing-page
+
+**Web Application Source:**  
+https://github.com/RetailPulse-NRC11863/retailpulse-web-application
+
+**Web Services Source:**  
+https://github.com/RetailPulse-NRC11863/retailpulse-web-services
+
+---
+
+#### 3. Diseño, Prototipado y Modelado
+
+**Big Picture Event Storming - Miro:**  
+https://miro.com/app/board/uXjVHd0j6Lc=/?share_link_id=737912347927
+
+**Design-Level Event Storming - Miro:**  
+https://miro.com/app/board/uXjVHe0Bh8Q=/?share_link_id=570174974504
+
+**Figma - Web Application Prototype:**  
+https://www.figma.com/proto/G09z9SLcGBIqnB5xNAsgEW/WEB-APLICATION?node-id=43-9750&t=Y3G3ksXy61OqMGsm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=41%3A6978&show-proto-sidebar=1
+
+---
+
+#### 4. Entrevistas y Evidencias
+
+**Entrevistas de Segmentos:**  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+---
