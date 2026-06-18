@@ -578,8 +578,6 @@ Considera que seria bueno tener una pantalla donde pueda consultar los precios o
 
 **Enlace:** [Enlace de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310349_upc_edu_pe/IQDP_YW2rY8ATJE47ANirMtLAW-v6aBYZvqO543KRLxJGAQ?e=9Lfbcy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-
-
 #### 2.2.3. Análisis de entrevistas
 
 ## Análisis de Entrevistas por Segmento
@@ -3031,12 +3029,17 @@ A continuación, se presenta el registro de commits destacados realizados durant
 
 | Repository | Branch | Commit Message | Author |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-
+| retailpulse-web-services | develop | chore: initialize Spring Boot DDD backend structure | fabiovallejo |
+| retailpulse-web-services | develop | feat(traffic-analytics): add domain and persistence model | fabiovallejo |
+| retailpulse-web-services | develop | feat(traffic-analytics): add application services and seed data | fabiovallejo |
+| retailpulse-web-services | develop | feat(traffic-analytics): expose layout and heatmap REST endpoints | fabiovallejo |
+| retailpulse-web-services | feature/promotion-subscription | feat: add promotion and subscription endpoints | notoriussxd |
+| retailpulse-web-services | develop | Merge pull request #1 from RetailPulse-NRC11863/feature/promotion-subscription | notoriussxd |
+| retailpulse-web-services | develop | feat(inventory): add product domain persistence and services | fabiovallejo |
+| retailpulse-web-services | develop | feat(inventory): expose product REST endpoints | fabiovallejo |
+| retailpulse-web-services | develop | feat(store-operations): add alerts and tasks domain services | fabiovallejo |
+| retailpulse-web-services | develop | feat(store-operations): expose alerts and tasks REST endpoints | fabiovallejo |
+| retailpulse-web-services | develop | feat: added docker config for Azure deploy | fabiovallejo |
 
 ##### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -3183,22 +3186,11 @@ La documentación de servicios fue realizada mediante Swagger/OpenAPI, permitien
 
 Durante el Sprint 3, la colaboración del equipo se orientó a la construcción de la primera versión real de Web Services, la integración progresiva del frontend con backend y la preparación de evidencias necesarias para AV2. Las actividades colaborativas deben evidenciar el uso de ramas, commits, pull requests y coordinación entre los integrantes.
 
-* 
-* 
-* 
-
 **Evidencia de Colaboración en GitHub**
 
 Se presenta a continuación la evidencia de colaboración obtenida a partir de los insights del repositorio correspondientes al Sprint 3:
 
-<img src="" alt="GitHub Insights Sprint 3" width="800">
-
-**Insights del Sprint 3:**
-* 
-* 
-* 
-* 
-
+<img src="assets/images/team-collaboration-insights-sprint-3.png" alt="GitHub Insights Sprint 3" width="800">
 
 #### 5.3. Validation Interviews.
 
@@ -3244,6 +3236,37 @@ Las entrevistas de validación fueron diseñadas para evaluar la claridad de la 
 
 A continuación, se debe registrar la información correspondiente a las entrevistas de validación realizadas durante el Sprint 3.
 
+##### Segmento 1: Dueños o administradores de negocios retail fisicos
+
+###### Entrevista 1
+
+* Nombre: Andy Pillaca
+* Edad: 27
+* Distrito: San Borja
+* Timing: 
+
+![Entrevista](assets/images/entrevista-validacion-andy-pillaca.png)
+
+**Resumen:** El entrevistado señaló que la propuesta de valor de RetailPulse fue clara, ya que permite centralizar información relevante para mejorar la operación de una tienda retail. Consideró que la navegación por el dashboard fue sencilla y que la información sobre productos, inventario, zonas y métricas resulta útil para tomar decisiones más rápidas. También destacó el valor del mapa de calor para identificar zonas con mayor o menor actividad, así como la utilidad de las alertas y tareas priorizadas para apoyar al personal de tienda. En general, indicó que recomendaría RetailPulse a negocios retail porque ayuda a ordenar la operación, detectar problemas y optimizar la gestión comercial.
+
+**Enlace:** 
+
+##### Segmento 2: Compradores frecuentes en tiendas fisicas
+
+###### Entrevista 1
+
+* Nombre: Andy Nuñez
+* Edad: 26
+* Distrito: Lurigancho-Chosica
+* Timing: 
+
+![Entrevista](assets/images/entrevista-validacion-arturo-nunez.png)
+
+**Resumen**: El entrevistado comprendió fácilmente la finalidad de RetailPulse y valoró positivamente la experiencia de búsqueda desde el kiosko, destacando que permite encontrar productos de manera rápida y consultar información útil como stock, ubicación, referencia de estante y promociones disponibles. Además, consideró que la interfaz es clara e intuitiva, y que la solución puede ayudar a ahorrar tiempo dentro de una tienda física al evitar recorridos innecesarios. Como principal mejora, sugirió incorporar sugerencias automáticas en el buscador y filtros por categoría para hacer la búsqueda aún más eficiente. En general, manifestó que sí usaría y recomendaría RetailPulse, ya que facilita el proceso de compra y mejora la experiencia del cliente.
+
+**Enlace:**
+
+
 **Resumen de hallazgos - Administradores, Supervisores y Personal de Tienda**
 
 * 
@@ -3255,9 +3278,6 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 * 
 * 
 * 
-
-Los detalles completos de las entrevistas, respuestas y evidencias se presentan en el Anexo correspondiente.
-
 
 ##### 5.3.3. Evaluaciones según heurísticas.
 
