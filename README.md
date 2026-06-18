@@ -3065,58 +3065,117 @@ Durante el Sprint 3, el equipo trabajó en la implementación e integración de 
 
 ##### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
-Durante este sprint se inició la documentación de la primera versión real de los Web Services de RetailPulse, desarrollados con Java y Spring Boot. A diferencia del sprint anterior, donde se utilizó JSON Server como Fake API para simular persistencia y consumo de datos, en el Sprint 3 se comenzó la migración hacia endpoints REST reales organizados según bounded contexts.
+Durante este sprint se documentó la primera versión real de los Web Services de RetailPulse, desarrollados con Java y Spring Boot. A diferencia del sprint anterior, donde se utilizó JSON Server como Fake API para simular persistencia y consumo de datos, en el Sprint 3 se realizó la migración progresiva hacia endpoints REST reales organizados según bounded contexts.
 
-La documentación debe evidenciar los endpoints disponibles, los métodos HTTP soportados, los recursos expuestos y su relación con las funcionalidades del frontend.
+La documentación de servicios fue realizada mediante Swagger/OpenAPI, permitiendo visualizar los recursos disponibles, los métodos HTTP soportados, los esquemas de request/response y la relación de cada endpoint con las funcionalidades implementadas en la aplicación web.
 
 **Descripción de los Logros:**
-* Implementación de una primera estructura backend con enfoque DDD.
+
+* Implementación de una primera versión real del backend con Java y Spring Boot.
 * Organización del backend por bounded contexts y capas: dominio, aplicación, infraestructura e interfaces REST.
 * Exposición de endpoints REST bajo la ruta base `/api/v1`.
-* Configuración de documentación de servicios mediante Swagger/OpenAPI.
+* Configuración de Swagger/OpenAPI para documentar y probar los servicios disponibles.
+* Implementación de endpoints compatibles con recursos previamente simulados en JSON Server.
 * Integración progresiva entre la aplicación Angular y los nuevos Web Services.
-* Reemplazo parcial o progresivo de recursos anteriormente simulados con JSON Server.
+* Incorporación de endpoints de compatibilidad para facilitar la migración desde la Fake API hacia la API REST real.
 
 **Endpoints documentados durante el Sprint 3:**
 
-| Bounded Context | Endpoint | Métodos | Funcionalidad relacionada | Estado |
+| Bounded Context / Módulo | Endpoint | Métodos | Funcionalidad relacionada | Estado |
 | :--- | :--- | :--- | :--- | :--- |
-| Traffic Analytics | `/api/v1/zones` | GET, POST, PUT | Consulta y mantenimiento de zonas del layout de tienda |  |
-| Traffic Analytics | `/api/v1/layouts` | GET, POST, PUT | Consulta y mantenimiento del layout de tienda |  |
-| Traffic Analytics | `/api/v1/heatmap-metrics` | GET, POST, PUT | Consulta y mantenimiento de métricas de heatmap |  |
-| Inventory Intelligence |  |  |  |  |
-| Store Operations |  |  |  |  |
-| Promotion Optimization |  |  |  |  |
-| Subscription |  |  |  |  |
+| Base Spring Boot | `/api/v1/health` | GET | Verificación del estado general de la API | Implementado y documentado |
+| Traffic Analytics | `/api/v1/zones` | GET, POST | Consulta y creación de zonas del layout de tienda | Implementado y documentado |
+| Traffic Analytics | `/api/v1/zones/{zoneId}` | GET, PUT | Consulta y actualización de una zona específica | Implementado y documentado |
+| Traffic Analytics | `/api/v1/layouts` | GET, POST | Consulta y creación de layouts de tienda | Implementado y documentado |
+| Traffic Analytics | `/api/v1/layouts/{layoutId}` | GET, PUT | Consulta y actualización de un layout específico | Implementado y documentado |
+| Traffic Analytics | `/api/v1/layouts/current` | GET | Consulta del layout activo de la tienda | Implementado y documentado |
+| Traffic Analytics | `/api/v1/heatmap-metrics` | GET, POST | Consulta y creación de métricas de heatmap | Implementado y documentado |
+| Traffic Analytics | `/api/v1/heatmap-metrics/{metricId}` | GET, PUT | Consulta y actualización de una métrica de heatmap específica | Implementado y documentado |
+| Traffic Analytics | `/api/v1/heatmap-metrics/by-zone/{zoneId}` | GET | Consulta de métricas de heatmap por zona | Implementado y documentado |
+| Traffic Analytics | `/api/v1/traffic/movement-events` | POST | Registro de eventos de movimiento dentro de tienda | Implementado y documentado |
+| Traffic Analytics | `/api/v1/traffic/zones/metrics` | GET | Consulta de métricas de tráfico por zonas | Implementado y documentado |
+| Traffic Analytics | `/api/v1/traffic/heatmap` | GET | Consulta de métricas para visualización de heatmap | Implementado y documentado |
+| Traffic Analytics | `/api/v1/traffic/congestion` | GET | Consulta de métricas de congestión operativa | Implementado y documentado |
+| Traffic Analytics Compatibility | `/api/v1/storeLayoutZones` | GET | Endpoint de compatibilidad con la colección legacy de JSON Server para zonas del layout | Implementado y documentado |
+| Traffic Analytics Compatibility | `/api/v1/heatmapMetrics` | GET | Endpoint de compatibilidad con la colección legacy de JSON Server para métricas de heatmap | Implementado y documentado |
+| Store Foundation | `/api/v1/stores` | GET, POST | Consulta y creación de tiendas | Implementado y documentado |
+| Store Foundation | `/api/v1/stores/{storeId}` | GET | Consulta de una tienda específica | Implementado y documentado |
+| Store Foundation | `/api/v1/store-foundation/zones` | GET, POST | Consulta y creación de zonas base de tienda | Implementado y documentado |
+| Store Foundation | `/api/v1/store-foundation/zones/{zoneId}` | GET, PUT, DELETE | Consulta, actualización y eliminación de zonas base de tienda | Implementado y documentado |
+| Store Foundation | `/api/v1/store-foundation/products` | GET, POST | Consulta y creación de productos desde Store Foundation | Implementado y documentado |
+| Store Foundation | `/api/v1/store-foundation/products/{productId}` | GET, PUT, DELETE | Consulta, actualización y eliminación de productos desde Store Foundation | Implementado y documentado |
+| Store Foundation | `/api/v1/store-foundation/products/search` | GET | Búsqueda de productos desde Store Foundation | Implementado y documentado |
+| Inventory Intelligence | `/api/v1/products` | GET, POST | Consulta y creación de productos para kiosko y administración | Implementado y documentado |
+| Inventory Intelligence | `/api/v1/products/search` | GET | Búsqueda de productos por nombre, categoría o zona | Implementado y documentado |
+| Inventory Intelligence | `/api/v1/products/{id}` | GET, PUT, DELETE | Consulta, actualización y eliminación de productos | Implementado y documentado |
+| Inventory Intelligence | `/api/v1/inventory/items` | GET, POST | Consulta y creación de ítems de inventario | Implementado y documentado |
+| Inventory Intelligence | `/api/v1/inventory/items/{productId}/stock` | PATCH | Actualización del stock de un producto | Implementado y documentado |
+| Inventory Intelligence | `/api/v1/inventory/items/product/{productId}` | GET | Consulta de inventario por producto | Implementado y documentado |
+| Inventory Intelligence | `/api/v1/inventory/items/critical` | GET | Consulta de productos con inventario crítico | Implementado y documentado |
+| Assisted Shopping / Kiosk | `/api/v1/kiosk/products/search` | GET | Búsqueda de productos desde el kiosko | Implementado y documentado |
+| Assisted Shopping / Kiosk | `/api/v1/kiosk/products/{productId}` | GET | Consulta de producto específico desde el kiosko | Implementado y documentado |
+| Assisted Shopping / Kiosk | `/api/v1/kiosk/sessions` | POST | Inicio de sesión de búsqueda en kiosko | Implementado y documentado |
+| Assisted Shopping / Kiosk | `/api/v1/kiosk/sessions/{sessionId}` | GET | Consulta de una sesión de kiosko | Implementado y documentado |
+| Assisted Shopping / Kiosk | `/api/v1/kiosk/sessions/{sessionId}/searches` | POST | Registro de búsquedas realizadas en el kiosko | Implementado y documentado |
+| Store Operations | `/api/v1/operational-alerts` | GET, POST | Consulta y creación de alertas operativas | Implementado y documentado |
+| Store Operations | `/api/v1/operational-alerts/{id}` | GET, PUT | Consulta y actualización de una alerta operativa | Implementado y documentado |
+| Store Operations | `/api/v1/operational-alerts/{id}/status` | PATCH | Cambio de estado de una alerta operativa | Implementado y documentado |
+| Store Operations | `/api/v1/operational-alerts/active` | GET | Consulta de alertas operativas activas | Implementado y documentado |
+| Store Operations | `/api/v1/operational-tasks` | GET, POST | Consulta y creación de tareas operativas | Implementado y documentado |
+| Store Operations | `/api/v1/operational-tasks/{id}` | GET, PUT | Consulta y actualización de una tarea operativa | Implementado y documentado |
+| Store Operations | `/api/v1/operational-tasks/{id}/status` | PATCH | Cambio de estado de una tarea operativa | Implementado y documentado |
+| Store Operations | `/api/v1/operational-tasks/pending` | GET | Consulta de tareas operativas pendientes | Implementado y documentado |
+| Store Operations Compatibility | `/api/v1/alerts` | GET | Endpoint de compatibilidad con la colección legacy de JSON Server para alertas | Implementado y documentado |
+| Store Operations Compatibility | `/api/v1/alerts/{id}` | GET | Consulta de alerta usando ruta legacy de JSON Server | Implementado y documentado |
+| Store Operations Compatibility | `/api/v1/operationalTasks` | GET | Endpoint de compatibilidad con la colección legacy de JSON Server para tareas operativas | Implementado y documentado |
+| Store Operations Compatibility | `/api/v1/operationalTasks/{id}` | GET | Consulta de tarea usando ruta legacy de JSON Server | Implementado y documentado |
+| Promotion Optimization | `/api/v1/recommendations` | GET, POST | Consulta y creación de recomendaciones comerciales | Implementado y documentado |
+| Promotion Optimization | `/api/v1/recommendations/active` | GET | Consulta de recomendaciones comerciales activas | Implementado y documentado |
+| Promotion Optimization | `/api/v1/recommendations/{recommendationId}/apply` | PATCH | Aplicación de una recomendación comercial | Implementado y documentado |
+| Promotion Optimization | `/api/v1/recommendations/product-opportunities` | GET | Consulta de oportunidades comerciales por productos críticos | Implementado y documentado |
+| Promotion Optimization | `/api/v1/promotion-recommendations` | GET, POST | Consulta y creación de recomendaciones comerciales usando ruta del bounded context | Implementado y documentado |
+| Promotion Optimization | `/api/v1/promotion-recommendations/active` | GET | Consulta de recomendaciones activas usando ruta del bounded context | Implementado y documentado |
+| Promotion Optimization | `/api/v1/promotion-recommendations/{recommendationId}/apply` | PATCH | Aplicación de recomendación usando ruta del bounded context | Implementado y documentado |
+| Promotion Optimization | `/api/v1/promotion-recommendations/product-opportunities` | GET | Consulta de oportunidades comerciales usando ruta del bounded context | Implementado y documentado |
+| Promotion Optimization | `/api/v1/product-performance` | GET | Consulta de productos con baja conversión o bajo desempeño comercial | Implementado y documentado |
+| Subscription | `/api/v1/subscription-plans` | GET, POST | Consulta y creación de planes SaaS | Implementado y documentado |
+| Subscription | `/api/v1/subscription-plans/{planId}` | GET | Consulta de un plan SaaS específico | Implementado y documentado |
+| Subscription | `/api/v1/subscription/plans` | GET, POST | Consulta y creación de planes SaaS usando ruta del bounded context | Implementado y documentado |
+| Subscription | `/api/v1/subscription/plans/{planId}` | GET | Consulta de plan SaaS usando ruta del bounded context | Implementado y documentado |
+| Subscription | `/api/v1/accounts/current-plan` | GET, PUT, PATCH | Consulta y cambio del plan actual simulado | Implementado y documentado |
+| Subscription | `/api/v1/accounts` | POST | Creación de cuenta SaaS | Implementado y documentado |
+| Subscription | `/api/v1/accounts/current` | GET | Consulta de la cuenta SaaS actual | Implementado y documentado |
+| Subscription | `/api/v1/accounts/{accountId}` | GET | Consulta de una cuenta SaaS por ID | Implementado y documentado |
+| Subscription | `/api/v1/accounts/{accountId}/change-plan` | PATCH | Cambio de plan de una cuenta SaaS | Implementado y documentado |
+| Subscription | `/api/v1/subscription/accounts/current-plan` | GET, PUT, PATCH | Consulta y cambio del plan actual simulado usando ruta del bounded context | Implementado y documentado |
+| Subscription | `/api/v1/subscription/accounts` | POST | Creación de cuenta SaaS usando ruta del bounded context | Implementado y documentado |
+| Subscription | `/api/v1/subscription/accounts/current` | GET | Consulta de cuenta SaaS actual usando ruta del bounded context | Implementado y documentado |
+| Subscription | `/api/v1/subscription/accounts/{accountId}` | GET | Consulta de cuenta SaaS por ID usando ruta del bounded context | Implementado y documentado |
+| Subscription | `/api/v1/subscription/accounts/{accountId}/change-plan` | PATCH | Cambio de plan usando ruta del bounded context | Implementado y documentado |
 
 **Evidencia de Swagger/OpenAPI:**
 
-<img src="" alt="Swagger OpenAPI Services Documentation Sprint 3" width="800">
-
+<img src="assets/images/retailpulse-swagger.png" alt="Swagger OpenAPI Services Documentation Sprint 3" width="800">
 
 ##### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
-Para validar las funcionalidades desarrolladas durante el Sprint 3, el equipo debe evidenciar el despliegue de la aplicación web y de la primera versión real de Web Services. Esta sección debe completarse con las URLs públicas, capturas del proceso de despliegue y verificación de funcionamiento.
-
 **1. Despliegue del Frontend**
 
-* **Plataforma:** 
-* **Enlace de Producción (Frontend):** 
+* **Plataforma: Azure Static Web Apps** 
+* **Enlace de Producción (Frontend): https://polite-sea-0e075210f.7.azurestaticapps.net** 
 
-<img src="" alt="Despliegue del Frontend Sprint 3" width="800">
+<img src="assets/images/retailpulse-frontend-deploy.png" alt="Despliegue del Frontend Sprint 3" width="800">
 
 **2. Despliegue del Backend / Web Services**
 
-* **Plataforma:** 
-* **Enlace de Producción (Backend):** 
-* **Swagger/OpenAPI:** 
+* **Plataforma: Azure Web Apps** 
+* **Enlace de Producción (Backend): https://retailpulse-api-fabio-dgb7etencqega8g8.centralus-01.azurewebsites.net/swagger-ui/swagger-ui/index.html**
 
-<img src="" alt="Despliegue del Backend Sprint 3" width="800">
+<img src="assets/images/retailpulse-backend-deploy.png" alt="Despliegue del Backend Sprint 3" width="800">
 
 **3. Verificación de consumo de Web Services desde el frontend**
 
-<img src="" alt="Frontend consumiendo Web Services Sprint 3" width="800">
-
+<img src="assets/images/retailpulse-frontend-backend-connection.png" alt="Frontend consumiendo Web Services Sprint 3" width="800">
 
 ##### 5.2.3.8. Team Collaboration Insights during Sprint.
 
