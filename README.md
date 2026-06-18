@@ -3282,18 +3282,43 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-**Carrera:** Ingeniería de Software
-**Curso:** Desarrollo de Aplicaciones Open Source
-**Sección:** NRC 11863
-**Profesores:** Iván Robles Fernández
-**Auditor:** Jesus Andres Godoy Santillan
-**Cliente(s):** Administradores de tiendas físicas, Compradores en tiendas físicas y Personal de tienda
+En esta sección se debe registrar la evaluación heurística aplicada al landing page y a la aplicación web de RetailPulse, considerando los criterios definidos para el proyecto.
 
-**Site o App a evaluar:** RetailPulse
+**Carrera:** Ingeniería de Software  
+**Curso:** Desarrollo de Aplicaciones Open Source  
+**Sección:** NRC 11863  
+**Profesores:** Iván Robles Fernández  
+**Auditor:** Jesus Andres Godoy Santillan  
+**Cliente(s):** Administradores de tiendas físicas, Compradores en tiendas físicas y Personal de tienda  
+
+**Site o App a evaluar:** RetailPulse  
 
 **ESCALA DE SEVERIDAD:**
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+<table>
+    <tr>
+        <td><b>Nivel</b></td>
+        <td><b>Descripción</b></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><b>Problema superficial:</b> puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><b>Problema menor:</b> puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><b>Problema mayor:</b> ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><b>Problema muy grave:</b> un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td>
+    </tr>
+</table>
 
 **Tareas evaluadas:**
 
@@ -3307,111 +3332,82 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 **TABLA RESUMEN**
 
-| # | Problema | Escala de severidad | Heurística / Principio violado |
-| --- | --- | --- | --- |
-| 1 | Cambio de idioma en el Quiosco reinicia la búsqueda actual | 3 | Usabilidad - Libertad y control del usuario |
-| 2 | Botón "Marcar como atendido" en Staff no pide confirmación | 2 | Usabilidad - Prevención de errores |
-| 3 | Falta de explicaciones en términos técnicos de los planes SaaS | 1 | Usabilidad - Correspondencia entre sistema y mundo real |
-| 4 | Errores en el checkout de suscripción no son específicos | 3 | Usabilidad - Ayuda al usuario a reconocer, diagnosticar y recuperarse de errores |
-| 5 | El botón del Modo Quiosco genera clics accidentales en el Login | 2 | Usabilidad - Prevención de errores |
-| 6 | Validación del formato del RUC ocurre solo al enviar el formulario | 2 | Usabilidad - Visibilidad del estado del sistema |
-| 7 | Alertas de prioridad alta y media dependen solo del color | 2 | Inclusive Design - Accesibilidad y compatibilidad |
-| 8 | Búsqueda en el Quiosco no guarda el historial reciente | 1 | Usabilidad - Reconocer mejor que recordar |
-| 9 | Falta de breadcrumbs (migas de pan) en la configuración de la tienda | 2 | Usabilidad - Flexibilidad y eficiencia de uso |
-| 10 | Flujo de regreso desde el Quiosco al Login es poco visible | 2 | Usabilidad - Visibilidad del estado del sistema |
+| # | Heurística evaluada | Hallazgo | Severidad | Recomendación |
+| :--- | :--- | :--- | :---: | :--- |
+| **1** | **Visibilidad del estatus del sistema** | Flujo de regreso desde el Quiosco al Login es poco visible, lo que genera confusión sobre el estado actual de la pantalla para el administrador que configuró la tablet. | 2 | Mejorar el contraste del botón de salida e implementar un requerimiento de clic prolongado o doble tap para evitar salidas accidentales. |
+| **2** | **Alineación entre el sistema y el mundo real** | Falta de explicaciones en términos técnicos de los planes SaaS (ej. "Analítica Predictiva"), lo que puede confundir a dueños de minimarkets tradicionales. | 1 | Añadir iconos de tooltips junto a características complejas que expliquen el beneficio de forma sencilla y en lenguaje de negocio. |
+| **3** | **Control y libertad para el usuario** | Cambio de idioma (EN/ES) en el Quiosco reinicia la pantalla actual y borra la barra de búsqueda, obligando al cliente a tipear de nuevo si se equivoca. | 3 | Mantener el estado del componente de búsqueda y los resultados actuales al momento de ejecutar el cambio de idioma en el servicio. |
+| **4** | **Consistencia y estándares** | Alertas de prioridad alta y media en la vista Staff dependen solo del color (rojo/amarillo), ignorando los estándares modernos de accesibilidad visual. | 2 | Acompañar el color con iconos distintivos y fijos (ej. un triángulo de advertencia para rojo, un círculo de información para amarillo). |
+| **5** | **Reconocimiento antes que reacción** | Búsqueda en el Quiosco no guarda el historial reciente. Los compradores deben volver a tipear la palabra completa desde cero si salen de la vista. | 1 | Desplegar un pequeño menú inferior con las últimas 3 búsquedas realizadas localmente al hacer clic en el input de búsqueda. |
+| **6** | **Prevención de errores** | Botón "Marcar como atendido" en la vista de Staff no pide confirmación, facilitando descartes accidentales de tareas críticas por clics erróneos. | 2 | Implementar un modal rápido de confirmación o un mensaje tipo "Toast" en la parte inferior con la opción visual de "Deshacer" (Undo). |
+| **7** | **Flexibilidad y eficiencia de uso** | Falta de breadcrumbs (migas de pan) en la configuración de la tienda. El Administrador debe usar forzosamente el menú lateral para regresar, perdiendo agilidad. | 2 | Añadir breadcrumbs jerárquicos (Ej: Dashboard > Settings > Store Profile) en la cabecera superior de todas las vistas administrativas. |
+| **8** | **Estética y diseño minimalista** | El botón del Modo Quiosco genera clics accidentales en el Login por su proximidad con los enlaces de registro, saturando la zona visual principal. | 2 | Separar visualmente el acceso al Quiosco ubicándolo en una franja inferior aislada o con un diseño (outline) marcadamente distinto. |
+| **9** | **Ayudar a los usuarios con los errores** | Errores en el checkout de suscripción (pasarela Stripe) muestran un mensaje de error genérico en lugar de señalar exactamente qué campo del formulario falló. | 3 | Usar validación reactiva en tiempo real por campo, resaltando en texto rojo el input específico que contiene el error antes de permitir el pago. |
+| **10** | **Ayuda y documentación** | Validación del formato del RUC ocurre solo al enviar el formulario. Falta ayuda contextual dinámica durante la escritura de los datos iniciales de la tienda. | 2 | Implementar validaciones en Angular que avisen al usuario de la longitud o formato incorrecto de forma dinámica mientras escribe. |
 
 ---
 
 **DESCRIPCIÓN DE PROBLEMAS**
 
-**PROBLEMA #1: Cambio de idioma en el Quiosco reinicia la búsqueda actual**
-**Severidad:** 3
-**Heurística violada:** Usabilidad - Libertad y control del usuario
-**Problema:** Cuando un comprador está buscando un producto en el Quiosco y presiona el botón de idioma (EN/ES), la pantalla se refresca y borra el texto de la barra de búsqueda, obligando al cliente a empezar de nuevo.
-**Evidencia:** Durante las pruebas, los usuarios que cambiaron el idioma a la mitad de una consulta perdieron su progreso, generando frustración al tener que volver a tipear.
-**Recomendación:** Mantener el estado del componente de búsqueda (estado de Angular) y los resultados actuales al momento de ejecutar el cambio de idioma en el servicio de traducción.
-
----
-
-**PROBLEMA #2: Botón "Marcar como atendido" en Staff no pide confirmación**
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Prevención de errores
-**Problema:** En el panel operativo del personal, hacer clic en "Mark as Attended" en una tarea pendiente mueve la alerta inmediatamente al historial sin un cuadro de confirmación, lo que puede causar que se descarten tareas críticas por accidente.
-**Evidencia:** El personal de tienda opera en entornos rápidos (a menudo en pantallas táctiles), donde los toques accidentales son muy comunes al caminar por los pasillos.
-**Recomendación:** Implementar un modal rápido de confirmación o un mensaje tipo "Toast" en la parte inferior con la opción de "Deshacer" (Undo) visible por 5 segundos.
-
----
-
-**PROBLEMA #3: Falta de explicaciones en términos técnicos de los planes SaaS**
-**Severidad:** 1
-**Heurística violada:** Usabilidad - Correspondencia entre sistema y mundo real
-**Problema:** En la vista de registro (Paso 2), el plan Premium menciona beneficios como "Mapas de Calor (Heatmaps)" o "Analítica Predictiva", términos que podrían no ser del todo claros para un administrador de tienda tradicional.
-**Evidencia:** En las entrevistas, algunos dueños de minimarkets mostraron desconocimiento sobre términos analíticos avanzados si no se les explica en lenguaje de negocio.
-**Recomendación:** Añadir iconos de tooltips (signo de interrogación) junto a las características complejas que expliquen el beneficio de forma sencilla (ej. "Visualiza qué pasillos tienen más visitantes").
-
----
-
-**PROBLEMA #4: Errores en el checkout de suscripción no son específicos**
-**Severidad:** 3
-**Heurística violada:** Usabilidad - Ayuda al usuario a reconocer, diagnosticar y recuperarse de errores
-**Problema:** Si el administrador ingresa mal la fecha de expiración o el CVC en la pasarela simulada de Stripe, el sistema muestra un mensaje de error genérico en lugar de señalar exactamente qué campo del formulario falló.
-**Evidencia:** El usuario debe adivinar cuál de los datos ingresados en la tarjeta es el incorrecto, lo cual retrasa el onboarding a la plataforma.
-**Recomendación:** Usar validación reactiva en tiempo real por campo, resaltando en texto rojo el input específico que contiene el error antes de permitir hacer clic en "Pagar".
-
----
-
-**PROBLEMA #5: El botón del Modo Quiosco genera clics accidentales en el Login**
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Prevención de errores
-**Problema:** El botón de "Abrir modo quiosco" está ubicado muy cerca del enlace de "Regístrate" y del botón principal de Login, lo que puede derivar en que el administrador o el staff entre a la vista pública por error.
-**Evidencia:** La proximidad de las zonas interactivas en el diseño actual aumenta el riesgo de "misclicks", especialmente en dispositivos con pantallas pequeñas.
-**Recomendación:** Separar visualmente el acceso al Quiosco ubicándolo en una franja inferior aislada o con un diseño visual (outline) marcadamente distinto.
-
----
-
-**PROBLEMA #6: Validación del formato del RUC ocurre solo al enviar el formulario**
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
-**Problema:** En el paso de "Configuración de la tienda", si el usuario ingresa un RUC con menos de 11 dígitos, el sistema espera a que presione "Finalizar" para mostrar el error, interrumpiendo el flujo.
-**Evidencia:** Los usuarios pueden creer que ya terminaron su registro hasta que se topan con el error de validación final.
-**Recomendación:** Implementar validación en Angular (Validators.pattern) que avise al usuario de la longitud incorrecta de forma dinámica mientras escribe en el campo.
-
----
-
-**PROBLEMA #7: Alertas de prioridad alta y media dependen solo del color**
-**Severidad:** 2
-**Heurística violada:** Inclusive Design - Accesibilidad y compatibilidad
-**Problema:** En la vista de Staff, las alertas de "OUT OF STOCK" y "LOW STOCK" se diferencian visualmente por marcos rojos y amarillos. Usuarios con daltonismo pueden tener problemas para priorizarlas rápidamente.
-**Evidencia:** Depender exclusivamente de las variaciones de color no cumple con los estándares de accesibilidad visual modernos.
-**Recomendación:** Acompañar el color con iconos distintivos y fijos (ej. un triángulo de advertencia para rojo, un círculo de información para amarillo).
-
----
-
-**PROBLEMA #8: Búsqueda en el Quiosco no guarda el historial reciente**
-**Severidad:** 1
-**Heurística violada:** Usabilidad - Reconocer mejor que recordar
-**Problema:** Los compradores a menudo buscan el mismo producto si se distraen o si otra persona usa el quiosco rápidamente, pero deben volver a tipear la palabra completa desde cero porque el input siempre inicia vacío.
-**Evidencia:** Entrevistados como Giancarlo indicaron que perder tiempo buscando el mismo producto genera fricción en la experiencia de la tienda física.
-**Recomendación:** Desplegar un pequeño menú inferior con las últimas 3 búsquedas realizadas localmente al hacer clic en el input de búsqueda.
-
----
-
-**PROBLEMA #9: Falta de breadcrumbs (migas de pan) en la configuración de la tienda**
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Flexibilidad y eficiencia de uso
-**Problema:** Cuando el Administrador navega hacia vistas profundas (ej. editando los detalles de una Zona o el Horario), no hay una ruta jerárquica en la parte superior que le indique en qué sección exacta se encuentra.
-**Evidencia:** Para regresar a la vista general, el usuario debe utilizar forzosamente el menú lateral principal en lugar de subir un nivel de forma intuitiva.
-**Recomendación:** Añadir breadcrumbs (Ej: Dashboard > Settings > Store Profile) en la cabecera superior de las vistas administrativas.
-
----
-
-**PROBLEMA #10: Flujo de regreso desde el Quiosco al Login es poco visible**
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
-**Problema:** Existe un botón para "Volver al login" desde la interfaz del Quiosco, pero su ubicación y bajo contraste sobre la barra superior oscura hacen que pase desapercibido para el personal que configuró la tablet.
-**Evidencia:** Entrevistados de mayor edad mencionaron que las herramientas tecnológicas pueden ser confusas si los botones de navegación principales no resaltan.
+**PROBLEMA #1: Flujo de regreso desde el Quiosco al Login es poco visible** **Severidad:** 2  
+**Heurística violada:** Visibilidad del estatus del sistema  
+**Problema:** Existe un botón para "Volver al login" desde la interfaz del Quiosco, pero su ubicación y bajo contraste sobre la barra superior oscura hacen que pase desapercibido para el personal que configuró la tablet.  
+**Evidencia:** Entrevistados de mayor edad mencionaron que las herramientas tecnológicas pueden ser confusas si los botones de navegación principales no resaltan.  
 **Recomendación:** Mejorar el contraste del botón de salida e implementar un requerimiento de clic prolongado o doble tap (ej. un candado) para evitar que los compradores salgan de la vista pública por accidente.
 
+**PROBLEMA #2: Falta de explicaciones en términos técnicos de los planes SaaS** **Severidad:** 1  
+**Heurística violada:** Alineación entre el sistema y el mundo real  
+**Problema:** En la vista de registro (Paso 2), el plan Premium menciona beneficios como "Mapas de Calor (Heatmaps)" o "Analítica Predictiva", términos que podrían no ser del todo claros para un administrador de tienda tradicional.  
+**Evidencia:** En las entrevistas, algunos dueños de minimarkets mostraron desconocimiento sobre términos analíticos avanzados si no se les explica en lenguaje de negocio.  
+**Recomendación:** Añadir iconos de tooltips (signo de interrogación) junto a las características complejas que expliquen el beneficio de forma sencilla (ej. "Visualiza qué pasillos tienen más visitantes").
+
+**PROBLEMA #3: Cambio de idioma en el Quiosco reinicia la búsqueda actual** **Severidad:** 3  
+**Heurística violada:** Control y libertad para el usuario  
+**Problema:** Cuando un comprador está buscando un producto en el Quiosco y presiona el botón de idioma (EN/ES), la pantalla se refresca y borra el texto de la barra de búsqueda, obligando al cliente a empezar de nuevo.  
+**Evidencia:** Durante las pruebas, los usuarios que cambiaron el idioma a la mitad de una consulta perdieron su progreso, generando frustración al tener que volver a tipear.  
+**Recomendación:** Mantener el estado del componente de búsqueda (estado de Angular) y los resultados actuales al momento de ejecutar el cambio de idioma en el servicio de traducción.
+
+**PROBLEMA #4: Alertas de prioridad alta y media dependen solo del color** **Severidad:** 2  
+**Heurística violada:** Consistencia y estándares  
+**Problema:** En la vista de Staff, las alertas de "OUT OF STOCK" y "LOW STOCK" se diferencian visualmente por marcos rojos y amarillos. Usuarios con daltonismo pueden tener problemas para priorizarlas rápidamente.  
+**Evidencia:** Depender exclusivamente de las variaciones de color no cumple con los estándares de accesibilidad visual modernos.  
+**Recomendación:** Acompañar el color con iconos distintivos y fijos (ej. un triángulo de advertencia para rojo, un círculo de información para amarillo).
+
+**PROBLEMA #5: Búsqueda en el Quiosco no guarda el historial reciente** **Severidad:** 1  
+**Heurística violada:** Reconocimiento antes que reacción  
+**Problema:** Los compradores a menudo buscan el mismo producto si se distraen o si otra persona usa el quiosco rápidamente, pero deben volver a tipear la palabra completa desde cero porque el input siempre inicia vacío.  
+**Evidencia:** Entrevistados como Giancarlo indicaron que perder tiempo buscando el mismo producto genera fricción en la experiencia de la tienda física.  
+**Recomendación:** Desplegar un pequeño menú inferior con las últimas 3 búsquedas realizadas localmente al hacer clic en el input de búsqueda.
+
+**PROBLEMA #6: Botón "Marcar como atendido" en Staff no pide confirmación** **Severidad:** 2  
+**Heurística violada:** Prevención de errores  
+**Problema:** En el panel operativo del personal, hacer clic en "Mark as Attended" en una tarea pendiente mueve la alerta inmediatamente al historial sin un cuadro de confirmación, lo que puede causar que se descarten tareas críticas por accidente.  
+**Evidencia:** El personal de tienda opera en entornos rápidos (a menudo en pantallas táctiles), donde los toques accidentales son muy comunes al caminar por los pasillos.  
+**Recomendación:** Implementar un modal rápido de confirmación o un mensaje tipo "Toast" en la parte inferior con la opción de "Deshacer" (Undo) visible por 5 segundos.
+
+**PROBLEMA #7: Falta de breadcrumbs (migas de pan) en la configuración de la tienda** **Severidad:** 2  
+**Heurística violada:** Flexibilidad y eficiencia de uso  
+**Problema:** Cuando el Administrador navega hacia vistas profundas (ej. editando los detalles de una Zona o el Horario), no hay una ruta jerárquica en la parte superior que le indique en qué sección exacta se encuentra.  
+**Evidencia:** Para regresar a la vista general, el usuario debe utilizar forzosamente el menú lateral principal en lugar de subir un nivel de forma intuitiva.  
+**Recomendación:** Añadir breadcrumbs jerárquicos (Ej: Dashboard > Settings > Store Profile) en la cabecera superior de las vistas administrativas.
+
+**PROBLEMA #8: El botón del Modo Quiosco genera clics accidentales en el Login** **Severidad:** 2  
+**Heurística violada:** Estética y diseño minimalista  
+**Problema:** El botón de "Abrir modo quiosco" está ubicado muy cerca del enlace de "Regístrate" y del botón principal de Login, lo que puede derivar en que el administrador o el staff entre a la vista pública por error.  
+**Evidencia:** La proximidad de las zonas interactivas en el diseño actual aumenta el riesgo de "misclicks", especialmente en dispositivos con pantallas pequeñas.  
+**Recomendación:** Separar visualmente el acceso al Quiosco ubicándolo en una franja inferior aislada o con un diseño visual (outline) marcadamente distinto.
+
+**PROBLEMA #9: Errores en el checkout de suscripción no son específicos** **Severidad:** 3  
+**Heurística violada:** Ayudar a los usuarios con los errores  
+**Problema:** Si el administrador ingresa mal la fecha de expiración o el CVC en la pasarela simulada de Stripe, el sistema muestra un mensaje de error genérico en lugar de señalar exactamente qué campo del formulario falló.  
+**Evidencia:** El usuario debe adivinar cuál de los datos ingresados en la tarjeta es el incorrecto, lo cual retrasa el onboarding a la plataforma.  
+**Recomendación:** Usar validación reactiva en tiempo real por campo, resaltando en texto rojo el input específico que contiene el error antes de permitir hacer clic en "Pagar".
+
+**PROBLEMA #10: Validación del formato del RUC ocurre solo al enviar el formulario** **Severidad:** 2  
+**Heurística violada:** Ayuda y documentación  
+**Problema:** En el paso de "Configuración de la tienda", si el usuario ingresa un RUC con menos de 11 dígitos, el sistema espera a que presione "Finalizar" para mostrar el error, interrumpiendo el flujo.  
+**Evidencia:** Los usuarios pueden creer que ya terminaron su registro hasta que se topan con el error de validación final.  
+**Recomendación:** Implementar validación en Angular (`Validators.pattern`) que avise al usuario de la longitud incorrecta de forma dinámica mientras escribe en el campo.
 
 #### 5.4. Video About-the-Product.
 
