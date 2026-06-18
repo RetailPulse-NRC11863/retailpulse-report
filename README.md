@@ -3453,10 +3453,6 @@ En esta sección se presenta la primera versión del video About-the-Product, or
 
 [Video About-the-Product - YouTube](https://youtu.be/IugIQcvcHa4)
 
-**Cuadro representativo del video:**
-
-<img src="" alt="Video About-the-Product Sprint 3" width="800">
-
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
