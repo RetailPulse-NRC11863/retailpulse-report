@@ -3244,13 +3244,13 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 * Nombre: Andy Pillaca
 * Edad: 27
 * Distrito: San Borja
-* Timing: 
+* Timing: 0:00-9:43
 
 ![Entrevista](assets/images/entrevista-validacion-andy-pillaca.png)
 
 **Resumen:** El entrevistado señaló que la propuesta de valor de RetailPulse fue clara, ya que permite centralizar información relevante para mejorar la operación de una tienda retail. Consideró que la navegación por el dashboard fue sencilla y que la información sobre productos, inventario, zonas y métricas resulta útil para tomar decisiones más rápidas. También destacó el valor del mapa de calor para identificar zonas con mayor o menor actividad, así como la utilidad de las alertas y tareas priorizadas para apoyar al personal de tienda. En general, indicó que recomendaría RetailPulse a negocios retail porque ayuda a ordenar la operación, detectar problemas y optimizar la gestión comercial.
 
-**Enlace:** 
+**Enlace:** [https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1](https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1) 
 
 ##### Segmento 2: Compradores frecuentes en tiendas fisicas
 
@@ -3259,26 +3259,13 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 * Nombre: Andy Nuñez
 * Edad: 26
 * Distrito: Lurigancho-Chosica
-* Timing: 
+* Timing: 9:43-13:51
 
 ![Entrevista](assets/images/entrevista-validacion-arturo-nunez.png)
 
 **Resumen**: El entrevistado comprendió fácilmente la finalidad de RetailPulse y valoró positivamente la experiencia de búsqueda desde el kiosko, destacando que permite encontrar productos de manera rápida y consultar información útil como stock, ubicación, referencia de estante y promociones disponibles. Además, consideró que la interfaz es clara e intuitiva, y que la solución puede ayudar a ahorrar tiempo dentro de una tienda física al evitar recorridos innecesarios. Como principal mejora, sugirió incorporar sugerencias automáticas en el buscador y filtros por categoría para hacer la búsqueda aún más eficiente. En general, manifestó que sí usaría y recomendaría RetailPulse, ya que facilita el proceso de compra y mejora la experiencia del cliente.
 
-**Enlace:**
-
-
-**Resumen de hallazgos - Administradores, Supervisores y Personal de Tienda**
-
-* 
-* 
-* 
-
-**Resumen de hallazgos - Clientes / Compradores**
-
-* 
-* 
-* 
+**Enlace:** [https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1](https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1) 
 
 ##### 5.3.3. Evaluaciones según heurísticas
 
