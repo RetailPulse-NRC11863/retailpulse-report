@@ -2890,7 +2890,7 @@ Durante el Sprint 3, el equipo se enfocó en la implementación de la primera ve
 
 ##### 5.2.3.3. Sprint Backlog 3
 
-![Sprint Backlog 3](assets/images/sprint_backlog_3.png)
+![Sprint Backlog 3](assets/images/sprint_backlog_3.jng)
 
 **Duración:** 2 semanas
 
