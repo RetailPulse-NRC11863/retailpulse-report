@@ -3048,24 +3048,11 @@ Durante el Sprint 3, el equipo trabajó en la implementación e integración de 
 
 **1. Backend Spring Boot en ejecución local:**
 
-<img src="" alt="Backend Spring Boot en ejecución local" width="800">
+<img src="assets/images/spring-boot-local.png" alt="Backend Spring Boot en ejecución local" width="800">
 
 **2. Swagger/OpenAPI con endpoints disponibles:**
 
-<img src="" alt="Swagger OpenAPI Sprint 3" width="800">
-
-**3. Vista de layout y heatmap consumiendo backend real:**
-
-<img src="" alt="Layout y heatmap consumiendo backend real" width="800">
-
-**4. Vista de productos o inventario consumiendo backend real:**
-
-<img src="" alt="Productos e inventario consumiendo backend real" width="800">
-
-**5. Vista de alertas, tareas o recomendaciones operativas:**
-
-<img src="" alt="Alertas y recomendaciones operativas" width="800">
-
+<img src="assets/images/swagger-local.png" alt="Swagger OpenAPI Sprint 3" width="800">
 
 ##### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
