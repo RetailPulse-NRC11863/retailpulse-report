@@ -3237,6 +3237,17 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** El entrevistado señaló que la propuesta de valor de RetailPulse fue clara, ya que permite centralizar información relevante para mejorar la operación de una tienda retail. Consideró que la navegación por el dashboard fue sencilla y que la información sobre productos, inventario, zonas y métricas resulta útil para tomar decisiones más rápidas. También destacó el valor del mapa de calor para identificar zonas con mayor o menor actividad, así como la utilidad de las alertas y tareas priorizadas para apoyar al personal de tienda. En general, indicó que recomendaría RetailPulse a negocios retail porque ayuda a ordenar la operación, detectar problemas y optimizar la gestión comercial.
 
+Entrevista 2
+Nombre: [Carlos Mendoza]
+Edad: [34]
+Distrito: [Pueblo Libre]
+Timing: [00:00 - 08:18]
+
+![Entrevista](assets/images/11.png)
+
+Resumen: El entrevistado señaló que la propuesta de valor de RetailPulse fue sumamente clara, destacando que digitalizar el comportamiento del cliente y automatizar alertas soluciona problemas reales de gestión. Consideró que la navegación por el dashboard fue sencilla y valoró positivamente el diseño limpio en modo oscuro para evitar fatiga visual durante los turnos. Resaltó de manera especial la utilidad del mapa de calor para identificar "zonas muertas", así como el gestor de alertas operativas para dirigir al personal en tiempo real sin necesidad de microgestión. Aunque consideró la interfaz amigable, sugirió incluir tutoriales o videos breves para facilitar el proceso inicial de configuración y mapeo de la tienda (onboarding). En general, recomendaría totalmente la plataforma porque otorga un control analítico avanzado, optimiza al personal, evita quiebres de stock y ayuda a incrementar las ventas basándose en datos reales y no en intuición.
+
+
 **Enlace:** [https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1](https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1) 
 
 ##### Segmento 2: Compradores frecuentes en tiendas fisicas
@@ -3251,6 +3262,16 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 ![Entrevista](assets/images/entrevista-validacion-arturo-nunez.png)
 
 **Resumen**: El entrevistado comprendió fácilmente la finalidad de RetailPulse y valoró positivamente la experiencia de búsqueda desde el kiosko, destacando que permite encontrar productos de manera rápida y consultar información útil como stock, ubicación, referencia de estante y promociones disponibles. Además, consideró que la interfaz es clara e intuitiva, y que la solución puede ayudar a ahorrar tiempo dentro de una tienda física al evitar recorridos innecesarios. Como principal mejora, sugirió incorporar sugerencias automáticas en el buscador y filtros por categoría para hacer la búsqueda aún más eficiente. En general, manifestó que sí usaría y recomendaría RetailPulse, ya que facilita el proceso de compra y mejora la experiencia del cliente.
+
+Entrevista 2
+Nombre: [Juan Flores]
+Edad: [22]
+Distrito: [Lince]
+Timing: [00:00 - 07:29]
+
+![Entrevista](assets/images/22.png)
+
+Resumen: El entrevistado comprendió instantáneamente la finalidad del quiosco, comparándolo con tener un buscador web integrado directamente en el local físico. Valoró muy positivamente la experiencia de búsqueda, destacando la fluidez de la interfaz táctil y la utilidad de las sugerencias automáticas mientras escribía. Pudo identificar claramente la disponibilidad, la zona y el estante del producto en una sola pantalla, y consideró que las promociones mostradas fueron muy acertadas y nada invasivas. Lo que más le gustó de la experiencia fue la autonomía y el gran ahorro de tiempo al no tener que buscar vendedores disponibles. Como principal oportunidad de mejora, sugirió incorporar un escáner físico de códigos de barras en el módulo para facilitar su uso a personas mayores que prefieren no escribir. Manifestó que usaría y recomendaría definitivamente RetailPulse para visitar tiendas nuevas, ya que elimina la fricción, evita colas por consultas y hace la compra mucho más rápida y cómoda.
 
 **Enlace:** [https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1](https://upcedupe-my.sharepoint.com/personal/u20211d989_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211d989_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0729-11863-RetailPulse-%20validation-sprint-3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1) 
 
