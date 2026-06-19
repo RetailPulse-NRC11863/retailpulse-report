@@ -3237,11 +3237,12 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** El entrevistado señaló que la propuesta de valor de RetailPulse fue clara, ya que permite centralizar información relevante para mejorar la operación de una tienda retail. Consideró que la navegación por el dashboard fue sencilla y que la información sobre productos, inventario, zonas y métricas resulta útil para tomar decisiones más rápidas. También destacó el valor del mapa de calor para identificar zonas con mayor o menor actividad, así como la utilidad de las alertas y tareas priorizadas para apoyar al personal de tienda. En general, indicó que recomendaría RetailPulse a negocios retail porque ayuda a ordenar la operación, detectar problemas y optimizar la gestión comercial.
 
-Entrevista 2
-Nombre: [Carlos Mendoza]
-Edad: [34]
-Distrito: [Pueblo Libre]
-Timing: [00:00 - 08:18]
+##### Entrevista 2
+
+* Nombre: [Carlos Mendoza]
+* Edad: [34]
+* Distrito: [Pueblo Libre]
+* Timing: [00:00 - 08:18]
 
 ![Entrevista](assets/images/11.png)
 
@@ -3263,11 +3264,12 @@ Resumen: El entrevistado señaló que la propuesta de valor de RetailPulse fue s
 
 **Resumen**: El entrevistado comprendió fácilmente la finalidad de RetailPulse y valoró positivamente la experiencia de búsqueda desde el kiosko, destacando que permite encontrar productos de manera rápida y consultar información útil como stock, ubicación, referencia de estante y promociones disponibles. Además, consideró que la interfaz es clara e intuitiva, y que la solución puede ayudar a ahorrar tiempo dentro de una tienda física al evitar recorridos innecesarios. Como principal mejora, sugirió incorporar sugerencias automáticas en el buscador y filtros por categoría para hacer la búsqueda aún más eficiente. En general, manifestó que sí usaría y recomendaría RetailPulse, ya que facilita el proceso de compra y mejora la experiencia del cliente.
 
-Entrevista 2
-Nombre: [Juan Flores]
-Edad: [22]
-Distrito: [Lince]
-Timing: [00:00 - 07:29]
+###### Entrevista 2
+
+* Nombre: [Juan Flores]
+* Edad: [22]
+* Distrito: [Lince]
+* Timing: [00:00 - 07:29]
 
 ![Entrevista](assets/images/22.png)
 
