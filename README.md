@@ -2793,6 +2793,12 @@ Se presenta a continuación la evidencia de colaboración obtenida a partir de l
 
 #### 5.2.3. Sprint 3
 
+El Sprint 3 representó el paso desde una aplicación web alimentada por datos simulados hacia una primera integración con Web Services reales. A nivel técnico, el trabajo se concentró en conectar las funcionalidades principales de RetailPulse con un backend Spring Boot organizado por bounded contexts, manteniendo la arquitectura del frontend Angular y preparando evidencias de ejecución, despliegue e integración para la revisión del producto.
+
+El alcance funcional del sprint incluyó la configuración de tienda, consulta de productos, búsqueda asistida desde kiosko, visualización de métricas de tráfico, revisión de inventario, gestión de alertas operativas, tareas para personal de tienda, recomendaciones comerciales y planes de suscripción SaaS. Por ello, las evidencias del Sprint 3 demuestran no solo que existen endpoints o pantallas individuales, sino también que los módulos se conectan dentro de escenarios de negocio completos y trazables.
+
+Para efectos de la revisión del sprint, se consideró como criterio de evidencia técnica la relación entre user story, pantalla frontend, servicio Angular, endpoint backend, respuesta JSON y resultado observado por el usuario. Esta trazabilidad permite mostrar que la implementación no se limita a una capa visual, sino que integra flujo de datos, reglas de negocio y cambios de estado dentro de la plataforma.
+
 ##### 5.2.3.1. Sprint Planning 3
 
 <table>
@@ -3041,10 +3047,27 @@ A continuación, se presenta el registro de commits destacados realizados durant
 | retailpulse-web-services | develop | feat(store-operations): add alerts and tasks domain services | fabiovallejo |
 | retailpulse-web-services | develop | feat(store-operations): expose alerts and tasks REST endpoints | fabiovallejo |
 | retailpulse-web-services | develop | feat: added docker config for Azure deploy | fabiovallejo |
+| retailpulse-web-application | main | fix: deploy error | fabiovallejo |
+
+Adicionalmente, los commits registrados se agrupan según las capacidades técnicas que habilitaron dentro del producto. Esta lectura permite evidenciar que el Sprint 3 no estuvo orientado solo a crear endpoints aislados, sino a preparar una base funcional para flujos completos de retail físico.
+
+| Capacidad implementada | Módulos relacionados | Evidencia técnica asociada |
+| :--- | :--- | :--- |
+| Configuración y consulta de tienda | Store Foundation, Store Setup | Consumo de tiendas, zonas y productos desde Angular para construir la configuración operativa de la tienda. |
+| Analítica de tráfico y heatmap | Traffic Analytics, Dashboard, Store Heatmap | Consulta de métricas por zona, niveles de calor, congestión y visualización administrativa. |
+| Búsqueda asistida en kiosko | Assisted Shopping, Product Catalog | Búsqueda de productos desde la vista pública del kiosko, mostrando datos de ubicación y disponibilidad al comprador. |
+| Inventario y stock crítico | Inventory Intelligence, Products | Consulta y actualización de stock, con estados derivados como `AVAILABLE`, `LOW_STOCK` y `OUT_OF_STOCK`. |
+| Operación de tienda | Store Operations, Staff Alerts | Consulta de alertas activas y tareas pendientes para el personal de tienda, incluyendo cambios de estado operativos. |
+| Recomendaciones comerciales | Promotion Optimization, Conversion Reports | Visualización de recomendaciones activas y aplicación de acciones comerciales sugeridas por el sistema. |
+| Suscripción SaaS | Subscription, Register, Subscription Page | Consulta de planes disponibles y control de funcionalidades según el plan activo del comercio. |
+
+La aplicación Angular actualizada consume el backend desplegado en Azure mediante la variable `environment.apiUrl`, configurada con la ruta base `https://retailpulse-api-fabio-dgb7etencqega8g8.centralus-01.azurewebsites.net/api/v1`. Esta configuración permite que las vistas principales del frontend consulten servicios reales en lugar de depender exclusivamente de la Fake API utilizada en sprints anteriores.
+
+<img src="assets/images/sprint-3-environment-api-url.png" alt="Configuración de environment apiUrl hacia backend Azure" width="800">
 
 ##### 5.2.3.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 3, el equipo trabajó en la implementación e integración de los servicios backend reales de RetailPulse, orientados a reemplazar progresivamente la Fake API usada en sprints anteriores. En esta sección se deben incluir las evidencias visuales de las funcionalidades ejecutándose desde la aplicación web y consumiendo Web Services reales.
+Durante el Sprint 3, el equipo trabajó en la implementación e integración de los servicios backend reales de RetailPulse, orientados a reemplazar progresivamente la Fake API usada en sprints anteriores. Las evidencias de ejecución se organizaron a partir de escenarios funcionales completos, donde cada pantalla se relaciona con un servicio Angular, un endpoint del backend, una respuesta JSON y un resultado visible para el usuario final.
 
 **1. Backend Spring Boot en ejecución local:**
 
@@ -3053,6 +3076,76 @@ Durante el Sprint 3, el equipo trabajó en la implementación e integración de 
 **2. Swagger/OpenAPI con endpoints disponibles:**
 
 <img src="assets/images/swagger-local.png" alt="Swagger OpenAPI Sprint 3" width="800">
+
+**3. Flujo de búsqueda asistida de producto desde kiosko:**
+
+Este flujo evidencia la experiencia del comprador cuando utiliza el kiosko web para encontrar un producto dentro de la tienda física. El usuario ingresa una consulta en la pantalla pública del kiosko, el frontend ejecuta una búsqueda contra el catálogo de productos y la respuesta permite mostrar información útil como nombre, categoría, precio, zona, pasillo, repisa o referencia de exhibición.
+
+| Elemento | Evidencia |
+| :--- | :--- |
+| Pantalla frontend | `/kiosk` |
+| Componentes relacionados | `KioskSearchPageComponent`, `ProductSearchBoxComponent`, `ProductResultCardComponent` |
+| Servicio Angular | `AssistedShoppingApiService` |
+| Endpoint consumido | `GET /api/v1/products/search?query={texto}` |
+| Entidades involucradas | Product, Zone, AssistedProduct |
+| Resultado esperado | El comprador visualiza productos coincidentes con su ubicación dentro de tienda y datos de disponibilidad comercial. |
+
+<img src="assets/images/sprint-3-kiosk-product-search.png" alt="Búsqueda de producto desde kiosko" width="800">
+
+<img src="assets/images/sprint-3-kiosk-product-search-network.png" alt="Network tab de búsqueda de producto desde kiosko" width="800">
+
+**4. Flujo de consulta de métricas de tienda y heatmap operativo:**
+
+Este flujo evidencia cómo el administrador consulta información de tráfico por zonas para identificar áreas con mayor actividad, congestión o necesidad de acción operativa. La aplicación obtiene zonas y métricas desde el backend, y las presenta en vistas administrativas como dashboard y mapa de calor.
+
+| Elemento | Evidencia |
+| :--- | :--- |
+| Pantallas frontend | `/app/admin/dashboard`, `/app/admin/store-heatmap` |
+| Componentes relacionados | `DashboardPageComponent`, `StoreHeatmapPageComponent`, `StoreHeatmapComponent`, `KpiCardComponent` |
+| Servicio Angular | `TrafficAnalyticsApiService` |
+| Endpoints relacionados | `GET /api/v1/zones`, `GET /api/v1/traffic/zones/metrics`, `GET /api/v1/traffic/heatmap`, `GET /api/v1/traffic/congestion` |
+| Entidades involucradas | Zone, ZoneMetric, HeatmapMetric |
+| Resultado esperado | El administrador identifica zonas calientes, niveles de congestión, conteo de tráfico, permanencia promedio y oportunidades de mejora operativa. |
+
+<img src="assets/images/sprint-3-store-heatmap-execution.png" alt="Mapa de calor operativo consumiendo métricas del backend" width="800">
+
+<img src="assets/images/sprint-3-traffic-metrics-json.png" alt="Respuesta JSON de métricas de tráfico por zonas" width="800">
+
+**5. Flujo de gestión de tareas operativas del personal de tienda:**
+
+Este flujo evidencia la forma en que el personal de tienda consulta tareas pendientes y atiende actividades priorizadas. El backend registra tareas con estado inicial `PENDING` y permite completar una tarea cuando el colaborador confirma su atención, cambiando su estado operativo a `COMPLETED`.
+
+| Elemento | Evidencia |
+| :--- | :--- |
+| Pantalla frontend | `/app/staff/alerts` |
+| Componentes relacionados | `AlertsPage`, `TaskCardComponent`, `AlertCardComponent` |
+| Servicios Angular | `StoreOperationsStore`, `OperationalTasksApiService`, `OperationalAlertsApiService` |
+| Endpoints relacionados | `GET /api/v1/operational-tasks/pending`, `GET /api/v1/operational-alerts/active`, `PATCH /api/v1/operational-tasks/{taskId}/complete` |
+| Entidades involucradas | OperationalTask, OperationalAlert |
+| Estados relevantes | `PENDING` -> `COMPLETED`, `ACTIVE` -> `RESOLVED` |
+| Resultado esperado | El personal visualiza tareas priorizadas, atiende una tarea y el sistema refleja el cambio de estado correspondiente. |
+
+<img src="assets/images/sprint-3-staff-pending-tasks.png" alt="Vista de tareas operativas pendientes para personal de tienda" width="800">
+
+<img src="assets/images/sprint-3-task-complete-response.png" alt="Cambio de estado de tarea operativa desde backend" width="800">
+
+**6. Flujo de recomendación comercial aplicada:**
+
+Este flujo evidencia cómo el administrador revisa recomendaciones comerciales generadas a partir de información de tráfico, productos o prioridad comercial. Una recomendación activa puede ser aplicada para registrar que la decisión fue tomada por el negocio.
+
+| Elemento | Evidencia |
+| :--- | :--- |
+| Pantalla frontend | `/app/admin/conversion` |
+| Componentes relacionados | `ConversionReportPage`, `RecommendationCardComponent`, `ProductPerformanceCardComponent` |
+| Servicio Angular | `PromotionOptimizationApiService` |
+| Endpoints relacionados | `GET /api/v1/promotion-recommendations`, `GET /api/v1/promotion-recommendations/active`, `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` |
+| Entidades involucradas | PromotionRecommendation, Product |
+| Estados relevantes | `ACTIVE` -> `APPLIED` |
+| Resultado esperado | El administrador visualiza recomendaciones activas, aplica una acción comercial y el sistema actualiza el estado de la recomendación. |
+
+<img src="assets/images/sprint-3-promotion-recommendations.png" alt="Recomendaciones comerciales activas en la aplicación web" width="800">
+
+<img src="assets/images/sprint-3-recommendation-applied-response.png" alt="Respuesta del backend al aplicar una recomendación comercial" width="800">
 
 ##### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
@@ -3167,6 +3260,33 @@ La documentación de servicios fue realizada mediante Swagger/OpenAPI, permitien
 **3. Verificación de consumo de Web Services desde el frontend**
 
 <img src="assets/images/retailpulse-frontend-backend-connection.png" alt="Frontend consumiendo Web Services Sprint 3" width="800">
+
+La verificación del despliegue no se limitó a comprobar que las URLs públicas estuvieran disponibles. También se validó que la aplicación Angular publicada consuma el backend desplegado mediante la ruta base configurada en `environment.apiUrl`, apuntando a `https://retailpulse-api-fabio-dgb7etencqega8g8.centralus-01.azurewebsites.net/api/v1`.
+
+| Elemento desplegado | Plataforma | Evidencia documentada |
+| :--- | :--- | :--- |
+| Frontend Angular | Azure Static Web Apps | Acceso público a la aplicación web, navegación por vistas administrativas y modo kiosko. |
+| Backend Spring Boot | Azure Web Apps | Acceso público a Swagger/OpenAPI y endpoints bajo `/api/v1`. |
+| Integración frontend-backend | Azure Static Web Apps + Azure Web Apps | Requests observables en Network tab hacia la API desplegada. |
+| Documentación interactiva | Swagger UI | Prueba manual de endpoints desde navegador o Swagger. |
+
+**4. Configuración de API en frontend desplegado**
+
+La aplicación web utiliza la variable `environment.apiUrl` para centralizar la URL base de consumo de servicios. En el Sprint 3, esta configuración fue alineada con el backend desplegado en Azure, permitiendo que vistas como kiosko, dashboard, heatmap, operaciones y suscripción consulten servicios reales.
+
+<img src="assets/images/sprint-3-frontend-api-url-production.png" alt="Configuración de apiUrl en frontend desplegado" width="800">
+
+**5. Evidencia de requests desde navegador**
+
+Para demostrar la integración real, se registra el Network tab del navegador mientras se ejecutan flujos representativos. Las solicitudes muestran la ruta de producción del backend, el método HTTP, el estado de respuesta y el payload recibido por la aplicación.
+
+<img src="assets/images/sprint-3-production-network-tab.png" alt="Network tab del frontend desplegado consumiendo backend Azure" width="800">
+
+**6. Evidencia de respuesta JSON desde producción**
+
+También se considera como evidencia técnica la respuesta JSON obtenida directamente desde endpoints publicados. Esta captura permite comprobar que el backend no solo está desplegado, sino que devuelve datos estructurados para las funcionalidades principales del producto.
+
+<img src="assets/images/sprint-3-production-api-json-response.png" alt="Respuesta JSON de endpoint desplegado en Azure" width="800">
 
 ##### 5.2.3.8. Team Collaboration Insights during Sprint.
 
@@ -3466,11 +3586,15 @@ En cuanto a la gestión del desarrollo, la elaboración del Product Backlog y la
 
 Finalmente, RetailPulse se consolida como una propuesta innovadora que integra analítica de comportamiento, asistencia al comprador y optimización operativa en un solo sistema, demostrando el potencial de las tecnologías open source para resolver problemáticas reales. En conjunto, el proyecto evidencia una correcta integración entre análisis, diseño, experiencia de usuario y planificación ágil, dando como resultado una solución coherente, bien fundamentada y con potencial de aplicación en un entorno real.
 
-#### Video About-the-Team
+#### 5.5. Video About-the-Team
 
 En esta sección se presenta el video About-The-Team, en el cual se resume el proceso de trabajo realizado por el equipo RetailPulse durante el desarrollo del proyecto. El video evidencia la organización del equipo, la distribución de responsabilidades, las actividades realizadas durante el Sprint 3 y los principales aportes de cada integrante.
 
 Asimismo, se incluyen testimonios ante cámara de los participantes, donde cada miembro describe las actividades desarrolladas, los outcomes alcanzados y las competencias fortalecidas durante la implementación, validación y despliegue de la solución.
+
+El contenido del video refuerza la relación entre el trabajo técnico realizado y los resultados obtenidos durante el Sprint 3. Para ello, se consideró importante que el equipo explique cómo se distribuyeron las responsabilidades entre backend, frontend, despliegue, evidencias y validación, así como los principales aprendizajes derivados de la integración entre Angular y Spring Boot.
+
+Como resultado, el video About-the-Team comunica que el equipo no solo dividió tareas por repositorio, sino por responsabilidades del producto. Esta perspectiva permite mostrar colaboración entre capas: el backend provee reglas y datos, el frontend construye la experiencia de usuario y el reporte documenta la trazabilidad entre implementación, validación y despliegue.
 
 **URL de la versión publicada en Microsoft Stream:**
 
