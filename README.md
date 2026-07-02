@@ -3145,8 +3145,6 @@ Este flujo evidencia cómo el administrador revisa recomendaciones comerciales g
 
 <img src="assets/images/sprint-3-promotion-recommendations.png" alt="Recomendaciones comerciales activas en la aplicación web" width="800">
 
-<img src="assets/images/sprint-3-recommendation-applied-response.png" alt="Respuesta del backend al aplicar una recomendación comercial" width="800">
-
 ##### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
 Durante este sprint se documentó la primera versión real de los Web Services de RetailPulse, desarrollados con Java y Spring Boot. A diferencia del sprint anterior, donde se utilizó JSON Server como Fake API para simular persistencia y consumo de datos, en el Sprint 3 se realizó la migración progresiva hacia endpoints REST reales organizados según bounded contexts.
@@ -3276,18 +3274,6 @@ La aplicación web utiliza la variable `environment.apiUrl` para centralizar la 
 
 <img src="assets/images/sprint-3-frontend-api-url-production.png" alt="Configuración de apiUrl en frontend desplegado" width="800">
 
-**5. Evidencia de requests desde navegador**
-
-Para demostrar la integración real, se registra el Network tab del navegador mientras se ejecutan flujos representativos. Las solicitudes muestran la ruta de producción del backend, el método HTTP, el estado de respuesta y el payload recibido por la aplicación.
-
-<img src="assets/images/sprint-3-production-network-tab.png" alt="Network tab del frontend desplegado consumiendo backend Azure" width="800">
-
-**6. Evidencia de respuesta JSON desde producción**
-
-También se considera como evidencia técnica la respuesta JSON obtenida directamente desde endpoints publicados. Esta captura permite comprobar que el backend no solo está desplegado, sino que devuelve datos estructurados para las funcionalidades principales del producto.
-
-<img src="assets/images/sprint-3-production-api-json-response.png" alt="Respuesta JSON de endpoint desplegado en Azure" width="800">
-
 ##### 5.2.3.8. Team Collaboration Insights during Sprint.
 
 **Desarrollo de las Actividades de Implementación**
@@ -3359,10 +3345,10 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 ##### Entrevista 2
 
-* Nombre: [Carlos Mendoza]
-* Edad: [34]
-* Distrito: [Pueblo Libre]
-* Timing: [00:00 - 08:18]
+* Nombre: Carlos Mendoza
+* Edad: 34
+* Distrito: Pueblo Libre
+* Timing: 13:51 - 22:09
 
 ![Entrevista](assets/images/11.png)
 
@@ -3386,10 +3372,10 @@ Resumen: El entrevistado señaló que la propuesta de valor de RetailPulse fue s
 
 ###### Entrevista 2
 
-* Nombre: [Juan Flores]
-* Edad: [22]
-* Distrito: [Lince]
-* Timing: [00:00 - 07:29]
+* Nombre: Juan Flores
+* Edad: 22
+* Distrito: Lince
+* Timing: 22:09 - 29:40
 
 ![Entrevista](assets/images/22.png)
 
@@ -3531,7 +3517,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 En esta sección se presenta la primera versión del video About-the-Product, orientado a explicar la propuesta de valor de RetailPulse, sus principales funcionalidades, los segmentos objetivo y la forma en que la plataforma transforma eventos de tienda en acciones operativas y comerciales.
 
 **Resumen del video:**
-**Guion – About the Product**
 
 ### Introducción
 
