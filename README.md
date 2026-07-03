@@ -103,14 +103,14 @@ RetailPulse no se limita a mostrar datos, sino que los transforma en acciones co
 </td>
   </tr>
   <tr>
-    <td rowspan="3"><img src="assets/images/perfil-jose.png" alt="José María Franco" width="800"></td>
+    <td rowspan="3"><img src="assets/images/perfil-jose-maria.jpeg" alt="José María Franco" width="800"></td>
     <td>Franco del Carpio, José María (U202319178)</td>
   </tr>
   <tr>
     <td>Ingeniería de Software</td>
   </tr>
   <tr>
-    <td>[Insertar biografía aquí]</td>
+    <td>Mi nombre es Jose Maria, estudio Ingenieria de Software y me gusta aprender nuevas tecnologias.</td>
   </tr>
   <tr>
     <td rowspan="3"><img src="assets/images/perfil-luis.png" alt="Luis Rubio" width="800"></td>
