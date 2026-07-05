@@ -3207,6 +3207,106 @@ La documentación de servicios fue realizada mediante Swagger/OpenAPI, permitien
 
 La tabla de servicios del Sprint 3 se centra en los recursos REST que permitieron reemplazar progresivamente la Fake API y habilitar la primera integración funcional entre Angular y Spring Boot.
 
+**Pruebas de endpoints realizadas durante el Sprint 3:**
+
+Para complementar la documentación generada con Swagger/OpenAPI, el equipo registró pruebas funcionales sobre endpoints representativos de cada bounded context. Estas pruebas permitieron verificar disponibilidad del backend, estructura de respuestas, métodos HTTP soportados y coherencia entre los datos retornados por la API y las vistas integradas en Angular.
+
+| Módulo | Método y endpoint probado | Escenario de prueba | Request / parámetros utilizados | Resultado esperado |
+| :--- | :--- | :--- | :--- | :--- |
+| Base Spring Boot | `GET /api/v1/health` | Verificar que la API real se encuentre disponible. | Sin body. | Respuesta exitosa confirmando que el backend está operativo. |
+| Store Foundation | `GET /api/v1/stores` | Consultar tiendas asociadas a cuentas SaaS. | Sin body; consumo desde configuración inicial. | Retorna tiendas registradas con identificador, nombre, dirección y estado. |
+| Store Foundation | `POST /api/v1/stores` | Crear una tienda base para una cuenta SaaS. | Body con nombre, dirección, ciudad y cuenta asociada. | Registra la tienda y devuelve el `storeId` generado. |
+| Store Foundation | `GET /api/v1/stores/{storeId}` | Consultar información específica de una tienda. | Identificador de tienda en la ruta. | Retorna datos de la tienda activa para inicializar contexto operativo. |
+| Store Foundation | `PUT /api/v1/stores/{storeId}` | Actualizar información general de tienda. | Body con datos editados de nombre, ubicación u horario. | Persiste cambios y actualiza la vista de configuración. |
+| Store Foundation | `GET /api/v1/zones` | Listar zonas configuradas en el layout físico. | Sin body; consumo desde editor de layout. | Retorna zonas con nombre, tipo, posición y dimensiones. |
+| Store Foundation | `POST /api/v1/zones` | Crear una zona del layout de tienda. | Body con `storeId`, nombre, tipo y coordenadas. | Crea la zona y permite visualizarla en el mapa de tienda. |
+| Store Foundation | `PUT /api/v1/zones/{zoneId}` | Editar posición o información de una zona. | Body con coordenadas y metadatos actualizados. | Actualiza la distribución visual del layout. |
+| Store Foundation | `DELETE /api/v1/zones/{zoneId}` | Eliminar una zona del layout. | Identificador de zona en la ruta. | Remueve la zona y evita que aparezca en consultas posteriores. |
+| Store Foundation | `GET /api/v1/products` | Consultar productos reales registrados para la tienda. | Sin body; consumo desde listado administrativo. | Retorna colección de productos con `productId`, `name`, `sku`, categoría y estado. |
+| Store Foundation | `POST /api/v1/products` | Crear un producto en el catálogo. | Body con nombre, SKU, categoría, precio y zona asignada. | Registra el producto y lo deja disponible para inventario y búsqueda. |
+| Store Foundation | `GET /api/v1/products/{productId}` | Consultar detalle de un producto existente. | Identificador de producto en la ruta. | Retorna información completa del producto para edición o visualización. |
+| Store Foundation | `PUT /api/v1/products/{productId}` | Editar datos de producto. | Body con precio, categoría, nombre o zona actualizada. | Persiste cambios y actualiza el catálogo administrativo. |
+| Store Foundation | `DELETE /api/v1/products/{productId}` | Eliminar producto del catálogo. | Identificador de producto en la ruta. | Retira el producto de consultas administrativas y de kiosko. |
+| Store Foundation | `GET /api/v1/products/search?query=leche` | Validar búsqueda administrativa por nombre o SKU. | Parámetro `query` con texto ingresado por el usuario. | Retorna productos coincidentes y permite actualizar la tabla de catálogo en frontend. |
+| Traffic Analytics | `POST /api/v1/traffic/movement-events` | Registrar evento de movimiento en tienda. | Body con `zoneId`, timestamp, tipo de evento y duración estimada. | Guarda el evento para alimentar métricas de tráfico. |
+| Traffic Analytics | `GET /api/v1/traffic/heatmap` | Consultar datos utilizados por el mapa de calor. | Sin body; consumo desde dashboard. | Retorna zonas con nivel de intensidad, visitas, permanencia e interacción. |
+| Traffic Analytics | `GET /api/v1/traffic/zones/metrics` | Validar métricas por zona del layout físico. | Sin body; consulta desde vista de analítica. | Retorna métricas agrupadas por zona para visualizar desempeño operativo. |
+| Traffic Analytics | `GET /api/v1/traffic/congestion` | Consultar zonas con congestión operativa. | Sin body; consumo desde dashboard operativo. | Retorna zonas con mayor concentración y nivel de congestión. |
+| Traffic Analytics | `PUT /api/v1/traffic/zones/{zoneId}/metrics` | Actualizar métricas calculadas de una zona. | Body con visitas, permanencia, interacción y conversión. | Actualiza indicadores utilizados por heatmap y recomendaciones. |
+| Inventory Intelligence | `GET /api/v1/inventory/items` | Consultar inventario general de la tienda. | Sin body; consumo desde vista de inventario. | Retorna inventario con producto, stock disponible, mínimo y estado. |
+| Inventory Intelligence | `POST /api/v1/inventory/items` | Crear ítem de inventario para un producto. | Body con `productId`, stock inicial, stock mínimo y ubicación. | Asocia inventario al producto y habilita monitoreo de stock. |
+| Inventory Intelligence | `GET /api/v1/inventory/items/product/{productId}` | Consultar inventario asociado a un producto. | Identificador de producto en la ruta. | Retorna stock, estado y referencia operativa del producto. |
+| Inventory Intelligence | `GET /api/v1/inventory/items/critical` | Identificar productos con stock crítico. | Sin body; consumo desde módulo de inventario. | Retorna ítems con bajo stock u out of stock para priorizar reposición. |
+| Inventory Intelligence | `PATCH /api/v1/inventory/items/{productId}/stock` | Actualizar stock disponible de un producto. | Body con cantidad disponible actualizada. | Retorna inventario actualizado y estado derivado del stock. |
+| Assisted Shopping / Kiosk | `GET /api/v1/kiosk/products/search?query=arroz` | Buscar productos desde el kiosko. | Parámetro `query` con texto ingresado por comprador. | Retorna productos con stock, zona y referencia de ubicación para la experiencia de compra. |
+| Assisted Shopping / Kiosk | `GET /api/v1/kiosk/products/{productId}` | Consultar detalle de producto desde kiosko. | Identificador de producto en la ruta. | Retorna datos del producto, disponibilidad, zona y promociones asociadas. |
+| Assisted Shopping / Kiosk | `POST /api/v1/kiosk/sessions` | Iniciar sesión de búsqueda en kiosko. | Body con `storeId` y datos mínimos de contexto. | Genera `sessionId` para rastrear acciones del comprador. |
+| Assisted Shopping / Kiosk | `GET /api/v1/kiosk/sessions/{sessionId}` | Consultar sesión de kiosko. | Identificador de sesión en la ruta. | Retorna acciones registradas y estado de la sesión. |
+| Assisted Shopping / Kiosk | `POST /api/v1/kiosk/sessions/{sessionId}/searches` | Registrar una acción del comprador durante la búsqueda. | Body con `query`, `productId`, `resultStatus` y `action`. | Registra eventos como `SEARCHED`, `LOCATION_VIEWED`, `HELP_REQUESTED` o `FOUND`. |
+| Store Operations | `GET /api/v1/operational-alerts` | Consultar todas las alertas operativas. | Sin body; consumo desde vista administrativa. | Retorna alertas activas, resueltas y su origen funcional. |
+| Store Operations | `POST /api/v1/operational-alerts` | Crear alerta operativa manual o derivada. | Body con tipo, prioridad, zona, producto y descripción. | Registra alerta y la muestra al personal correspondiente. |
+| Store Operations | `GET /api/v1/operational-alerts/active` | Consultar alertas operativas activas. | Sin body; consumo desde panel de staff. | Retorna alertas con prioridad, origen, zona y estado actual. |
+| Store Operations | `PATCH /api/v1/operational-alerts/{alertId}/resolve` | Resolver una alerta activa. | Identificador de alerta en la ruta. | Cambia estado de alerta a resuelta y actualiza panel operativo. |
+| Store Operations | `GET /api/v1/operational-tasks` | Consultar tareas operativas generales. | Sin body; consumo desde vista de staff. | Retorna tareas con prioridad, responsable, origen y estado. |
+| Store Operations | `POST /api/v1/operational-tasks` | Crear tarea operativa para personal. | Body con título, prioridad, zona, alerta relacionada y descripción. | Registra tarea y la coloca en la lista operativa. |
+| Store Operations | `GET /api/v1/operational-tasks/pending` | Consultar tareas pendientes. | Sin body; consumo desde panel de staff. | Retorna tareas pendientes ordenadas por prioridad. |
+| Store Operations | `PATCH /api/v1/operational-tasks/{taskId}/complete` | Marcar una tarea operativa como completada. | Identificador de tarea pendiente en la ruta. | Cambia el estado de `PENDING` a `COMPLETED` y actualiza la vista del staff. |
+| Promotion Optimization | `GET /api/v1/promotion-recommendations` | Consultar recomendaciones comerciales generales. | Sin body; consumo desde dashboard comercial. | Retorna recomendaciones activas, aplicadas y descartadas. |
+| Promotion Optimization | `POST /api/v1/promotion-recommendations` | Crear recomendación comercial. | Body con producto, tipo, prioridad, motivo y acción sugerida. | Registra recomendación para evaluación del administrador. |
+| Promotion Optimization | `GET /api/v1/promotion-recommendations/active` | Consultar recomendaciones comerciales activas. | Sin body; consumo desde vista administrativa. | Retorna recomendaciones disponibles con prioridad, producto y motivo de recomendación. |
+| Promotion Optimization | `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Aplicar una recomendación comercial. | Identificador de recomendación activa en la ruta. | Cambia el estado de `ACTIVE` a `APPLIED` y registra la decisión comercial. |
+| Promotion Optimization | `GET /api/v1/promotion-recommendations/product-opportunities` | Consultar oportunidades comerciales por producto. | Sin body; consumo desde recomendaciones. | Retorna oportunidades basadas en inventario, interacción y conversión. |
+| Subscription | `GET /api/v1/subscription/plans` | Consultar planes SaaS disponibles. | Sin body; consumo desde flujo de registro o suscripción. | Retorna planes con nombre, precio, características y límites funcionales. |
+| Subscription | `POST /api/v1/subscription/accounts` | Crear cuenta SaaS inicial. | Body con ownerEmail, planId y datos de negocio. | Crea cuenta y habilita contexto inicial de tienda. |
+| Subscription | `GET /api/v1/subscription/accounts/current` | Consultar cuenta SaaS activa. | Sin body; consumo desde sesión actual. | Retorna cuenta actual con plan, estado y tienda asociada. |
+| Subscription | `GET /api/v1/subscription/accounts/{accountId}` | Consultar cuenta SaaS por identificador. | Identificador de cuenta en la ruta. | Retorna detalle de cuenta, propietario, plan y estado. |
+| Subscription | `PATCH /api/v1/subscription/accounts/{accountId}/change-plan` | Validar cambio de plan de una cuenta SaaS. | Body con identificador del nuevo plan. | Actualiza el plan activo y refleja nuevas capacidades de la cuenta. |
+
+**Pruebas de errores y validaciones básicas en Sprint 3:**
+
+| Endpoint probado | Caso de validación | Request / condición | Resultado esperado |
+| :--- | :--- | :--- | :--- |
+| `GET /api/v1/products/{productId}` | Producto inexistente. | `productId` no registrado. | Respuesta `404 Not Found` y mensaje indicando que el producto no existe. |
+| `POST /api/v1/products` | Creación con SKU vacío o duplicado. | Body incompleto o SKU ya registrado. | Respuesta `400 Bad Request` o validación equivalente sin crear producto. |
+| `PATCH /api/v1/inventory/items/{productId}/stock` | Stock inválido. | Body con stock negativo. | Respuesta de validación y conservación del stock anterior. |
+| `GET /api/v1/kiosk/products/search?query=` | Búsqueda vacía desde kiosko. | Parámetro `query` vacío. | Respuesta controlada sin romper la pantalla del kiosko. |
+| `PATCH /api/v1/operational-tasks/{taskId}/complete` | Tarea inexistente o ya completada. | `taskId` inválido o estado final previo. | Respuesta `404 Not Found` o conflicto de estado según corresponda. |
+| `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Recomendación inexistente o ya aplicada. | `recommendationId` inválido o estado `APPLIED`. | Respuesta controlada y sin duplicar la acción comercial. |
+| `PATCH /api/v1/subscription/accounts/{accountId}/change-plan` | Plan inexistente. | Body con `planId` no registrado. | Respuesta de error y mantenimiento del plan actual. |
+
+**Ejemplos de respuestas verificadas en Sprint 3:**
+
+```json
+{
+  "status": "UP",
+  "service": "RetailPulse API",
+  "version": "1.0.0"
+}
+```
+
+```json
+{
+  "productId": 8,
+  "name": "Arroz Extra 5kg",
+  "sku": "ARR-005",
+  "availableStock": 16,
+  "zoneName": "Abarrotes",
+  "shelfReference": "Pasillo 1 - Estante C"
+}
+```
+
+```json
+{
+  "taskId": 4,
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "origin": "HELP_REQUESTED",
+  "zoneName": "Bebidas"
+}
+```
+
+Estas pruebas evidencian que el Sprint 3 no solo incorporó documentación estática de endpoints, sino también verificación funcional de consumo mediante Swagger/OpenAPI y desde las pantallas principales del frontend. De esta manera, se confirmó que la API real podía sostener los primeros flujos integrados de productos, inventario, tráfico, kiosko, operaciones, recomendaciones y suscripción.
+
 **Evidencia de Swagger/OpenAPI:**
 
 <img src="assets/images/retailpulse-swagger.png" alt="Swagger OpenAPI Services Documentation Sprint 3" width="800">
@@ -3607,6 +3707,116 @@ En el Sprint 4 se documentó la versión v2 del backend de RetailPulse, enfocada
 | Oportunidades y recomendaciones | `GET /api/v1/promotion-recommendations/product-opportunities`, `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Respuesta con conversionRate, stockStatus, recommendationId y prioridad | Documentado |
 | Cuenta SaaS y contexto de tienda | `GET /api/v1/subscription/accounts/current`, `POST /api/v1/subscription/accounts` | Respuesta con ownerEmail, storeId, planId y estado de suscripción | Documentado |
 
+**Ejemplos de consumo de endpoints representativos**
+
+Además de la documentación generada en Swagger/OpenAPI, se registraron ejemplos de consumo para evidenciar cómo la aplicación web interactúa con la API en escenarios funcionales reales. Estos ejemplos no buscan reemplazar la documentación interactiva, sino complementar la evidencia con requests, responses y resultados visibles para el usuario.
+
+**1. Búsqueda de productos desde kiosko**
+
+* **Método y endpoint:** `GET /api/v1/kiosk/products/search?query=leche&storeId=1`
+* **Parámetros:** `query` representa el texto ingresado por el comprador y `storeId` identifica la tienda activa.
+* **Resultado esperado en frontend:** El kiosko muestra productos coincidentes, stock disponible, zona física y referencia de ubicación para orientar al comprador.
+
+```json
+{
+  "query": "leche",
+  "results": [
+    {
+      "productId": 12,
+      "name": "Leche Entera 1L",
+      "sku": "MILK-001",
+      "availableStock": 28,
+      "stockStatus": "AVAILABLE",
+      "zone": {
+        "zoneId": 3,
+        "name": "Lácteos",
+        "shelfReference": "Pasillo 2 - Estante B"
+      }
+    }
+  ]
+}
+```
+
+**2. Actualización de stock**
+
+* **Método y endpoint:** `PATCH /api/v1/inventory/items/12/stock`
+* **Body de request:** Cantidad actualizada después de reposición, venta o ajuste operativo.
+* **Resultado esperado en frontend:** El dashboard de inventario actualiza el stock y cambia el estado visual del producto si pasa a crítico o disponible.
+
+```json
+{
+  "availableStock": 4,
+  "reason": "SALE_UPDATE"
+}
+```
+
+```json
+{
+  "productId": 12,
+  "productName": "Leche Entera 1L",
+  "availableStock": 4,
+  "minimumStock": 8,
+  "stockStatus": "LOW_STOCK",
+  "updatedAt": "2026-07-06T22:15:00"
+}
+```
+
+**3. Atención de tarea operativa**
+
+* **Método y endpoint:** `PATCH /api/v1/operational-tasks/7/complete`
+* **Parámetros:** `taskId` identifica la tarea pendiente asignada al personal de tienda.
+* **Resultado esperado en frontend:** La tarea cambia de pendiente a completada y deja de aparecer en la lista priorizada del staff.
+
+```json
+{
+  "taskId": 7,
+  "title": "Reponer producto en zona Lácteos",
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "completedAt": "2026-07-06T22:20:00",
+  "origin": "LOW_STOCK_ALERT"
+}
+```
+
+**4. Aplicación de recomendación comercial**
+
+* **Método y endpoint:** `PATCH /api/v1/promotion-recommendations/5/apply`
+* **Parámetros:** `recommendationId` identifica la recomendación generada por oportunidades de conversión, inventario o tráfico.
+* **Resultado esperado en frontend:** La recomendación pasa de activa a aplicada y queda registrada como decisión comercial tomada por el administrador.
+
+```json
+{
+  "recommendationId": 5,
+  "productId": 12,
+  "recommendationType": "PROMOTION",
+  "status": "APPLIED",
+  "conversionRate": 0.18,
+  "stockStatus": "AVAILABLE",
+  "appliedAt": "2026-07-06T22:25:00"
+}
+```
+
+**Manejo de errores documentado**
+
+La API considera respuestas de error consistentes para facilitar la integración con el frontend y permitir que la aplicación muestre mensajes comprensibles al usuario. Los principales casos documentados fueron los siguientes:
+
+| Código HTTP | Escenario | Ejemplo de respuesta | Comportamiento esperado en frontend |
+| :---: | :--- | :--- | :--- |
+| `400 Bad Request` | Request con datos inválidos, como stock negativo o query vacía. | `{ "error": "Invalid request", "message": "availableStock must be greater than or equal to 0" }` | Mostrar validación junto al formulario o acción ejecutada. |
+| `404 Not Found` | Producto, tarea, alerta o recomendación inexistente. | `{ "error": "Resource not found", "message": "Product 99 was not found" }` | Informar que el recurso ya no está disponible y refrescar la vista. |
+| `409 Conflict` | Cambio de estado no permitido, como completar una tarea ya completada. | `{ "error": "Invalid state transition", "message": "Task is already completed" }` | Evitar duplicar la acción y mantener el estado actual en pantalla. |
+| `500 Internal Server Error` | Error no controlado del servidor o dependencia externa. | `{ "error": "Internal server error", "message": "Unexpected service failure" }` | Mostrar mensaje genérico y permitir reintentar la operación. |
+
+**Pruebas funcionales de API**
+
+| Endpoint probado | Escenario funcional | Resultado esperado | Evidencia |
+| :--- | :--- | :--- | :--- |
+| `GET /api/v1/kiosk/products/search` | Buscar un producto existente desde el kiosko. | Retorna coincidencias con stock, zona y referencia de estante. | Validado en Swagger/OpenAPI y flujo de kiosko del frontend. |
+| `PATCH /api/v1/inventory/items/{productId}/stock` | Actualizar stock por debajo del mínimo configurado. | Retorna `LOW_STOCK` y habilita alerta operativa relacionada. | Validado mediante request manual y vista de inventario. |
+| `PATCH /api/v1/operational-tasks/{taskId}/complete` | Marcar una tarea pendiente como atendida. | Cambia el estado a `COMPLETED` y desaparece de pendientes. | Validado desde Swagger/OpenAPI y vista del staff. |
+| `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Aplicar una recomendación activa. | Cambia el estado de `ACTIVE` a `APPLIED`. | Validado desde endpoint y vista de recomendaciones comerciales. |
+| `GET /api/v1/health` | Verificar disponibilidad del backend desplegado. | Retorna estado exitoso de la API. | Validado con health check público en Azure. |
+
 ##### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
 El despliegue del Sprint 4 corresponde a la versión final integrada de RetailPulse. El frontend se mantiene publicado en Azure Static Web Apps y el backend v2 se ejecuta como contenedor Docker en Azure Web Apps, consumiendo PostgreSQL en Azure como base de datos persistente.
@@ -3751,6 +3961,30 @@ Resumen: El entrevistado señaló que la propuesta de valor de RetailPulse fue s
 Resumen: El entrevistado comprendió instantáneamente la finalidad del quiosco, comparándolo con tener un buscador web integrado directamente en el local físico. Valoró muy positivamente la experiencia de búsqueda, destacando la fluidez de la interfaz táctil y la utilidad de las sugerencias automáticas mientras escribía. Pudo identificar claramente la disponibilidad, la zona y el estante del producto en una sola pantalla, y consideró que las promociones mostradas fueron muy acertadas y nada invasivas. Lo que más le gustó de la experiencia fue la autonomía y el gran ahorro de tiempo al no tener que buscar vendedores disponibles. Como principal oportunidad de mejora, sugirió incorporar un escáner físico de códigos de barras en el módulo para facilitar su uso a personas mayores que prefieren no escribir. Manifestó que usaría y recomendaría definitivamente RetailPulse para visitar tiendas nuevas, ya que elimina la fricción, evita colas por consultas y hace la compra mucho más rápida y cómoda.
 
 **Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8) 
+
+##### Análisis consolidado de hallazgos
+
+Las entrevistas permitieron validar la utilidad de RetailPulse desde dos perspectivas complementarias. Por un lado, los administradores y personal de tienda evaluaron la capacidad del sistema para ordenar la operación diaria, priorizar alertas y tomar decisiones con datos. Por otro lado, los compradores frecuentes valoraron la autonomía del kiosko para encontrar productos sin depender de un colaborador disponible.
+
+**Segmento 1: Administradores, supervisores y personal de tienda**
+
+| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora propuesta |
+| :--- | :--- | :--- | :--- |
+| La propuesta de valor se percibe clara porque centraliza información operativa. | Andy Pillaca destacó dashboard, inventario, zonas, métricas y alertas como información útil para decidir más rápido. | Valida el enfoque de RetailPulse como herramienta de gestión para tiendas físicas. | Mantener una navegación orientada a indicadores accionables y no solo a reportes visuales. |
+| El mapa de calor ayuda a detectar zonas con baja actividad o problemas de distribución. | Carlos Mendoza resaltó el valor de identificar "zonas muertas" dentro de la tienda. | Refuerza la importancia del módulo de Traffic Analytics dentro del dashboard. | Añadir explicaciones breves sobre intensidad, conversión y permanencia para usuarios no técnicos. |
+| Las alertas y tareas reducen la necesidad de supervisión manual constante. | Los entrevistados valoraron que el personal pueda recibir acciones priorizadas en tiempo real. | Confirma la utilidad del bounded context Store Operations. | Mejorar confirmaciones, estados y trazabilidad de tareas atendidas. |
+| El onboarding inicial puede requerir mayor guía. | Carlos Mendoza sugirió tutoriales o videos breves para configurar la tienda. | Identifica una barrera de adopción en negocios retail tradicionales. | Incorporar ayuda contextual durante la configuración de layout, zonas y productos. |
+
+**Segmento 2: Compradores frecuentes en tiendas físicas**
+
+| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora propuesta |
+| :--- | :--- | :--- | :--- |
+| El kiosko facilita encontrar productos sin recorrer innecesariamente la tienda. | Andy Nuñez valoró consultar stock, ubicación, estante y promociones desde una sola experiencia. | Valida el flujo de Assisted Shopping como componente central de la experiencia del comprador. | Mantener la búsqueda visible, rápida y conectada con inventario real. |
+| La autonomía del comprador reduce fricción cuando no hay personal disponible. | Juan Flores comparó el kiosko con un buscador web dentro del local físico. | Refuerza el valor de RetailPulse en escenarios de alta afluencia o baja disponibilidad de staff. | Conectar solicitudes de ayuda del kiosko con tareas operativas para el personal. |
+| Las sugerencias automáticas y filtros pueden mejorar la eficiencia de búsqueda. | Andy Nuñez propuso sugerencias por texto y filtros por categoría. | Identifica una mejora directa sobre la interacción del kiosko. | Priorizar autocompletado, filtros por categoría e historial reciente de búsqueda. |
+| Algunos usuarios podrían preferir alternativas al ingreso manual de texto. | Juan Flores sugirió incorporar escáner físico de códigos de barras para personas mayores. | Abre oportunidades de accesibilidad y facilidad de uso en tienda. | Evaluar escaneo de código de barras o búsqueda por voz como funcionalidades futuras. |
+
+En conjunto, las entrevistas validan que RetailPulse responde a necesidades reales de operación y experiencia de compra en tiendas físicas. Los administradores reconocen valor en la trazabilidad de datos, alertas y recomendaciones, mientras que los compradores destacan rapidez, autonomía y claridad de ubicación. Como oportunidades futuras, el equipo identifica mejoras de onboarding, asistencia contextual, accesibilidad del kiosko y mecanismos de búsqueda más eficientes.
 
 ##### 5.3.3. Evaluaciones según heurísticas
 
