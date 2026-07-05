@@ -3214,20 +3214,65 @@ Para complementar la documentación generada con Swagger/OpenAPI, el equipo regi
 | Módulo | Método y endpoint probado | Escenario de prueba | Request / parámetros utilizados | Resultado esperado |
 | :--- | :--- | :--- | :--- | :--- |
 | Base Spring Boot | `GET /api/v1/health` | Verificar que la API real se encuentre disponible. | Sin body. | Respuesta exitosa confirmando que el backend está operativo. |
+| Store Foundation | `GET /api/v1/stores` | Consultar tiendas asociadas a cuentas SaaS. | Sin body; consumo desde configuración inicial. | Retorna tiendas registradas con identificador, nombre, dirección y estado. |
+| Store Foundation | `POST /api/v1/stores` | Crear una tienda base para una cuenta SaaS. | Body con nombre, dirección, ciudad y cuenta asociada. | Registra la tienda y devuelve el `storeId` generado. |
+| Store Foundation | `GET /api/v1/stores/{storeId}` | Consultar información específica de una tienda. | Identificador de tienda en la ruta. | Retorna datos de la tienda activa para inicializar contexto operativo. |
+| Store Foundation | `PUT /api/v1/stores/{storeId}` | Actualizar información general de tienda. | Body con datos editados de nombre, ubicación u horario. | Persiste cambios y actualiza la vista de configuración. |
+| Store Foundation | `GET /api/v1/zones` | Listar zonas configuradas en el layout físico. | Sin body; consumo desde editor de layout. | Retorna zonas con nombre, tipo, posición y dimensiones. |
+| Store Foundation | `POST /api/v1/zones` | Crear una zona del layout de tienda. | Body con `storeId`, nombre, tipo y coordenadas. | Crea la zona y permite visualizarla en el mapa de tienda. |
+| Store Foundation | `PUT /api/v1/zones/{zoneId}` | Editar posición o información de una zona. | Body con coordenadas y metadatos actualizados. | Actualiza la distribución visual del layout. |
+| Store Foundation | `DELETE /api/v1/zones/{zoneId}` | Eliminar una zona del layout. | Identificador de zona en la ruta. | Remueve la zona y evita que aparezca en consultas posteriores. |
 | Store Foundation | `GET /api/v1/products` | Consultar productos reales registrados para la tienda. | Sin body; consumo desde listado administrativo. | Retorna colección de productos con `productId`, `name`, `sku`, categoría y estado. |
+| Store Foundation | `POST /api/v1/products` | Crear un producto en el catálogo. | Body con nombre, SKU, categoría, precio y zona asignada. | Registra el producto y lo deja disponible para inventario y búsqueda. |
+| Store Foundation | `GET /api/v1/products/{productId}` | Consultar detalle de un producto existente. | Identificador de producto en la ruta. | Retorna información completa del producto para edición o visualización. |
+| Store Foundation | `PUT /api/v1/products/{productId}` | Editar datos de producto. | Body con precio, categoría, nombre o zona actualizada. | Persiste cambios y actualiza el catálogo administrativo. |
+| Store Foundation | `DELETE /api/v1/products/{productId}` | Eliminar producto del catálogo. | Identificador de producto en la ruta. | Retira el producto de consultas administrativas y de kiosko. |
 | Store Foundation | `GET /api/v1/products/search?query=leche` | Validar búsqueda administrativa por nombre o SKU. | Parámetro `query` con texto ingresado por el usuario. | Retorna productos coincidentes y permite actualizar la tabla de catálogo en frontend. |
+| Traffic Analytics | `POST /api/v1/traffic/movement-events` | Registrar evento de movimiento en tienda. | Body con `zoneId`, timestamp, tipo de evento y duración estimada. | Guarda el evento para alimentar métricas de tráfico. |
 | Traffic Analytics | `GET /api/v1/traffic/heatmap` | Consultar datos utilizados por el mapa de calor. | Sin body; consumo desde dashboard. | Retorna zonas con nivel de intensidad, visitas, permanencia e interacción. |
 | Traffic Analytics | `GET /api/v1/traffic/zones/metrics` | Validar métricas por zona del layout físico. | Sin body; consulta desde vista de analítica. | Retorna métricas agrupadas por zona para visualizar desempeño operativo. |
+| Traffic Analytics | `GET /api/v1/traffic/congestion` | Consultar zonas con congestión operativa. | Sin body; consumo desde dashboard operativo. | Retorna zonas con mayor concentración y nivel de congestión. |
+| Traffic Analytics | `PUT /api/v1/traffic/zones/{zoneId}/metrics` | Actualizar métricas calculadas de una zona. | Body con visitas, permanencia, interacción y conversión. | Actualiza indicadores utilizados por heatmap y recomendaciones. |
+| Inventory Intelligence | `GET /api/v1/inventory/items` | Consultar inventario general de la tienda. | Sin body; consumo desde vista de inventario. | Retorna inventario con producto, stock disponible, mínimo y estado. |
+| Inventory Intelligence | `POST /api/v1/inventory/items` | Crear ítem de inventario para un producto. | Body con `productId`, stock inicial, stock mínimo y ubicación. | Asocia inventario al producto y habilita monitoreo de stock. |
+| Inventory Intelligence | `GET /api/v1/inventory/items/product/{productId}` | Consultar inventario asociado a un producto. | Identificador de producto en la ruta. | Retorna stock, estado y referencia operativa del producto. |
 | Inventory Intelligence | `GET /api/v1/inventory/items/critical` | Identificar productos con stock crítico. | Sin body; consumo desde módulo de inventario. | Retorna ítems con bajo stock u out of stock para priorizar reposición. |
 | Inventory Intelligence | `PATCH /api/v1/inventory/items/{productId}/stock` | Actualizar stock disponible de un producto. | Body con cantidad disponible actualizada. | Retorna inventario actualizado y estado derivado del stock. |
 | Assisted Shopping / Kiosk | `GET /api/v1/kiosk/products/search?query=arroz` | Buscar productos desde el kiosko. | Parámetro `query` con texto ingresado por comprador. | Retorna productos con stock, zona y referencia de ubicación para la experiencia de compra. |
+| Assisted Shopping / Kiosk | `GET /api/v1/kiosk/products/{productId}` | Consultar detalle de producto desde kiosko. | Identificador de producto en la ruta. | Retorna datos del producto, disponibilidad, zona y promociones asociadas. |
+| Assisted Shopping / Kiosk | `POST /api/v1/kiosk/sessions` | Iniciar sesión de búsqueda en kiosko. | Body con `storeId` y datos mínimos de contexto. | Genera `sessionId` para rastrear acciones del comprador. |
+| Assisted Shopping / Kiosk | `GET /api/v1/kiosk/sessions/{sessionId}` | Consultar sesión de kiosko. | Identificador de sesión en la ruta. | Retorna acciones registradas y estado de la sesión. |
 | Assisted Shopping / Kiosk | `POST /api/v1/kiosk/sessions/{sessionId}/searches` | Registrar una acción del comprador durante la búsqueda. | Body con `query`, `productId`, `resultStatus` y `action`. | Registra eventos como `SEARCHED`, `LOCATION_VIEWED`, `HELP_REQUESTED` o `FOUND`. |
+| Store Operations | `GET /api/v1/operational-alerts` | Consultar todas las alertas operativas. | Sin body; consumo desde vista administrativa. | Retorna alertas activas, resueltas y su origen funcional. |
+| Store Operations | `POST /api/v1/operational-alerts` | Crear alerta operativa manual o derivada. | Body con tipo, prioridad, zona, producto y descripción. | Registra alerta y la muestra al personal correspondiente. |
 | Store Operations | `GET /api/v1/operational-alerts/active` | Consultar alertas operativas activas. | Sin body; consumo desde panel de staff. | Retorna alertas con prioridad, origen, zona y estado actual. |
+| Store Operations | `PATCH /api/v1/operational-alerts/{alertId}/resolve` | Resolver una alerta activa. | Identificador de alerta en la ruta. | Cambia estado de alerta a resuelta y actualiza panel operativo. |
+| Store Operations | `GET /api/v1/operational-tasks` | Consultar tareas operativas generales. | Sin body; consumo desde vista de staff. | Retorna tareas con prioridad, responsable, origen y estado. |
+| Store Operations | `POST /api/v1/operational-tasks` | Crear tarea operativa para personal. | Body con título, prioridad, zona, alerta relacionada y descripción. | Registra tarea y la coloca en la lista operativa. |
+| Store Operations | `GET /api/v1/operational-tasks/pending` | Consultar tareas pendientes. | Sin body; consumo desde panel de staff. | Retorna tareas pendientes ordenadas por prioridad. |
 | Store Operations | `PATCH /api/v1/operational-tasks/{taskId}/complete` | Marcar una tarea operativa como completada. | Identificador de tarea pendiente en la ruta. | Cambia el estado de `PENDING` a `COMPLETED` y actualiza la vista del staff. |
+| Promotion Optimization | `GET /api/v1/promotion-recommendations` | Consultar recomendaciones comerciales generales. | Sin body; consumo desde dashboard comercial. | Retorna recomendaciones activas, aplicadas y descartadas. |
+| Promotion Optimization | `POST /api/v1/promotion-recommendations` | Crear recomendación comercial. | Body con producto, tipo, prioridad, motivo y acción sugerida. | Registra recomendación para evaluación del administrador. |
 | Promotion Optimization | `GET /api/v1/promotion-recommendations/active` | Consultar recomendaciones comerciales activas. | Sin body; consumo desde vista administrativa. | Retorna recomendaciones disponibles con prioridad, producto y motivo de recomendación. |
 | Promotion Optimization | `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Aplicar una recomendación comercial. | Identificador de recomendación activa en la ruta. | Cambia el estado de `ACTIVE` a `APPLIED` y registra la decisión comercial. |
+| Promotion Optimization | `GET /api/v1/promotion-recommendations/product-opportunities` | Consultar oportunidades comerciales por producto. | Sin body; consumo desde recomendaciones. | Retorna oportunidades basadas en inventario, interacción y conversión. |
 | Subscription | `GET /api/v1/subscription/plans` | Consultar planes SaaS disponibles. | Sin body; consumo desde flujo de registro o suscripción. | Retorna planes con nombre, precio, características y límites funcionales. |
+| Subscription | `POST /api/v1/subscription/accounts` | Crear cuenta SaaS inicial. | Body con ownerEmail, planId y datos de negocio. | Crea cuenta y habilita contexto inicial de tienda. |
+| Subscription | `GET /api/v1/subscription/accounts/current` | Consultar cuenta SaaS activa. | Sin body; consumo desde sesión actual. | Retorna cuenta actual con plan, estado y tienda asociada. |
+| Subscription | `GET /api/v1/subscription/accounts/{accountId}` | Consultar cuenta SaaS por identificador. | Identificador de cuenta en la ruta. | Retorna detalle de cuenta, propietario, plan y estado. |
 | Subscription | `PATCH /api/v1/subscription/accounts/{accountId}/change-plan` | Validar cambio de plan de una cuenta SaaS. | Body con identificador del nuevo plan. | Actualiza el plan activo y refleja nuevas capacidades de la cuenta. |
+
+**Pruebas de errores y validaciones básicas en Sprint 3:**
+
+| Endpoint probado | Caso de validación | Request / condición | Resultado esperado |
+| :--- | :--- | :--- | :--- |
+| `GET /api/v1/products/{productId}` | Producto inexistente. | `productId` no registrado. | Respuesta `404 Not Found` y mensaje indicando que el producto no existe. |
+| `POST /api/v1/products` | Creación con SKU vacío o duplicado. | Body incompleto o SKU ya registrado. | Respuesta `400 Bad Request` o validación equivalente sin crear producto. |
+| `PATCH /api/v1/inventory/items/{productId}/stock` | Stock inválido. | Body con stock negativo. | Respuesta de validación y conservación del stock anterior. |
+| `GET /api/v1/kiosk/products/search?query=` | Búsqueda vacía desde kiosko. | Parámetro `query` vacío. | Respuesta controlada sin romper la pantalla del kiosko. |
+| `PATCH /api/v1/operational-tasks/{taskId}/complete` | Tarea inexistente o ya completada. | `taskId` inválido o estado final previo. | Respuesta `404 Not Found` o conflicto de estado según corresponda. |
+| `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Recomendación inexistente o ya aplicada. | `recommendationId` inválido o estado `APPLIED`. | Respuesta controlada y sin duplicar la acción comercial. |
+| `PATCH /api/v1/subscription/accounts/{accountId}/change-plan` | Plan inexistente. | Body con `planId` no registrado. | Respuesta de error y mantenimiento del plan actual. |
 
 **Ejemplos de respuestas verificadas en Sprint 3:**
 
