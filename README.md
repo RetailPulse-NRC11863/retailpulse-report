@@ -3607,6 +3607,116 @@ En el Sprint 4 se documentó la versión v2 del backend de RetailPulse, enfocada
 | Oportunidades y recomendaciones | `GET /api/v1/promotion-recommendations/product-opportunities`, `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Respuesta con conversionRate, stockStatus, recommendationId y prioridad | Documentado |
 | Cuenta SaaS y contexto de tienda | `GET /api/v1/subscription/accounts/current`, `POST /api/v1/subscription/accounts` | Respuesta con ownerEmail, storeId, planId y estado de suscripción | Documentado |
 
+**Ejemplos de consumo de endpoints representativos**
+
+Además de la documentación generada en Swagger/OpenAPI, se registraron ejemplos de consumo para evidenciar cómo la aplicación web interactúa con la API en escenarios funcionales reales. Estos ejemplos no buscan reemplazar la documentación interactiva, sino complementar la evidencia con requests, responses y resultados visibles para el usuario.
+
+**1. Búsqueda de productos desde kiosko**
+
+* **Método y endpoint:** `GET /api/v1/kiosk/products/search?query=leche&storeId=1`
+* **Parámetros:** `query` representa el texto ingresado por el comprador y `storeId` identifica la tienda activa.
+* **Resultado esperado en frontend:** El kiosko muestra productos coincidentes, stock disponible, zona física y referencia de ubicación para orientar al comprador.
+
+```json
+{
+  "query": "leche",
+  "results": [
+    {
+      "productId": 12,
+      "name": "Leche Entera 1L",
+      "sku": "MILK-001",
+      "availableStock": 28,
+      "stockStatus": "AVAILABLE",
+      "zone": {
+        "zoneId": 3,
+        "name": "Lácteos",
+        "shelfReference": "Pasillo 2 - Estante B"
+      }
+    }
+  ]
+}
+```
+
+**2. Actualización de stock**
+
+* **Método y endpoint:** `PATCH /api/v1/inventory/items/12/stock`
+* **Body de request:** Cantidad actualizada después de reposición, venta o ajuste operativo.
+* **Resultado esperado en frontend:** El dashboard de inventario actualiza el stock y cambia el estado visual del producto si pasa a crítico o disponible.
+
+```json
+{
+  "availableStock": 4,
+  "reason": "SALE_UPDATE"
+}
+```
+
+```json
+{
+  "productId": 12,
+  "productName": "Leche Entera 1L",
+  "availableStock": 4,
+  "minimumStock": 8,
+  "stockStatus": "LOW_STOCK",
+  "updatedAt": "2026-07-06T22:15:00"
+}
+```
+
+**3. Atención de tarea operativa**
+
+* **Método y endpoint:** `PATCH /api/v1/operational-tasks/7/complete`
+* **Parámetros:** `taskId` identifica la tarea pendiente asignada al personal de tienda.
+* **Resultado esperado en frontend:** La tarea cambia de pendiente a completada y deja de aparecer en la lista priorizada del staff.
+
+```json
+{
+  "taskId": 7,
+  "title": "Reponer producto en zona Lácteos",
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "completedAt": "2026-07-06T22:20:00",
+  "origin": "LOW_STOCK_ALERT"
+}
+```
+
+**4. Aplicación de recomendación comercial**
+
+* **Método y endpoint:** `PATCH /api/v1/promotion-recommendations/5/apply`
+* **Parámetros:** `recommendationId` identifica la recomendación generada por oportunidades de conversión, inventario o tráfico.
+* **Resultado esperado en frontend:** La recomendación pasa de activa a aplicada y queda registrada como decisión comercial tomada por el administrador.
+
+```json
+{
+  "recommendationId": 5,
+  "productId": 12,
+  "recommendationType": "PROMOTION",
+  "status": "APPLIED",
+  "conversionRate": 0.18,
+  "stockStatus": "AVAILABLE",
+  "appliedAt": "2026-07-06T22:25:00"
+}
+```
+
+**Manejo de errores documentado**
+
+La API considera respuestas de error consistentes para facilitar la integración con el frontend y permitir que la aplicación muestre mensajes comprensibles al usuario. Los principales casos documentados fueron los siguientes:
+
+| Código HTTP | Escenario | Ejemplo de respuesta | Comportamiento esperado en frontend |
+| :---: | :--- | :--- | :--- |
+| `400 Bad Request` | Request con datos inválidos, como stock negativo o query vacía. | `{ "error": "Invalid request", "message": "availableStock must be greater than or equal to 0" }` | Mostrar validación junto al formulario o acción ejecutada. |
+| `404 Not Found` | Producto, tarea, alerta o recomendación inexistente. | `{ "error": "Resource not found", "message": "Product 99 was not found" }` | Informar que el recurso ya no está disponible y refrescar la vista. |
+| `409 Conflict` | Cambio de estado no permitido, como completar una tarea ya completada. | `{ "error": "Invalid state transition", "message": "Task is already completed" }` | Evitar duplicar la acción y mantener el estado actual en pantalla. |
+| `500 Internal Server Error` | Error no controlado del servidor o dependencia externa. | `{ "error": "Internal server error", "message": "Unexpected service failure" }` | Mostrar mensaje genérico y permitir reintentar la operación. |
+
+**Pruebas funcionales de API**
+
+| Endpoint probado | Escenario funcional | Resultado esperado | Evidencia |
+| :--- | :--- | :--- | :--- |
+| `GET /api/v1/kiosk/products/search` | Buscar un producto existente desde el kiosko. | Retorna coincidencias con stock, zona y referencia de estante. | Validado en Swagger/OpenAPI y flujo de kiosko del frontend. |
+| `PATCH /api/v1/inventory/items/{productId}/stock` | Actualizar stock por debajo del mínimo configurado. | Retorna `LOW_STOCK` y habilita alerta operativa relacionada. | Validado mediante request manual y vista de inventario. |
+| `PATCH /api/v1/operational-tasks/{taskId}/complete` | Marcar una tarea pendiente como atendida. | Cambia el estado a `COMPLETED` y desaparece de pendientes. | Validado desde Swagger/OpenAPI y vista del staff. |
+| `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Aplicar una recomendación activa. | Cambia el estado de `ACTIVE` a `APPLIED`. | Validado desde endpoint y vista de recomendaciones comerciales. |
+| `GET /api/v1/health` | Verificar disponibilidad del backend desplegado. | Retorna estado exitoso de la API. | Validado con health check público en Azure. |
+
 ##### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
 El despliegue del Sprint 4 corresponde a la versión final integrada de RetailPulse. El frontend se mantiene publicado en Azure Static Web Apps y el backend v2 se ejecuta como contenedor Docker en Azure Web Apps, consumiendo PostgreSQL en Azure como base de datos persistente.
@@ -3751,6 +3861,30 @@ Resumen: El entrevistado señaló que la propuesta de valor de RetailPulse fue s
 Resumen: El entrevistado comprendió instantáneamente la finalidad del quiosco, comparándolo con tener un buscador web integrado directamente en el local físico. Valoró muy positivamente la experiencia de búsqueda, destacando la fluidez de la interfaz táctil y la utilidad de las sugerencias automáticas mientras escribía. Pudo identificar claramente la disponibilidad, la zona y el estante del producto en una sola pantalla, y consideró que las promociones mostradas fueron muy acertadas y nada invasivas. Lo que más le gustó de la experiencia fue la autonomía y el gran ahorro de tiempo al no tener que buscar vendedores disponibles. Como principal oportunidad de mejora, sugirió incorporar un escáner físico de códigos de barras en el módulo para facilitar su uso a personas mayores que prefieren no escribir. Manifestó que usaría y recomendaría definitivamente RetailPulse para visitar tiendas nuevas, ya que elimina la fricción, evita colas por consultas y hace la compra mucho más rápida y cómoda.
 
 **Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8) 
+
+##### Análisis consolidado de hallazgos
+
+Las entrevistas permitieron validar la utilidad de RetailPulse desde dos perspectivas complementarias. Por un lado, los administradores y personal de tienda evaluaron la capacidad del sistema para ordenar la operación diaria, priorizar alertas y tomar decisiones con datos. Por otro lado, los compradores frecuentes valoraron la autonomía del kiosko para encontrar productos sin depender de un colaborador disponible.
+
+**Segmento 1: Administradores, supervisores y personal de tienda**
+
+| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora propuesta |
+| :--- | :--- | :--- | :--- |
+| La propuesta de valor se percibe clara porque centraliza información operativa. | Andy Pillaca destacó dashboard, inventario, zonas, métricas y alertas como información útil para decidir más rápido. | Valida el enfoque de RetailPulse como herramienta de gestión para tiendas físicas. | Mantener una navegación orientada a indicadores accionables y no solo a reportes visuales. |
+| El mapa de calor ayuda a detectar zonas con baja actividad o problemas de distribución. | Carlos Mendoza resaltó el valor de identificar "zonas muertas" dentro de la tienda. | Refuerza la importancia del módulo de Traffic Analytics dentro del dashboard. | Añadir explicaciones breves sobre intensidad, conversión y permanencia para usuarios no técnicos. |
+| Las alertas y tareas reducen la necesidad de supervisión manual constante. | Los entrevistados valoraron que el personal pueda recibir acciones priorizadas en tiempo real. | Confirma la utilidad del bounded context Store Operations. | Mejorar confirmaciones, estados y trazabilidad de tareas atendidas. |
+| El onboarding inicial puede requerir mayor guía. | Carlos Mendoza sugirió tutoriales o videos breves para configurar la tienda. | Identifica una barrera de adopción en negocios retail tradicionales. | Incorporar ayuda contextual durante la configuración de layout, zonas y productos. |
+
+**Segmento 2: Compradores frecuentes en tiendas físicas**
+
+| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora propuesta |
+| :--- | :--- | :--- | :--- |
+| El kiosko facilita encontrar productos sin recorrer innecesariamente la tienda. | Andy Nuñez valoró consultar stock, ubicación, estante y promociones desde una sola experiencia. | Valida el flujo de Assisted Shopping como componente central de la experiencia del comprador. | Mantener la búsqueda visible, rápida y conectada con inventario real. |
+| La autonomía del comprador reduce fricción cuando no hay personal disponible. | Juan Flores comparó el kiosko con un buscador web dentro del local físico. | Refuerza el valor de RetailPulse en escenarios de alta afluencia o baja disponibilidad de staff. | Conectar solicitudes de ayuda del kiosko con tareas operativas para el personal. |
+| Las sugerencias automáticas y filtros pueden mejorar la eficiencia de búsqueda. | Andy Nuñez propuso sugerencias por texto y filtros por categoría. | Identifica una mejora directa sobre la interacción del kiosko. | Priorizar autocompletado, filtros por categoría e historial reciente de búsqueda. |
+| Algunos usuarios podrían preferir alternativas al ingreso manual de texto. | Juan Flores sugirió incorporar escáner físico de códigos de barras para personas mayores. | Abre oportunidades de accesibilidad y facilidad de uso en tienda. | Evaluar escaneo de código de barras o búsqueda por voz como funcionalidades futuras. |
+
+En conjunto, las entrevistas validan que RetailPulse responde a necesidades reales de operación y experiencia de compra en tiendas físicas. Los administradores reconocen valor en la trazabilidad de datos, alertas y recomendaciones, mientras que los compradores destacan rapidez, autonomía y claridad de ubicación. Como oportunidades futuras, el equipo identifica mejoras de onboarding, asistencia contextual, accesibilidad del kiosko y mecanismos de búsqueda más eficientes.
 
 ##### 5.3.3. Evaluaciones según heurísticas
 
