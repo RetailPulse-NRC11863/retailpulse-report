@@ -3207,6 +3207,61 @@ La documentación de servicios fue realizada mediante Swagger/OpenAPI, permitien
 
 La tabla de servicios del Sprint 3 se centra en los recursos REST que permitieron reemplazar progresivamente la Fake API y habilitar la primera integración funcional entre Angular y Spring Boot.
 
+**Pruebas de endpoints realizadas durante el Sprint 3:**
+
+Para complementar la documentación generada con Swagger/OpenAPI, el equipo registró pruebas funcionales sobre endpoints representativos de cada bounded context. Estas pruebas permitieron verificar disponibilidad del backend, estructura de respuestas, métodos HTTP soportados y coherencia entre los datos retornados por la API y las vistas integradas en Angular.
+
+| Módulo | Método y endpoint probado | Escenario de prueba | Request / parámetros utilizados | Resultado esperado |
+| :--- | :--- | :--- | :--- | :--- |
+| Base Spring Boot | `GET /api/v1/health` | Verificar que la API real se encuentre disponible. | Sin body. | Respuesta exitosa confirmando que el backend está operativo. |
+| Store Foundation | `GET /api/v1/products` | Consultar productos reales registrados para la tienda. | Sin body; consumo desde listado administrativo. | Retorna colección de productos con `productId`, `name`, `sku`, categoría y estado. |
+| Store Foundation | `GET /api/v1/products/search?query=leche` | Validar búsqueda administrativa por nombre o SKU. | Parámetro `query` con texto ingresado por el usuario. | Retorna productos coincidentes y permite actualizar la tabla de catálogo en frontend. |
+| Traffic Analytics | `GET /api/v1/traffic/heatmap` | Consultar datos utilizados por el mapa de calor. | Sin body; consumo desde dashboard. | Retorna zonas con nivel de intensidad, visitas, permanencia e interacción. |
+| Traffic Analytics | `GET /api/v1/traffic/zones/metrics` | Validar métricas por zona del layout físico. | Sin body; consulta desde vista de analítica. | Retorna métricas agrupadas por zona para visualizar desempeño operativo. |
+| Inventory Intelligence | `GET /api/v1/inventory/items/critical` | Identificar productos con stock crítico. | Sin body; consumo desde módulo de inventario. | Retorna ítems con bajo stock u out of stock para priorizar reposición. |
+| Inventory Intelligence | `PATCH /api/v1/inventory/items/{productId}/stock` | Actualizar stock disponible de un producto. | Body con cantidad disponible actualizada. | Retorna inventario actualizado y estado derivado del stock. |
+| Assisted Shopping / Kiosk | `GET /api/v1/kiosk/products/search?query=arroz` | Buscar productos desde el kiosko. | Parámetro `query` con texto ingresado por comprador. | Retorna productos con stock, zona y referencia de ubicación para la experiencia de compra. |
+| Assisted Shopping / Kiosk | `POST /api/v1/kiosk/sessions/{sessionId}/searches` | Registrar una acción del comprador durante la búsqueda. | Body con `query`, `productId`, `resultStatus` y `action`. | Registra eventos como `SEARCHED`, `LOCATION_VIEWED`, `HELP_REQUESTED` o `FOUND`. |
+| Store Operations | `GET /api/v1/operational-alerts/active` | Consultar alertas operativas activas. | Sin body; consumo desde panel de staff. | Retorna alertas con prioridad, origen, zona y estado actual. |
+| Store Operations | `PATCH /api/v1/operational-tasks/{taskId}/complete` | Marcar una tarea operativa como completada. | Identificador de tarea pendiente en la ruta. | Cambia el estado de `PENDING` a `COMPLETED` y actualiza la vista del staff. |
+| Promotion Optimization | `GET /api/v1/promotion-recommendations/active` | Consultar recomendaciones comerciales activas. | Sin body; consumo desde vista administrativa. | Retorna recomendaciones disponibles con prioridad, producto y motivo de recomendación. |
+| Promotion Optimization | `PATCH /api/v1/promotion-recommendations/{recommendationId}/apply` | Aplicar una recomendación comercial. | Identificador de recomendación activa en la ruta. | Cambia el estado de `ACTIVE` a `APPLIED` y registra la decisión comercial. |
+| Subscription | `GET /api/v1/subscription/plans` | Consultar planes SaaS disponibles. | Sin body; consumo desde flujo de registro o suscripción. | Retorna planes con nombre, precio, características y límites funcionales. |
+| Subscription | `PATCH /api/v1/subscription/accounts/{accountId}/change-plan` | Validar cambio de plan de una cuenta SaaS. | Body con identificador del nuevo plan. | Actualiza el plan activo y refleja nuevas capacidades de la cuenta. |
+
+**Ejemplos de respuestas verificadas en Sprint 3:**
+
+```json
+{
+  "status": "UP",
+  "service": "RetailPulse API",
+  "version": "1.0.0"
+}
+```
+
+```json
+{
+  "productId": 8,
+  "name": "Arroz Extra 5kg",
+  "sku": "ARR-005",
+  "availableStock": 16,
+  "zoneName": "Abarrotes",
+  "shelfReference": "Pasillo 1 - Estante C"
+}
+```
+
+```json
+{
+  "taskId": 4,
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "origin": "HELP_REQUESTED",
+  "zoneName": "Bebidas"
+}
+```
+
+Estas pruebas evidencian que el Sprint 3 no solo incorporó documentación estática de endpoints, sino también verificación funcional de consumo mediante Swagger/OpenAPI y desde las pantallas principales del frontend. De esta manera, se confirmó que la API real podía sostener los primeros flujos integrados de productos, inventario, tráfico, kiosko, operaciones, recomendaciones y suscripción.
+
 **Evidencia de Swagger/OpenAPI:**
 
 <img src="assets/images/retailpulse-swagger.png" alt="Swagger OpenAPI Services Documentation Sprint 3" width="800">
