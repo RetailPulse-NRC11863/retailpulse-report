@@ -3907,12 +3907,11 @@ Las entrevistas de validación fueron diseñadas para evaluar la claridad de la 
 
 ##### 5.3.2. Registro de Entrevistas.
 
-A continuación, se presenta la información correspondiente a las entrevistas de validación realizadas durante el Sprint 3, incluyendo participantes, tiempos de registro, evidencias visuales y hallazgos principales por segmento.
+A continuación, se debe registrar la información correspondiente a las entrevistas de validación realizadas durante el Sprint 3.
 
-##### Segmento 1: Dueños o administradores de negocios retail fisicos
+##### Segmento 1: Dueños o administradores de negocios retail físicos
 
 ###### Entrevista 1
-
 * Nombre: Andy Pillaca
 * Edad: 27
 * Distrito: San Borja
@@ -3922,24 +3921,25 @@ A continuación, se presenta la información correspondiente a las entrevistas d
 
 **Resumen:** El entrevistado señaló que la propuesta de valor de RetailPulse fue clara, ya que permite centralizar información relevante para mejorar la operación de una tienda retail. Consideró que la navegación por el dashboard fue sencilla y que la información sobre productos, inventario, zonas y métricas resulta útil para tomar decisiones más rápidas. También destacó el valor del mapa de calor para identificar zonas con mayor o menor actividad, así como la utilidad de las alertas y tareas priorizadas para apoyar al personal de tienda. En general, indicó que recomendaría RetailPulse a negocios retail porque ayuda a ordenar la operación, detectar problemas y optimizar la gestión comercial.
 
-##### Entrevista 2
+**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
+###### Entrevista 2
 * Nombre: Carlos Mendoza
 * Edad: 34
 * Distrito: Pueblo Libre
-* Timing: 13:51 - 22:09
+* Timing: 13:55 - 22:08
 
 ![Entrevista](assets/images/11.png)
 
-Resumen: El entrevistado señaló que la propuesta de valor de RetailPulse fue sumamente clara, destacando que digitalizar el comportamiento del cliente y automatizar alertas soluciona problemas reales de gestión. Consideró que la navegación por el dashboard fue sencilla y valoró positivamente el diseño limpio en modo oscuro para evitar fatiga visual durante los turnos. Resaltó de manera especial la utilidad del mapa de calor para identificar "zonas muertas", así como el gestor de alertas operativas para dirigir al personal en tiempo real sin necesidad de microgestión. Aunque consideró la interfaz amigable, sugirió incluir tutoriales o videos breves para facilitar el proceso inicial de configuración y mapeo de la tienda (onboarding). En general, recomendaría totalmente la plataforma porque otorga un control analítico avanzado, optimiza al personal, evita quiebres de stock y ayuda a incrementar las ventas basándose en datos reales y no en intuición.
+**Resumen:** Durante la sesión conducida por el investigador Jesús Godoy, el entrevistado (supervisor de operaciones en una tienda retail de tecnología) señaló que la propuesta de valor fue sumamente clara, destacando que digitalizar el comportamiento del cliente y automatizar alertas soluciona problemas reales, a diferencia de solo mirar reportes de caja. Valoró positivamente el diseño en modo oscuro (Dark Mode) para evitar fatiga visual durante largas horas de monitoreo. Resaltó la utilidad del mapa de calor para identificar "zonas muertas" y el gestor de alertas automáticas para dirigir al personal. Sugirió incluir videos cortos o una guía paso a paso para el proceso inicial de mapeo de la tienda (onboarding). Recomendaría totalmente la plataforma porque otorga un control analítico avanzado.
 
+**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
-**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8) 
+---
 
-##### Segmento 2: Compradores frecuentes en tiendas fisicas
+##### Segmento 2: Compradores frecuentes en tiendas físicas
 
 ###### Entrevista 1
-
 * Nombre: Andy Nuñez
 * Edad: 26
 * Distrito: Lurigancho-Chosica
@@ -3947,20 +3947,47 @@ Resumen: El entrevistado señaló que la propuesta de valor de RetailPulse fue s
 
 ![Entrevista](assets/images/entrevista-validacion-arturo-nunez.png)
 
-**Resumen**: El entrevistado comprendió fácilmente la finalidad de RetailPulse y valoró positivamente la experiencia de búsqueda desde el kiosko, destacando que permite encontrar productos de manera rápida y consultar información útil como stock, ubicación, referencia de estante y promociones disponibles. Además, consideró que la interfaz es clara e intuitiva, y que la solución puede ayudar a ahorrar tiempo dentro de una tienda física al evitar recorridos innecesarios. Como principal mejora, sugirió incorporar sugerencias automáticas en el buscador y filtros por categoría para hacer la búsqueda aún más eficiente. En general, manifestó que sí usaría y recomendaría RetailPulse, ya que facilita el proceso de compra y mejora la experiencia del cliente.
+**Resumen:** El entrevistado comprendió fácilmente la finalidad del quiosco RetailPulse y valoró positivamente la experiencia de búsqueda, destacando que permite encontrar productos de manera rápida y consultar información útil como stock, ubicación y promociones disponibles. Consideró que la interfaz es clara e intuitiva, y que la solución ahorra tiempo al evitar recorridos innecesarios. Como principal mejora, sugirió incorporar sugerencias automáticas en el buscador y filtros por categoría. Manifestó que sí usaría y recomendaría la plataforma.
+
+**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
 ###### Entrevista 2
-
 * Nombre: Juan Flores
 * Edad: 22
 * Distrito: Lince
-* Timing: 22:09 - 29:40
+* Timing: 22:13 - 29:34
 
 ![Entrevista](assets/images/22.png)
 
-Resumen: El entrevistado comprendió instantáneamente la finalidad del quiosco, comparándolo con tener un buscador web integrado directamente en el local físico. Valoró muy positivamente la experiencia de búsqueda, destacando la fluidez de la interfaz táctil y la utilidad de las sugerencias automáticas mientras escribía. Pudo identificar claramente la disponibilidad, la zona y el estante del producto en una sola pantalla, y consideró que las promociones mostradas fueron muy acertadas y nada invasivas. Lo que más le gustó de la experiencia fue la autonomía y el gran ahorro de tiempo al no tener que buscar vendedores disponibles. Como principal oportunidad de mejora, sugirió incorporar un escáner físico de códigos de barras en el módulo para facilitar su uso a personas mayores que prefieren no escribir. Manifestó que usaría y recomendaría definitivamente RetailPulse para visitar tiendas nuevas, ya que elimina la fricción, evita colas por consultas y hace la compra mucho más rápida y cómoda.
+**Resumen:** El entrevistado comprendió instantáneamente la finalidad del quiosco, comparándolo con tener un buscador web integrado en el local físico. Destacó la fluidez de la interfaz táctil y la utilidad de las sugerencias automáticas. Pudo identificar claramente la disponibilidad y ubicación del producto en una sola pantalla. Lo que más le gustó fue la autonomía y el ahorro de tiempo al no tener que buscar vendedores. Sugirió incorporar un escáner físico de códigos de barras en el módulo para facilitar su uso a personas mayores que prefieren no escribir.
 
-**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQD5B52z3aSZRbhSNpwMWooxAQs_fT3FQxSg24RhFleIyW8) 
+**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+
+###### Entrevista 3
+* Nombre: Sebastian Roman
+* Edad: 21
+* Distrito: Surco
+* Timing: 29:38 - 32:54
+
+![Entrevista](assets/images/entrevista-validacion-sebas.png)
+
+**Resumen:** Durante la entrevista conducida por Anghelo, el usuario comprendió de inmediato que la plataforma es una herramienta para buscar productos y ofertas. Valoró de forma positiva que el sistema informe la ubicación exacta (pasillo/zona) y no solo el stock. Consideró que la interfaz es moderna y otorga gran independencia, evitando la necesidad de buscar a un asesor. Como oportunidad de mejora, sugirió incorporar opciones para ordenar y filtrar resultados por precio o marca cuando hay muchos productos similares.
+
+**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+
+###### Entrevista 4
+* Nombre: Zoila / Sra. Zou
+* Edad: 55
+* Distrito: Surco
+* Timing: 32:54 - 40:51
+
+![Entrevista](assets/images/entrevista-validacion-zou.png)
+
+**Resumen:** Durante la sesión conducida por el investigador José María, la entrevistada interactuó con la vista de quiosco y destacó el orden y la claridad visual. Valoró especialmente que el sistema muestre promociones complementarias a su búsqueda principal. Resaltó que la aplicación resuelve el problema de perder tiempo buscando productos cuando cambian los estantes o al no encontrar personal. Consideró que la información sobre ubicación y stock es precisa y evitaría la frustración de descubrir que el producto está agotado.
+
+**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+
+---
 
 ##### Análisis consolidado de hallazgos
 
@@ -3968,21 +3995,23 @@ Las entrevistas permitieron validar la utilidad de RetailPulse desde dos perspec
 
 **Segmento 1: Administradores, supervisores y personal de tienda**
 
-| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora propuesta |
+| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora implementada |
 | :--- | :--- | :--- | :--- |
-| La propuesta de valor se percibe clara porque centraliza información operativa. | Andy Pillaca destacó dashboard, inventario, zonas, métricas y alertas como información útil para decidir más rápido. | Valida el enfoque de RetailPulse como herramienta de gestión para tiendas físicas. | Mantener una navegación orientada a indicadores accionables y no solo a reportes visuales. |
-| El mapa de calor ayuda a detectar zonas con baja actividad o problemas de distribución. | Carlos Mendoza resaltó el valor de identificar "zonas muertas" dentro de la tienda. | Refuerza la importancia del módulo de Traffic Analytics dentro del dashboard. | Añadir explicaciones breves sobre intensidad, conversión y permanencia para usuarios no técnicos. |
-| Las alertas y tareas reducen la necesidad de supervisión manual constante. | Los entrevistados valoraron que el personal pueda recibir acciones priorizadas en tiempo real. | Confirma la utilidad del bounded context Store Operations. | Mejorar confirmaciones, estados y trazabilidad de tareas atendidas. |
-| El onboarding inicial puede requerir mayor guía. | Carlos Mendoza sugirió tutoriales o videos breves para configurar la tienda. | Identifica una barrera de adopción en negocios retail tradicionales. | Incorporar ayuda contextual durante la configuración de layout, zonas y productos. |
+| La propuesta de valor se percibe clara porque centraliza información operativa. | Andy Pillaca destacó dashboard, inventario, zonas, métricas y alertas como información útil para decidir más rápido. | Valida el enfoque de RetailPulse como herramienta de gestión para tiendas físicas. | Se optimizó la navegación del dashboard para priorizar indicadores accionables en la pantalla principal. |
+| El mapa de calor ayuda a detectar zonas con baja actividad o problemas de distribución. | Carlos Mendoza resaltó el valor de identificar "zonas muertas" dentro de la tienda. | Refuerza la importancia del módulo de Traffic Analytics dentro del dashboard. | Se agregaron tooltips (textos flotantes) explicativos sobre intensidad, conversión y permanencia para usuarios no técnicos. |
+| Las alertas y tareas reducen la necesidad de supervisión manual constante. | Los entrevistados valoraron que el personal pueda recibir acciones priorizadas en tiempo real. | Confirma la utilidad del bounded context Store Operations. | Se rediseñó la sección de alertas para mostrar claramente los estados, confirmaciones y la trazabilidad de tareas atendidas. |
+| El onboarding inicial puede requerir mayor guía. | Carlos Mendoza sugirió tutoriales o videos breves para configurar la tienda. | Identifica una barrera de adopción en negocios retail tradicionales. | Se desarrolló un flujo de onboarding interactivo y ayuda contextual para la configuración del layout, zonas y productos. |
 
 **Segmento 2: Compradores frecuentes en tiendas físicas**
 
-| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora propuesta |
+| Hallazgo del usuario | Evidencia de entrevista | Impacto en el producto | Mejora implementada |
 | :--- | :--- | :--- | :--- |
-| El kiosko facilita encontrar productos sin recorrer innecesariamente la tienda. | Andy Nuñez valoró consultar stock, ubicación, estante y promociones desde una sola experiencia. | Valida el flujo de Assisted Shopping como componente central de la experiencia del comprador. | Mantener la búsqueda visible, rápida y conectada con inventario real. |
-| La autonomía del comprador reduce fricción cuando no hay personal disponible. | Juan Flores comparó el kiosko con un buscador web dentro del local físico. | Refuerza el valor de RetailPulse en escenarios de alta afluencia o baja disponibilidad de staff. | Conectar solicitudes de ayuda del kiosko con tareas operativas para el personal. |
-| Las sugerencias automáticas y filtros pueden mejorar la eficiencia de búsqueda. | Andy Nuñez propuso sugerencias por texto y filtros por categoría. | Identifica una mejora directa sobre la interacción del kiosko. | Priorizar autocompletado, filtros por categoría e historial reciente de búsqueda. |
-| Algunos usuarios podrían preferir alternativas al ingreso manual de texto. | Juan Flores sugirió incorporar escáner físico de códigos de barras para personas mayores. | Abre oportunidades de accesibilidad y facilidad de uso en tienda. | Evaluar escaneo de código de barras o búsqueda por voz como funcionalidades futuras. |
+| El kiosko facilita encontrar productos sin recorrer innecesariamente la tienda. | Andy Nuñez valoró consultar stock, ubicación, estante y promociones desde una sola experiencia. | Valida el flujo de Assisted Shopping como componente central de la experiencia del comprador. | Se fijó la barra de búsqueda en la interfaz superior para que sea visible rápidamente y conectada al inventario real. |
+| La autonomía del comprador reduce fricción cuando no hay personal disponible. | Juan Flores comparó el kiosko con un buscador web dentro del local físico. | Refuerza el valor de RetailPulse en escenarios de alta afluencia o baja disponibilidad de staff. | Se programó una alerta que conecta el botón de "Solicitar ayuda" del kiosko con el panel de tareas operativas del personal. |
+| Las sugerencias automáticas y filtros pueden mejorar la eficiencia de búsqueda. | Andy Nuñez propuso sugerencias por texto y filtros por categoría. | Identifica una mejora directa sobre la interacción del kiosko. | Se añadió un sistema de autocompletado predictivo y botones de filtros rápidos por categoría bajo el buscador. |
+| Algunos usuarios podrían preferir alternativas al ingreso manual de texto. | Juan Flores sugirió incorporar escáner físico de códigos de barras para personas mayores. | Abre oportunidades de accesibilidad y facilidad de uso en tienda. | Se integró en la interfaz un botón visible de "Escanear Código de Barras", preparado para conectar con lectores físicos. |
+| La búsqueda en inventarios amplios requiere herramientas de ordenamiento rápido. | Sebastián Román sugirió incorporar opciones para ordenar y filtrar resultados por precio o marca. | Optimiza la navegación cuando el usuario se enfrenta a categorías con demasiados productos similares. | Se implementó un botón desplegable con filtros avanzados (precio, marca) y se aumentó el contraste tipográfico de la ubicación. |
+| Las ofertas cruzadas y la lectura rápida de stock evitan frustraciones y fomentan ventas adicionales. | La Sra. Zou destacó las promociones complementarias y la necesidad de saber si hay stock para no ir al estante en vano. | Incrementa oportunidades de upselling y mejora la accesibilidad visual, especialmente para adultos mayores. | Se añadió una sección de "Ofertas Complementarias" y se aplicó semaforización (colores verde, amarillo, rojo) en el stock. |
 
 En conjunto, las entrevistas validan que RetailPulse responde a necesidades reales de operación y experiencia de compra en tiendas físicas. Los administradores reconocen valor en la trazabilidad de datos, alertas y recomendaciones, mientras que los compradores destacan rapidez, autonomía y claridad de ubicación. Como oportunidades futuras, el equipo identifica mejoras de onboarding, asistencia contextual, accesibilidad del kiosko y mecanismos de búsqueda más eficientes.
 
