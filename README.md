@@ -4213,13 +4213,36 @@ El contenido del video refuerza la relación entre el trabajo técnico realizado
 
 Como resultado, el video About-the-Team comunica que el equipo no solo dividió tareas por repositorio, sino por responsabilidades del producto. Esta perspectiva permite mostrar colaboración entre capas: el backend provee reglas y datos, el frontend construye la experiencia de usuario y el reporte documenta la trazabilidad entre implementación, validación y despliegue.
 
+##### 📋 Descripción de Escenas y Participantes
+
+Este apartado describe la estructura técnica del video del equipo de desarrollo, integrando la identidad visual, el discurso corporativo de la startup y la asignación de roles clave para la materialización del producto **RetailPulse**.
+
+**🎥 Tabla del Guion Técnico y Estructura de Escenas**
+
+| Escena / Tiempo | Visual (Imagen y Branding) | Audio (Diálogos y Banda Sonora) |
+| :--- | :--- | :--- |
+| **Escena 1**<br>00:00 - 00:01 | **Introducción de Marca:** La pantalla inicia mostrando el logotipo oficial de **RetailPulse** centrado de forma nítida sobre un fondo limpio. Sirve como el gancho visual para establecer la identidad de la startup desde el primer segundo. | **Banda Sonora:** Comienza una pista instrumental de ritmo constante y matices tecnológicos que se mantendrá en segundo plano durante todo el video para denotar innovación corporativa. |
+| **Escena 2**<br>00:01 - 01:15 | **Presentación del Team Leader:** Plano medio de Fabio Vallejo. En la esquina superior izquierda de la pantalla permanece estático el **isotipo del logo de RetailPulse** como identificador de la marca en todo momento. | **Fabio Vallejo (Team Leader):** "Hola, soy Fabio Vallejo y en RetailPulse yo asumí el rol de Team Leader del equipo. Durante el proyecto participé en distintas áreas como el backend, frontend, la documentación, validación, despliegue y las entrevistas..." Explica su aporte en servicios con Spring Boot y la documentación de endpoints en Swagger, destacando la importancia de evidenciar flujos completos de negocio basados en reglas claras. |
+| **Escena 3**<br>01:15 - 02:29 | **Perspectiva del Core Developer:** Corte a plano medio de Ángel Justino Hurtado. Se mantiene el identificador visual de la startup en el entorno digital de la toma. | **Ángel Justino (Developer):** "Hola, mi nombre es Ángel Justino Hurtado... y pertenezco a RetailPulse. En nuestro proyecto, mi trabajo principal consistió en aterrizar los casos de uso reales y armar todo el motor de recomendaciones y promociones dinámicas..." Comenta la evolución del equipo al construir un ecosistema SaaS escalable aplicando patrones de diseño profesionales y la arquitectura *Domain-Driven Design (DDD)* bajo el estándar de la startup. |
+| **Escena 4**<br>02:29 - 03:53 | **Aseguramiento de Calidad:** Corte a plano medio de Jesús Godoy. El branding se mantiene unificado mediante el banner superior. | **Jesús Godoy (QA / Integración):** "Bueno, mi nombre es Jesús Godoy... Como equipo, yo vi un gran equipo realmente. Personalmente diría que he sido una ayuda considerable..." Describe su labor supervisando el cumplimiento de los criterios de aceptación de la startup, la redacción de informes y la correcta integración de todos los módulos del software en una sola plataforma unificada. |
+| **Escena 5**<br>03:53 - 04:54 | **Sustentación de Objetivos:** Corte a plano medio de Luis Sebastián Rubio. | **Luis Sebastián (Developer):** "Hola, soy Luis Sebastián Rubio... Mi experiencia en el curso diría que me ha ayudado bastante a reforzar mi confianza para desarrollar nuestros propios proyectos..." Explica su rol en el trabajo grupal enfocado en la redacción de informes y en la articulación de estrategias técnicas para que la startup cumpla las metas planteadas. |
+| **Escena 6**<br>04:54 - 06:29 | **Cierre y Aprendizaje:** Corte a plano medio de José María Franco del Carpio. La pantalla concluye el último tramo difuminándose de vuelta hacia el branding de la marca. | **José María Franco (Developer):** "Hola a todos, mi nombre es José María Franco del Carpio... Mi función principal estuvo relacionada con la gestión de inventario, entrevistas de validación y parte de la documentación en Spring..." Concluye destacando el valor del desarrollo ágil con Scrum, el uso de código abierto en un entorno real y cómo las tecnologías trabajaron juntas en beneficio de **RetailPulse**. |
+
+**💡 Justificación del Enfoque de Branding y Roles en el Informe**
+
+* **Identidad Visual Unificada:** El uso del logotipo en el inicio y el isotipo persistente en pantalla asegura la continuidad estética requerida por los estándares de presentación de la startup.
+* **Alineamiento Discursivo:** Los participantes no solo mencionan sus tareas individuales, sino que estructuran su discurso alrededor de la visión del negocio de **RetailPulse**, empleando terminología técnica avanzada de la industria como *SaaS (Software as a Service)*, arquitectura *Domain-Driven Design (DDD)* y flujos de negocio optimizados.
+* **Distribución de Competencias:** El reporte evidencia una organización clara de ingeniería de software, partiendo del liderazgo técnico (*Team Leader*), pasando por la arquitectura de datos y motores dinámicos, el aseguramiento de la calidad (*QA*), hasta la gestión lógica del inventario del core del negocio.
+
+---
+
 **URL de la versión publicada en Microsoft Stream:**
 
-[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQCA5NpEZOhQTaP0bSI-9bncAfpBD3pfVOkQ-nLyoUHf_UA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=S7fSLD](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211d989_upc_edu_pe/IQCA5NpEZOhQTaP0bSI-9bncAfpBD3pfVOkQ-nLyoUHf_UA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=S7fSLD)
+[LINK](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20251c350_upc_edu_pe/IQC1BFCuCJICSIifb5GE18I7AajK-F1OxBju0n0iXbLFytQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=i2pd1k)
 
 **URL de la versión publicada en YouTube:**
 
-[https://youtu.be/6dIop2AMrf8](https://youtu.be/6dIop2AMrf8)
+[LINK](https://youtu.be/qr-AE48gL1U)
 
 ## Bibliografía
 
