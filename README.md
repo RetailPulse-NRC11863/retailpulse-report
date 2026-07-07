@@ -3921,7 +3921,7 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** El entrevistado señaló que la propuesta de valor de RetailPulse fue clara, ya que permite centralizar información relevante para mejorar la operación de una tienda retail. Consideró que la navegación por el dashboard fue sencilla y que la información sobre productos, inventario, zonas y métricas resulta útil para tomar decisiones más rápidas. También destacó el valor del mapa de calor para identificar zonas con mayor o menor actividad, así como la utilidad de las alertas y tareas priorizadas para apoyar al personal de tienda. En general, indicó que recomendaría RetailPulse a negocios retail porque ayuda a ordenar la operación, detectar problemas y optimizar la gestión comercial.
 
-**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
 ###### Entrevista 2
 * Nombre: Carlos Mendoza
@@ -3933,7 +3933,7 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** Durante la sesión conducida por el investigador Jesús Godoy, el entrevistado (supervisor de operaciones en una tienda retail de tecnología) señaló que la propuesta de valor fue sumamente clara, destacando que digitalizar el comportamiento del cliente y automatizar alertas soluciona problemas reales, a diferencia de solo mirar reportes de caja. Valoró positivamente el diseño en modo oscuro (Dark Mode) para evitar fatiga visual durante largas horas de monitoreo. Resaltó la utilidad del mapa de calor para identificar "zonas muertas" y el gestor de alertas automáticas para dirigir al personal. Sugirió incluir videos cortos o una guía paso a paso para el proceso inicial de mapeo de la tienda (onboarding). Recomendaría totalmente la plataforma porque otorga un control analítico avanzado.
 
-**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
 ---
 
@@ -3949,7 +3949,7 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** El entrevistado comprendió fácilmente la finalidad del quiosco RetailPulse y valoró positivamente la experiencia de búsqueda, destacando que permite encontrar productos de manera rápida y consultar información útil como stock, ubicación y promociones disponibles. Consideró que la interfaz es clara e intuitiva, y que la solución ahorra tiempo al evitar recorridos innecesarios. Como principal mejora, sugirió incorporar sugerencias automáticas en el buscador y filtros por categoría. Manifestó que sí usaría y recomendaría la plataforma.
 
-**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
 ###### Entrevista 2
 * Nombre: Juan Flores
@@ -3961,7 +3961,7 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** El entrevistado comprendió instantáneamente la finalidad del quiosco, comparándolo con tener un buscador web integrado en el local físico. Destacó la fluidez de la interfaz táctil y la utilidad de las sugerencias automáticas. Pudo identificar claramente la disponibilidad y ubicación del producto en una sola pantalla. Lo que más le gustó fue la autonomía y el ahorro de tiempo al no tener que buscar vendedores. Sugirió incorporar un escáner físico de códigos de barras en el módulo para facilitar su uso a personas mayores que prefieren no escribir.
 
-**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
 ###### Entrevista 3
 * Nombre: Sebastian Roman
@@ -3973,7 +3973,7 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** Durante la entrevista conducida por Anghelo, el usuario comprendió de inmediato que la plataforma es una herramienta para buscar productos y ofertas. Valoró de forma positiva que el sistema informe la ubicación exacta (pasillo/zona) y no solo el stock. Consideró que la interfaz es moderna y otorga gran independencia, evitando la necesidad de buscar a un asesor. Como oportunidad de mejora, sugirió incorporar opciones para ordenar y filtrar resultados por precio o marca cuando hay muchos productos similares.
 
-**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
 ###### Entrevista 4
 * Nombre: Zoila / Sra. Zou
@@ -3985,7 +3985,7 @@ A continuación, se debe registrar la información correspondiente a las entrevi
 
 **Resumen:** Durante la sesión conducida por el investigador José María, la entrevistada interactuó con la vista de quiosco y destacó el orden y la claridad visual. Valoró especialmente que el sistema muestre promociones complementarias a su búsqueda principal. Resaltó que la aplicación resuelve el problema de perder tiempo buscando productos cuando cambian los estantes o al no encontrar personal. Consideró que la información sobre ubicación y stock es precisa y evitaría la frustración de descubrir que el producto está agotado.
 
-**Enlace:** [Ver grabación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
+**Enlace:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b331_upc_edu_pe/IQDOf-xbYgZXRI_opkdgj94KAZSPc-Fc5hFLXj7tGZiIguQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dzHi9Z)
 
 ---
 
@@ -4232,11 +4232,11 @@ Este apartado describe la estructura técnica del video del equipo de desarrollo
 
 **URL de la versión publicada en Microsoft Stream:**
 
-[LINK](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20251c350_upc_edu_pe/IQC1BFCuCJICSIifb5GE18I7AajK-F1OxBju0n0iXbLFytQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=i2pd1k)
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20251c350_upc_edu_pe/IQC1BFCuCJICSIifb5GE18I7AajK-F1OxBju0n0iXbLFytQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=i2pd1k](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20251c350_upc_edu_pe/IQC1BFCuCJICSIifb5GE18I7AajK-F1OxBju0n0iXbLFytQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=i2pd1k)
 
 **URL de la versión publicada en YouTube:**
 
-[LINK](https://youtu.be/qr-AE48gL1U)
+[https://youtu.be/qr-AE48gL1U](https://youtu.be/qr-AE48gL1U)
 
 ## Bibliografía
 
