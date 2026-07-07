@@ -4213,11 +4213,11 @@ El contenido del video refuerza la relación entre el trabajo técnico realizado
 
 Como resultado, el video About-the-Team comunica que el equipo no solo dividió tareas por repositorio, sino por responsabilidades del producto. Esta perspectiva permite mostrar colaboración entre capas: el backend provee reglas y datos, el frontend construye la experiencia de usuario y el reporte documenta la trazabilidad entre implementación, validación y despliegue.
 
-##### 📋 Descripción de Escenas y Participantes
+##### Descripción de Escenas y Participantes
 
 Este apartado describe la estructura técnica del video del equipo de desarrollo, integrando la identidad visual, el discurso corporativo de la startup y la asignación de roles clave para la materialización del producto **RetailPulse**.
 
-**🎥 Tabla del Guion Técnico y Estructura de Escenas**
+** Tabla del Guion Técnico y Estructura de Escenas**
 
 | Escena / Tiempo | Visual (Imagen y Branding) | Audio (Diálogos y Banda Sonora) |
 | :--- | :--- | :--- |
@@ -4227,12 +4227,6 @@ Este apartado describe la estructura técnica del video del equipo de desarrollo
 | **Escena 4**<br>02:29 - 03:53 | **Aseguramiento de Calidad:** Corte a plano medio de Jesús Godoy. El branding se mantiene unificado mediante el banner superior. | **Jesús Godoy (QA / Integración):** "Bueno, mi nombre es Jesús Godoy... Como equipo, yo vi un gran equipo realmente. Personalmente diría que he sido una ayuda considerable..." Describe su labor supervisando el cumplimiento de los criterios de aceptación de la startup, la redacción de informes y la correcta integración de todos los módulos del software en una sola plataforma unificada. |
 | **Escena 5**<br>03:53 - 04:54 | **Sustentación de Objetivos:** Corte a plano medio de Luis Sebastián Rubio. | **Luis Sebastián (Developer):** "Hola, soy Luis Sebastián Rubio... Mi experiencia en el curso diría que me ha ayudado bastante a reforzar mi confianza para desarrollar nuestros propios proyectos..." Explica su rol en el trabajo grupal enfocado en la redacción de informes y en la articulación de estrategias técnicas para que la startup cumpla las metas planteadas. |
 | **Escena 6**<br>04:54 - 06:29 | **Cierre y Aprendizaje:** Corte a plano medio de José María Franco del Carpio. La pantalla concluye el último tramo difuminándose de vuelta hacia el branding de la marca. | **José María Franco (Developer):** "Hola a todos, mi nombre es José María Franco del Carpio... Mi función principal estuvo relacionada con la gestión de inventario, entrevistas de validación y parte de la documentación en Spring..." Concluye destacando el valor del desarrollo ágil con Scrum, el uso de código abierto en un entorno real y cómo las tecnologías trabajaron juntas en beneficio de **RetailPulse**. |
-
-**💡 Justificación del Enfoque de Branding y Roles en el Informe**
-
-* **Identidad Visual Unificada:** El uso del logotipo en el inicio y el isotipo persistente en pantalla asegura la continuidad estética requerida por los estándares de presentación de la startup.
-* **Alineamiento Discursivo:** Los participantes no solo mencionan sus tareas individuales, sino que estructuran su discurso alrededor de la visión del negocio de **RetailPulse**, empleando terminología técnica avanzada de la industria como *SaaS (Software as a Service)*, arquitectura *Domain-Driven Design (DDD)* y flujos de negocio optimizados.
-* **Distribución de Competencias:** El reporte evidencia una organización clara de ingeniería de software, partiendo del liderazgo técnico (*Team Leader*), pasando por la arquitectura de datos y motores dinámicos, el aseguramiento de la calidad (*QA*), hasta la gestión lógica del inventario del core del negocio.
 
 ---
 
